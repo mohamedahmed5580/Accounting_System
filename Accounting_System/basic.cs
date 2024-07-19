@@ -21,5 +21,10 @@ namespace Accounting_System
         {
 
         }
+
+        private void gunaContextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
