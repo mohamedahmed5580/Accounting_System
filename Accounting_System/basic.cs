@@ -16,5 +16,10 @@ namespace Accounting_System
         {
             InitializeComponent();
         }
+
+        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
