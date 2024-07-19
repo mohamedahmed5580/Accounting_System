@@ -16,15 +16,5 @@ namespace Accounting_System
         {
             InitializeComponent();
         }
-
-        private void basic_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaContextMenuStrip1_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
     }
 }

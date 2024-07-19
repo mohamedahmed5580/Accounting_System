@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Accounting_System
 {
-    public partial class Form1 : Form
+    public partial class any : Form
     {
-        public Form1()
+        public any()
         {
             InitializeComponent();
+        }
+
+        private void basic_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaContextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }
