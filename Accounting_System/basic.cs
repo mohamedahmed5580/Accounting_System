@@ -21,5 +21,40 @@ namespace Accounting_System
         {
 
         }
+
+        private void gunaGradientPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaImageButton9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaImageButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaImageButton6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaImageButton7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gunaAdvenceButton28_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
