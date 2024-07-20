@@ -33,21 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AltoControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AltoControls.1.0.1\lib\AltoControls.dll</HintPath>
-    </Reference>
     <Reference Include="Guna.UI">
       <HintPath>..\..\Dentist_System\Dentist_System\bin\Debug\net8.0-windows\Guna.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
-      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,67 +57,19 @@
     <Compile Include="any.Designer.cs">
       <DependentUpon>any.cs</DependentUpon>
     </Compile>
-    <Compile Include="Barcode_printing.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Barcode_printing.Designer.cs">
-      <DependentUpon>Barcode_printing.cs</DependentUpon>
-    </Compile>
     <Compile Include="basic.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="basic.Designer.cs">
       <DependentUpon>basic.cs</DependentUpon>
     </Compile>
-    <Compile Include="GeneralLedger.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GeneralLedger.Designer.cs">
-      <DependentUpon>GeneralLedger.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SalesmanLedger.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SalesmanLedger.Designer.cs">
-      <DependentUpon>SalesmanLedger.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SalesReport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SalesReport.Designer.cs">
-      <DependentUpon>SalesReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Stock.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Stock.Designer.cs">
-      <DependentUpon>Stock.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StockBalance.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StockBalance.Designer.cs">
-      <DependentUpon>StockBalance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="supplier_payment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="supplier_payment.Designer.cs">
-      <DependentUpon>supplier_payment.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="any.resx">
       <DependentUpon>any.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Barcode_printing.resx">
-      <DependentUpon>Barcode_printing.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="basic.resx">
       <DependentUpon>basic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GeneralLedger.resx">
-      <DependentUpon>GeneralLedger.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -137,22 +81,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SalesmanLedger.resx">
-      <DependentUpon>SalesmanLedger.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SalesReport.resx">
-      <DependentUpon>SalesReport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Stock.resx">
-      <DependentUpon>Stock.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StockBalance.resx">
-      <DependentUpon>StockBalance.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="supplier_payment.resx">
-      <DependentUpon>supplier_payment.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
