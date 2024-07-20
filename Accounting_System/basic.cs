@@ -57,11 +57,16 @@ namespace Accounting_System
 
         }
 
+<<<<<<< HEAD
         private void basic_Load(object sender, EventArgs e)
+=======
+        private void groupBox1_Enter(object sender, EventArgs e)
+>>>>>>> e921cd73b273c7b3eaba217652e04e58a3b4f070
         {
 
         }
 
+<<<<<<< HEAD
 
 
         private void btnBankReconciliation_Click(object sender, EventArgs e)
@@ -106,5 +111,11 @@ namespace Accounting_System
             SalesReport salesReport = new SalesReport();
             salesReport.Show(); 
         }
+=======
+        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+>>>>>>> e921cd73b273c7b3eaba217652e04e58a3b4f070
     }
 }

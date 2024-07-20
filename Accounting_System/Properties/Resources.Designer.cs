@@ -63,6 +63,36 @@ namespace Accounting_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1486564180_finance_financial_report_81493 {
+            get {
+                object obj = ResourceManager.GetObject("1486564180-finance-financial-report_81493", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cashier2_118071 {
+            get {
+                object obj = ResourceManager.GetObject("cashier2_118071", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cashier2_1180711 {
+            get {
+                object obj = ResourceManager.GetObject("cashier2_1180711", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap diagram_06_24511 {
             get {
                 object obj = ResourceManager.GetObject("diagram-06_24511", resourceCulture);
@@ -73,9 +103,49 @@ namespace Accounting_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap diagram_06_24511__1_ {
+            get {
+                object obj = ResourceManager.GetObject("diagram-06_24511 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap diagram_06_245111 {
             get {
                 object obj = ResourceManager.GetObject("diagram-06_245111", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap finance_money_coin_bill_cash_payment_icon_141995 {
+            get {
+                object obj = ResourceManager.GetObject("finance_money_coin_bill_cash_payment_icon_141995", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap finance_receipt_dollar_calculator_payment_money_icon_142011 {
+            get {
+                object obj = ResourceManager.GetObject("finance_receipt_dollar_calculator_payment_money_icon_142011", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap folder_type_services_opened_icon_129836 {
+            get {
+                object obj = ResourceManager.GetObject("folder_type_services_opened_icon_129836", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,6 +183,46 @@ namespace Accounting_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gnomelogs_103380 {
+            get {
+                object obj = ResourceManager.GetObject("gnomelogs_103380", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gnomelogs_103380__1_ {
+            get {
+                object obj = ResourceManager.GetObject("gnomelogs_103380 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_basket_4341280_120547 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder-basket-4341280_120547", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_basket_4341280_1205471 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder-basket-4341280_1205471", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_free_17_463011 {
             get {
                 object obj = ResourceManager.GetObject("if_free-17_463011", resourceCulture);
@@ -123,9 +233,109 @@ namespace Accounting_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_icons_user {
+            get {
+                object obj = ResourceManager.GetObject("if_icons_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logout_37127 {
+            get {
+                object obj = ResourceManager.GetObject("Logout_37127", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap medical_history {
             get {
                 object obj = ResourceManager.GetObject("medical-history", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mimetypes_office_spreadsheet_table_xls_381 {
+            get {
+                object obj = ResourceManager.GetObject("mimetypes_office_spreadsheet_table_xls_381", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pay_cash_payment_money_dollar_bill_icon_143267 {
+            get {
+                object obj = ResourceManager.GetObject("pay_cash_payment_money_dollar_bill_icon_143267", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap power_closedown_close_exit_pode_1842 {
+            get {
+                object obj = ResourceManager.GetObject("power_closedown_close_exit_pode_1842", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap question_answer_bubble_messages_chat_icon_207504 {
+            get {
+                object obj = ResourceManager.GetObject("question_answer_bubble_messages_chat_icon_207504", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap question_bubble_icon_262696 {
+            get {
+                object obj = ResourceManager.GetObject("question_bubble_icon_262696", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap users_icon_icons_com_57999 {
+            get {
+                object obj = ResourceManager.GetObject("users_icon-icons.com_57999", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap users_icon_icons_com_57999__1_ {
+            get {
+                object obj = ResourceManager.GetObject("users_icon-icons.com_57999 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap warehouse_storage_unit_storehouse_icon_192428 {
+            get {
+                object obj = ResourceManager.GetObject("warehouse_storage_unit_storehouse_icon_192428", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
