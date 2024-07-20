@@ -106,5 +106,62 @@
   <ItemGroup>
     <None Include="Resources\diagram-06_24511.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagram-06_24511 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse_storage_unit_storehouse_icon_192428.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_type_services_opened_icon_129836.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier2_118071.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finance_receipt_dollar_calculator_payment_money_icon_142011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_icon-icons.com_57999.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_icon-icons.com_57999 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finance_money_coin_bill_cash_payment_icon_141995.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder-basket-4341280_120547.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icons_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay_cash_payment_money_dollar_bill_icon_143267.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question_bubble_icon_262696.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question_answer_bubble_messages_chat_icon_207504.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mimetypes_office_spreadsheet_table_xls_381.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486564180-finance-financial-report_81493.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnomelogs_103380.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnomelogs_103380 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout_37127.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_closedown_close_exit_pode_1842.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
