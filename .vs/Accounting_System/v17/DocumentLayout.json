@@ -3,59 +3,59 @@
   "WorkspaceRootPath": "C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\basic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\basic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\basic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\basic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\basic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\basic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\salesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\salesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\salesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\salesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\salesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\salesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\generalledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\generalledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\generalledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\salesmanledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\salesmanledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\salesmanledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\stockbalance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\stockbalance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\stockbalance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\generalledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\generalledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\generalledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\salesmanledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\salesmanledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\salesmanledger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\stockbalance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\stockbalance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\stockbalance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\supplier_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\supplier_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\supplier_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|c:\\users\\empohy\\documents\\github\\accounting_system\\accounting_system\\barcode_printing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\accounting_system\\barcode_printing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A4A05BEA-F799-4B4C-90FF-A518FE19BBE2}|Accounting_System\\Accounting_System.csproj|solutionrelative:accounting_system\\barcode_printing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -78,8 +78,7 @@
               "RelativeToolTip": "Accounting_System\\SalesReport.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAuwBsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T17:21:54.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T17:21:54.495Z"
             },
             {
               "$type": "Document",
@@ -90,8 +89,7 @@
               "ToolTip": "C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\Accounting_System\\SalesReport.cs [Design]",
               "RelativeToolTip": "Accounting_System\\SalesReport.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T17:14:19.151Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-20T17:14:19.151Z"
             },
             {
               "$type": "Document",
@@ -103,8 +101,7 @@
               "RelativeToolTip": "Accounting_System\\GeneralLedger.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T16:54:19.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T16:54:19.247Z"
             },
             {
               "$type": "Document",
@@ -116,8 +113,7 @@
               "RelativeToolTip": "Accounting_System\\Stock.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T16:40:47.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T16:40:47.401Z"
             },
             {
               "$type": "Document",
@@ -128,8 +124,7 @@
               "ToolTip": "C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\Accounting_System\\Stock.cs [Design]",
               "RelativeToolTip": "Accounting_System\\Stock.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T16:36:36.652Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-20T16:36:36.652Z"
             },
             {
               "$type": "Document",
@@ -140,8 +135,7 @@
               "ToolTip": "C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\Accounting_System\\SalesmanLedger.cs [Design]",
               "RelativeToolTip": "Accounting_System\\SalesmanLedger.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T16:19:14.255Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-20T16:19:14.255Z"
             },
             {
               "$type": "Document",
@@ -153,8 +147,7 @@
               "RelativeToolTip": "Accounting_System\\StockBalance.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAqwBoAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T15:47:15.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T15:47:15.085Z"
             },
             {
               "$type": "Document",
@@ -176,7 +169,7 @@
               "RelativeDocumentMoniker": "Accounting_System\\basic.cs",
               "ToolTip": "C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\Accounting_System\\basic.cs",
               "RelativeToolTip": "Accounting_System\\basic.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAwG4AAAAAAAAA",
+              "ViewState": "AQIAAFQAAAAAAAAAAAA8wGcAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T14:00:28.362Z",
               "EditorCaption": ""
@@ -190,8 +183,7 @@
               "ToolTip": "C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\Accounting_System\\GeneralLedger.cs [Design]",
               "RelativeToolTip": "Accounting_System\\GeneralLedger.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T16:49:52.783Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-20T16:49:52.783Z"
             },
             {
               "$type": "Document",
@@ -203,8 +195,7 @@
               "RelativeToolTip": "Accounting_System\\SalesmanLedger.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAAwBcAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T16:23:39.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T16:23:39.419Z"
             },
             {
               "$type": "Document",
@@ -215,8 +206,7 @@
               "ToolTip": "C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\Accounting_System\\StockBalance.cs [Design]",
               "RelativeToolTip": "Accounting_System\\StockBalance.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T15:30:45.443Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-20T15:30:45.443Z"
             },
             {
               "$type": "Document",
@@ -227,8 +217,7 @@
               "ToolTip": "C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\Accounting_System\\supplier_payment.cs [Design]",
               "RelativeToolTip": "Accounting_System\\supplier_payment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T14:17:44.941Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-20T14:17:44.941Z"
             },
             {
               "$type": "Document",
@@ -239,8 +228,7 @@
               "ToolTip": "C:\\Users\\EMPOHY\\Documents\\GitHub\\Accounting_System\\Accounting_System\\Barcode_printing.cs [Design]",
               "RelativeToolTip": "Accounting_System\\Barcode_printing.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T15:14:46.601Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-20T15:14:46.601Z"
             }
           ]
         }
