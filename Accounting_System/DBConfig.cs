@@ -50,6 +50,7 @@ namespace Pharmacy.PL
             Accounting_System.Properties.Settings.Default.Save();
 
             MetroFramework.MetroMessageBox.Show(this, "", "Success", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            this.Close();
 
         }
 

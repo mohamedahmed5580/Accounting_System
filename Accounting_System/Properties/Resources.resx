@@ -130,14 +130,17 @@
   <data name="warehouse_storage_unit_storehouse_icon_192428" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\warehouse_storage_unit_storehouse_icon_192428.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="question_answer_bubble_messages_chat_icon_207504" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\question_answer_bubble_messages_chat_icon_207504.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="pay_cash_payment_money_dollar_bill_icon_143267" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pay_cash_payment_money_dollar_bill_icon_143267.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="power_closedown_close_exit_pode_1842" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\power_closedown_close_exit_pode_1842.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="folder_type_services_opened_icon_129836" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\folder_type_services_opened_icon_129836.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486564180-finance-financial-report_81493" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486564180-finance-financial-report_81493.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconfinder-basket-4341280_1205471" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconfinder-basket-4341280_120547.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,8 +166,8 @@
   <data name="gnomelogs_103380 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gnomelogs_103380 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1486564180-finance-financial-report_81493" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1486564180-finance-financial-report_81493.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="question_answer_bubble_messages_chat_icon_207504" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\question_answer_bubble_messages_chat_icon_207504.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gnomelogs_103380" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gnomelogs_103380.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,7 +202,7 @@
   <data name="mimetypes_office_spreadsheet_table_xls_381" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mimetypes_office_spreadsheet_table_xls_381.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="power_closedown_close_exit_pode_1842" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\power_closedown_close_exit_pode_1842.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pills" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pills.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

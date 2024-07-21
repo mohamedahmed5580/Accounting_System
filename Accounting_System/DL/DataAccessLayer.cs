@@ -13,10 +13,10 @@ namespace Pharmacy.DL
 
         private static string Con()
         {
-            if (Properties.Settings.Default.Mode == true)
-                return string.Format("Data Source={0}; Initial Catalog={1};Integrated Security=true", Properties.Settings.Default.Server, Properties.Settings.Default.Database);
+            if (Accounting_System.Properties.Settings.Default.Mode == true)
+                return string.Format("Data Source={0}; Initial Catalog={1};Integrated Security=true", Accounting_System.Properties.Settings.Default.Server, Accounting_System.Properties.Settings.Default.Database);
             else
-                return string.Format("Data Source={0}; Initial Catalog={1};Integrated Security=false;User ID={2}; Password={3}", Properties.Settings.Default.Server, Properties.Settings.Default.Database, Properties.Settings.Default.Name, Properties.Settings.Default.Pass);
+                return string.Format("Data Source={0}; Initial Catalog={1};Integrated Security=false;User ID={2}; Password={3}", Accounting_System.Properties.Settings.Default.Server, Accounting_System.Properties.Settings.Default.Database, Accounting_System.Properties.Settings.Default.Name, Accounting_System.Properties.Settings.Default.Pass);
          }
 
         public static SqlConnection cn = new SqlConnection(Con());      

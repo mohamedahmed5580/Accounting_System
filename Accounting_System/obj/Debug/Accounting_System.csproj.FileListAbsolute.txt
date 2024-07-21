@@ -22,3 +22,4 @@ C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj
 C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\bin\Debug\MetroFramework.Design.dll
 C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\bin\Debug\MetroFramework.dll
 C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.loading.resources
