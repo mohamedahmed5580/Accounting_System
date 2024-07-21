@@ -104,6 +104,109 @@ namespace Accounting_System
 
         private void toolStripMenuItem27_Click(object sender, EventArgs e)
         {
+            if (!tabPage1.Created)
+            {
+                tabControl1.TabPages.Add(tabPage2);
+                tabControl1.SelectedTab = tabPage1;
+            }
+            else
+            {
+                tabControl1.SelectedTab = tabPage1;
+            }
+        }
+
+        private void btnStockAdjustment_Click(object sender, EventArgs e)
+        {
+            StockBalance stockBalance = new StockBalance();
+            stockBalance.Show();
+        }
+
+        private void btnProductMaster_Click(object sender, EventArgs e)
+        {
+            if (!tabPage2.Created)
+            {
+                tabControl1.TabPages.Add(tabPage2);
+                tabControl1.SelectedTab = tabPage2;
+            }
+            else
+            {
+                tabControl1.SelectedTab = tabPage2;
+            }
+        }
+
+
+        private void btnBankReconciliation_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBarcodeLabelPrinting_Click(object sender, EventArgs e)
+        {
+            Barcode_printing barcode_Printing = new Barcode_printing(); 
+            barcode_Printing.Show();    
+        }
+
+
+
+        private void btnPayment_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStockTransfer_Issue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAccountingReports_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void btnPOSReport_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnVoucher_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPOSReport_Click_1(object sender, EventArgs e)
+        {
+            SalesReport salesReport = new SalesReport();
+            salesReport.Show();
+        }
+
+        private void btnPurchaseOrder_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPayment_Click_1(object sender, EventArgs e)
+        {
+            SalesmanLedger salesmanLedger = new SalesmanLedger();   
+            salesmanLedger.Show();  
+        }
+
+        private void btnBankReconciliation_Click_1(object sender, EventArgs e)
+        {
+            supplier_payment supplier_Payment = new supplier_payment(); 
+            supplier_Payment.Show();
+        }
+
+        private void btnStockTransfer_Issue_Click_1(object sender, EventArgs e)
+        {
+            Stock stock = new Stock();  
+            stock.Show();   
+        }
+
+        private void btnAccountingReports_Click_1(object sender, EventArgs e)
+        {
+            GeneralLedger generalLedger = new GeneralLedger();  
+            generalLedger.Show();   
         }
     }
 }

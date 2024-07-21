@@ -36,6 +36,15 @@
     <Reference Include="Guna.UI">
       <HintPath>..\..\Dentist_System\Dentist_System\bin\Debug\net8.0-windows\Guna.UI.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -69,6 +78,12 @@
     <Compile Include="basic.Designer.cs">
       <DependentUpon>basic.cs</DependentUpon>
     </Compile>
+    <Compile Include="DBConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBConfig.Designer.cs">
+      <DependentUpon>DBConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="GeneralLedger.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +104,7 @@
     <Compile Include="SalesReport.Designer.cs">
       <DependentUpon>SalesReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Settings.Designer.cs" />
     <Compile Include="Stock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="basic.resx">
       <DependentUpon>basic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBConfig.resx">
+      <DependentUpon>DBConfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GeneralLedger.resx">
       <DependentUpon>GeneralLedger.cs</DependentUpon>
@@ -144,6 +163,7 @@
     <EmbeddedResource Include="supplier_payment.resx">
       <DependentUpon>supplier_payment.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -225,6 +245,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\power_closedown_close_exit_pode_1842.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

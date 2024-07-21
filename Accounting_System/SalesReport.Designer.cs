@@ -54,9 +54,10 @@
             this.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel1.Controls.Add(this.GroupBox2);
             this.Panel1.Controls.Add(this.Panel2);
-            this.Panel1.Location = new System.Drawing.Point(5, 5);
+            this.Panel1.Location = new System.Drawing.Point(7, 6);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(767, 187);
+            this.Panel1.Size = new System.Drawing.Size(1022, 230);
             this.Panel1.TabIndex = 3;
             // 
             // GroupBox2
@@ -70,9 +71,11 @@
             this.GroupBox2.Controls.Add(this.btnGetData);
             this.GroupBox2.Controls.Add(this.dtpDateFrom);
             this.GroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupBox2.Location = new System.Drawing.Point(6, 75);
+            this.GroupBox2.Location = new System.Drawing.Point(8, 92);
+            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Size = new System.Drawing.Size(753, 95);
+            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox2.Size = new System.Drawing.Size(1004, 117);
             this.GroupBox2.TabIndex = 50;
             this.GroupBox2.TabStop = false;
             this.GroupBox2.Text = "بحث بتاريخ الفاتورة :";
@@ -84,9 +87,10 @@
             this.Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button2.ForeColor = System.Drawing.Color.White;
             this.Button2.Image = ((System.Drawing.Image)(resources.GetObject("Button2.Image")));
-            this.Button2.Location = new System.Drawing.Point(6, 28);
+            this.Button2.Location = new System.Drawing.Point(8, 34);
+            this.Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(39, 50);
+            this.Button2.Size = new System.Drawing.Size(52, 62);
             this.Button2.TabIndex = 53;
             this.Button2.UseVisualStyleBackColor = true;
             this.Button2.Click += new System.EventHandler(this.Button2_Click);
@@ -96,9 +100,10 @@
             this.Label5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label5.ForeColor = System.Drawing.Color.White;
-            this.Label5.Location = new System.Drawing.Point(489, 28);
+            this.Label5.Location = new System.Drawing.Point(652, 34);
+            this.Label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(119, 24);
+            this.Label5.Size = new System.Drawing.Size(159, 30);
             this.Label5.TabIndex = 52;
             this.Label5.Text = "إلى تاريخ :";
             this.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,9 +113,10 @@
             this.Label6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label6.ForeColor = System.Drawing.Color.White;
-            this.Label6.Location = new System.Drawing.Point(614, 28);
+            this.Label6.Location = new System.Drawing.Point(819, 34);
+            this.Label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(119, 24);
+            this.Label6.Size = new System.Drawing.Size(159, 30);
             this.Label6.TabIndex = 51;
             this.Label6.Text = "من تاريخ :";
             this.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,9 +128,10 @@
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
-            this.btnReset.Location = new System.Drawing.Point(46, 28);
+            this.btnReset.Location = new System.Drawing.Point(61, 34);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(39, 50);
+            this.btnReset.Size = new System.Drawing.Size(52, 62);
             this.btnReset.TabIndex = 0;
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
@@ -138,9 +145,10 @@
             this.Button1.ForeColor = System.Drawing.Color.White;
             this.Button1.Image = ((System.Drawing.Image)(resources.GetObject("Button1.Image")));
             this.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Button1.Location = new System.Drawing.Point(105, 33);
+            this.Button1.Location = new System.Drawing.Point(140, 41);
+            this.Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(175, 41);
+            this.Button1.Size = new System.Drawing.Size(233, 50);
             this.Button1.TabIndex = 15;
             this.Button1.Text = "تقرير تفصيلي";
             this.Button1.UseVisualStyleBackColor = false;
@@ -150,9 +158,10 @@
             this.dtpDateTo.CustomFormat = "dd/MM/yyyy";
             this.dtpDateTo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.dtpDateTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDateTo.Location = new System.Drawing.Point(489, 52);
+            this.dtpDateTo.Location = new System.Drawing.Point(652, 64);
+            this.dtpDateTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpDateTo.Name = "dtpDateTo";
-            this.dtpDateTo.Size = new System.Drawing.Size(119, 26);
+            this.dtpDateTo.Size = new System.Drawing.Size(157, 30);
             this.dtpDateTo.TabIndex = 14;
             // 
             // btnGetData
@@ -164,9 +173,10 @@
             this.btnGetData.ForeColor = System.Drawing.Color.White;
             this.btnGetData.Image = ((System.Drawing.Image)(resources.GetObject("btnGetData.Image")));
             this.btnGetData.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGetData.Location = new System.Drawing.Point(291, 33);
+            this.btnGetData.Location = new System.Drawing.Point(388, 41);
+            this.btnGetData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGetData.Name = "btnGetData";
-            this.btnGetData.Size = new System.Drawing.Size(175, 41);
+            this.btnGetData.Size = new System.Drawing.Size(233, 50);
             this.btnGetData.TabIndex = 1;
             this.btnGetData.Text = "تقرير عام";
             this.btnGetData.UseVisualStyleBackColor = false;
@@ -176,9 +186,10 @@
             this.dtpDateFrom.CustomFormat = "dd/MM/yyyy";
             this.dtpDateFrom.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.dtpDateFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDateFrom.Location = new System.Drawing.Point(614, 52);
+            this.dtpDateFrom.Location = new System.Drawing.Point(819, 64);
+            this.dtpDateFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpDateFrom.Name = "dtpDateFrom";
-            this.dtpDateFrom.Size = new System.Drawing.Size(119, 26);
+            this.dtpDateFrom.Size = new System.Drawing.Size(157, 30);
             this.dtpDateFrom.TabIndex = 11;
             // 
             // Panel2
@@ -186,9 +197,10 @@
             this.Panel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Panel2.Controls.Add(this.Label1);
-            this.Panel2.Location = new System.Drawing.Point(6, 7);
+            this.Panel2.Location = new System.Drawing.Point(8, 9);
+            this.Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(753, 62);
+            this.Panel2.Size = new System.Drawing.Size(1004, 76);
             this.Panel2.TabIndex = 0;
             // 
             // Label1
@@ -197,20 +209,22 @@
             this.Label1.BackColor = System.Drawing.Color.Transparent;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label1.ForeColor = System.Drawing.Color.White;
-            this.Label1.Location = new System.Drawing.Point(311, 15);
+            this.Label1.Location = new System.Drawing.Point(415, 18);
+            this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(102, 20);
+            this.Label1.Size = new System.Drawing.Size(125, 25);
             this.Label1.TabIndex = 0;
             this.Label1.Text = "تقارير المبيعات";
             // 
             // SalesReport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(777, 196);
+            this.ClientSize = new System.Drawing.Size(1036, 241);
             this.Controls.Add(this.Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SalesReport";

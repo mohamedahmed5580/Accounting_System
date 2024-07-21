@@ -51,9 +51,10 @@
             this.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel1.Controls.Add(this.GroupBox2);
             this.Panel1.Controls.Add(this.Panel2);
-            this.Panel1.Location = new System.Drawing.Point(5, 4);
+            this.Panel1.Location = new System.Drawing.Point(7, 5);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(830, 188);
+            this.Panel1.Size = new System.Drawing.Size(1106, 231);
             this.Panel1.TabIndex = 3;
             // 
             // GroupBox2
@@ -65,9 +66,11 @@
             this.GroupBox2.Controls.Add(this.Label4);
             this.GroupBox2.Controls.Add(this.dtpDateFrom);
             this.GroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.GroupBox2.Location = new System.Drawing.Point(11, 87);
+            this.GroupBox2.Location = new System.Drawing.Point(15, 107);
+            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Size = new System.Drawing.Size(811, 90);
+            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox2.Size = new System.Drawing.Size(1081, 111);
             this.GroupBox2.TabIndex = 50;
             this.GroupBox2.TabStop = false;
             this.GroupBox2.Text = " عرض تقرير بين تاريخين :";
@@ -78,9 +81,10 @@
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(15, 28);
+            this.btnReset.Location = new System.Drawing.Point(20, 34);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(104, 42);
+            this.btnReset.Size = new System.Drawing.Size(139, 52);
             this.btnReset.TabIndex = 0;
             this.btnReset.Text = "إعادة تعيين";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -92,9 +96,10 @@
             this.Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Button1.ForeColor = System.Drawing.Color.White;
-            this.Button1.Location = new System.Drawing.Point(137, 28);
+            this.Button1.Location = new System.Drawing.Point(183, 34);
+            this.Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(118, 42);
+            this.Button1.Size = new System.Drawing.Size(157, 52);
             this.Button1.TabIndex = 15;
             this.Button1.Text = "عرض التقرير";
             this.Button1.UseVisualStyleBackColor = false;
@@ -104,31 +109,34 @@
             this.dtpDateTo.CustomFormat = "dd/MM/yyyy";
             this.dtpDateTo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.dtpDateTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDateTo.Location = new System.Drawing.Point(281, 41);
+            this.dtpDateTo.Location = new System.Drawing.Point(375, 50);
+            this.dtpDateTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpDateTo.Name = "dtpDateTo";
-            this.dtpDateTo.Size = new System.Drawing.Size(119, 26);
+            this.dtpDateTo.Size = new System.Drawing.Size(157, 30);
             this.dtpDateTo.TabIndex = 14;
             // 
             // Label2
             // 
-            this.Label2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Label2.BackColor = System.Drawing.Color.DodgerBlue;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label2.ForeColor = System.Drawing.Color.White;
-            this.Label2.Location = new System.Drawing.Point(406, 41);
+            this.Label2.Location = new System.Drawing.Point(541, 50);
+            this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(82, 26);
+            this.Label2.Size = new System.Drawing.Size(109, 32);
             this.Label2.TabIndex = 13;
             this.Label2.Text = "إلى تاريخ :";
             this.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Label4
             // 
-            this.Label4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Label4.BackColor = System.Drawing.Color.DodgerBlue;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label4.ForeColor = System.Drawing.Color.White;
-            this.Label4.Location = new System.Drawing.Point(715, 40);
+            this.Label4.Location = new System.Drawing.Point(953, 49);
+            this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(78, 26);
+            this.Label4.Size = new System.Drawing.Size(104, 32);
             this.Label4.TabIndex = 12;
             this.Label4.Text = "من تاريخ :";
             this.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -138,19 +146,21 @@
             this.dtpDateFrom.CustomFormat = "dd/MM/yyyy";
             this.dtpDateFrom.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.dtpDateFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDateFrom.Location = new System.Drawing.Point(589, 40);
+            this.dtpDateFrom.Location = new System.Drawing.Point(785, 49);
+            this.dtpDateFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpDateFrom.Name = "dtpDateFrom";
-            this.dtpDateFrom.Size = new System.Drawing.Size(120, 26);
+            this.dtpDateFrom.Size = new System.Drawing.Size(159, 30);
             this.dtpDateFrom.TabIndex = 11;
             // 
             // Panel2
             // 
-            this.Panel2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Panel2.BackColor = System.Drawing.Color.DodgerBlue;
             this.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Panel2.Controls.Add(this.Label1);
-            this.Panel2.Location = new System.Drawing.Point(6, 7);
+            this.Panel2.Location = new System.Drawing.Point(8, 9);
+            this.Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(816, 62);
+            this.Panel2.Size = new System.Drawing.Size(1088, 76);
             this.Panel2.TabIndex = 0;
             // 
             // Label1
@@ -159,20 +169,22 @@
             this.Label1.BackColor = System.Drawing.Color.Transparent;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.Label1.ForeColor = System.Drawing.Color.White;
-            this.Label1.Location = new System.Drawing.Point(306, 15);
+            this.Label1.Location = new System.Drawing.Point(408, 18);
+            this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(158, 29);
+            this.Label1.Size = new System.Drawing.Size(191, 36);
             this.Label1.TabIndex = 0;
             this.Label1.Text = "دفتر الأستاذ العام";
             // 
             // GeneralLedger
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(840, 200);
+            this.ClientSize = new System.Drawing.Size(1120, 246);
             this.Controls.Add(this.Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "GeneralLedger";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
