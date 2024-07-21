@@ -57,19 +57,67 @@
     <Compile Include="any.Designer.cs">
       <DependentUpon>any.cs</DependentUpon>
     </Compile>
+    <Compile Include="Barcode_printing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcode_printing.Designer.cs">
+      <DependentUpon>Barcode_printing.cs</DependentUpon>
+    </Compile>
     <Compile Include="basic.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="basic.Designer.cs">
       <DependentUpon>basic.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeneralLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralLedger.Designer.cs">
+      <DependentUpon>GeneralLedger.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesmanLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesmanLedger.Designer.cs">
+      <DependentUpon>SalesmanLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesReport.Designer.cs">
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockBalance.Designer.cs">
+      <DependentUpon>StockBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supplier_payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supplier_payment.Designer.cs">
+      <DependentUpon>supplier_payment.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="any.resx">
       <DependentUpon>any.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Barcode_printing.resx">
+      <DependentUpon>Barcode_printing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="basic.resx">
       <DependentUpon>basic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralLedger.resx">
+      <DependentUpon>GeneralLedger.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,6 +129,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SalesmanLedger.resx">
+      <DependentUpon>SalesmanLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesReport.resx">
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockBalance.resx">
+      <DependentUpon>StockBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supplier_payment.resx">
+      <DependentUpon>supplier_payment.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

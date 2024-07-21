@@ -11,3 +11,10 @@ C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj
 C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.exe
 C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.pdb
 C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.any.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.GeneralLedger.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.SalesmanLedger.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.SalesReport.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.Stock.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.StockBalance.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.supplier_payment.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.Barcode_printing.resources
