@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetBarcode</name>
+    </assembly>
+    <members>
+        <member name="M:NetBarcode.Barcode.Configure(System.Action{NetBarcode.BarcodeSettings})">
+            <summary>
+            Set configs
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetBarcode.Barcode.Configure(NetBarcode.BarcodeSettings)">
+            <summary>
+            Set configs
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetBarcode.Barcode.SaveImageFile(System.String,System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+                Saves the image to a file.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="path">The file path for the image.</param>
+            <param name="imageFormat">The image format. Defaults to Png.</param>
+        </member>
+        <member name="M:NetBarcode.Barcode.GetBase64Image(System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+                Gets the image as a Base64 encoded string.
+            <param name="data">The data to encode as a barcode.</param>
+                <param name="imageFormat">The image format. Defaults to Png.</param>
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Barcode.GetByteArray(System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+                Gets the image as a byte array.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <param name="imageFormat">The image format. Defaults to PNG.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NetBarcode.Barcode.GetImage(System.String)">
+            <summary>
+                Gets the image.
+            </summary>
+            <param name="data">The data to encode as a barcode.</param>
+            <returns>
+                Image class
+            </returns>
+        </member>
+        <member name="T:NetBarcode.Types.Codabar">
+            <summary>
+             Codabar encoding
+             Written by: Brad Barnhill
+             Refactored: Filipe Tagliatti
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.Codabar.GetEncoding">
+            <summary>
+            Encode the raw data using the Codabar algorithm.
+            </summary>
+        </member>
+        <member name="T:NetBarcode.Types.Code11">
+            <summary>
+             Code 11 encoding
+             Written by: Brad Barnhill
+             Refactored: Filipe Tagliatti
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.Code11.GetEncoding">
+            <summary>
+            Encode the raw data using the Code 11 algorithm.
+            </summary>
+        </member>
+        <member name="T:NetBarcode.Types.Code128">
+            <summary>
+             Code 128 encoding
+             Written by: Brad Barnhill
+             Refactored: Filipe Tagliatti
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.Code128.#ctor(System.String)">
+            <summary>
+            Encodes data.
+            </summary>
+            <param name="data">Data to encode.</param>
+        </member>
+        <member name="M:NetBarcode.Types.Code128.#ctor(System.String,NetBarcode.Types.Code128.Code128Type)">
+            <summary>
+            Encodes data.
+            </summary>
+            <param name="data">Data to encode.</param>
+            <param name="code128Type">Type of encoding to lock to. (Code 128A, Code 128B, Code 128C)</param>
+        </member>
+        <member name="T:NetBarcode.Types.Code39">
+            <summary>
+             Code 39 encoding
+             Written by: Brad Barnhill
+             Refactored: Filipe Tagliatti
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.Code39.#ctor(System.String)">
+            <summary>
+            Encodes with Code39.
+            </summary>
+            <param name="data">Data to encode.</param>
+        </member>
+        <member name="M:NetBarcode.Types.Code39.#ctor(System.String,System.Boolean)">
+            <summary>
+            Encodes with Code39.
+            </summary>
+            <param name="data">_data to encode.</param>
+            <param name="extended">Allow Extended Code 39 (Full Ascii mode).</param>
+        </member>
+        <member name="M:NetBarcode.Types.Code39.#ctor(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Encodes with Code39.
+            </summary>
+            <param name="data">_data to encode.</param>
+            <param name="extended">Allow Extended Code 39 (Full Ascii mode).</param>
+            <param name="enableChecksum">Whether to calculate the Mod 43 checksum and encode it into the barcode</param>
+        </member>
+        <member name="M:NetBarcode.Types.Code39.GetEncoding">
+            <summary>
+            Encode the raw data using the Code 39 algorithm.
+            </summary>
+        </member>
+        <member name="T:NetBarcode.Types.Code93">
+            <summary>
+             Code 93 encoding
+             Written by: Brad Barnhill
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.Code93.#ctor(System.String)">
+            <summary>
+            Encodes with Code93.
+            </summary>
+            <param name="data">Data to encode.</param>
+        </member>
+        <member name="M:NetBarcode.Types.Code93.GetEncoding">
+            <summary>
+            Encode the raw data using the Code 93 algorithm.
+            </summary>
+        </member>
+        <member name="T:NetBarcode.Types.Ean13">
+            <summary>
+             EAN-13 encoding
+             Written by: Brad Barnhill
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.Ean13.GetEncoding">
+            <summary>
+            Encode the raw data using the EAN-13 algorithm. (Can include the checksum already.  If it doesnt exist in the data then it will calculate it for you.  Accepted data lengths are 12 + 1 checksum or just the 12 data digits)
+            </summary>
+        </member>
+        <member name="T:NetBarcode.Types.Ean8">
+            <summary>
+             EAN-8 encoding
+             Written by: Brad Barnhill
+            </summary>
+        </member>
+        <member name="M:NetBarcode.Types.Ean8.GetEncoding">
+            <summary>
+            Encode the raw data using the EAN-8 algorithm.
+            </summary>
+        </member>
+    </members>
+</doc>

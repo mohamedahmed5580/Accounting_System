@@ -1,0 +1,1133 @@
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\bin\Debug\Accounting_System.exe.config
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\bin\Debug\Accounting_System.exe
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\bin\Debug\Accounting_System.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\bin\Debug\Guna.UI.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.csproj.AssemblyReference.cache
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.basic.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.Properties.Resources.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.csproj.GenerateResource.cache
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.csproj.CoreCompileInputs.cache
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.csproj.CopyComplete
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.exe
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.any.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.GeneralLedger.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.SalesmanLedger.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.SalesReport.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.Stock.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.StockBalance.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.supplier_payment.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.Barcode_printing.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Pharmacy.PL.DBConfig.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\bin\Debug\MetroFramework.Design.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\bin\Debug\MetroFramework.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System\Accounting_System\obj\Debug\Accounting_System.loading.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\Accounting_System.exe.config
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\Accounting_System.exe
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\Accounting_System.pdb
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\MetroFramework.Design.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\MetroFramework.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.csproj.AssemblyReference.cache
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.any.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Barcode_printing.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.basic.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Pharmacy.PL.DBConfig.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.DebtorsReport.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.GeneralLedger.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.loading.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.ProfitAndLossReport.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Properties.Resources.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReport.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesmanLedger.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesReport.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Stock.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.StockBalance.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.supplier_payment.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.csproj.GenerateResource.cache
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.csproj.CoreCompileInputs.cache
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounti.16B89065.Up2Date
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.exe
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.pdb
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SuppliersList.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PaymentRecord.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\log4net.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\log4net.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\DevExpress.Data.v24.1.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\DevExpress.Data.v24.1.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\AltoControls.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.frmReport.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.services.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.servicesRecord.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.customerRecord2.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Quotation.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.QuotationRecord.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.productRecord.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.QuotationRecord1.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.ProductsLedger.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Stat.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Logs.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.StockInAndOutReport.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.VoucherReport.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurshaseDaybook.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SupplierLedger.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerLedger.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerRecord5.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Venduer.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.OverAllReport.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Company.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.OriginalCompany.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Programers.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Payment_2.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerRecord3.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesmanRecord_2.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PaymentRecord_2.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Voucher.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesmanRecord.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.VoucherRecord.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.AddCustomer.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Camera.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Category.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CTOPOS.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerList.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.LoginForm.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.POS.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Products.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.ProductsScreen.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReturn.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReturnRecordScreen.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReturnScreen.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Pymentinvoice.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PymentinvoiceScreen.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesInvoiceScreen.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesLocations.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesMan.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesManScreen.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesReturn.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesReturnRecord.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SubCategory.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Supplier.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SupplierScreen.resources
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\AForge.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\CryptoQrUtilities.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\Emgu.CV.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Buffers.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Memory.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Json.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.ValueTuple.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\Touchless.Vision.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\WebCamLib.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\zxing.dll
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\AForge.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\Emgu.CV.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Buffers.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Memory.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Json.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\EMPOHY\Documents\GitHub\Accounting_System-main\Accounting_System\bin\Debug\System.ValueTuple.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\Accounting_System.exe.config
+D:\Accounting_System-main\Accounting_System\bin\Debug\Accounting_System.exe
+D:\Accounting_System-main\Accounting_System\bin\Debug\Accounting_System.pdb
+D:\Accounting_System-main\Accounting_System\bin\Debug\AForge.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.DirectShow.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\AltoControls.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\CryptoQrUtilities.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.Shared.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\DevExpress.Data.v24.1.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\Emgu.CV.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\log4net.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\MetroFramework.Design.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\MetroFramework.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\MetroFramework.Fonts.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Buffers.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.ComponentModel.Composition.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Memory.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Numerics.Vectors.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Encodings.Web.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Json.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.ValueTuple.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\Touchless.Vision.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\WebCamLib.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\zxing.dll
+D:\Accounting_System-main\Accounting_System\bin\Debug\AForge.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.DirectShow.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\DevExpress.Data.v24.1.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\Emgu.CV.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\log4net.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Buffers.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Memory.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Numerics.Vectors.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Encodings.Web.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Json.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Accounting_System-main\Accounting_System\bin\Debug\System.ValueTuple.xml
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.csproj.AssemblyReference.cache
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.AddCustomer.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.any.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Barcode_printing.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.basic.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Camera.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Category.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Company.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CTOPOS.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerLedger.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerList.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.customerRecord2.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerRecord3.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerRecord5.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Pharmacy.PL.DBConfig.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.DebtorsReport.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.frmReport.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.GeneralLedger.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.loading.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.LoginForm.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Logs.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.OriginalCompany.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.OverAllReport.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PaymentRecord.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PaymentRecord_2.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Payment_2.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.POS.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.productRecord.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Products.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.ProductsLedger.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.ProductsScreen.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.ProfitAndLossReport.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Programers.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Properties.Resources.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReport.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReturn.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReturnRecordScreen.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReturnScreen.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurshaseDaybook.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Pymentinvoice.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PymentinvoiceScreen.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Quotation.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.QuotationRecord.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.QuotationRecord1.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesInvoiceScreen.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesLocations.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesMan.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesmanLedger.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesmanRecord.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesmanRecord_2.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesManScreen.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesReport.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesReturn.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesReturnRecord.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.services.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.servicesRecord.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Stat.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Stock.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.StockBalance.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.StockInAndOutReport.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SubCategory.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Supplier.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SupplierLedger.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SupplierScreen.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SuppliersList.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.supplier_payment.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Venduer.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Voucher.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.VoucherRecord.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.VoucherReport.resources
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.csproj.GenerateResource.cache
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.csproj.CoreCompileInputs.cache
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounti.16B89065.Up2Date
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.exe
+D:\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.csproj.AssemblyReference.cache
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Actives.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.AddCustomer.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.any.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Barcode_printing.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.basic.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Camera.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Category.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Company.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CTOPOS.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerLedger.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerList.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.customerRecord2.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerRecord3.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerRecord5.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Pharmacy.PL.DBConfig.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.DebtorsReport.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.frmReport.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.GeneralLedger.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.loading.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.LoginForm.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Logs.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.OriginalCompany.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.OverAllReport.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PaymentRecord.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PaymentRecord_2.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Payment_2.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.POS.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.productRecord.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Products.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.ProductsLedger.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.ProductsScreen.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.ProfitAndLossReport.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Programers.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Properties.Resources.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReport.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReturn.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReturnRecordScreen.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReturnScreen.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurshaseDaybook.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Pymentinvoice.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PymentinvoiceScreen.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Quotation.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.QuotationRecord.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.QuotationRecord1.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesInvoiceScreen.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesLocations.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesMan.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesmanLedger.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesmanRecord.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesmanRecord_2.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesManScreen.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesReport.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesReturn.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesReturnRecord.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.services.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.servicesRecord.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Stat.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Stock.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.StockBalance.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.StockInAndOutReport.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SubCategory.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Supplier.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SupplierLedger.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SupplierScreen.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SuppliersList.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.supplier_payment.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Venduer.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Voucher.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.VoucherRecord.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.VoucherReport.resources
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.csproj.GenerateResource.cache
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.csproj.CoreCompileInputs.cache
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Accounting_System.exe.config
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Accounting_System.exe
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Accounting_System.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\AForge.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\AltoControls.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\CryptoQrUtilities.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\DevExpress.Data.v24.1.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\DeviceId.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Emgu.CV.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\log4net.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\MetroFramework.Design.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\MetroFramework.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Buffers.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Memory.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Json.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.ValueTuple.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Touchless.Vision.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\WebCamLib.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\zxing.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\AForge.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\DevExpress.Data.v24.1.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\DeviceId.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Emgu.CV.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\log4net.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Buffers.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Memory.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Json.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.ValueTuple.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounti.16B89065.Up2Date
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.exe
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\libSkiaSharp.dylib
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\x86\libSkiaSharp.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\x64\libSkiaSharp.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\arm64\libSkiaSharp.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\x64\libSkiaSharp.so
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\arm\libSkiaSharp.so
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\arm64\libSkiaSharp.so
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\musl-x64\libSkiaSharp.so
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Aspose.BarCode.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Barcoder.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Barcoder.Renderer.Svg.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\BarcodeStandard.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\BitMiracle.LibTiff.NET.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Abstractions.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Drawing.Common.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Logger.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Shared.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\NetBarcode.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\SixLabors.Fonts.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\SixLabors.ImageSharp.Drawing.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\SkiaSharp.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\SvgLib.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Collections.Immutable.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Drawing.Common.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Formats.Nrbf.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.IO.Pipelines.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Reflection.TypeExtensions.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Resources.Extensions.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Security.AccessControl.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Security.Permissions.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\TypeLite.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\TypeLite.Net4.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\zxing.presentation.dll
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Aspose.BarCode.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\BitMiracle.LibTiff.NET.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Abstractions.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Drawing.Common.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Drawing.Common.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Logger.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Shared.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\log4net.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\NetBarcode.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\SixLabors.Fonts.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\SixLabors.ImageSharp.Drawing.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\SkiaSharp.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\SkiaSharp.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Collections.Immutable.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Drawing.Common.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Drawing.Common.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Formats.Nrbf.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.IO.Pipelines.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Reflection.Metadata.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Reflection.TypeExtensions.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Resources.Extensions.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Security.AccessControl.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Security.Permissions.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\TypeLite.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\TypeLite.Net4.pdb
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\zxing.xml
+C:\Users\moham\OneDrive\Documents\GitHub\Accounting_System-main\Accounting_System-main\Accounting_System\bin\Debug\zxing.presentation.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\libSkiaSharp.dylib
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\x86\libSkiaSharp.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\x64\libSkiaSharp.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\arm64\libSkiaSharp.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\x64\libSkiaSharp.so
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\arm\libSkiaSharp.so
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\arm64\libSkiaSharp.so
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\musl-x64\libSkiaSharp.so
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Accounting_System.exe.config
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Accounting_System.exe
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Accounting_System.pdb
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\AForge.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\AltoControls.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Aspose.BarCode.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Barcoder.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Barcoder.Renderer.Svg.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\BarcodeStandard.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\BitMiracle.LibTiff.NET.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CryptoQrUtilities.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\DevExpress.Data.v24.1.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\DeviceId.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Emgu.CV.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Abstractions.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Drawing.Common.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Logger.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Shared.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\log4net.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\MetroFramework.Design.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\MetroFramework.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\NetBarcode.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\SixLabors.Fonts.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\SixLabors.ImageSharp.Drawing.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\SkiaSharp.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\SvgLib.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Buffers.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Collections.Immutable.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Drawing.Common.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Formats.Nrbf.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.IO.Pipelines.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Memory.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Reflection.TypeExtensions.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Resources.Extensions.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Security.AccessControl.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Security.Permissions.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Json.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.ValueTuple.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Touchless.Vision.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\TypeLite.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\TypeLite.Net4.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\WebCamLib.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\zxing.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\zxing.presentation.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\stdole.dll
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\AForge.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Aspose.BarCode.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\BitMiracle.LibTiff.NET.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\DevExpress.Data.v24.1.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\DeviceId.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Emgu.CV.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Abstractions.pdb
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Drawing.Common.pdb
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Drawing.Common.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Logger.pdb
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\IronSoftware.Shared.pdb
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\log4net.pdb
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\log4net.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\NetBarcode.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\SixLabors.Fonts.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\SixLabors.ImageSharp.Drawing.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\SkiaSharp.pdb
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\SkiaSharp.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Buffers.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Collections.Immutable.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Drawing.Common.pdb
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Drawing.Common.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Formats.Nrbf.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.IO.Pipelines.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Memory.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Reflection.Metadata.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Reflection.TypeExtensions.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Resources.Extensions.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Security.AccessControl.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Security.Permissions.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Text.Json.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\System.ValueTuple.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\TypeLite.pdb
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\TypeLite.Net4.pdb
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\zxing.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\bin\Debug\zxing.presentation.xml
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.csproj.AssemblyReference.cache
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Actives.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.AddCustomer.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.any.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Barcode_printing.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.basic.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Camera.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Category.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Company.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CTOPOS.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerLedger.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerList.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.customerRecord2.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerRecord3.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.CustomerRecord5.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Pharmacy.PL.DBConfig.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.DebtorsReport.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.frmReport.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.GeneralLedger.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.loading.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.LoginForm.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Logs.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.OriginalCompany.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.OverAllReport.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PaymentRecord.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PaymentRecord_2.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Payment_2.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.POS.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.productRecord.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Products.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.ProductsLedger.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.ProductsScreen.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.ProfitAndLossReport.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Programers.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Properties.Resources.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReport.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReturn.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReturnRecordScreen.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurchaseReturnScreen.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PurshaseDaybook.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Pymentinvoice.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.PymentinvoiceScreen.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Quotation.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.QuotationRecord.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.QuotationRecord1.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesInvoiceScreen.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesLocations.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesMan.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesmanLedger.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesmanRecord.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesmanRecord_2.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesManScreen.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesReport.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesReturn.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SalesReturnRecord.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.services.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.servicesRecord.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Stat.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Stock.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.StockBalance.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.StockInAndOutReport.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SubCategory.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Supplier.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SupplierLedger.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SupplierScreen.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.SuppliersList.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.supplier_payment.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Venduer.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.Voucher.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.VoucherRecord.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.VoucherReport.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.csproj.GenerateResource.cache
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.csproj.CoreCompileInputs.cache
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounti.16B89065.Up2Date
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.exe
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.pdb
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.users.resources
+C:\Users\EMPOHY\Desktop\Accounting_System-main\Accounting_System\obj\Debug\Accounting_System.ChangePassword.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\libSkiaSharp.dylib
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\x86\libSkiaSharp.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\x64\libSkiaSharp.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\arm64\libSkiaSharp.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\x64\libSkiaSharp.so
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\arm\libSkiaSharp.so
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\arm64\libSkiaSharp.so
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\musl-x64\libSkiaSharp.so
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Accounting_System.exe.config
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Accounting_System.exe
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Accounting_System.pdb
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\AForge.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\AForge.Video.DirectShow.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\AForge.Video.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\AltoControls.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Aspose.BarCode.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Barcoder.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Barcoder.Renderer.Svg.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\BarcodeStandard.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\BitMiracle.LibTiff.NET.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\CryptoQrUtilities.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\DevExpress.Data.v24.1.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\DeviceId.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Emgu.CV.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\IronSoftware.Abstractions.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\IronSoftware.Drawing.Common.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\IronSoftware.Logger.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\IronSoftware.Shared.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\log4net.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\MetroFramework.Design.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\MetroFramework.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\MetroFramework.Fonts.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Bcl.HashCode.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Primitives.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\NetBarcode.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\SixLabors.Fonts.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\SixLabors.ImageSharp.Drawing.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\SkiaSharp.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\SvgLib.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Buffers.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Collections.Immutable.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.ComponentModel.Composition.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Configuration.ConfigurationManager.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Drawing.Common.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Formats.Nrbf.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.IO.Pipelines.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Memory.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Numerics.Vectors.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Reflection.Metadata.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Reflection.TypeExtensions.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Resources.Extensions.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Security.AccessControl.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Security.Permissions.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Security.Principal.Windows.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Text.Encoding.CodePages.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Text.Encodings.Web.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Text.Json.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Threading.Tasks.Extensions.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.ValueTuple.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Touchless.Vision.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\TypeLite.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\TypeLite.Net4.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\WebCamLib.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\zxing.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\zxing.presentation.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\stdole.dll
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\AForge.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\AForge.Video.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\AForge.Video.DirectShow.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Aspose.BarCode.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\BitMiracle.LibTiff.NET.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\DevExpress.Data.v24.1.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\DeviceId.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Emgu.CV.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\IronSoftware.Abstractions.pdb
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\IronSoftware.Drawing.Common.pdb
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\IronSoftware.Drawing.Common.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\IronSoftware.Logger.pdb
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\IronSoftware.Shared.pdb
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\log4net.pdb
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\log4net.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Bcl.HashCode.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\Microsoft.Extensions.Primitives.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\NetBarcode.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\SixLabors.Fonts.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\SixLabors.ImageSharp.Drawing.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\SkiaSharp.pdb
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\SkiaSharp.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Buffers.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Collections.Immutable.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Configuration.ConfigurationManager.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Drawing.Common.pdb
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Drawing.Common.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Formats.Nrbf.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.IO.Pipelines.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Memory.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Numerics.Vectors.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Reflection.Metadata.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Reflection.TypeExtensions.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Resources.Extensions.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Security.AccessControl.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Security.Permissions.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Security.Principal.Windows.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Text.Encoding.CodePages.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Text.Encodings.Web.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Text.Json.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.Threading.Tasks.Extensions.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\System.ValueTuple.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\TypeLite.pdb
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\TypeLite.Net4.pdb
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\zxing.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\bin\Debug\zxing.presentation.xml
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.csproj.AssemblyReference.cache
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Actives.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.AddCustomer.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.any.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Barcode_printing.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.basic.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Camera.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Category.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.ChangePassword.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Company.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.CTOPOS.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.CustomerLedger.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.CustomerList.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.customerRecord2.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.CustomerRecord3.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.CustomerRecord5.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Pharmacy.PL.DBConfig.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.DebtorsReport.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.frmReport.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.GeneralLedger.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.loading.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.LoginForm.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Logs.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.OriginalCompany.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.OverAllReport.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.PaymentRecord.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.PaymentRecord_2.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Payment_2.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.POS.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.productRecord.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Products.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.ProductsLedger.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.ProductsScreen.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.ProfitAndLossReport.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Programers.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Properties.Resources.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.PurchaseReport.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.PurchaseReturn.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.PurchaseReturnRecordScreen.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.PurchaseReturnScreen.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.PurshaseDaybook.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Pymentinvoice.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.PymentinvoiceScreen.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Quotation.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.QuotationRecord.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.QuotationRecord1.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SalesInvoiceScreen.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SalesLocations.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SalesMan.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SalesmanLedger.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SalesmanRecord.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SalesmanRecord_2.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SalesManScreen.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SalesReport.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SalesReturn.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SalesReturnRecord.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.services.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.servicesRecord.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Stat.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Stock.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.StockBalance.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.StockInAndOutReport.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SubCategory.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Supplier.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SupplierLedger.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SupplierScreen.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.SuppliersList.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.supplier_payment.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.users.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Venduer.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Voucher.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.VoucherRecord.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.VoucherReport.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.csproj.GenerateResource.cache
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.csproj.CoreCompileInputs.cache
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounti.16B89065.Up2Date
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.exe
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.pdb
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.MainMenu.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Notifications.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.PymentNotification.resources
+G:\GitHub\Accounting_System-main - Copy\Accounting_System\obj\Debug\Accounting_System.Currencies.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Accounting_System.exe.config
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Accounting_System.exe
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Accounting_System.pdb
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\AForge.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\AForge.Video.DirectShow.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\AForge.Video.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\AltoControls.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Aspose.BarCode.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Barcoder.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Barcoder.Renderer.Svg.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\BarcodeStandard.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\BitMiracle.LibTiff.NET.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\CryptoQrUtilities.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\DevExpress.Data.v24.1.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\DeviceId.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Emgu.CV.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\IronSoftware.Abstractions.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\IronSoftware.Drawing.Common.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\IronSoftware.Logger.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\IronSoftware.Shared.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\log4net.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\MetroFramework.Design.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\MetroFramework.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\MetroFramework.Fonts.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Bcl.HashCode.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Primitives.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\NetBarcode.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\SixLabors.Fonts.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\SixLabors.ImageSharp.Drawing.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\SkiaSharp.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\SvgLib.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Buffers.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Collections.Immutable.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.ComponentModel.Composition.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Configuration.ConfigurationManager.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Drawing.Common.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Formats.Nrbf.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.IO.Pipelines.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Memory.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Numerics.Vectors.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Reflection.Metadata.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Reflection.TypeExtensions.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Resources.Extensions.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Security.AccessControl.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Security.Permissions.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Security.Principal.Windows.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Text.Encoding.CodePages.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Text.Encodings.Web.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Text.Json.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Threading.Tasks.Extensions.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.ValueTuple.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Touchless.Vision.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\TypeLite.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\TypeLite.Net4.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\WebCamLib.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\zxing.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\zxing.presentation.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\stdole.dll
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\AForge.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\AForge.Video.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\AForge.Video.DirectShow.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Aspose.BarCode.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\BitMiracle.LibTiff.NET.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\DevExpress.Data.v24.1.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\DeviceId.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Emgu.CV.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\IronSoftware.Abstractions.pdb
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\IronSoftware.Drawing.Common.pdb
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\IronSoftware.Drawing.Common.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\IronSoftware.Logger.pdb
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\IronSoftware.Shared.pdb
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\log4net.pdb
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\log4net.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Bcl.HashCode.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\Microsoft.Extensions.Primitives.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\NetBarcode.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\SixLabors.Fonts.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\SixLabors.ImageSharp.Drawing.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\SkiaSharp.pdb
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\SkiaSharp.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Buffers.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Collections.Immutable.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Configuration.ConfigurationManager.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Drawing.Common.pdb
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Drawing.Common.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Formats.Nrbf.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.IO.Pipelines.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Memory.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Numerics.Vectors.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Reflection.Metadata.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Reflection.TypeExtensions.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Resources.Extensions.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Security.AccessControl.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Security.Permissions.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Security.Principal.Windows.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Text.Encoding.CodePages.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Text.Encodings.Web.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Text.Json.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.Threading.Tasks.Extensions.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\System.ValueTuple.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\TypeLite.pdb
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\TypeLite.Net4.pdb
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\zxing.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\bin\Debug\zxing.presentation.xml
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.csproj.AssemblyReference.cache
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Actives.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.AddCustomer.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.any.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Barcode_printing.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.basic.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Camera.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Category.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.ChangePassword.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Company.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.CTOPOS.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Currencies.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.CustomerLedger.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.CustomerList.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.customerRecord2.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.CustomerRecord3.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.CustomerRecord5.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Pharmacy.PL.DBConfig.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.DebtorsReport.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.frmReport.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.GeneralLedger.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.loading.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.LoginForm.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Logs.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.MainMenu.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Notifications.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.OriginalCompany.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.OverAllReport.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.PaymentRecord.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.PaymentRecord_2.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Payment_2.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.POS.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.productRecord.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Products.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.ProductsLedger.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.ProductsScreen.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.ProfitAndLossReport.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Programers.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Properties.Resources.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.PurchaseReport.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.PurchaseReturn.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.PurchaseReturnRecordScreen.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.PurchaseReturnScreen.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.PurshaseDaybook.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Pymentinvoice.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.PymentinvoiceScreen.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.PymentNotification.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Quotation.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.QuotationRecord.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.QuotationRecord1.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SalesInvoiceScreen.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SalesLocations.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SalesMan.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SalesmanLedger.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SalesmanRecord.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SalesmanRecord_2.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SalesManScreen.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SalesReport.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SalesReturn.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SalesReturnRecord.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.services.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.servicesRecord.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Stat.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Stock.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.StockBalance.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.StockInAndOutReport.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SubCategory.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Supplier.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SupplierLedger.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SupplierScreen.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.SuppliersList.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.supplier_payment.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.users.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Venduer.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.Voucher.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.VoucherRecord.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.VoucherReport.resources
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.csproj.GenerateResource.cache
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.csproj.CoreCompileInputs.cache
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounti.16B89065.Up2Date
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.exe
+G:\GitHub\Accounting_System (2)\Accounting_System\obj\Debug\Accounting_System.pdb
