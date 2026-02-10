@@ -285,6 +285,8 @@ namespace Accounting_System {
             
             private global::System.Data.DataColumn columnProductname;
             
+            private global::System.Data.DataColumn columnSellingPrice;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public BarcodeTableDataTable() {
@@ -344,6 +346,14 @@ namespace Accounting_System {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn SellingPriceColumn {
+                get {
+                    return this.columnSellingPrice;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -379,12 +389,13 @@ namespace Accounting_System {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BarcodeTableRow AddBarcodeTableRow(string Barcode_, byte[] BarcodeImage, string Productname) {
+            public BarcodeTableRow AddBarcodeTableRow(string Barcode_, byte[] BarcodeImage, string Productname, double SellingPrice) {
                 BarcodeTableRow rowBarcodeTableRow = ((BarcodeTableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Barcode_,
                         BarcodeImage,
-                        Productname};
+                        Productname,
+                        SellingPrice};
                 rowBarcodeTableRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowBarcodeTableRow);
                 return rowBarcodeTableRow;
@@ -410,6 +421,7 @@ namespace Accounting_System {
                 this.columnBarcode_ = base.Columns["Barcode "];
                 this.columnBarcodeImage = base.Columns["BarcodeImage"];
                 this.columnProductname = base.Columns["Productname"];
+                this.columnSellingPrice = base.Columns["SellingPrice"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -421,6 +433,8 @@ namespace Accounting_System {
                 base.Columns.Add(this.columnBarcodeImage);
                 this.columnProductname = new global::System.Data.DataColumn("Productname", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProductname);
+                this.columnSellingPrice = new global::System.Data.DataColumn("SellingPrice", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSellingPrice);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -611,6 +625,22 @@ namespace Accounting_System {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double SellingPrice {
+                get {
+                    try {
+                        return ((double)(this[this.tableBarcodeTable.SellingPriceColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SellingPrice\' in table \'BarcodeTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableBarcodeTable.SellingPriceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsBarcode_Null() {
                 return this.IsNull(this.tableBarcodeTable.Barcode_Column);
             }
@@ -643,6 +673,18 @@ namespace Accounting_System {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetProductnameNull() {
                 this[this.tableBarcodeTable.ProductnameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsSellingPriceNull() {
+                return this.IsNull(this.tableBarcodeTable.SellingPriceColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetSellingPriceNull() {
+                this[this.tableBarcodeTable.SellingPriceColumn] = global::System.Convert.DBNull;
             }
         }
         

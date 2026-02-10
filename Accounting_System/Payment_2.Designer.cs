@@ -37,14 +37,12 @@
             this.lblBalance = new System.Windows.Forms.Label();
             this.Label11 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
-            this.txtContactNo = new System.Windows.Forms.TextBox();
             this.txtCity = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.Label26 = new System.Windows.Forms.Label();
             this.Label12 = new System.Windows.Forms.Label();
             this.txtRemarks = new System.Windows.Forms.RichTextBox();
             this.Label6 = new System.Windows.Forms.Label();
-            this.txtSupplierName = new System.Windows.Forms.TextBox();
             this.Label7 = new System.Windows.Forms.Label();
             this.cmbPaymentMode = new System.Windows.Forms.ComboBox();
             this.dtpTranactionDate = new System.Windows.Forms.DateTimePicker();
@@ -68,6 +66,7 @@
             this.Panel1 = new System.Windows.Forms.Panel();
             this.Label13 = new System.Windows.Forms.Label();
             this.GroupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtSalesman = new System.Windows.Forms.ComboBox();
             this.Label9 = new System.Windows.Forms.Label();
             this.txtCommissionPer = new System.Windows.Forms.TextBox();
             this.Label8 = new System.Windows.Forms.Label();
@@ -76,7 +75,6 @@
             this.Label15 = new System.Windows.Forms.Label();
             this.Button1 = new System.Windows.Forms.Button();
             this.txtSalesmanID = new System.Windows.Forms.TextBox();
-            this.txtSalesman = new System.Windows.Forms.TextBox();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.btnNew = new System.Windows.Forms.Button();
             this.btnGetData = new System.Windows.Forms.Button();
@@ -84,10 +82,12 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.gbPartyInfo = new System.Windows.Forms.GroupBox();
+            this.txtSupplierName = new System.Windows.Forms.ComboBox();
             this.Label30 = new System.Windows.Forms.Label();
             this.Label36 = new System.Windows.Forms.Label();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.txtBank = new System.Windows.Forms.TextBox();
+            this.txtContactNo = new System.Windows.Forms.ComboBox();
             this.Panel2.SuspendLayout();
             this.Panel1.SuspendLayout();
             this.GroupBox3.SuspendLayout();
@@ -103,7 +103,7 @@
             this.dtpCheck.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.dtpCheck.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpCheck.Location = new System.Drawing.Point(8, 318);
-            this.dtpCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpCheck.Margin = new System.Windows.Forms.Padding(4);
             this.dtpCheck.Name = "dtpCheck";
             this.dtpCheck.Size = new System.Drawing.Size(184, 30);
             this.dtpCheck.TabIndex = 99;
@@ -113,7 +113,7 @@
             this.txtCheck.Enabled = false;
             this.txtCheck.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtCheck.Location = new System.Drawing.Point(8, 224);
-            this.txtCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCheck.Margin = new System.Windows.Forms.Padding(4);
             this.txtCheck.Name = "txtCheck";
             this.txtCheck.Size = new System.Drawing.Size(184, 30);
             this.txtCheck.TabIndex = 97;
@@ -123,7 +123,7 @@
             // 
             this.btnSelection.Image = ((System.Drawing.Image)(resources.GetObject("btnSelection.Image")));
             this.btnSelection.Location = new System.Drawing.Point(13, 30);
-            this.btnSelection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSelection.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelection.Name = "btnSelection";
             this.btnSelection.Size = new System.Drawing.Size(75, 39);
             this.btnSelection.TabIndex = 6;
@@ -148,7 +148,7 @@
             this.txtSupplierID.BackColor = System.Drawing.SystemColors.Control;
             this.txtSupplierID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtSupplierID.Location = new System.Drawing.Point(108, 31);
-            this.txtSupplierID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSupplierID.Margin = new System.Windows.Forms.Padding(4);
             this.txtSupplierID.Multiline = true;
             this.txtSupplierID.Name = "txtSupplierID";
             this.txtSupplierID.ReadOnly = true;
@@ -193,23 +193,12 @@
             this.Label4.Text = "رقم الشيك :";
             this.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtContactNo
-            // 
-            this.txtContactNo.BackColor = System.Drawing.SystemColors.Control;
-            this.txtContactNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtContactNo.Location = new System.Drawing.Point(13, 212);
-            this.txtContactNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtContactNo.Name = "txtContactNo";
-            this.txtContactNo.ReadOnly = true;
-            this.txtContactNo.Size = new System.Drawing.Size(411, 30);
-            this.txtContactNo.TabIndex = 4;
-            // 
             // txtCity
             // 
             this.txtCity.BackColor = System.Drawing.SystemColors.Control;
             this.txtCity.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtCity.Location = new System.Drawing.Point(13, 169);
-            this.txtCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(4);
             this.txtCity.Name = "txtCity";
             this.txtCity.ReadOnly = true;
             this.txtCity.Size = new System.Drawing.Size(411, 30);
@@ -220,7 +209,7 @@
             this.txtAddress.BackColor = System.Drawing.SystemColors.Control;
             this.txtAddress.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtAddress.Location = new System.Drawing.Point(13, 127);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.ReadOnly = true;
             this.txtAddress.Size = new System.Drawing.Size(411, 30);
@@ -256,7 +245,7 @@
             // 
             this.txtRemarks.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtRemarks.Location = new System.Drawing.Point(8, 370);
-            this.txtRemarks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRemarks.Margin = new System.Windows.Forms.Padding(4);
             this.txtRemarks.Name = "txtRemarks";
             this.txtRemarks.Size = new System.Drawing.Size(184, 53);
             this.txtRemarks.TabIndex = 4;
@@ -274,17 +263,6 @@
             this.Label6.TabIndex = 100;
             this.Label6.Text = "تاريخ الاستحقاق :";
             this.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtSupplierName
-            // 
-            this.txtSupplierName.BackColor = System.Drawing.SystemColors.Control;
-            this.txtSupplierName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSupplierName.Location = new System.Drawing.Point(13, 85);
-            this.txtSupplierName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtSupplierName.Name = "txtSupplierName";
-            this.txtSupplierName.ReadOnly = true;
-            this.txtSupplierName.Size = new System.Drawing.Size(411, 30);
-            this.txtSupplierName.TabIndex = 1;
             // 
             // Label7
             // 
@@ -309,7 +287,7 @@
             "شيك",
             "حوالة بنكية"});
             this.cmbPaymentMode.Location = new System.Drawing.Point(8, 133);
-            this.cmbPaymentMode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPaymentMode.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPaymentMode.Name = "cmbPaymentMode";
             this.cmbPaymentMode.Size = new System.Drawing.Size(184, 31);
             this.cmbPaymentMode.TabIndex = 2;
@@ -320,7 +298,7 @@
             this.dtpTranactionDate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.dtpTranactionDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpTranactionDate.Location = new System.Drawing.Point(8, 81);
-            this.dtpTranactionDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpTranactionDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpTranactionDate.Name = "dtpTranactionDate";
             this.dtpTranactionDate.Size = new System.Drawing.Size(184, 30);
             this.dtpTranactionDate.TabIndex = 1;
@@ -343,7 +321,7 @@
             this.txtTransactionNo.BackColor = System.Drawing.SystemColors.Control;
             this.txtTransactionNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtTransactionNo.Location = new System.Drawing.Point(8, 32);
-            this.txtTransactionNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTransactionNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTransactionNo.Name = "txtTransactionNo";
             this.txtTransactionNo.ReadOnly = true;
             this.txtTransactionNo.Size = new System.Drawing.Size(184, 30);
@@ -366,7 +344,7 @@
             // 
             this.txtTransactionAmount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtTransactionAmount.Location = new System.Drawing.Point(8, 180);
-            this.txtTransactionAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTransactionAmount.Margin = new System.Windows.Forms.Padding(4);
             this.txtTransactionAmount.Name = "txtTransactionAmount";
             this.txtTransactionAmount.Size = new System.Drawing.Size(184, 30);
             this.txtTransactionAmount.TabIndex = 3;
@@ -399,7 +377,7 @@
             this.Panel2.Controls.Add(this.txtT_ID);
             this.Panel2.Controls.Add(this.Label1);
             this.Panel2.Location = new System.Drawing.Point(12, 9);
-            this.Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(1239, 47);
             this.Panel2.TabIndex = 0;
@@ -407,7 +385,7 @@
             // TextBox3
             // 
             this.TextBox3.Location = new System.Drawing.Point(877, 16);
-            this.TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox3.Name = "TextBox3";
             this.TextBox3.Size = new System.Drawing.Size(40, 30);
             this.TextBox3.TabIndex = 315;
@@ -416,7 +394,7 @@
             // TextBox2
             // 
             this.TextBox2.Location = new System.Drawing.Point(819, 11);
-            this.TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox2.Name = "TextBox2";
             this.TextBox2.Size = new System.Drawing.Size(40, 30);
             this.TextBox2.TabIndex = 314;
@@ -425,7 +403,7 @@
             // TextBox1
             // 
             this.TextBox1.Location = new System.Drawing.Point(775, 10);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox1.Name = "TextBox1";
             this.TextBox1.Size = new System.Drawing.Size(40, 30);
             this.TextBox1.TabIndex = 313;
@@ -467,16 +445,15 @@
             // txtSup_ID
             // 
             this.txtSup_ID.Location = new System.Drawing.Point(80, 27);
-            this.txtSup_ID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSup_ID.Margin = new System.Windows.Forms.Padding(4);
             this.txtSup_ID.Name = "txtSup_ID";
             this.txtSup_ID.Size = new System.Drawing.Size(45, 30);
             this.txtSup_ID.TabIndex = 2;
-            this.txtSup_ID.Visible = false;
             // 
             // txtT_ID
             // 
             this.txtT_ID.Location = new System.Drawing.Point(25, 27);
-            this.txtT_ID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtT_ID.Margin = new System.Windows.Forms.Padding(4);
             this.txtT_ID.Name = "txtT_ID";
             this.txtT_ID.Size = new System.Drawing.Size(45, 30);
             this.txtT_ID.TabIndex = 1;
@@ -533,7 +510,7 @@
             this.Panel1.Controls.Add(this.Panel2);
             this.Panel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.Panel1.Location = new System.Drawing.Point(5, 6);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(1263, 551);
             this.Panel1.TabIndex = 3;
@@ -553,6 +530,7 @@
             // 
             // GroupBox3
             // 
+            this.GroupBox3.Controls.Add(this.txtSalesman);
             this.GroupBox3.Controls.Add(this.Label9);
             this.GroupBox3.Controls.Add(this.txtCommissionPer);
             this.GroupBox3.Controls.Add(this.Label8);
@@ -561,18 +539,30 @@
             this.GroupBox3.Controls.Add(this.Label15);
             this.GroupBox3.Controls.Add(this.Button1);
             this.GroupBox3.Controls.Add(this.txtSalesmanID);
-            this.GroupBox3.Controls.Add(this.txtSalesman);
             this.GroupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.GroupBox3.ForeColor = System.Drawing.Color.Black;
             this.GroupBox3.Location = new System.Drawing.Point(12, 79);
-            this.GroupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox3.Name = "GroupBox3";
-            this.GroupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.GroupBox3.Size = new System.Drawing.Size(653, 123);
             this.GroupBox3.TabIndex = 37;
             this.GroupBox3.TabStop = false;
             this.GroupBox3.Text = "معلومات المندوب";
             this.GroupBox3.Enter += new System.EventHandler(this.GroupBox3_Enter);
+            // 
+            // txtSalesman
+            // 
+            this.txtSalesman.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtSalesman.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtSalesman.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.txtSalesman.FormattingEnabled = true;
+            this.txtSalesman.Location = new System.Drawing.Point(206, 79);
+            this.txtSalesman.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSalesman.Name = "txtSalesman";
+            this.txtSalesman.Size = new System.Drawing.Size(275, 31);
+            this.txtSalesman.TabIndex = 347;
+            this.txtSalesman.SelectedIndexChanged += new System.EventHandler(this.txtSalesman_SelectedIndexChanged);
             // 
             // Label9
             // 
@@ -588,7 +578,7 @@
             // 
             this.txtCommissionPer.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtCommissionPer.Location = new System.Drawing.Point(40, 26);
-            this.txtCommissionPer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCommissionPer.Margin = new System.Windows.Forms.Padding(4);
             this.txtCommissionPer.Name = "txtCommissionPer";
             this.txtCommissionPer.Size = new System.Drawing.Size(115, 30);
             this.txtCommissionPer.TabIndex = 341;
@@ -621,7 +611,7 @@
             // 
             this.txtSM_ID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtSM_ID.Location = new System.Drawing.Point(113, 78);
-            this.txtSM_ID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSM_ID.Margin = new System.Windows.Forms.Padding(4);
             this.txtSM_ID.Name = "txtSM_ID";
             this.txtSM_ID.ReadOnly = true;
             this.txtSM_ID.Size = new System.Drawing.Size(85, 30);
@@ -643,7 +633,7 @@
             // 
             this.Button1.Image = ((System.Drawing.Image)(resources.GetObject("Button1.Image")));
             this.Button1.Location = new System.Drawing.Point(275, 25);
-            this.Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button1.Margin = new System.Windows.Forms.Padding(4);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(68, 34);
             this.Button1.TabIndex = 338;
@@ -654,22 +644,12 @@
             // 
             this.txtSalesmanID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtSalesmanID.Location = new System.Drawing.Point(347, 26);
-            this.txtSalesmanID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSalesmanID.Margin = new System.Windows.Forms.Padding(4);
             this.txtSalesmanID.Multiline = true;
             this.txtSalesmanID.Name = "txtSalesmanID";
             this.txtSalesmanID.ReadOnly = true;
             this.txtSalesmanID.Size = new System.Drawing.Size(132, 32);
             this.txtSalesmanID.TabIndex = 339;
-            // 
-            // txtSalesman
-            // 
-            this.txtSalesman.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSalesman.Location = new System.Drawing.Point(205, 78);
-            this.txtSalesman.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtSalesman.Name = "txtSalesman";
-            this.txtSalesman.ReadOnly = true;
-            this.txtSalesman.Size = new System.Drawing.Size(273, 30);
-            this.txtSalesman.TabIndex = 340;
             // 
             // GroupBox2
             // 
@@ -679,9 +659,9 @@
             this.GroupBox2.Controls.Add(this.btnDelete);
             this.GroupBox2.Controls.Add(this.btnUpdate);
             this.GroupBox2.Location = new System.Drawing.Point(1101, 79);
-            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.GroupBox2.Size = new System.Drawing.Size(148, 398);
             this.GroupBox2.TabIndex = 10;
             this.GroupBox2.TabStop = false;
@@ -695,7 +675,7 @@
             this.btnNew.Image = ((System.Drawing.Image)(resources.GetObject("btnNew.Image")));
             this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNew.Location = new System.Drawing.Point(11, 28);
-            this.btnNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(4);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(123, 49);
             this.btnNew.TabIndex = 1;
@@ -712,7 +692,7 @@
             this.btnGetData.Image = ((System.Drawing.Image)(resources.GetObject("btnGetData.Image")));
             this.btnGetData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGetData.Location = new System.Drawing.Point(13, 315);
-            this.btnGetData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGetData.Margin = new System.Windows.Forms.Padding(4);
             this.btnGetData.Name = "btnGetData";
             this.btnGetData.Size = new System.Drawing.Size(123, 49);
             this.btnGetData.TabIndex = 5;
@@ -728,7 +708,7 @@
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.Location = new System.Drawing.Point(12, 100);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(123, 49);
             this.btnSave.TabIndex = 2;
@@ -747,7 +727,7 @@
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDelete.Location = new System.Drawing.Point(13, 241);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(123, 49);
             this.btnDelete.TabIndex = 4;
@@ -765,7 +745,7 @@
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUpdate.Location = new System.Drawing.Point(13, 171);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(120, 49);
             this.btnUpdate.TabIndex = 3;
@@ -777,13 +757,13 @@
             // gbPartyInfo
             // 
             this.gbPartyInfo.BackColor = System.Drawing.Color.White;
+            this.gbPartyInfo.Controls.Add(this.txtContactNo);
+            this.gbPartyInfo.Controls.Add(this.txtSupplierName);
             this.gbPartyInfo.Controls.Add(this.btnSelection);
             this.gbPartyInfo.Controls.Add(this.Label10);
             this.gbPartyInfo.Controls.Add(this.txtSupplierID);
             this.gbPartyInfo.Controls.Add(this.lblBalance);
             this.gbPartyInfo.Controls.Add(this.Label11);
-            this.gbPartyInfo.Controls.Add(this.txtContactNo);
-            this.gbPartyInfo.Controls.Add(this.txtSupplierName);
             this.gbPartyInfo.Controls.Add(this.txtCity);
             this.gbPartyInfo.Controls.Add(this.txtAddress);
             this.gbPartyInfo.Controls.Add(this.Label26);
@@ -793,13 +773,26 @@
             this.gbPartyInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.gbPartyInfo.ForeColor = System.Drawing.Color.Black;
             this.gbPartyInfo.Location = new System.Drawing.Point(12, 209);
-            this.gbPartyInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbPartyInfo.Margin = new System.Windows.Forms.Padding(4);
             this.gbPartyInfo.Name = "gbPartyInfo";
-            this.gbPartyInfo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbPartyInfo.Padding = new System.Windows.Forms.Padding(4);
             this.gbPartyInfo.Size = new System.Drawing.Size(653, 305);
             this.gbPartyInfo.TabIndex = 0;
             this.gbPartyInfo.TabStop = false;
             this.gbPartyInfo.Text = "معلومات العميـــــــــــل";
+            // 
+            // txtSupplierName
+            // 
+            this.txtSupplierName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtSupplierName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtSupplierName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.txtSupplierName.FormattingEnabled = true;
+            this.txtSupplierName.Location = new System.Drawing.Point(108, 87);
+            this.txtSupplierName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSupplierName.Name = "txtSupplierName";
+            this.txtSupplierName.Size = new System.Drawing.Size(316, 31);
+            this.txtSupplierName.TabIndex = 39;
+            this.txtSupplierName.SelectedIndexChanged += new System.EventHandler(this.txtSupplierName_SelectedIndexChanged);
             // 
             // Label30
             // 
@@ -847,9 +840,9 @@
             this.GroupBox1.Controls.Add(this.Label2);
             this.GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.GroupBox1.Location = new System.Drawing.Point(691, 78);
-            this.GroupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.GroupBox1.Size = new System.Drawing.Size(403, 437);
             this.GroupBox1.TabIndex = 1;
             this.GroupBox1.TabStop = false;
@@ -860,10 +853,23 @@
             this.txtBank.Enabled = false;
             this.txtBank.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtBank.Location = new System.Drawing.Point(8, 271);
-            this.txtBank.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBank.Margin = new System.Windows.Forms.Padding(4);
             this.txtBank.Name = "txtBank";
             this.txtBank.Size = new System.Drawing.Size(184, 30);
             this.txtBank.TabIndex = 101;
+            // 
+            // txtContactNo
+            // 
+            this.txtContactNo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtContactNo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtContactNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.txtContactNo.FormattingEnabled = true;
+            this.txtContactNo.Location = new System.Drawing.Point(108, 214);
+            this.txtContactNo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContactNo.Name = "txtContactNo";
+            this.txtContactNo.Size = new System.Drawing.Size(316, 31);
+            this.txtContactNo.TabIndex = 40;
+            this.txtContactNo.SelectedIndexChanged += new System.EventHandler(this.txtContactNo1_SelectedIndexChanged);
             // 
             // Payment_2
             // 
@@ -875,11 +881,12 @@
             this.Controls.Add(this.Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Payment_2";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.Payment_2_Load);
             this.Panel2.ResumeLayout(false);
             this.Panel2.PerformLayout();
             this.Panel1.ResumeLayout(false);
@@ -905,14 +912,12 @@
         internal System.Windows.Forms.Label lblBalance;
         internal System.Windows.Forms.Label Label11;
         internal System.Windows.Forms.Label Label4;
-        internal System.Windows.Forms.TextBox txtContactNo;
         internal System.Windows.Forms.TextBox txtCity;
         internal System.Windows.Forms.TextBox txtAddress;
         internal System.Windows.Forms.Label Label26;
         internal System.Windows.Forms.Label Label12;
         internal System.Windows.Forms.RichTextBox txtRemarks;
         internal System.Windows.Forms.Label Label6;
-        internal System.Windows.Forms.TextBox txtSupplierName;
         internal System.Windows.Forms.Label Label7;
         internal System.Windows.Forms.ComboBox cmbPaymentMode;
         internal System.Windows.Forms.DateTimePicker dtpTranactionDate;
@@ -944,7 +949,6 @@
         internal System.Windows.Forms.Label Label15;
         internal System.Windows.Forms.Button Button1;
         internal System.Windows.Forms.TextBox txtSalesmanID;
-        internal System.Windows.Forms.TextBox txtSalesman;
         internal System.Windows.Forms.GroupBox GroupBox2;
         internal System.Windows.Forms.Button btnNew;
         internal System.Windows.Forms.Button btnGetData;
@@ -956,5 +960,8 @@
         internal System.Windows.Forms.Label Label36;
         internal System.Windows.Forms.GroupBox GroupBox1;
         internal System.Windows.Forms.TextBox txtBank;
+        internal System.Windows.Forms.ComboBox txtSupplierName;
+        internal System.Windows.Forms.ComboBox txtSalesman;
+        internal System.Windows.Forms.ComboBox txtContactNo;
     }
 }

@@ -1,4 +1,4 @@
-﻿using Pharmacy.DL;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,11 +22,7 @@ namespace Accounting_System
         }
         private void formclosed(object sender, FormClosedEventArgs e)
         { 
-            LoginForm frmLogin = new LoginForm();
-            frmLogin.Show();
-            frmLogin.UserID.Text = "";
-            frmLogin.Password.Text = "";
-            frmLogin.Password.Focus();
+            
         }
 
         private void Panel1_Paint(object sender, PaintEventArgs e)

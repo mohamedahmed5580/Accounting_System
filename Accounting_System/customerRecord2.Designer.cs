@@ -408,6 +408,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.customerRecord2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgw)).EndInit();
             this.Panel1.ResumeLayout(false);
             this.Panel1.PerformLayout();

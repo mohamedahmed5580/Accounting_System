@@ -1,4 +1,4 @@
-﻿using Pharmacy.DL;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -240,23 +240,22 @@ namespace Accounting_System
                 {
                     DataGridViewRow dr = dgw.SelectedRows[0];
 
-/*                    if (lblSet.Text == "Billing")
+                    /*                    if (lblSet.Text == "Billing")
+                                        {
+                                            POS frmPOS = POS.Instancee();
+                                            frmPOS.txtCID.Text = dr.Cells[0].Value.ToString();
+                                            frmPOS.txtCustomerID.Text = dr.Cells[1].Value.ToString();
+                                            frmPOS.txtCustomerName.Text = dr.Cells[2].Value.ToString();
+                                            frmPOS.txtContactNo.Text = dr.Cells[8].Value.ToString();
+                                            frmPOS.txtCustomerName.ReadOnly = true;
+                                            frmPOS.txtContactNo.ReadOnly = true;
+                                            frmPOS.Show();
+                                        }
+                                        else */
+                    if (lblSet.Text == "Quotation")
                     {
-                        frmPOS.Show();
-                        this.Hide();
-                        frmPOS.txtCID.Text = dr.Cells[0].Value.ToString();
-                        frmPOS.txtCustomerID.Text = dr.Cells[1].Value.ToString();
-                        frmPOS.txtCustomerName.Text = dr.Cells[2].Value.ToString();
-                        frmPOS.txtContactNo.Text = dr.Cells[8].Value.ToString();
-                        frmPOS.txtCustomerName.ReadOnly = true;
-                        frmPOS.txtContactNo.ReadOnly = true;
-                        lblSet.Text = "";
-                    }
-                    else */if (lblSet.Text == "Quotation")
-                    {
-                        Quotation frmQuotation = Quotation.Instance;
+                        Quotation frmQuotation = Quotation.instance;
                         frmQuotation.Reset();
-                        frmQuotation.Show();
                         frmQuotation.txtCID.Text = dr.Cells[0].Value.ToString();
                         frmQuotation.txtCustomerID.Text = dr.Cells[1].Value.ToString();
                         frmQuotation.txtCustomerName.Text = dr.Cells[2].Value.ToString();
@@ -265,7 +264,6 @@ namespace Accounting_System
                         frmQuotation.txtContactNo.ReadOnly = true;
                         lblSet.Text = "";
                         this.Hide();
-
 
                     }
                     else
@@ -287,6 +285,11 @@ namespace Accounting_System
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+        }
+
+        private void customerRecord2_Load(object sender, EventArgs e)
+        {
 
         }
     }

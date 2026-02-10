@@ -74,7 +74,7 @@
             this.Label1.BackColor = System.Drawing.Color.Transparent;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.Label1.ForeColor = System.Drawing.Color.White;
-            this.Label1.Location = new System.Drawing.Point(599, 11);
+            this.Label1.Location = new System.Drawing.Point(382, 19);
             this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(248, 36);
@@ -83,14 +83,16 @@
             // 
             // Panel2
             // 
+            this.Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Panel2.Controls.Add(this.lblSet);
             this.Panel2.Controls.Add(this.Label1);
             this.Panel2.Location = new System.Drawing.Point(12, 9);
-            this.Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(1536, 76);
+            this.Panel2.Size = new System.Drawing.Size(1067, 76);
             this.Panel2.TabIndex = 0;
             // 
             // lblSet
@@ -201,6 +203,8 @@
             this.dgw.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FloralWhite;
             this.dgw.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgw.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgw.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.CadetBlue;
@@ -236,11 +240,11 @@
             this.dgw.EnableHeadersVisualStyles = false;
             this.dgw.GridColor = System.Drawing.Color.Gray;
             this.dgw.Location = new System.Drawing.Point(12, 186);
-            this.dgw.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgw.Margin = new System.Windows.Forms.Padding(4);
             this.dgw.MultiSelect = false;
             this.dgw.Name = "dgw";
             this.dgw.ReadOnly = true;
-            this.dgw.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dgw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgw.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.CadetBlue;
@@ -260,7 +264,7 @@
             this.dgw.RowTemplate.Height = 50;
             this.dgw.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgw.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw.Size = new System.Drawing.Size(1536, 537);
+            this.dgw.Size = new System.Drawing.Size(1067, 537);
             this.dgw.TabIndex = 43;
             this.dgw.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_CellContentClick);
             // 
@@ -278,7 +282,7 @@
             this.txtSalesmanName.BackColor = System.Drawing.Color.White;
             this.txtSalesmanName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtSalesmanName.Location = new System.Drawing.Point(16, 39);
-            this.txtSalesmanName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSalesmanName.Margin = new System.Windows.Forms.Padding(4);
             this.txtSalesmanName.Name = "txtSalesmanName";
             this.txtSalesmanName.Size = new System.Drawing.Size(243, 30);
             this.txtSalesmanName.TabIndex = 13;
@@ -302,8 +306,8 @@
             this.Panel3.Controls.Add(this.txtSalesmanName);
             this.Panel3.Controls.Add(this.Label3);
             this.Panel3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.Panel3.Location = new System.Drawing.Point(344, 92);
-            this.Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel3.Location = new System.Drawing.Point(169, 92);
+            this.Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.Panel3.Name = "Panel3";
             this.Panel3.Size = new System.Drawing.Size(283, 86);
             this.Panel3.TabIndex = 48;
@@ -313,7 +317,7 @@
             this.txtCity.BackColor = System.Drawing.Color.White;
             this.txtCity.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtCity.Location = new System.Drawing.Point(16, 39);
-            this.txtCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(4);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(243, 30);
             this.txtCity.TabIndex = 13;
@@ -333,12 +337,13 @@
             // 
             // Panel4
             // 
+            this.Panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel4.Controls.Add(this.txtCity);
             this.Panel4.Controls.Add(this.Label2);
             this.Panel4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.Panel4.Location = new System.Drawing.Point(816, 92);
-            this.Panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel4.Location = new System.Drawing.Point(460, 92);
+            this.Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.Panel4.Name = "Panel4";
             this.Panel4.Size = new System.Drawing.Size(283, 86);
             this.Panel4.TabIndex = 49;
@@ -348,7 +353,7 @@
             this.txtContactNo.BackColor = System.Drawing.Color.White;
             this.txtContactNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtContactNo.Location = new System.Drawing.Point(20, 39);
-            this.txtContactNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContactNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtContactNo.Name = "txtContactNo";
             this.txtContactNo.Size = new System.Drawing.Size(243, 30);
             this.txtContactNo.TabIndex = 13;
@@ -372,8 +377,8 @@
             this.Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Button1.ForeColor = System.Drawing.Color.White;
-            this.Button1.Location = new System.Drawing.Point(93, 111);
-            this.Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button1.Location = new System.Drawing.Point(12, 108);
+            this.Button1.Margin = new System.Windows.Forms.Padding(4);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(149, 54);
             this.Button1.TabIndex = 5;
@@ -382,18 +387,21 @@
             // 
             // Panel6
             // 
+            this.Panel6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel6.Controls.Add(this.txtContactNo);
             this.Panel6.Controls.Add(this.Label4);
             this.Panel6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.Panel6.Location = new System.Drawing.Point(1264, 92);
-            this.Panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel6.Location = new System.Drawing.Point(751, 92);
+            this.Panel6.Margin = new System.Windows.Forms.Padding(4);
             this.Panel6.Name = "Panel6";
             this.Panel6.Size = new System.Drawing.Size(283, 86);
             this.Panel6.TabIndex = 50;
             // 
             // Panel1
             // 
+            this.Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel1.BackColor = System.Drawing.Color.White;
             this.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel1.Controls.Add(this.Button1);
@@ -403,9 +411,9 @@
             this.Panel1.Controls.Add(this.dgw);
             this.Panel1.Controls.Add(this.Panel2);
             this.Panel1.Location = new System.Drawing.Point(7, 6);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1558, 732);
+            this.Panel1.Size = new System.Drawing.Size(1089, 732);
             this.Panel1.TabIndex = 3;
             this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
@@ -414,14 +422,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1571, 745);
+            this.ClientSize = new System.Drawing.Size(1107, 745);
             this.Controls.Add(this.Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "SalesmanRecord_2";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.SalesmanRecord_2_Load);
             this.Panel2.ResumeLayout(false);
             this.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgw)).EndInit();

@@ -1,5 +1,5 @@
 ﻿using Microsoft.SqlServer.Server;
-using Pharmacy.DL;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -264,13 +264,11 @@ namespace Accounting_System
                     }
                     else if (lblSet.Text == "voucher")
                     {
-                        Voucher frmVoucher = new Voucher();
+                        Voucher frmVoucher =  Voucher.instance;
                         frmVoucher.Reset();
                         this.Close();
                         frmVoucher.txtName.Text = dr.Cells[2].Value.ToString();
-                        frmVoucher.txtName.ReadOnly = true;
                         lblSet.Text = string.Empty;
-                        frmVoucher.ShowDialog();
                     }
                     else if (lblSet.Text == "voucher1")
                     {

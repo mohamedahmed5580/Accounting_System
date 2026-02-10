@@ -1,4 +1,4 @@
-﻿using Pharmacy.DL;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -99,14 +99,7 @@ namespace Accounting_System
 
         private void Dgw_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
         {
-            string strRowNumber = (e.RowIndex + 1).ToString();
-            SizeF size = e.Graphics.MeasureString(strRowNumber, this.Font);
-            if (dgw.RowHeadersWidth < Convert.ToInt32(size.Width + 20))
-            {
-                dgw.RowHeadersWidth = Convert.ToInt32(size.Width + 20);
-            }
-            Brush b = SystemBrushes.ControlText;
-            e.Graphics.DrawString(strRowNumber, this.Font, b, e.RowBounds.Location.X + 15, e.RowBounds.Location.Y + (e.RowBounds.Height - size.Height) / 2);
+           
         }
 
 
@@ -118,21 +111,97 @@ namespace Accounting_System
         {
             try
             {
-                string query = $"SELECT RTRIM(ID), RTRIM(CustomerID), RTRIM([Name]), RTRIM(Gender), RTRIM(Address), RTRIM(City), RTRIM(State), RTRIM(ZipCode), RTRIM(ContactNo), RTRIM(EmailID), RTRIM(Remarks) FROM Customer WHERE CustomerType='Regular' AND {column} LIKE @searchText ORDER BY Name";
-                SqlParameter[] parameters = { DataAccessLayer.CreateParameter("@searchText", SqlDbType.VarChar, $"%{searchText}%") };
-                DataTable dt = DataAccessLayer.ExecuteTable(query, CommandType.Text, parameters);
-                dgw.Rows.Clear();
-                foreach (DataRow row in dt.Rows)
+                // Validate input
+                if (string.IsNullOrWhiteSpace(searchText))
                 {
-                    dgw.Rows.Add(row.ItemArray);
+                    MessageBox.Show("Search text cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
+
+                // Clear existing rows in the DataGridView
+                dgw.Rows.Clear();
+
+                // Define the SQL query with parameterized input to prevent SQL injection
+                string query = @"
+            SELECT 
+                RTRIM(ID) AS ID, 
+                RTRIM(CustomerID) AS CustomerID, 
+                RTRIM([Name]) AS Name, 
+                RTRIM(Gender) AS Gender, 
+                RTRIM(Address) AS Address, 
+                RTRIM(City) AS City, 
+                RTRIM(State) AS State, 
+                RTRIM(ZipCode) AS ZipCode, 
+                RTRIM(ContactNo) AS ContactNo, 
+                RTRIM(EmailID) AS EmailID, 
+                RTRIM(Remarks) AS Remarks 
+            FROM Customer 
+            WHERE CustomerType = 'Regular' AND {0} LIKE @searchText 
+            ORDER BY [Name]";
+
+                // Replace the placeholder for the column name (sanitized to avoid SQL injection risk)
+                if (!IsValidColumnName(column))
+                {
+                    MessageBox.Show("Invalid column name provided.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                query = string.Format(query, column);
+
+                // Use SqlConnection and SqlCommand to execute the query
+                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
+                {
+                    con.Open();
+
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        // Add the search parameter to prevent SQL injection
+                        cmd.Parameters.AddWithValue("@searchText", "%" + searchText + "%");
+
+                        using (SqlDataReader rdr = cmd.ExecuteReader())
+                        {
+                            while (rdr.Read())
+                            {
+                                // Safely retrieve data from the reader
+                                dgw.Rows.Add(
+                                    rdr.IsDBNull(rdr.GetOrdinal("ID")) ? string.Empty : rdr["ID"].ToString(),
+                                    rdr.IsDBNull(rdr.GetOrdinal("CustomerID")) ? string.Empty : rdr["CustomerID"].ToString(),
+                                    rdr.IsDBNull(rdr.GetOrdinal("Name")) ? string.Empty : rdr["Name"].ToString(),
+                                    rdr.IsDBNull(rdr.GetOrdinal("Gender")) ? string.Empty : rdr["Gender"].ToString(),
+                                    rdr.IsDBNull(rdr.GetOrdinal("Address")) ? string.Empty : rdr["Address"].ToString(),
+                                    rdr.IsDBNull(rdr.GetOrdinal("City")) ? string.Empty : rdr["City"].ToString(),
+                                    rdr.IsDBNull(rdr.GetOrdinal("State")) ? string.Empty : rdr["State"].ToString(),
+                                    rdr.IsDBNull(rdr.GetOrdinal("ZipCode")) ? string.Empty : rdr["ZipCode"].ToString(),
+                                    rdr.IsDBNull(rdr.GetOrdinal("ContactNo")) ? string.Empty : rdr["ContactNo"].ToString(),
+                                    rdr.IsDBNull(rdr.GetOrdinal("EmailID")) ? string.Empty : rdr["EmailID"].ToString(),
+                                    rdr.IsDBNull(rdr.GetOrdinal("Remarks")) ? string.Empty : rdr["Remarks"].ToString()
+                                );
+                            }
+                        }
+                    }
+                }
+            }
+            catch (SqlException sqlEx)
+            {
+                // Handle SQL-specific errors
+                MessageBox.Show($"Database Error: {sqlEx.Message}\n\nStack Trace: {sqlEx.StackTrace}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Handle other exceptions
+                MessageBox.Show($"An unexpected error occurred: {ex.Message}\n\nStack Trace: {ex.StackTrace}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
+        private bool IsValidColumnName(string columnName)
+        {
+            // List of valid column names in the Customer table
+            string[] validColumns = { "ID", "CustomerID", "Name", "Gender", "Address", "City", "State", "ZipCode", "ContactNo", "EmailID", "Remarks" };
+
+            // Check if the provided column name is in the list of valid columns
+            return validColumns.Contains(columnName);
+        }
+        
         public void Reset()
         {
             txtCustomerName.Text = "";
@@ -154,7 +223,15 @@ namespace Accounting_System
         }
         private void txtCustomerName_TextChanged(object sender, EventArgs e)
         {
+            if (txtCustomerName.Text=="")
+            {
+                GetData();
+            }
+            else
+            {
             SearchData("Name", txtCustomerName.Text);
+
+            }
 
         }
 

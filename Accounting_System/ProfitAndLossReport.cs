@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using Pharmacy.DL;
+
 
 namespace Accounting_System
 {
@@ -30,7 +30,7 @@ namespace Accounting_System
         {
             try
             {
-                frmReport frmReport = new frmReport(); 
+                frmReport frmReport = new frmReport();
                 using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
                 {
                     con.Open();
@@ -85,7 +85,7 @@ namespace Accounting_System
                             using (SqlConnection con2 = new SqlConnection(DataAccessLayer.Con()))
                             {
                                 con2.Open();
-                                string ct = "select ISNULL(sum(GrandTotal),0), ISNULL(sum(TotalPaid),0), ISNULL(sum(Balance),0) from InvoiceInfo where InvoiceDate between @d1 and @d2";
+                                string ct = "select ISNULL(sum(GrandTotal),0), ISNULL(sum(TotalPaid),0), ISNULL(sum(Balance),0),ISNULL(sum(total_sale),0)  from InvoiceInfo where InvoiceDate between @d1 and @d2";
                                 using (SqlCommand cmd2 = new SqlCommand(ct, con2))
                                 {
                                     cmd2.Parameters.Add("@d1", SqlDbType.DateTime).Value = dtpDateFrom.Value.Date;
@@ -93,19 +93,23 @@ namespace Accounting_System
 
                                     using (SqlDataReader rdr2 = cmd2.ExecuteReader())
                                     {
-                                        decimal a, b, c;
+                                        decimal a, b, c,f;
                                         if (rdr2.Read())
                                         {
                                             a = Convert.ToDecimal(rdr2.GetValue(0));
                                             b = Convert.ToDecimal(rdr2.GetValue(1));
                                             c = Convert.ToDecimal(rdr2.GetValue(2));
+                                            f = Convert.ToDecimal(rdr2.GetValue(3));
                                         }
                                         else
                                         {
                                             a = 0;
                                             b = 0;
                                             c = 0;
+                                            f = 0;
                                         }
+
+
 
                                         using (SqlConnection con3 = new SqlConnection(DataAccessLayer.Con()))
                                         {
@@ -136,6 +140,7 @@ namespace Accounting_System
                                                     rpt.SetParameterValue("p5", c);
                                                     rpt.SetParameterValue("p6", d);
                                                     rpt.SetParameterValue("p7", DateTime.Today);
+                                                    rpt.SetParameterValue("p8", f);
 
                                                     frmReport.crystalReportViewer1.ReportSource = rpt;
                                                     frmReport.Show();

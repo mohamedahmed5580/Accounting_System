@@ -92,9 +92,10 @@
             this.cmbServiceCode.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbServiceCode.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.cmbServiceCode.FormattingEnabled = true;
-            this.cmbServiceCode.Location = new System.Drawing.Point(7, 30);
+            this.cmbServiceCode.Location = new System.Drawing.Point(9, 37);
+            this.cmbServiceCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbServiceCode.Name = "cmbServiceCode";
-            this.cmbServiceCode.Size = new System.Drawing.Size(128, 27);
+            this.cmbServiceCode.Size = new System.Drawing.Size(169, 31);
             this.cmbServiceCode.TabIndex = 13;
             // 
             // Label3
@@ -102,9 +103,10 @@
             this.Label3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label3.ForeColor = System.Drawing.Color.White;
-            this.Label3.Location = new System.Drawing.Point(88, 26);
+            this.Label3.Location = new System.Drawing.Point(117, 32);
+            this.Label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(98, 25);
+            this.Label3.Size = new System.Drawing.Size(131, 31);
             this.Label3.TabIndex = 55;
             this.Label3.Text = "إلى تاريخ :";
             this.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -114,9 +116,10 @@
             this.Label5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label5.ForeColor = System.Drawing.Color.White;
-            this.Label5.Location = new System.Drawing.Point(235, 25);
+            this.Label5.Location = new System.Drawing.Point(256, 32);
+            this.Label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(98, 25);
+            this.Label5.Size = new System.Drawing.Size(131, 31);
             this.Label5.TabIndex = 54;
             this.Label5.Text = "من تاريخ :";
             this.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -126,9 +129,10 @@
             this.dtpDateTo.CustomFormat = "dd/MM/yyyy";
             this.dtpDateTo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.dtpDateTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDateTo.Location = new System.Drawing.Point(89, 51);
+            this.dtpDateTo.Location = new System.Drawing.Point(119, 63);
+            this.dtpDateTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpDateTo.Name = "dtpDateTo";
-            this.dtpDateTo.Size = new System.Drawing.Size(97, 26);
+            this.dtpDateTo.Size = new System.Drawing.Size(128, 30);
             this.dtpDateTo.TabIndex = 14;
             // 
             // btnGetData
@@ -136,9 +140,10 @@
             this.btnGetData.BackColor = System.Drawing.Color.Gold;
             this.btnGetData.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGetData.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnGetData.Location = new System.Drawing.Point(6, 27);
+            this.btnGetData.Location = new System.Drawing.Point(8, 33);
+            this.btnGetData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGetData.Name = "btnGetData";
-            this.btnGetData.Size = new System.Drawing.Size(76, 32);
+            this.btnGetData.Size = new System.Drawing.Size(101, 39);
             this.btnGetData.TabIndex = 1;
             this.btnGetData.Text = "بحث";
             this.btnGetData.UseVisualStyleBackColor = false;
@@ -147,40 +152,51 @@
             // Column2
             // 
             this.Column2.HeaderText = "كود الخدمة";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
+            this.Column2.Width = 125;
             // 
             // Column3
             // 
             dataGridViewCellStyle1.Format = "dd/MM/yyyy";
             this.Column3.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column3.HeaderText = "تاريخ انشاء الخدمة";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
+            this.Column3.Width = 125;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "CID";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             this.Column4.Visible = false;
+            this.Column4.Width = 125;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "رقم العميل";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
+            this.Column5.Width = 125;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Service ID";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.Visible = false;
+            this.Column1.Width = 125;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "اسم العميل";
+            this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             this.Column6.Width = 140;
@@ -188,42 +204,53 @@
             // Column12
             // 
             this.Column12.HeaderText = "وصف الخدمة";
+            this.Column12.MinimumWidth = 6;
             this.Column12.Name = "Column12";
             this.Column12.ReadOnly = true;
+            this.Column12.Width = 125;
             // 
             // Column13
             // 
             this.Column13.HeaderText = "وصف المشكلة";
+            this.Column13.MinimumWidth = 6;
             this.Column13.Name = "Column13";
             this.Column13.ReadOnly = true;
+            this.Column13.Width = 125;
             // 
             // Column7
             // 
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
             this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column7.HeaderText = "رسوم";
+            this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
+            this.Column7.Width = 125;
             // 
             // Column8
             // 
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
             this.Column8.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column8.HeaderText = "رسوم أخرى";
+            this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
+            this.Column8.Width = 125;
             // 
             // Column9
             // 
             dataGridViewCellStyle4.Format = "dd/MM/yyyy";
             this.Column9.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column9.HeaderText = "الوقت المقدر للتصليح";
+            this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
+            this.Column9.Width = 125;
             // 
             // Column14
             // 
             this.Column14.HeaderText = "الحالة";
+            this.Column14.MinimumWidth = 6;
             this.Column14.Name = "Column14";
             this.Column14.ReadOnly = true;
             this.Column14.Width = 120;
@@ -231,6 +258,7 @@
             // Column10
             // 
             this.Column10.HeaderText = "ملاحظات";
+            this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
             this.Column10.ReadOnly = true;
             this.Column10.Width = 110;
@@ -241,17 +269,19 @@
             this.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Panel2.Controls.Add(this.lblSet);
             this.Panel2.Controls.Add(this.Label1);
-            this.Panel2.Location = new System.Drawing.Point(6, 7);
+            this.Panel2.Location = new System.Drawing.Point(8, 9);
+            this.Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(1237, 62);
+            this.Panel2.Size = new System.Drawing.Size(1588, 76);
             this.Panel2.TabIndex = 0;
             // 
             // lblSet
             // 
             this.lblSet.AutoSize = true;
-            this.lblSet.Location = new System.Drawing.Point(226, 24);
+            this.lblSet.Location = new System.Drawing.Point(301, 30);
+            this.lblSet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSet.Name = "lblSet";
-            this.lblSet.Size = new System.Drawing.Size(23, 13);
+            this.lblSet.Size = new System.Drawing.Size(27, 16);
             this.lblSet.TabIndex = 45;
             this.lblSet.Text = "Set";
             this.lblSet.Visible = false;
@@ -262,26 +292,30 @@
             this.Label1.BackColor = System.Drawing.Color.Transparent;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.Label1.ForeColor = System.Drawing.Color.White;
-            this.Label1.Location = new System.Drawing.Point(498, 12);
+            this.Label1.Location = new System.Drawing.Point(664, 15);
+            this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(199, 29);
+            this.Label1.Size = new System.Drawing.Size(243, 36);
             this.Label1.TabIndex = 0;
             this.Label1.Text = "قائمة سجلات الخدمات";
             // 
             // Column11
             // 
             this.Column11.HeaderText = "نوع الخدمة";
+            this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";
             this.Column11.ReadOnly = true;
+            this.Column11.Width = 125;
             // 
             // dtpDateFrom
             // 
             this.dtpDateFrom.CustomFormat = "dd/MM/yyyy";
             this.dtpDateFrom.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.dtpDateFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDateFrom.Location = new System.Drawing.Point(235, 50);
+            this.dtpDateFrom.Location = new System.Drawing.Point(256, 63);
+            this.dtpDateFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpDateFrom.Name = "dtpDateFrom";
-            this.dtpDateFrom.Size = new System.Drawing.Size(98, 26);
+            this.dtpDateFrom.Size = new System.Drawing.Size(129, 30);
             this.dtpDateFrom.TabIndex = 11;
             // 
             // dgw
@@ -326,7 +360,8 @@
             this.dgw.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgw.EnableHeadersVisualStyles = false;
             this.dgw.GridColor = System.Drawing.Color.Gray;
-            this.dgw.Location = new System.Drawing.Point(9, 171);
+            this.dgw.Location = new System.Drawing.Point(12, 210);
+            this.dgw.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgw.MultiSelect = false;
             this.dgw.Name = "dgw";
             this.dgw.ReadOnly = true;
@@ -350,7 +385,7 @@
             this.dgw.RowTemplate.Height = 30;
             this.dgw.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgw.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw.Size = new System.Drawing.Size(1233, 397);
+            this.dgw.Size = new System.Drawing.Size(1584, 489);
             this.dgw.TabIndex = 43;
             // 
             // Panel1
@@ -365,9 +400,10 @@
             this.Panel1.Controls.Add(this.GroupBox1);
             this.Panel1.Controls.Add(this.dgw);
             this.Panel1.Controls.Add(this.Panel2);
-            this.Panel1.Location = new System.Drawing.Point(5, 4);
+            this.Panel1.Location = new System.Drawing.Point(7, 5);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1251, 584);
+            this.Panel1.Size = new System.Drawing.Size(1608, 718);
             this.Panel1.TabIndex = 3;
             // 
             // btnExportExcel
@@ -378,9 +414,10 @@
             this.btnExportExcel.ForeColor = System.Drawing.Color.White;
             this.btnExportExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExportExcel.Image")));
             this.btnExportExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExportExcel.Location = new System.Drawing.Point(6, 80);
+            this.btnExportExcel.Location = new System.Drawing.Point(8, 98);
+            this.btnExportExcel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExportExcel.Name = "btnExportExcel";
-            this.btnExportExcel.Size = new System.Drawing.Size(139, 36);
+            this.btnExportExcel.Size = new System.Drawing.Size(185, 44);
             this.btnExportExcel.TabIndex = 53;
             this.btnExportExcel.Text = "تصدير للأكسل";
             this.btnExportExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -393,9 +430,10 @@
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(6, 122);
+            this.btnReset.Location = new System.Drawing.Point(8, 150);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(139, 33);
+            this.btnReset.Size = new System.Drawing.Size(185, 41);
             this.btnReset.TabIndex = 52;
             this.btnReset.Text = "إعادة تعيين";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -405,9 +443,11 @@
             // 
             this.GroupBox4.Controls.Add(this.txtCustomerName);
             this.GroupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.GroupBox4.Location = new System.Drawing.Point(151, 80);
+            this.GroupBox4.Location = new System.Drawing.Point(201, 98);
+            this.GroupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GroupBox4.Name = "GroupBox4";
-            this.GroupBox4.Size = new System.Drawing.Size(156, 85);
+            this.GroupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox4.Size = new System.Drawing.Size(208, 105);
             this.GroupBox4.TabIndex = 51;
             this.GroupBox4.TabStop = false;
             this.GroupBox4.Text = "بحث باسم العميل :";
@@ -416,9 +456,10 @@
             // 
             this.txtCustomerName.BackColor = System.Drawing.Color.White;
             this.txtCustomerName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtCustomerName.Location = new System.Drawing.Point(6, 30);
+            this.txtCustomerName.Location = new System.Drawing.Point(8, 37);
+            this.txtCustomerName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCustomerName.Name = "txtCustomerName";
-            this.txtCustomerName.Size = new System.Drawing.Size(138, 26);
+            this.txtCustomerName.Size = new System.Drawing.Size(183, 30);
             this.txtCustomerName.TabIndex = 14;
             // 
             // GroupBox3
@@ -431,9 +472,11 @@
             this.GroupBox3.Controls.Add(this.Button1);
             this.GroupBox3.Controls.Add(this.DateTimePicker2);
             this.GroupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.GroupBox3.Location = new System.Drawing.Point(466, 80);
+            this.GroupBox3.Location = new System.Drawing.Point(620, 98);
+            this.GroupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GroupBox3.Name = "GroupBox3";
-            this.GroupBox3.Size = new System.Drawing.Size(432, 85);
+            this.GroupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox3.Size = new System.Drawing.Size(574, 105);
             this.GroupBox3.TabIndex = 50;
             this.GroupBox3.TabStop = false;
             this.GroupBox3.Text = "بحث بتاريخ إنشاء الخدمة والحالة :";
@@ -443,9 +486,10 @@
             this.Label2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label2.ForeColor = System.Drawing.Color.White;
-            this.Label2.Location = new System.Drawing.Point(95, 24);
+            this.Label2.Location = new System.Drawing.Point(135, 30);
+            this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(111, 25);
+            this.Label2.Size = new System.Drawing.Size(148, 31);
             this.Label2.TabIndex = 54;
             this.Label2.Text = "الحالة :";
             this.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -455,9 +499,10 @@
             this.Label7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label7.ForeColor = System.Drawing.Color.White;
-            this.Label7.Location = new System.Drawing.Point(217, 24);
+            this.Label7.Location = new System.Drawing.Point(293, 30);
+            this.Label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(97, 25);
+            this.Label7.Size = new System.Drawing.Size(129, 31);
             this.Label7.TabIndex = 53;
             this.Label7.Text = "إلى تاريخ :";
             this.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -467,9 +512,10 @@
             this.Label8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label8.ForeColor = System.Drawing.Color.White;
-            this.Label8.Location = new System.Drawing.Point(329, 26);
+            this.Label8.Location = new System.Drawing.Point(438, 29);
+            this.Label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(95, 25);
+            this.Label8.Size = new System.Drawing.Size(127, 31);
             this.Label8.TabIndex = 52;
             this.Label8.Text = "من تاريخ :";
             this.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -483,9 +529,10 @@
             "تم أنجازها",
             "قيد العمل",
             "لم يتم انجازها"});
-            this.cmbStatus.Location = new System.Drawing.Point(95, 49);
+            this.cmbStatus.Location = new System.Drawing.Point(135, 60);
+            this.cmbStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(111, 27);
+            this.cmbStatus.Size = new System.Drawing.Size(147, 31);
             this.cmbStatus.TabIndex = 15;
             // 
             // DateTimePicker1
@@ -493,9 +540,10 @@
             this.DateTimePicker1.CustomFormat = "dd/MM/yyyy";
             this.DateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateTimePicker1.Location = new System.Drawing.Point(217, 49);
+            this.DateTimePicker1.Location = new System.Drawing.Point(293, 60);
+            this.DateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DateTimePicker1.Name = "DateTimePicker1";
-            this.DateTimePicker1.Size = new System.Drawing.Size(97, 26);
+            this.DateTimePicker1.Size = new System.Drawing.Size(128, 30);
             this.DateTimePicker1.TabIndex = 14;
             // 
             // Button1
@@ -503,9 +551,10 @@
             this.Button1.BackColor = System.Drawing.Color.Gold;
             this.Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.Button1.Location = new System.Drawing.Point(6, 24);
+            this.Button1.Location = new System.Drawing.Point(26, 30);
+            this.Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(76, 32);
+            this.Button1.Size = new System.Drawing.Size(101, 39);
             this.Button1.TabIndex = 1;
             this.Button1.Text = "بحث";
             this.Button1.UseVisualStyleBackColor = false;
@@ -516,9 +565,10 @@
             this.DateTimePicker2.CustomFormat = "dd/MM/yyyy";
             this.DateTimePicker2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateTimePicker2.Location = new System.Drawing.Point(329, 51);
+            this.DateTimePicker2.Location = new System.Drawing.Point(438, 60);
+            this.DateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DateTimePicker2.Name = "DateTimePicker2";
-            this.DateTimePicker2.Size = new System.Drawing.Size(95, 26);
+            this.DateTimePicker2.Size = new System.Drawing.Size(125, 30);
             this.DateTimePicker2.TabIndex = 11;
             // 
             // GroupBox2
@@ -529,9 +579,11 @@
             this.GroupBox2.Controls.Add(this.btnGetData);
             this.GroupBox2.Controls.Add(this.dtpDateFrom);
             this.GroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.GroupBox2.Location = new System.Drawing.Point(902, 80);
+            this.GroupBox2.Location = new System.Drawing.Point(1201, 98);
+            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Size = new System.Drawing.Size(343, 85);
+            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox2.Size = new System.Drawing.Size(395, 105);
             this.GroupBox2.TabIndex = 49;
             this.GroupBox2.TabStop = false;
             this.GroupBox2.Text = "بحث بتاريخ إنشاء الخدمة :";
@@ -540,20 +592,23 @@
             // 
             this.GroupBox1.Controls.Add(this.cmbServiceCode);
             this.GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.GroupBox1.Location = new System.Drawing.Point(313, 80);
+            this.GroupBox1.Location = new System.Drawing.Point(417, 98);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(147, 85);
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox1.Size = new System.Drawing.Size(196, 105);
             this.GroupBox1.TabIndex = 48;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "بحث بكود الخدمة :";
             // 
             // servicesRecord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1260, 593);
+            this.ClientSize = new System.Drawing.Size(1622, 730);
             this.Controls.Add(this.Panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "servicesRecord";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;

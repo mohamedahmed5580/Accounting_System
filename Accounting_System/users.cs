@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using Pharmacy.DL;
 using System.Security.Cryptography;
 
 namespace Accounting_System
@@ -387,11 +386,6 @@ namespace Accounting_System
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-        }
-
-        private void dgw_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
         }
     }

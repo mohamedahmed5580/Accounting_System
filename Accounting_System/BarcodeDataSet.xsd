@@ -9,15 +9,16 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="BarcodeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="BarcodeDataSet" msprop:Generator_DataSetName="BarcodeDataSet">
+  <xs:element name="BarcodeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="BarcodeDataSet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BarcodeDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="BarcodeTable" msprop:Generator_RowEvHandlerName="BarcodeTableRowChangeEventHandler" msprop:Generator_RowDeletedName="BarcodeTableRowDeleted" msprop:Generator_RowDeletingName="BarcodeTableRowDeleting" msprop:Generator_RowEvArgName="BarcodeTableRowChangeEvent" msprop:Generator_TablePropName="BarcodeTable" msprop:Generator_RowChangedName="BarcodeTableRowChanged" msprop:Generator_RowChangingName="BarcodeTableRowChanging" msprop:Generator_TableClassName="BarcodeTableDataTable" msprop:Generator_RowClassName="BarcodeTableRow" msprop:Generator_TableVarName="tableBarcodeTable" msprop:Generator_UserTableName="BarcodeTable">
+        <xs:element name="BarcodeTable" msprop:Generator_RowClassName="BarcodeTableRow" msprop:Generator_RowEvHandlerName="BarcodeTableRowChangeEventHandler" msprop:Generator_RowDeletedName="BarcodeTableRowDeleted" msprop:Generator_RowDeletingName="BarcodeTableRowDeleting" msprop:Generator_RowEvArgName="BarcodeTableRowChangeEvent" msprop:Generator_TablePropName="BarcodeTable" msprop:Generator_RowChangedName="BarcodeTableRowChanged" msprop:Generator_UserTableName="BarcodeTable" msprop:Generator_RowChangingName="BarcodeTableRowChanging" msprop:Generator_TableClassName="BarcodeTableDataTable" msprop:Generator_TableVarName="tableBarcodeTable">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Barcode_x0020_" msprop:Generator_ColumnPropNameInRow="Barcode_" msprop:Generator_ColumnPropNameInTable="Barcode_Column" msprop:Generator_ColumnVarNameInTable="columnBarcode_" msprop:Generator_UserColumnName="Barcode " type="xs:string" minOccurs="0" />
-              <xs:element name="BarcodeImage" msprop:Generator_ColumnPropNameInRow="BarcodeImage" msprop:Generator_ColumnPropNameInTable="BarcodeImageColumn" msprop:Generator_ColumnVarNameInTable="columnBarcodeImage" msprop:Generator_UserColumnName="BarcodeImage" type="xs:base64Binary" minOccurs="0" />
-              <xs:element name="Productname" msprop:Generator_ColumnPropNameInRow="Productname" msprop:Generator_ColumnPropNameInTable="ProductnameColumn" msprop:Generator_ColumnVarNameInTable="columnProductname" msprop:Generator_UserColumnName="Productname" type="xs:string" minOccurs="0" />
+              <xs:element name="Barcode_x0020_" msprop:Generator_UserColumnName="Barcode " msprop:Generator_ColumnPropNameInTable="Barcode_Column" msprop:Generator_ColumnPropNameInRow="Barcode_" msprop:Generator_ColumnVarNameInTable="columnBarcode_" type="xs:string" minOccurs="0" />
+              <xs:element name="BarcodeImage" msprop:Generator_UserColumnName="BarcodeImage" msprop:Generator_ColumnPropNameInTable="BarcodeImageColumn" msprop:Generator_ColumnPropNameInRow="BarcodeImage" msprop:Generator_ColumnVarNameInTable="columnBarcodeImage" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Productname" msprop:Generator_UserColumnName="Productname" msprop:Generator_ColumnPropNameInTable="ProductnameColumn" msprop:Generator_ColumnPropNameInRow="Productname" msprop:Generator_ColumnVarNameInTable="columnProductname" type="xs:string" minOccurs="0" />
+              <xs:element name="SellingPrice" msprop:Generator_ColumnPropNameInRow="SellingPrice" msprop:Generator_ColumnPropNameInTable="SellingPriceColumn" msprop:Generator_ColumnVarNameInTable="columnSellingPrice" msprop:Generator_UserColumnName="SellingPrice" type="xs:double" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

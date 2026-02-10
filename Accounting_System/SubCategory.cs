@@ -1,5 +1,4 @@
-﻿using Pharmacy.DL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +15,6 @@ namespace Accounting_System
 {
     public partial class SubCategory : Form
     {
-        SqlConnection cn = new SqlConnection(DataAccessLayer.Con());
 
         public SubCategory()
         {
@@ -74,6 +72,8 @@ namespace Accounting_System
                 cmbCategory.Focus();
                 return;
             }
+
+            btnSave.Enabled = false;
             try
             {
                 using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
@@ -91,6 +91,7 @@ namespace Accounting_System
                                 MessageBox.Show("هذه الفئة الفرعية موجودة بالفعل", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 txtSubCategory.Text = "";
                                 txtSubCategory.Focus();
+                                btnSave.Enabled = true;
                                 return;
                             }
                         }
@@ -107,30 +108,34 @@ namespace Accounting_System
 
                     LogFunc(lblUser.Text, "added the new subcategory '" + txtSubCategory.Text + "' having Category '" + cmbCategory.Text + "'");
                     MessageBox.Show("تم الحفظ بنجاح", "السجلات", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    btnSave.Enabled = false;
-                    Getdata();
                     Reset();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"An error occurred: {ex.Message}\n{ex.StackTrace}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                btnSave.Enabled = true;
             }
-
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            try
+            if (MessageBox.Show("هل أنت متأكد بالفعل أنك تريد حذف هذا السجل?", "تأكيد", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                if (MessageBox.Show("هل أنت متأكد بالفعل أنك تريد حذف هذا السجل?", "تأكيد", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                btnDelete.Enabled = false;
+                try
                 {
                     DeleteRecord();
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    btnDelete.Enabled = true;
+                }
+                finally
+                {
+                    if (btnSave.Enabled) btnDelete.Enabled = false;
+                }
             }
         }
 
@@ -180,27 +185,28 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtSubCategory.Text))
+            {
+                MessageBox.Show("الرجاء كتابة اسم الفئة الفرعية", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtSubCategory.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(cmbCategory.Text))
+            {
+                MessageBox.Show("الرجاء اختيار الفئة الرئيسية", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cmbCategory.Focus();
+                return;
+            }
+
+            btnUpdate.Enabled = false;
             try
             {
-                if (string.IsNullOrWhiteSpace(txtSubCategory.Text))
-                {
-                    MessageBox.Show("الرجاء كتابة اسم الفئة الفرعية", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtSubCategory.Focus();
-                    return;
-                }
-                if (string.IsNullOrWhiteSpace(cmbCategory.Text))
-                {
-                    MessageBox.Show("الرجاء اختيار الفئة الرئيسية", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    cmbCategory.Focus();
-                    return;
-                }
-
                 using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
                 {
                     cn.Open();
@@ -215,13 +221,13 @@ namespace Accounting_System
 
                     LogFunc(lblUser.Text, "updated the sub category '" + txtSubCategory.Text + "' having Category '" + cmbCategory.Text + "'");
                     MessageBox.Show("تم التعديل بنجاح", "Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    btnUpdate.Enabled = false;
-                    Getdata();
+                    Reset();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                btnUpdate.Enabled = true;
             }
         }
 
@@ -243,7 +249,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
 
@@ -281,29 +287,12 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
 
         private void dgw_MouseClick(object sender, MouseEventArgs e)
         {
-            try
-            {
-                if (dgw.Rows.Count > 0)
-                {
-                    DataGridViewRow dr = dgw.SelectedRows[0];
-                    txtID.Text = dr.Cells[0].Value.ToString();
-                    txtSubCategory.Text = dr.Cells[1].Value.ToString();
-                    cmbCategory.Text = dr.Cells[2].Value.ToString();
-                    btnDelete.Enabled = true;
-                    btnUpdate.Enabled = true;
-                    btnSave.Enabled = false;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
         private void txtSearchBySubCategory_TextChanged(object sender, EventArgs e)
@@ -324,7 +313,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
 
@@ -346,7 +335,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
 
@@ -435,7 +424,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
 
@@ -576,7 +565,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
 
@@ -636,6 +625,35 @@ namespace Accounting_System
         {
             Getdata();
             fillCombo();
+            Reset();
+        }
+
+        private void dgw_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+            try
+            {
+                if (dgw.Rows.Count > 0)
+                {
+                    DataGridViewRow dr = dgw.SelectedRows[0];
+                    txtID.Text = dr.Cells[0].Value.ToString();
+                    txtSubCategory.Text = dr.Cells[1].Value.ToString();
+                    cmbCategory.Text = dr.Cells[2].Value.ToString();
+                    btnDelete.Enabled = true;
+                    btnUpdate.Enabled = true;
+                    btnSave.Enabled = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void SubCategory_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Products products = Products.instance();
+            products.fillSubCategory();
         }
     }
 }

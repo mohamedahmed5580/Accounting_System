@@ -1,5 +1,5 @@
 ﻿using Microsoft.Office.Interop.Excel;
-using Pharmacy.DL;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,16 +66,17 @@ namespace Accounting_System
             }
             
         }
+
         private void btnSave_Click(object sender, EventArgs e)
         {
             // Step 1: Get the values from the textboxes
             string name = txtName.Text;
-            int price;
+            double price;
 
             // Validate if price is a valid integer
-            if (!int.TryParse(txtPrice.Text, out price))
+            if (!double.TryParse(txtPrice.Text, out price))
             {
-                MessageBox.Show("Please enter a valid price.");
+                MessageBox.Show("الرجاء ادخال السعر بشكل صحيح", "العملات", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
@@ -101,7 +102,7 @@ namespace Accounting_System
                         // Step 7: Display a success message if data is inserted
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show("تمت اضافة العملة بنجاح.");
+                            MessageBox.Show("تمت اضافة العملة بنجاح", "العملات", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             // Optionally, you can clear the textboxes here
                             txtName.Clear();
                             txtPrice.Clear();
@@ -160,7 +161,8 @@ namespace Accounting_System
                             // Step 7: Provide feedback and refresh data if deletion was successful
                             if (rowsAffected > 0)
                             {
-                                MessageBox.Show("تم الحذف بنجاح.");
+
+                                MessageBox.Show("تم الحذف بنجاح", "العملات", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 GetData(); // Refresh the DataGridView to show updated data
                             }
                             else
@@ -228,7 +230,7 @@ namespace Accounting_System
 
                             if (rowsAffected > 0)
                             {
-                                MessageBox.Show("تم التعديل بنجاح.");
+                                MessageBox.Show("تمت عملية التعديل بنجاح", "العملات", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 GetData(); // Refresh the DataGridView with updated data
                             }
                             else
@@ -271,6 +273,27 @@ namespace Accounting_System
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Currencies_FormClosing(object sender, FormClosingEventArgs e)
+        {
+         
+        }
+
+        private void Currencies_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (lblSet.Text== "curr")
+            {
+                Pymentinvoice pymentinvoice = Pymentinvoice.instance;
+
+                pymentinvoice.GenerateCurrencies();
+            }
+            
         }
     }
 }

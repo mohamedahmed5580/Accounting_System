@@ -1,5 +1,4 @@
-﻿using Pharmacy.DL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,29 +21,16 @@ namespace Accounting_System
             cmbSalesman.SelectedIndexChanged += new EventHandler(cmbSupplierName_SelectedIndexChanged);
         }
 
-        private void Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         private void fillSalesman()
         {
             try
             {
-                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
+                string query = "SELECT RTRIM(Name) FROM Salesman ORDER BY 1";
+                DataTable dtable = DataAccessLayer.ExecuteTable(query, CommandType.Text);
+                cmbSalesman.Items.Clear();
+                foreach (DataRow drow in dtable.Rows)
                 {
-                    con.Open();
-                    using (SqlDataAdapter adp = new SqlDataAdapter("SELECT RTRIM(Name) FROM Salesman ORDER BY 1", con))
-                    {
-                        DataSet ds = new DataSet();
-                        adp.Fill(ds);
-                        DataTable dtable = ds.Tables[0];
-
-                        cmbSalesman.Items.Clear();
-                        foreach (DataRow drow in dtable.Rows)
-                        {
-                            cmbSalesman.Items.Add(drow[0].ToString());
-                        }
-                    }
+                    cmbSalesman.Items.Add(drow[0].ToString());
                 }
             }
             catch (Exception ex)
@@ -68,30 +54,15 @@ namespace Accounting_System
         {
             try
             {
-                string a = string.Empty;
-                string b = string.Empty;
-                string c = string.Empty;
                 txtSalesmanID.Text = string.Empty;
+                string query = "SELECT RTRIM(Salesman_ID), RTRIM(Address), RTRIM(City), RTRIM(ContactNo) FROM Salesman WHERE Name = @d1";
+                SqlParameter[] parameters = { new SqlParameter("@d1", cmbSalesman.Text) };
 
-                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
+                using (SqlDataReader rdr = DataAccessLayer.ExecuteReader(query, CommandType.Text, parameters))
                 {
-                    con.Open();
-
-                    using (SqlCommand cmd = con.CreateCommand())
+                    if (rdr.Read())
                     {
-                        cmd.CommandText = "SELECT RTRIM(Salesman_ID), RTRIM(Address), RTRIM(City), RTRIM(ContactNo) FROM Salesman WHERE Name = @d1";
-                        cmd.Parameters.AddWithValue("@d1", cmbSalesman.Text);
-
-                        using (SqlDataReader rdr = cmd.ExecuteReader())
-                        {
-                            if (rdr.Read())
-                            {
-                                txtSalesmanID.Text = rdr.GetValue(0).ToString();
-                                a = rdr.GetValue(1).ToString();
-                                b = rdr.GetValue(2).ToString();
-                                c = rdr.GetValue(3).ToString();
-                            }
-                        }
+                        txtSalesmanID.Text = rdr.GetValue(0).ToString();
                     }
                 }
             }
@@ -99,12 +70,11 @@ namespace Accounting_System
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            Button1.Enabled = false;
             try
             {
                 if (string.IsNullOrWhiteSpace(cmbSalesman.Text))
@@ -114,75 +84,78 @@ namespace Accounting_System
                     return;
                 }
 
-                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
+                string queryCheck = "SELECT * FROM InvoiceInfo " +
+                                  "INNER JOIN SalesMan ON InvoiceInfo.SalesmanID = SalesMan.SM_ID " +
+                                  "INNER JOIN Salesman_Commission ON InvoiceInfo.Inv_ID = Salesman_Commission.InvoiceID " +
+                                  "WHERE InvoiceDate BETWEEN @d2 AND @d3 AND Salesman_ID = @d1";
+
+                SqlParameter[] parameters = {
+                    new SqlParameter("@d1", txtSalesmanID.Text),
+                    new SqlParameter("@d2", dtpDateFrom.Value.Date),
+                    new SqlParameter("@d3", dtpDateTo.Value.Date)
+                };
+
+                using (SqlDataReader rdr = DataAccessLayer.ExecuteReader(queryCheck, CommandType.Text, parameters))
                 {
-                    con.Open();
-                    string ct = "SELECT * FROM InvoiceInfo " +
-                                "INNER JOIN SalesMan ON InvoiceInfo.SalesmanID = SalesMan.SM_ID " +
-                                "INNER JOIN Salesman_Commission ON InvoiceInfo.Inv_ID = Salesman_Commission.InvoiceID " +
-                                "WHERE InvoiceDate BETWEEN @d2 AND @d3 AND Salesman_ID = @d1";
-                    using (SqlCommand cmd = new SqlCommand(ct, con))
+                    if (!rdr.Read())
                     {
-                        cmd.Parameters.AddWithValue("@d1", txtSalesmanID.Text);
-                        cmd.Parameters.Add("@d2", SqlDbType.DateTime).Value = dtpDateFrom.Value.Date;
-                        cmd.Parameters.Add("@d3", SqlDbType.DateTime).Value = dtpDateTo.Value.Date;
-
-                        using (SqlDataReader rdr = cmd.ExecuteReader())
-                        {
-                            if (!rdr.Read())
-                            {
-                                MessageBox.Show("عفوا...لا يوجد سجلات", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                return;
-                            }
-                        }
+                        MessageBox.Show("عفوا...لا يوجد سجلات", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
                     }
-
-
-                    rptSalesmanLedger rpt = new rptSalesmanLedger(); // The report you created.
-                    SqlConnection myConnection = new SqlConnection(DataAccessLayer.Con());
-                    SqlCommand MyCommand = new SqlCommand();
-                    SqlDataAdapter myDA = new SqlDataAdapter();
-                    DataSet myDS = new DataSet(); // The DataSet you created.
-
-                    MyCommand.Connection = myConnection;
-                    MyCommand.CommandText = "SELECT InvoiceInfo.Inv_ID, InvoiceInfo.InvoiceNo, InvoiceInfo.InvoiceDate, InvoiceInfo.CustomerID, InvoiceInfo.SalesmanID, " +
-                                            "InvoiceInfo.GrandTotal, InvoiceInfo.TotalPaid, InvoiceInfo.Balance, InvoiceInfo.Remarks, SalesMan.SM_ID, SalesMan.SalesMan_ID, " +
-                                            "SalesMan.Name, SalesMan.Address, SalesMan.City, SalesMan.State, SalesMan.ZipCode, SalesMan.ContactNo, SalesMan.EmailID, " +
-                                            "SalesMan.Remarks AS Expr1, SalesMan.Photo, SalesMan.CommissionPer, Salesman_Commission.ID, Salesman_Commission.InvoiceID, " +
-                                            "Salesman_Commission.CommissionPer AS Expr2, Salesman_Commission.Commission " +
-                                            "FROM InvoiceInfo " +
-                                            "INNER JOIN SalesMan ON InvoiceInfo.SalesmanID = SalesMan.SM_ID " +
-                                            "INNER JOIN Salesman_Commission ON InvoiceInfo.Inv_ID = Salesman_Commission.InvoiceID " +
-                                            "WHERE InvoiceDate BETWEEN @d2 AND @d3 AND Salesman_ID = @d1 ORDER BY Inv_ID";
-                    MyCommand.Parameters.AddWithValue("@d1", txtSalesmanID.Text);
-                    MyCommand.Parameters.Add("@d2", SqlDbType.DateTime).Value = dtpDateFrom.Value.Date;
-                    MyCommand.Parameters.Add("@d3", SqlDbType.DateTime).Value = dtpDateTo.Value.Date;
-                    MyCommand.CommandType = CommandType.Text;
-
-                    myDA.SelectCommand = MyCommand;
-                    myDA.Fill(myDS, "InvoiceInfo");
-                    myDA.Fill(myDS, "Salesman");
-                    myDA.Fill(myDS, "Salesman_Commission");
-
-                    rpt.SetDataSource(myDS);
-                    rpt.SetParameterValue("p1", dtpDateFrom.Value.Date);
-                    rpt.SetParameterValue("p2", dtpDateTo.Value.Date);
-
-                    frmReport frmReport = new frmReport();
-                    frmReport.crystalReportViewer1.ReportSource = rpt;
-                    frmReport.ShowDialog();
                 }
+
+                rptSalesmanLedger rpt = new rptSalesmanLedger();
+                DataSet myDS = new DataSet();
+
+                string queryReport = "SELECT InvoiceInfo.Inv_ID, InvoiceInfo.InvoiceNo, InvoiceInfo.InvoiceDate, InvoiceInfo.CustomerID, InvoiceInfo.SalesmanID, " +
+                                    "InvoiceInfo.GrandTotal, InvoiceInfo.TotalPaid, InvoiceInfo.Balance, InvoiceInfo.Remarks, SalesMan.SM_ID, SalesMan.SalesMan_ID, " +
+                                    "SalesMan.Name, SalesMan.Address, SalesMan.City, SalesMan.State, SalesMan.ZipCode, SalesMan.ContactNo, SalesMan.EmailID, " +
+                                    "SalesMan.Remarks AS Expr1, SalesMan.Photo, SalesMan.CommissionPer, Salesman_Commission.ID, Salesman_Commission.InvoiceID, " +
+                                    "Salesman_Commission.CommissionPer AS Expr2, Salesman_Commission.Commission " +
+                                    "FROM InvoiceInfo " +
+                                    "INNER JOIN SalesMan ON InvoiceInfo.SalesmanID = SalesMan.SM_ID " +
+                                    "INNER JOIN Salesman_Commission ON InvoiceInfo.Inv_ID = Salesman_Commission.InvoiceID " +
+                                    "WHERE InvoiceDate BETWEEN @d2 AND @d3 AND Salesman_ID = @d1 ORDER BY Inv_ID";
+
+                SqlParameter[] reportParams = {
+                    new SqlParameter("@d1", txtSalesmanID.Text),
+                    new SqlParameter("@d2", dtpDateFrom.Value.Date),
+                    new SqlParameter("@d3", dtpDateTo.Value.Date)
+                };
+
+                // Re-using same connection or letting FillDataSet handle it
+                using (SqlConnection connection = new SqlConnection(DataAccessLayer.Con()))
+                {
+                    using (SqlCommand cmd = new SqlCommand(queryReport, connection))
+                    {
+                        cmd.Parameters.AddRange(reportParams);
+                        SqlDataAdapter myDA = new SqlDataAdapter(cmd);
+                        myDA.Fill(myDS, "InvoiceInfo");
+                        myDA.Fill(myDS, "Salesman");
+                        myDA.Fill(myDS, "Salesman_Commission");
+                    }
+                }
+
+                rpt.SetDataSource(myDS);
+                rpt.SetParameterValue("p1", dtpDateFrom.Value.Date);
+                rpt.SetParameterValue("p2", dtpDateTo.Value.Date);
+
+                frmReport frmReport = new frmReport();
+                frmReport.crystalReportViewer1.ReportSource = rpt;
+                frmReport.ShowDialog();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
+            finally
+            {
+                Button1.Enabled = true;
+            }
         }
 
         private void Venduer_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

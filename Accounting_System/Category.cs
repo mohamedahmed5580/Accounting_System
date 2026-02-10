@@ -1,6 +1,5 @@
 ﻿using Microsoft.Office.Interop.Excel;
 using Microsoft.VisualBasic;
-using Pharmacy.DL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -83,22 +82,7 @@ namespace Accounting_System
 
         private void dgw_MouseClick(object sender, MouseEventArgs e)
         {
-            try
-            {
-                if (dgw.Rows.Count > 0)
-                {
-                    DataGridViewRow dr = dgw.SelectedRows[0];
-                    txtCategoryName.Text = dr.Cells[0].Value.ToString();
-                    txtCategory.Text = dr.Cells[0].Value.ToString();
-                    btnUpdate.Enabled = true;
-                    btnDelete.Enabled = true;
-                    btnSave.Enabled = false;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
         }
 
         private void dgw_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
@@ -154,6 +138,7 @@ namespace Accounting_System
                 return;
             }
 
+            btnSave.Enabled = false;
             using (SqlConnection cn = new SqlConnection(connectionString))
             {
                 try
@@ -170,6 +155,7 @@ namespace Accounting_System
                                 MessageBox.Show("The category already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 txtCategory.Text = "";
                                 txtCategory.Focus();
+                                btnSave.Enabled = true;
                                 return;
                             }
                         }
@@ -184,13 +170,13 @@ namespace Accounting_System
 
                     LogFunc(lblUser.Text, $"added the new category '{txtCategory.Text}'");
                     MessageBox.Show("Saved successfully.", "Records", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    btnSave.Enabled = false;
                     Reset();
                     Getdata();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    btnSave.Enabled = true;
                 }
             }
         }
@@ -209,6 +195,7 @@ namespace Accounting_System
                 return;
             }
 
+            btnUpdate.Enabled = false;
             using (SqlConnection cn = new SqlConnection(connectionString))
             {
                 try
@@ -224,28 +211,35 @@ namespace Accounting_System
 
                     LogFunc(lblUser.Text, $"updated the category '{txtCategory.Text}'");
                     MessageBox.Show("Updated successfully.", "Records", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    btnUpdate.Enabled = false;
+                    Reset();
                     Getdata();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    btnUpdate.Enabled = true;
                 }
             }
         }
 
         private void btnDelete_Click_1(object sender, EventArgs e)
         {
-            try
+            if (MessageBox.Show("Are you sure you want to delete this record?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                if (MessageBox.Show("Are you sure you want to delete this record?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                btnDelete.Enabled = false;
+                try
                 {
                     DeleteRecord();
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    btnDelete.Enabled = true;
+                }
+                finally
+                {
+                    if (btnSave.Enabled) btnDelete.Enabled = false;
+                }
             }
         }
 
@@ -325,7 +319,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
 
@@ -466,7 +460,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
 
@@ -520,6 +514,32 @@ namespace Accounting_System
         private void dgw_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dgw_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                if (dgw.Rows.Count > 0)
+                {
+                    DataGridViewRow dr = dgw.SelectedRows[0];
+                    txtCategoryName.Text = dr.Cells[0].Value.ToString();
+                    txtCategory.Text = dr.Cells[0].Value.ToString();
+                    btnUpdate.Enabled = true;
+                    btnDelete.Enabled = true;
+                    btnSave.Enabled = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+            }
+        }
+
+        private void Category_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Products products =  Products.instance();
+            products.fillCategory();
         }
     }
 }

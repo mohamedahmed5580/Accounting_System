@@ -1,5 +1,4 @@
-﻿using Pharmacy.DL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -236,54 +235,81 @@ namespace Accounting_System
         {
             try
             {
-                if (dgw.Rows.Count > 0)
+                // Check if any row is selected
+                if (dgw.SelectedRows.Count == 0)
                 {
-                    DataGridViewRow dr = dgw.SelectedRows[0];
-                    Voucher frmVoucher = new Voucher();
-                    this.Close();
-                    
+                    MessageBox.Show("Please select a row to proceed.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
 
-                    // Use column names or indices to retrieve cell values
-                    frmVoucher.txtVoucherID.Text = dr.Cells[0].Value.ToString();
-                    frmVoucher.txtVoucherNo.Text = dr.Cells[1].Value.ToString();
-                    frmVoucher.dtpDate.Text = dr.Cells[2].Value.ToString();
-                    frmVoucher.txtName.Text = dr.Cells[3].Value.ToString();
-                    frmVoucher.txtDetails.Text = dr.Cells[4].Value.ToString();
-                    frmVoucher.txtGrandTotal.Text = dr.Cells[5].Value.ToString();
+                // Get the selected row
+                DataGridViewRow dr = dgw.SelectedRows[0];
 
-                    frmVoucher.btnSave.Enabled = false;
-                    frmVoucher.btnDelete.Enabled = true;
-                    frmVoucher.btnUpdate.Enabled = true;
-                    frmVoucher.btnPrint.Enabled = true;
-                    frmVoucher.btnRemove.Enabled = false;
+                // Access the Voucher form instance
+                Voucher frmVoucher = Voucher.instance;
+                if (frmVoucher == null)
+                {
+                    MessageBox.Show("Voucher form instance is not available.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
-                    using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
+                
+
+                // Use column names or indices to retrieve cell values
+                frmVoucher.txtVoucherID.Text = dr.Cells[0].Value?.ToString() ?? string.Empty;
+                frmVoucher.txtVoucherNo.Text = dr.Cells[1].Value?.ToString() ?? string.Empty;
+                frmVoucher.dtpDate.Text = dr.Cells[2].Value?.ToString() ?? string.Empty;
+                frmVoucher.txtName.Text = dr.Cells[3].Value?.ToString() ?? string.Empty;
+                frmVoucher.txtDetails.Text = dr.Cells[4].Value?.ToString() ?? string.Empty;
+                frmVoucher.txtGrandTotal.Text = dr.Cells[5].Value?.ToString() ?? string.Empty;
+
+                // Enable/disable buttons
+                frmVoucher.btnSave.Enabled = false;
+                frmVoucher.btnDelete.Enabled = true;
+                frmVoucher.btnUpdate.Enabled = true;
+                frmVoucher.btnPrint.Enabled = true;
+                frmVoucher.btnRemove.Enabled = false;
+
+                // Fetch additional details from the database
+                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
+                {
+                    con.Open();
+                    string sql = @"
+            SELECT RTRIM(Particulars), RTRIM(Amount), RTRIM(Note) 
+            FROM Voucher 
+            INNER JOIN Voucher_OtherDetails ON Voucher.Id = Voucher_OtherDetails.VoucherID 
+            WHERE Voucher.ID = @voucherID";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, con))
                     {
-                        con.Open();
-                        string sql = "SELECT RTRIM(Particulars), RTRIM(Amount), RTRIM(Note) " +
-                                     "FROM Voucher INNER JOIN Voucher_OtherDetails ON Voucher.Id = Voucher_OtherDetails.VoucherID " +
-                                     "WHERE Voucher.ID = @voucherID";
+                        // Use the VoucherID from the selected row
+                        cmd.Parameters.AddWithValue("@voucherID", dr.Cells[0].Value?.ToString() ?? string.Empty);
 
-                        using (SqlCommand cmd = new SqlCommand(sql, con))
+                        using (SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection))
                         {
-                            cmd.Parameters.AddWithValue("@voucherID", dr.Cells[0].Value);
+                            // Clear existing rows in the DataGridView
+                            frmVoucher.DataGridView1.Rows.Clear();
 
-                            using (SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection))
+                            // Add new rows based on the query results
+                            while (rdr.Read())
                             {
-                                frmVoucher.DataGridView1.Rows.Clear();
-                                while (rdr.Read())
-                                {
-                                    frmVoucher.DataGridView1.Rows.Add(rdr[0], rdr[1], rdr[2]);
-                                }
+                                frmVoucher.DataGridView1.Rows.Add(
+                                    rdr[0]?.ToString() ?? string.Empty,
+                                    rdr[1]?.ToString() ?? string.Empty,
+                                    rdr[2]?.ToString() ?? string.Empty
+                                );
                             }
                         }
                     }
-                    frmVoucher.ShowDialog();
                 }
+
+                // Close the current form
+                this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Display detailed error message
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

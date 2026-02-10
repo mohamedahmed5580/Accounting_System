@@ -41,6 +41,9 @@
             this.tbUser = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.pbDBConfig = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDBConfig)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -56,7 +59,8 @@
             // 
             // tbServer
             // 
-            this.tbServer.Location = new System.Drawing.Point(122, 105);
+            this.tbServer.Location = new System.Drawing.Point(123, 105);
+            this.tbServer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbServer.Name = "tbServer";
             this.tbServer.Size = new System.Drawing.Size(255, 22);
             this.tbServer.TabIndex = 1;
@@ -64,7 +68,8 @@
             // 
             // tbDb
             // 
-            this.tbDb.Location = new System.Drawing.Point(122, 142);
+            this.tbDb.Location = new System.Drawing.Point(123, 142);
+            this.tbDb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbDb.Name = "tbDb";
             this.tbDb.Size = new System.Drawing.Size(255, 22);
             this.tbDb.TabIndex = 3;
@@ -85,7 +90,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(28, 200);
+            this.label3.Location = new System.Drawing.Point(23, 190);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 18);
             this.label3.TabIndex = 4;
@@ -95,7 +100,8 @@
             // 
             this.rbWindows.AutoSize = true;
             this.rbWindows.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbWindows.Location = new System.Drawing.Point(122, 231);
+            this.rbWindows.Location = new System.Drawing.Point(123, 231);
+            this.rbWindows.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbWindows.Name = "rbWindows";
             this.rbWindows.Size = new System.Drawing.Size(209, 22);
             this.rbWindows.TabIndex = 5;
@@ -107,7 +113,8 @@
             // 
             this.rdSQL.AutoSize = true;
             this.rdSQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdSQL.Location = new System.Drawing.Point(122, 269);
+            this.rdSQL.Location = new System.Drawing.Point(123, 270);
+            this.rdSQL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdSQL.Name = "rdSQL";
             this.rdSQL.Size = new System.Drawing.Size(227, 22);
             this.rdSQL.TabIndex = 6;
@@ -117,7 +124,8 @@
             // 
             // tbPass
             // 
-            this.tbPass.Location = new System.Drawing.Point(122, 353);
+            this.tbPass.Location = new System.Drawing.Point(123, 353);
+            this.tbPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPass.Name = "tbPass";
             this.tbPass.Size = new System.Drawing.Size(255, 22);
             this.tbPass.TabIndex = 10;
@@ -135,7 +143,8 @@
             // 
             // tbUser
             // 
-            this.tbUser.Location = new System.Drawing.Point(122, 316);
+            this.tbUser.Location = new System.Drawing.Point(123, 316);
+            this.tbUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbUser.Name = "tbUser";
             this.tbUser.Size = new System.Drawing.Size(255, 22);
             this.tbUser.TabIndex = 8;
@@ -145,7 +154,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(28, 317);
+            this.label5.Location = new System.Drawing.Point(28, 318);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 18);
             this.label5.TabIndex = 7;
@@ -157,7 +166,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSave.Location = new System.Drawing.Point(133, 403);
+            this.btnSave.Location = new System.Drawing.Point(133, 402);
             this.btnSave.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(197, 33);
@@ -166,12 +175,52 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // gunaButton1
+            // 
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BaseColor = System.Drawing.Color.MidnightBlue;
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(123, 443);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Size = new System.Drawing.Size(256, 52);
+            this.gunaButton1.TabIndex = 12;
+            this.gunaButton1.Text = "استعادة نسخه احتياطية";
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
+            // 
+            // pbDBConfig
+            // 
+            this.pbDBConfig.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbDBConfig.Image = ((System.Drawing.Image)(resources.GetObject("pbDBConfig.Image")));
+            this.pbDBConfig.Location = new System.Drawing.Point(414, 26);
+            this.pbDBConfig.Margin = new System.Windows.Forms.Padding(4);
+            this.pbDBConfig.Name = "pbDBConfig";
+            this.pbDBConfig.Size = new System.Drawing.Size(31, 30);
+            this.pbDBConfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbDBConfig.TabIndex = 31;
+            this.pbDBConfig.TabStop = false;
+            this.pbDBConfig.Click += new System.EventHandler(this.pbDBConfig_Click);
+            // 
             // DBConfig
             // 
             this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 480);
+            this.ClientSize = new System.Drawing.Size(469, 517);
+            this.Controls.Add(this.pbDBConfig);
+            this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tbPass);
             this.Controls.Add(this.label4);
@@ -185,11 +234,14 @@
             this.Controls.Add(this.tbServer);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "DBConfig";
+            this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
             this.Resizable = false;
             this.Text = "DB Config";
             this.Load += new System.EventHandler(this.DBConfig_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbDBConfig)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +261,7 @@
         private System.Windows.Forms.TextBox tbUser;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnSave;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private System.Windows.Forms.PictureBox pbDBConfig;
     }
 }

@@ -1,5 +1,5 @@
 ﻿using Microsoft.Office.Interop.Excel;
-using Pharmacy.DL;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +23,9 @@ namespace Accounting_System
         }
         private void PurchaseReturnScreen_Load(object sender, EventArgs e)
         {
+            comboBoxGenerate();
+            comboBox2.SelectedIndex = comboBox2.Items.Count > 0 ? 0 : -1;
+
         }
 
         public void Getdata()
@@ -37,20 +40,29 @@ namespace Accounting_System
                    RTRIM(PurchaseReturn.DiscPer), RTRIM(PurchaseReturn.Discount), 
                    RTRIM(PurchaseReturn.VATPer), RTRIM(PurchaseReturn.VATAmt), 
                    RTRIM(PurchaseReturn.Total), RTRIM(PurchaseReturn.RoundOff), 
-                   RTRIM(PurchaseReturn.GrandTotal) 
+                   RTRIM(PurchaseReturn.GrandTotal),
+                   RTRIM(Warehouses.WarehouseName) AS WarehouseName, 
+                   RTRIM(Warehouses.WID) AS WarehouseID ,RTRIM(PurchaseReturn.Currencies), RTRIM(PurchaseReturn.CPrice)
             FROM Stock 
             INNER JOIN PurchaseReturn ON Stock.ST_ID = PurchaseReturn.PurchaseID 
             INNER JOIN Supplier ON Supplier.ID = Stock.SupplierID 
+            INNER JOIN Warehouses ON Stock.WID = Warehouses.WID  
+            WHERE Warehouses.WID = @d1
             ORDER BY PurchaseReturn.Date";
 
                 using (SqlCommand cmd = new SqlCommand(query, con))
-                using (SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection))
                 {
-                    dgw.Rows.Clear();
-                    while (rdr.Read())
+                    // Add the parameter here, before executing the reader.
+                    cmd.Parameters.AddWithValue("@d1", WID.Text);
+
+                    using (SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection))
                     {
-                        dgw.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7],
-                                     rdr[8], rdr[9], rdr[10], rdr[11], rdr[12], rdr[13], rdr[14], rdr[15]);
+                        dgw.Rows.Clear();
+                        while (rdr.Read())
+                        {
+                            dgw.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7],
+                                         rdr[8], rdr[9], rdr[10], rdr[11], rdr[12], rdr[13], rdr[14], rdr[15], rdr[16], rdr[17], rdr[18], rdr[19]);
+                        }
                     }
                 }
             }
@@ -65,23 +77,28 @@ namespace Accounting_System
             }
         }
 
+
         private void btnGetData_Click(object sender, EventArgs e)
         {
             try
             {
                 con.Open();
                 string query = @"
-            SELECT PR_ID, RTRIM(PRNo), PurchaseReturn.Date, RTRIM(PurchaseID), 
+             SELECT PR_ID, RTRIM(PRNo), PurchaseReturn.Date, RTRIM(PurchaseID), 
                    RTRIM(InvoiceNo), Stock.Date, RTRIM(Supplier.SupplierID), 
                    RTRIM(Name), RTRIM(PurchaseReturn.SubTotal), 
                    RTRIM(PurchaseReturn.DiscPer), RTRIM(PurchaseReturn.Discount), 
                    RTRIM(PurchaseReturn.VATPer), RTRIM(PurchaseReturn.VATAmt), 
                    RTRIM(PurchaseReturn.Total), RTRIM(PurchaseReturn.RoundOff), 
-                   RTRIM(PurchaseReturn.GrandTotal) 
+                   RTRIM(PurchaseReturn.GrandTotal),
+                   RTRIM(Warehouses.WarehouseName) AS WarehouseName, 
+                   RTRIM(Warehouses.WID) AS WarehouseID 
             FROM Stock 
             INNER JOIN PurchaseReturn ON Stock.ST_ID = PurchaseReturn.PurchaseID 
             INNER JOIN Supplier ON Supplier.ID = Stock.SupplierID 
-            WHERE PurchaseReturn.Date BETWEEN @d1 AND @d2 
+            INNER JOIN Warehouses ON Stock.WID = Warehouses.WID  
+
+            WHERE PurchaseReturn.Date BETWEEN @d1 AND @d2  AND Warehouses.WID = @d3
             ORDER BY PurchaseReturn.Date";
 
                 using (SqlCommand cmd = new SqlCommand(query, con))
@@ -95,7 +112,7 @@ namespace Accounting_System
                         while (rdr.Read())
                         {
                             dgw.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7],
-                                         rdr[8], rdr[9], rdr[10], rdr[11], rdr[12], rdr[13], rdr[14], rdr[15]);
+                                         rdr[8], rdr[9], rdr[10], rdr[11], rdr[12], rdr[13], rdr[14], rdr[15], rdr[16], rdr[17]);
                         }
                     }
                 }
@@ -117,16 +134,19 @@ namespace Accounting_System
             {
                 con.Open();
                 string query = @"
-            SELECT PR_ID, RTRIM(PRNo), PurchaseReturn.Date, RTRIM(PurchaseID), 
+             SELECT PR_ID, RTRIM(PRNo), PurchaseReturn.Date, RTRIM(PurchaseID), 
                    RTRIM(InvoiceNo), Stock.Date, RTRIM(Supplier.SupplierID), 
                    RTRIM(Name), RTRIM(PurchaseReturn.SubTotal), 
                    RTRIM(PurchaseReturn.DiscPer), RTRIM(PurchaseReturn.Discount), 
                    RTRIM(PurchaseReturn.VATPer), RTRIM(PurchaseReturn.VATAmt), 
                    RTRIM(PurchaseReturn.Total), RTRIM(PurchaseReturn.RoundOff), 
-                   RTRIM(PurchaseReturn.GrandTotal) 
+                   RTRIM(PurchaseReturn.GrandTotal),
+                   RTRIM(Warehouses.WarehouseName) AS WarehouseName, 
+                   RTRIM(Warehouses.WID) AS WarehouseID 
             FROM Stock 
             INNER JOIN PurchaseReturn ON Stock.ST_ID = PurchaseReturn.PurchaseID 
             INNER JOIN Supplier ON Supplier.ID = Stock.SupplierID 
+            INNER JOIN Warehouses ON Stock.WID = Warehouses.WID  
             WHERE Name LIKE @SupplierName 
             ORDER BY PurchaseReturn.Date";
 
@@ -140,7 +160,7 @@ namespace Accounting_System
                         while (rdr.Read())
                         {
                             dgw.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7],
-                                         rdr[8], rdr[9], rdr[10], rdr[11], rdr[12], rdr[13], rdr[14], rdr[15]);
+                                         rdr[8], rdr[9], rdr[10], rdr[11], rdr[12], rdr[13], rdr[14], rdr[15], rdr[16], rdr[17]);
                         }
                     }
                 }
@@ -203,6 +223,8 @@ namespace Accounting_System
                         frmPurchaseReturn.txtTotal.Text = dr.Cells[13].Value.ToString();
                         frmPurchaseReturn.txtRoundOff.Text = dr.Cells[14].Value.ToString();
                         frmPurchaseReturn.txtGrandTotal.Text = dr.Cells[15].Value.ToString();
+                        frmPurchaseReturn.comboBox1.Text = dr.Cells[18].Value.ToString();
+                        frmPurchaseReturn.Cprice.Text = dr.Cells[19].Value.ToString();
 
                         frmPurchaseReturn.btnSave.Enabled = false;
                         frmPurchaseReturn.DataGridView1.Enabled = true;
@@ -217,7 +239,8 @@ namespace Accounting_System
                     SELECT PurchaseReturn_Join.ProductID, RTRIM(Product.ProductCode), 
                            RTRIM(Product.ProductName), RTRIM(PurchaseReturn_Join.Barcode), 
                            PurchaseReturn_Join.Qty, PurchaseReturn_Join.Price, 
-                           PurchaseReturn_Join.ReturnQty, PurchaseReturn_Join.TotalAmount 
+                           PurchaseReturn_Join.ReturnQty, PurchaseReturn_Join.TotalAmount,PurchaseReturn_Join.WName ,PurchaseReturn_Join.WID
+                    
                     FROM PurchaseReturn_Join 
                     INNER JOIN PurchaseReturn ON PurchaseReturn_Join.PurchaseReturnID = PurchaseReturn.PR_ID 
                     INNER JOIN Product ON Product.PID = PurchaseReturn_Join.ProductID 
@@ -233,7 +256,7 @@ namespace Accounting_System
                                 while (rdr.Read())
                                 {
                                     frmPurchaseReturn.DataGridView1.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3],
-                                                                              rdr[4], rdr[5], rdr[6], rdr[7]);
+                                        rdr[4], rdr[5], rdr[6], rdr[7], rdr[8], rdr[9]);
                                 }
                             }
                         }
@@ -312,6 +335,98 @@ namespace Accounting_System
         private void dgw_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                // الخطوة 2: الحصول على اسم المخزن المحدد من الـ ComboBox
+                string selectedWarehouse = comboBox2.SelectedItem.ToString();
+
+                // الخطوة 3: تعريف استعلام SQL لجلب WID و WarehouseName بناءً على اسم المخزن المحدد
+                string query = "SELECT WID, WarehouseName FROM Warehouses WHERE WarehouseName = @Name";
+
+                // الخطوة 4: إنشاء اتصال بقاعدة البيانات
+                using (SqlConnection conn = new SqlConnection(DataAccessLayer.Con()))
+                {
+                    try
+                    {
+                        conn.Open();
+
+                        // الخطوة 5: إنشاء SqlCommand لتنفيذ الاستعلام
+                        using (SqlCommand cmd = new SqlCommand(query, conn))
+                        {
+                            // الخطوة 6: إضافة اسم المخزن المحدد كمعامل لمنع هجمات SQL Injection
+                            cmd.Parameters.AddWithValue("@Name", selectedWarehouse);
+
+                            // الخطوة 7: تنفيذ الاستعلام واستخدام SqlDataReader لجلب WID و WarehouseName
+                            using (SqlDataReader rdr = cmd.ExecuteReader())
+                            {
+                                if (rdr.Read()) // التحقق من وجود سجل واحد على الأقل
+                                {
+                                    // استرجاع 'WID' و 'WarehouseName' من القارئ
+                                    int wid = rdr["WID"] != DBNull.Value ? Convert.ToInt32(rdr["WID"]) : 0;
+                                    string warehouseName = rdr["WarehouseName"] != DBNull.Value ? rdr["WarehouseName"].ToString() : string.Empty;
+
+                                    // الخطوة 8: تعيين القيم المسترجعة إلى الـ TextBoxes الخاصة بك
+                                    WID.Text = wid.ToString();
+                                    // إذا كان لديك TextBox لاسم المخزن، يمكنك تعيينه هنا
+                                    // مثلاً: WarehouseNameTextBox.Text = warehouseName;
+                                }
+                                else
+                                {
+                                    MessageBox.Show("لم يتم العثور على المخزن المحدد.", "معلومات", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                }
+                            }
+                        }
+                    }
+                    catch (SqlException sqlEx)
+                    {
+                        // الخطوة 9: معالجة استثناءات SQL الخاصة
+                        MessageBox.Show($"حدث خطأ في قاعدة البيانات: {sqlEx.Message}", "خطأ قاعدة بيانات", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    catch (Exception ex)
+                    {
+                        // الخطوة 10: معالجة أي استثناءات عامة أخرى
+                        MessageBox.Show($"حدث خطأ غير متوقع: {ex.Message}", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"حدث خطأ في قاعدة البيانات: {ex.Message}", "خطأ قاعدة بيانات", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            Getdata();
+        }
+        public void comboBoxGenerate()
+        {
+            try
+            {
+
+                comboBox2.SelectedIndex = 0;
+
+                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("SELECT WarehouseName,WID FROM [dbo].[Warehouses]", con);
+
+                    using (SqlDataReader rdr = cmd.ExecuteReader())
+                    {
+                        comboBox2.Items.Clear();
+                        while (rdr.Read()) // Loops through all available rows
+                        {
+                            comboBox2.Items.Add(rdr["WarehouseName"].ToString());
+                            WID.Text = rdr["WID"].ToString();
+                        }
+                    }
+                }
+            }
+            catch{ 
+                return;
+            }
+
+          
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using DeviceId;
-using Pharmacy.DL;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -83,7 +83,7 @@ namespace Accounting_System
                     Properties.Settings.Default.IsActive = true;
                     Properties.Settings.Default.IsSoftwerAcitve = true;
                     Properties.Settings.Default.IsFirstOpen = false;
-                    Properties.Settings.Default.EndDate = DateTime.Now.AddDays(1); // Adjust the logic to set the correct end date
+                    Properties.Settings.Default.EndDate = DateTime.Now.AddDays(5); 
                     Properties.Settings.Default.Save();
 
                     MessageBox.Show($"لقد بدأت النسخة التجريبية الخاصة بك وستنتهي في {Properties.Settings.Default.EndDate.ToLongDateString()}");

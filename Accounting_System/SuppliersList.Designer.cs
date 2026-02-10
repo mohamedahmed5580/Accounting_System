@@ -225,14 +225,16 @@
             // 
             // Panel2
             // 
+            this.Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Panel2.Controls.Add(this.lblSet);
             this.Panel2.Controls.Add(this.Label1);
             this.Panel2.Location = new System.Drawing.Point(7, 9);
-            this.Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(1544, 59);
+            this.Panel2.Size = new System.Drawing.Size(1174, 59);
             this.Panel2.TabIndex = 0;
             // 
             // lblSet
@@ -279,6 +281,8 @@
             // 
             // Panel1
             // 
+            this.Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel1.BackColor = System.Drawing.Color.White;
             this.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel1.Controls.Add(this.Panel5);
@@ -288,9 +292,9 @@
             this.Panel1.Controls.Add(this.dgw);
             this.Panel1.Controls.Add(this.Panel2);
             this.Panel1.Location = new System.Drawing.Point(7, 6);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1561, 739);
+            this.Panel1.Size = new System.Drawing.Size(1191, 739);
             this.Panel1.TabIndex = 3;
             this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
@@ -300,9 +304,9 @@
             this.Panel5.Controls.Add(this.btnReset);
             this.Panel5.Controls.Add(this.btnExportExcel);
             this.Panel5.Location = new System.Drawing.Point(28, 75);
-            this.Panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel5.Margin = new System.Windows.Forms.Padding(4);
             this.Panel5.Name = "Panel5";
-            this.Panel5.Size = new System.Drawing.Size(303, 86);
+            this.Panel5.Size = new System.Drawing.Size(274, 86);
             this.Panel5.TabIndex = 52;
             // 
             // btnReset
@@ -312,9 +316,9 @@
             this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReset.Location = new System.Drawing.Point(17, 17);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(55, 46);
+            this.btnReset.Size = new System.Drawing.Size(41, 46);
             this.btnReset.TabIndex = 0;
             this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReset.UseVisualStyleBackColor = true;
@@ -328,34 +332,34 @@
             this.btnExportExcel.ForeColor = System.Drawing.Color.White;
             this.btnExportExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExportExcel.Image")));
             this.btnExportExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExportExcel.Location = new System.Drawing.Point(99, 17);
-            this.btnExportExcel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExportExcel.Location = new System.Drawing.Point(66, 17);
+            this.btnExportExcel.Margin = new System.Windows.Forms.Padding(4);
             this.btnExportExcel.Name = "btnExportExcel";
             this.btnExportExcel.Size = new System.Drawing.Size(192, 46);
             this.btnExportExcel.TabIndex = 5;
             this.btnExportExcel.Text = "تصدير للأكسل";
             this.btnExportExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExportExcel.UseVisualStyleBackColor = false;
-            this.btnExportExcel.Click += new System.EventHandler(this.btnExportExcel_Click);
             // 
             // Panel6
             // 
+            this.Panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel6.Controls.Add(this.txtContactNo);
             this.Panel6.Controls.Add(this.Label4);
             this.Panel6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.Panel6.Location = new System.Drawing.Point(1247, 75);
-            this.Panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel6.Location = new System.Drawing.Point(879, 76);
+            this.Panel6.Margin = new System.Windows.Forms.Padding(4);
             this.Panel6.Name = "Panel6";
-            this.Panel6.Size = new System.Drawing.Size(303, 86);
+            this.Panel6.Size = new System.Drawing.Size(280, 86);
             this.Panel6.TabIndex = 50;
             // 
             // txtContactNo
             // 
             this.txtContactNo.BackColor = System.Drawing.Color.White;
             this.txtContactNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtContactNo.Location = new System.Drawing.Point(32, 41);
-            this.txtContactNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContactNo.Location = new System.Drawing.Point(19, 41);
+            this.txtContactNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtContactNo.Name = "txtContactNo";
             this.txtContactNo.Size = new System.Drawing.Size(243, 30);
             this.txtContactNo.TabIndex = 13;
@@ -365,7 +369,7 @@
             this.Label4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label4.ForeColor = System.Drawing.Color.White;
-            this.Label4.Location = new System.Drawing.Point(32, 10);
+            this.Label4.Location = new System.Drawing.Point(19, 10);
             this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(244, 31);
@@ -375,22 +379,23 @@
             // 
             // Panel4
             // 
+            this.Panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel4.Controls.Add(this.txtCity);
             this.Panel4.Controls.Add(this.Label2);
             this.Panel4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.Panel4.Location = new System.Drawing.Point(819, 75);
-            this.Panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel4.Location = new System.Drawing.Point(601, 76);
+            this.Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.Panel4.Name = "Panel4";
-            this.Panel4.Size = new System.Drawing.Size(283, 86);
+            this.Panel4.Size = new System.Drawing.Size(270, 86);
             this.Panel4.TabIndex = 49;
             // 
             // txtCity
             // 
             this.txtCity.BackColor = System.Drawing.Color.White;
             this.txtCity.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtCity.Location = new System.Drawing.Point(17, 41);
-            this.txtCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCity.Location = new System.Drawing.Point(12, 41);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(4);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(243, 30);
             this.txtCity.TabIndex = 13;
@@ -400,7 +405,7 @@
             this.Label2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label2.ForeColor = System.Drawing.Color.White;
-            this.Label2.Location = new System.Drawing.Point(17, 10);
+            this.Label2.Location = new System.Drawing.Point(12, 10);
             this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(244, 31);
@@ -414,8 +419,8 @@
             this.Panel3.Controls.Add(this.txtSupplierName);
             this.Panel3.Controls.Add(this.Label3);
             this.Panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.Panel3.Location = new System.Drawing.Point(425, 75);
-            this.Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel3.Location = new System.Drawing.Point(310, 76);
+            this.Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.Panel3.Name = "Panel3";
             this.Panel3.Size = new System.Drawing.Size(283, 86);
             this.Panel3.TabIndex = 48;
@@ -425,7 +430,7 @@
             this.txtSupplierName.BackColor = System.Drawing.Color.White;
             this.txtSupplierName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtSupplierName.Location = new System.Drawing.Point(17, 41);
-            this.txtSupplierName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSupplierName.Margin = new System.Windows.Forms.Padding(4);
             this.txtSupplierName.Name = "txtSupplierName";
             this.txtSupplierName.Size = new System.Drawing.Size(243, 30);
             this.txtSupplierName.TabIndex = 13;
@@ -449,6 +454,9 @@
             this.dgw.AllowUserToDeleteRows = false;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightBlue;
             this.dgw.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgw.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgw.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.CadetBlue;
@@ -493,11 +501,11 @@
             this.dgw.EnableHeadersVisualStyles = false;
             this.dgw.GridColor = System.Drawing.Color.Gray;
             this.dgw.Location = new System.Drawing.Point(7, 175);
-            this.dgw.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgw.Margin = new System.Windows.Forms.Padding(4);
             this.dgw.MultiSelect = false;
             this.dgw.Name = "dgw";
             this.dgw.ReadOnly = true;
-            this.dgw.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dgw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgw.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.CadetBlue;
@@ -517,7 +525,7 @@
             this.dgw.RowTemplate.Height = 30;
             this.dgw.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgw.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw.Size = new System.Drawing.Size(1544, 548);
+            this.dgw.Size = new System.Drawing.Size(1174, 548);
             this.dgw.TabIndex = 43;
             this.dgw.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_CellContentClick);
             // 
@@ -562,15 +570,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1575, 752);
+            this.ClientSize = new System.Drawing.Size(1205, 752);
             this.Controls.Add(this.Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "SuppliersList";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.SuppliersList_Load);
             this.Panel2.ResumeLayout(false);
             this.Panel2.PerformLayout();
             this.Panel1.ResumeLayout(false);

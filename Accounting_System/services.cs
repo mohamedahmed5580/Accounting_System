@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using Pharmacy.DL;
+
 using System.Net.Mail;
 using System.Net;
 
@@ -16,7 +16,6 @@ namespace Accounting_System
 {
     public partial class services : Form
     {
-        SqlConnection con = new SqlConnection(DataAccessLayer.Con());
         public services()
         {
             InitializeComponent();
@@ -115,7 +114,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
         private void Print()
@@ -171,7 +170,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
             finally
             {
@@ -230,12 +229,12 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
         public static void LedgerDelete(string a, string b)
         {
-            using (SqlConnection con = DataAccessLayer.cn)
+            using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
             {
                 con.Open();
                 string cq = "DELETE FROM LedgerBook WHERE LedgerNo=@d1 AND Label=@d2";
@@ -243,13 +242,13 @@ namespace Accounting_System
                 {
                     cmd.Parameters.AddWithValue("@d1", a);
                     cmd.Parameters.AddWithValue("@d2", b);
-                    cmd.ExecuteReader();
+                    cmd.ExecuteNonQuery();
                 }
             }
         }
         public static void LogFunc(string st1, string st2)
         {
-            using (SqlConnection con = DataAccessLayer.cn)
+            using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
             {
                 con.Open();
                 string cb = "INSERT INTO Logs(UserID, Date, Operation) VALUES (@d1, @d2, @d3)";
@@ -258,7 +257,7 @@ namespace Accounting_System
                     cmd.Parameters.AddWithValue("@d1", st1);
                     cmd.Parameters.AddWithValue("@d2", DateTime.Now);
                     cmd.Parameters.AddWithValue("@d3", st2);
-                    cmd.ExecuteReader();
+                    cmd.ExecuteNonQuery();
                 }
             }
         }
@@ -284,7 +283,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
 
@@ -299,7 +298,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
 
         }
@@ -330,28 +329,23 @@ namespace Accounting_System
                 return;
             }
 
+            btnSave.Enabled = false;
             try
             {
                 using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
                 {
                     con.Open();
-                    string ctn = "SELECT * FROM Company";
+                    string ctn = "SELECT COUNT(*) FROM Company";
                     using (SqlCommand cmd = new SqlCommand(ctn, con))
                     {
-                        using (SqlDataReader rdr = cmd.ExecuteReader())
+                        int count = (int)cmd.ExecuteScalar();
+                        if (count == 0)
                         {
-                            if (!rdr.Read())
-                            {
-                                MessageBox.Show("Add company profile first in master entry", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                return;
-                            }
+                            MessageBox.Show("Add company profile first in master entry", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            return;
                         }
                     }
-                }
 
-                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
-                {
-                    con.Open();
                     string cb = "INSERT INTO Service(S_ID, ServiceCode, CustomerID, ServiceType, ServiceCreationDate, ItemDescription, ProblemDescription, ChargesQuote, AdvanceDeposit, EstimatedRepairDate, Remarks, Status) " +
                                 "VALUES (@d1, @d2, @d3, @d4, @d5, @d6, @d7, @d8, @d9, @d10, @d11, @d12)";
                     using (SqlCommand cmd = new SqlCommand(cb, con))
@@ -368,7 +362,7 @@ namespace Accounting_System
                         cmd.Parameters.AddWithValue("@d10", dtpEstimatedRepairDate.Value.Date);
                         cmd.Parameters.AddWithValue("@d11", txtRemarks.Text);
                         cmd.Parameters.AddWithValue("@d12", cmbStatus.Text);
-                        cmd.ExecuteReader();
+                        cmd.ExecuteNonQuery();
                     }
                 }
 
@@ -378,32 +372,6 @@ namespace Accounting_System
                 string st = "added the new service having service code '" + txtServiceCode.Text + "'";
                 LogFunc(lblUser.Text, st);
 
-                // Uncomment and implement SMS functionality if needed
-                /*
-                if (CheckForInternetConnection())
-                {
-                    using (SqlConnection con = new SqlConnection(cs))
-                    {
-                        con.Open();
-                        string ctn1 = "SELECT RTRIM(APIURL) FROM SMSSetting WHERE IsDefault='Yes' AND IsEnabled='Yes'";
-                        using (SqlCommand cmd = new SqlCommand(ctn1, con))
-                        {
-                            using (SqlDataReader rdr = cmd.ExecuteReader())
-                            {
-                                if (rdr.Read())
-                                {
-                                    string st2 = rdr.GetValue(0).ToString();
-                                    string st3 = "Hello, " + txtCustomerName.Text + " service has been created successfully having service code " + txtServiceCode.Text;
-                                    SMSFunc(txtContactNo.Text, st3, st2);
-                                    SMS(st3);
-                                }
-                            }
-                        }
-                    }
-                }
-                */
-
-                btnSave.Enabled = false;
                 fillServiceType();
                 MessageBox.Show("Successfully created", "Service", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Print();
@@ -412,12 +380,16 @@ namespace Accounting_System
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                btnSave.Enabled = true;
             }
-
+            finally
+            {
+                btnSave.Enabled = true;
+            }
         }
         public static void LedgerSave(DateTime a, string b, string c, string d, decimal e, decimal f, string g, string h)
         {
-            using (SqlConnection con = DataAccessLayer.cn)
+            using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
             {
                 con.Open();
                 string cb = "INSERT INTO LedgerBook(Date, Name, LedgerNo, Label, Debit, Credit, PartyID, Manual_Inv) VALUES (@d1, @d2, @d3, @d4, @d5, @d6, @d7, @d8)";
@@ -431,7 +403,7 @@ namespace Accounting_System
                     cmd.Parameters.AddWithValue("@d6", f);
                     cmd.Parameters.AddWithValue("@d7", g);
                     cmd.Parameters.AddWithValue("@d8", h);
-                    cmd.ExecuteReader();
+                    cmd.ExecuteNonQuery();
                 }
             }
         }
@@ -462,6 +434,7 @@ namespace Accounting_System
                 return;
             }
 
+            btnUpdate.Enabled = false;
             try
             {
                 using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
@@ -482,7 +455,7 @@ namespace Accounting_System
                         cmd.Parameters.AddWithValue("@d10", dtpEstimatedRepairDate.Value.Date);
                         cmd.Parameters.AddWithValue("@d11", txtRemarks.Text);
                         cmd.Parameters.AddWithValue("@d12", cmbStatus.Text);
-                        cmd.ExecuteReader();
+                        cmd.ExecuteNonQuery();
                     }
                 }
 
@@ -492,19 +465,22 @@ namespace Accounting_System
                 string st = "updated the service having service code '" + txtServiceCode.Text + "'";
                 LogFunc(lblUser.Text, st);
 
-                btnUpdate.Enabled = false;
-                fillServiceType();
                 MessageBox.Show("تم التعديل بنجاح", "خدمات", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Reset();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                btnUpdate.Enabled = true;
             }
-
+            finally
+            {
+                if (btnSave.Enabled) btnUpdate.Enabled = false;
+            }
         }
         public static void LedgerUpdate(DateTime a, string b, decimal e, decimal f, string g, string h, string i)
         {
-            using (SqlConnection con = DataAccessLayer.cn)
+            using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
             {
                 con.Open();
                 string cb = "UPDATE LedgerBook SET Date=@d1, Name=@d2, Debit=@d3, Credit=@d4, PartyID=@d5 WHERE LedgerNo=@d6 AND Label=@d7";
@@ -517,18 +493,25 @@ namespace Accounting_System
                     cmd.Parameters.AddWithValue("@d5", g);
                     cmd.Parameters.AddWithValue("@d6", h);
                     cmd.Parameters.AddWithValue("@d7", i);
-                    cmd.ExecuteReader();
+                    cmd.ExecuteNonQuery();
                 }
             }
         }
 
         private void btnGetData_Click(object sender, EventArgs e)
         {
-            servicesRecord frmServicesRecord = new servicesRecord();
-            frmServicesRecord.lblSet.Text = "Services";
-            frmServicesRecord.Reset();
-            frmServicesRecord.ShowDialog();
-
+            btnGetData.Enabled = false;
+            try
+            {
+                servicesRecord frmServicesRecord = new servicesRecord();
+                frmServicesRecord.lblSet.Text = "Services";
+                frmServicesRecord.Reset();
+                frmServicesRecord.ShowDialog();
+            }
+            finally
+            {
+                btnGetData.Enabled = true;
+            }
         }
 
         private void btnNew_Click(object sender, EventArgs e)
@@ -538,7 +521,15 @@ namespace Accounting_System
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            Print();
+            btnPrint.Enabled = false;
+            try
+            {
+                Print();
+            }
+            finally
+            {
+                btnPrint.Enabled = true;
+            }
         }
         private void txtChargesQuote_KeyPress(object sender, KeyPressEventArgs e)
         {

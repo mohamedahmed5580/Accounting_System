@@ -1,5 +1,5 @@
 ﻿using Microsoft.Office.Interop.Excel;
-using Pharmacy.DL;
+
 using Pharmacy.PL;
 using System;
 using System.Collections.Generic;
@@ -31,7 +31,7 @@ namespace Accounting_System
         private void pbDBConfig_Click(object sender, EventArgs e)
         {
             timer1.Enabled = false;
-            DBConfig c = new DBConfig();
+            Show_database c = new Show_database();
             c.ShowDialog();
             timer1.Enabled = true;
         }
@@ -74,7 +74,7 @@ namespace Accounting_System
                 Properties.Settings.Default.Save();
 
                 MessageBox.Show("لقد بدأت النسخة التجريبية الخاصة بك وستنتهي في " + Properties.Settings.Default.EndDate.ToLongDateString());
-                OpenNewForm(new basic());
+                OpenNewForm(new Dashbourd());
             }
             else
             {

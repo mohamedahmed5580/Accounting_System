@@ -1,5 +1,4 @@
-﻿using Pharmacy.DL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +14,8 @@ namespace Accounting_System
 {
     public partial class Quotation : Form
     {
-        private static Quotation _instance;
+        public static Quotation _instance;
+        public static Quotation instance;
         public static Quotation Instance
         {
             get
@@ -31,7 +31,6 @@ namespace Accounting_System
         {
             InitializeComponent();
             txtQty.TextChanged += new EventHandler(txtQty_TextChanged);
-            txtQty.KeyPress += new KeyPressEventHandler(txtQty_KeyPress);
             DataGridView1.MouseClick += new MouseEventHandler(DataGridView1_MouseClick);
             DataGridView1.RowPostPaint += new DataGridViewRowPostPaintEventHandler(DataGridView1_RowPostPaint);
             txtSellingPrice.KeyPress += new KeyPressEventHandler(txtSellingPrice_KeyPress);
@@ -40,6 +39,7 @@ namespace Accounting_System
             txtSellingPrice.TextChanged += new EventHandler(txtSellingPrice_TextChanged);
             txtDiscountPer.TextChanged += new EventHandler(txtDiscountPer_TextChanged);
             txtVAT.TextChanged += new EventHandler(txtVAT_TextChanged);
+            instance = this;
 
         }
 
@@ -756,7 +756,6 @@ namespace Accounting_System
 
         private void btnSelect_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Reset();
             customerRecord2 frmCustomerRecord2 = new customerRecord2();
             frmCustomerRecord2.lblSet.Text = "Quotation";

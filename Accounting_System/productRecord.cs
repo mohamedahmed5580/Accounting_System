@@ -1,4 +1,4 @@
-﻿using Pharmacy.DL;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -360,7 +360,7 @@ namespace Accounting_System
                         DataGridViewRow dr = dgw.SelectedRows[0];
 
                         // Access the singleton instance
-                        Quotation frmQuotation = Quotation.Instance;
+                        Quotation frmQuotation = Quotation.instance;
 
                         // Update the form's controls
                         frmQuotation.txtProductID.Text = dr.Cells[0].Value.ToString();
@@ -370,10 +370,6 @@ namespace Accounting_System
                         frmQuotation.txtDiscountPer.Text = dr.Cells[9].Value.ToString();
                         frmQuotation.txtVAT.Text = dr.Cells[10].Value.ToString();
 
-                        // Show the form
-                        frmQuotation.Show();
-
-                        // Close the current form
                         this.Close();
 
                         lblSet.Text = "";

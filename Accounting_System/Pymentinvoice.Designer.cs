@@ -30,15 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pymentinvoice));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Panel3 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -48,14 +60,19 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
-            this.currencies = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
+            this.btnListUpdate = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.WNeame = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.Label21 = new System.Windows.Forms.Label();
-            this.txtBarcode = new System.Windows.Forms.TextBox();
             this.txtTotalAmount = new System.Windows.Forms.TextBox();
+            this.Label9 = new System.Windows.Forms.Label();
+            this.txtBarcode = new System.Windows.Forms.TextBox();
             this.txtPricePerQty = new System.Windows.Forms.TextBox();
             this.txtQty = new System.Windows.Forms.TextBox();
-            this.Label9 = new System.Windows.Forms.Label();
             this.Label6 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
             this.Button1 = new System.Windows.Forms.Button();
@@ -63,13 +80,25 @@
             this.txtProductCode = new System.Windows.Forms.TextBox();
             this.Label7 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
+            this.dgw = new System.Windows.Forms.DataGridView();
+            this.DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OpenFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.Timer1 = new System.Windows.Forms.Timer(this.components);
             this.Label2 = new System.Windows.Forms.Label();
             this.Panel2 = new System.Windows.Forms.Panel();
-            this.Cprice = new System.Windows.Forms.TextBox();
+            this.CUID = new System.Windows.Forms.TextBox();
             this.lblUserType = new System.Windows.Forms.Label();
             this.txtProductID = new System.Windows.Forms.TextBox();
+            this.WID = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblSet = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.txtSup_ID = new System.Windows.Forms.TextBox();
@@ -83,6 +112,10 @@
             this.Label3 = new System.Windows.Forms.Label();
             this.txtInvoiceNo = new System.Windows.Forms.TextBox();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.Cprice = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txtVATAmt = new System.Windows.Forms.TextBox();
             this.Label13 = new System.Windows.Forms.Label();
             this.Label14 = new System.Windows.Forms.Label();
@@ -112,13 +145,16 @@
             this.Label31 = new System.Windows.Forms.Label();
             this.Panel1 = new System.Windows.Forms.Panel();
             this.gbPartyInfo = new System.Windows.Forms.GroupBox();
+            this.lblBalanceCC = new System.Windows.Forms.Label();
+            this.lblBalanceByC = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.txtContactNo = new System.Windows.Forms.ComboBox();
+            this.txtSupplierName = new System.Windows.Forms.ComboBox();
             this.btnSelection = new System.Windows.Forms.Button();
             this.Label10 = new System.Windows.Forms.Label();
             this.txtSupplierID = new System.Windows.Forms.TextBox();
             this.lblBalance = new System.Windows.Forms.Label();
             this.Label11 = new System.Windows.Forms.Label();
-            this.txtContactNo = new System.Windows.Forms.TextBox();
-            this.txtSupplierName = new System.Windows.Forms.TextBox();
             this.txtCity = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.Label26 = new System.Windows.Forms.Label();
@@ -134,10 +170,14 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Timer1 = new System.Windows.Forms.Timer(this.components);
+            this.searchtime = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.Panel3.SuspendLayout();
             this.GroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw)).BeginInit();
             this.Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.GroupBox1.SuspendLayout();
             this.pnlCalc.SuspendLayout();
             this.Panel1.SuspendLayout();
@@ -148,6 +188,9 @@
             // Panel3
             // 
             this.Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Panel3.Controls.Add(this.button6);
+            this.Panel3.Controls.Add(this.button5);
+            this.Panel3.Controls.Add(this.button4);
             this.Panel3.Controls.Add(this.button2);
             this.Panel3.Controls.Add(this.btnUpdate);
             this.Panel3.Controls.Add(this.btnDelete);
@@ -155,20 +198,68 @@
             this.Panel3.Controls.Add(this.btnSave);
             this.Panel3.Controls.Add(this.btnNew);
             this.Panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.Panel3.Location = new System.Drawing.Point(1192, 91);
+            this.Panel3.Location = new System.Drawing.Point(1358, 105);
             this.Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.Panel3.Name = "Panel3";
-            this.Panel3.Size = new System.Drawing.Size(148, 289);
+            this.Panel3.Size = new System.Drawing.Size(238, 237);
             this.Panel3.TabIndex = 2;
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.BackColor = System.Drawing.Color.Turquoise;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(118, 191);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(109, 39);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "طباعة";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.BackColor = System.Drawing.Color.Turquoise;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(122, 100);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(109, 39);
+            this.button5.TabIndex = 9;
+            this.button5.Text = "حفظ+طباعة";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.BackColor = System.Drawing.Color.SaddleBrown;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(5, 145);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(109, 39);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "العملات";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.DarkOrange;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(20, 232);
+            this.button2.Location = new System.Drawing.Point(5, 103);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 39);
@@ -179,11 +270,12 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdate.BackColor = System.Drawing.Color.SkyBlue;
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(20, 183);
+            this.btnUpdate.Location = new System.Drawing.Point(5, 57);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(109, 39);
@@ -201,7 +293,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(20, 93);
+            this.btnDelete.Location = new System.Drawing.Point(122, 144);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(109, 39);
@@ -217,7 +309,7 @@
             this.btnGetData.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGetData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGetData.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnGetData.Location = new System.Drawing.Point(20, 137);
+            this.btnGetData.Location = new System.Drawing.Point(5, 10);
             this.btnGetData.Margin = new System.Windows.Forms.Padding(4);
             this.btnGetData.Name = "btnGetData";
             this.btnGetData.Size = new System.Drawing.Size(109, 39);
@@ -231,7 +323,7 @@
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnSave.Location = new System.Drawing.Point(20, 50);
+            this.btnSave.Location = new System.Drawing.Point(122, 57);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(109, 39);
@@ -248,7 +340,7 @@
             this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnNew.ForeColor = System.Drawing.Color.White;
-            this.btnNew.Location = new System.Drawing.Point(20, 8);
+            this.btnNew.Location = new System.Drawing.Point(122, 13);
             this.btnNew.Margin = new System.Windows.Forms.Padding(4);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(109, 39);
@@ -265,7 +357,7 @@
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(412, 102);
+            this.btnRemove.Location = new System.Drawing.Point(737, 109);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(119, 42);
@@ -281,7 +373,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(569, 102);
+            this.btnAdd.Location = new System.Drawing.Point(1017, 109);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(157, 42);
@@ -292,20 +384,23 @@
             // 
             // GroupBox2
             // 
-            this.GroupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.GroupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GroupBox2.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.GroupBox2.Controls.Add(this.btnListUpdate);
+            this.GroupBox2.Controls.Add(this.textBox2);
+            this.GroupBox2.Controls.Add(this.label28);
+            this.GroupBox2.Controls.Add(this.comboBox2);
+            this.GroupBox2.Controls.Add(this.WNeame);
+            this.GroupBox2.Controls.Add(this.label27);
             this.GroupBox2.Controls.Add(this.button3);
-            this.GroupBox2.Controls.Add(this.currencies);
-            this.GroupBox2.Controls.Add(this.label22);
             this.GroupBox2.Controls.Add(this.Label21);
+            this.GroupBox2.Controls.Add(this.txtTotalAmount);
+            this.GroupBox2.Controls.Add(this.Label9);
             this.GroupBox2.Controls.Add(this.txtBarcode);
             this.GroupBox2.Controls.Add(this.btnRemove);
-            this.GroupBox2.Controls.Add(this.txtTotalAmount);
             this.GroupBox2.Controls.Add(this.txtPricePerQty);
             this.GroupBox2.Controls.Add(this.txtQty);
-            this.GroupBox2.Controls.Add(this.Label9);
             this.GroupBox2.Controls.Add(this.Label6);
             this.GroupBox2.Controls.Add(this.Label4);
             this.GroupBox2.Controls.Add(this.btnAdd);
@@ -315,42 +410,115 @@
             this.GroupBox2.Controls.Add(this.Label7);
             this.GroupBox2.Controls.Add(this.Label8);
             this.GroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.GroupBox2.Location = new System.Drawing.Point(380, 388);
+            this.GroupBox2.Location = new System.Drawing.Point(380, 367);
             this.GroupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox2.Name = "GroupBox2";
             this.GroupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.GroupBox2.Size = new System.Drawing.Size(962, 198);
+            this.GroupBox2.Size = new System.Drawing.Size(1235, 173);
             this.GroupBox2.TabIndex = 0;
             this.GroupBox2.TabStop = false;
             this.GroupBox2.Text = "معلومات الأصناف";
             this.GroupBox2.Enter += new System.EventHandler(this.GroupBox2_Enter);
             // 
-            // currencies
+            // btnListUpdate
             // 
-            this.currencies.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.currencies.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.currencies.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.currencies.Location = new System.Drawing.Point(7, 65);
-            this.currencies.Margin = new System.Windows.Forms.Padding(4);
-            this.currencies.Name = "currencies";
-            this.currencies.Size = new System.Drawing.Size(123, 30);
-            this.currencies.TabIndex = 315;
-            this.currencies.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.currencies.TextChanged += new System.EventHandler(this.currencies_TextChanged);
+            this.btnListUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnListUpdate.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnListUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListUpdate.Location = new System.Drawing.Point(879, 109);
+            this.btnListUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnListUpdate.Name = "btnListUpdate";
+            this.btnListUpdate.Size = new System.Drawing.Size(119, 42);
+            this.btnListUpdate.TabIndex = 382;
+            this.btnListUpdate.Text = "تعديل ";
+            this.btnListUpdate.UseVisualStyleBackColor = false;
+            this.btnListUpdate.Click += new System.EventHandler(this.btnListUpdate_Click);
             // 
-            // label22
+            // textBox2
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label22.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.label22.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(8, 36);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(119, 28);
-            this.label22.TabIndex = 314;
-            this.label22.Text = "نوع العمله";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.textBox2.Location = new System.Drawing.Point(119, 65);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(137, 30);
+            this.textBox2.TabIndex = 380;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label28
+            // 
+            this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label28.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.label28.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(123, 36);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(135, 28);
+            this.label28.TabIndex = 381;
+            this.label28.Text = "المجموع بالجنيه :";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "المخزن الرئيسي"});
+            this.comboBox2.Location = new System.Drawing.Point(1009, 64);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(166, 27);
+            this.comboBox2.TabIndex = 379;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // WNeame
+            // 
+            this.WNeame.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.WNeame.BackColor = System.Drawing.SystemColors.Control;
+            this.WNeame.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.WNeame.Location = new System.Drawing.Point(1007, 64);
+            this.WNeame.Margin = new System.Windows.Forms.Padding(4);
+            this.WNeame.Name = "WNeame";
+            this.WNeame.ReadOnly = true;
+            this.WNeame.Size = new System.Drawing.Size(168, 30);
+            this.WNeame.TabIndex = 375;
+            // 
+            // label27
+            // 
+            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label27.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.label27.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(1017, 36);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(158, 28);
+            this.label27.TabIndex = 376;
+            this.label27.Text = "اسم المخزن :";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.SkyBlue;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(610, 109);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(119, 42);
+            this.button3.TabIndex = 320;
+            this.button3.Text = "تفريغ";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Label21
             // 
@@ -358,50 +526,64 @@
             this.Label21.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label21.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label21.ForeColor = System.Drawing.Color.White;
-            this.Label21.Location = new System.Drawing.Point(436, 36);
+            this.Label21.Location = new System.Drawing.Point(612, 36);
             this.Label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label21.Name = "Label21";
-            this.Label21.Size = new System.Drawing.Size(159, 28);
+            this.Label21.Size = new System.Drawing.Size(104, 28);
             this.Label21.TabIndex = 31;
             this.Label21.Text = "الباركود :";
             this.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtBarcode
-            // 
-            this.txtBarcode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBarcode.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtBarcode.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtBarcode.Location = new System.Drawing.Point(436, 65);
-            this.txtBarcode.Margin = new System.Windows.Forms.Padding(4);
-            this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(159, 30);
-            this.txtBarcode.TabIndex = 2;
-            this.txtBarcode.TextChanged += new System.EventHandler(this.txtBarcode_TextChanged);
-            this.txtBarcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBarcode_KeyPress);
             // 
             // txtTotalAmount
             // 
             this.txtTotalAmount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTotalAmount.BackColor = System.Drawing.SystemColors.Control;
             this.txtTotalAmount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtTotalAmount.Location = new System.Drawing.Point(127, 65);
+            this.txtTotalAmount.Location = new System.Drawing.Point(256, 65);
             this.txtTotalAmount.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotalAmount.Name = "txtTotalAmount";
             this.txtTotalAmount.ReadOnly = true;
-            this.txtTotalAmount.Size = new System.Drawing.Size(97, 30);
+            this.txtTotalAmount.Size = new System.Drawing.Size(120, 30);
             this.txtTotalAmount.TabIndex = 5;
             this.txtTotalAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtTotalAmount.TextChanged += new System.EventHandler(this.txtTotalAmount_TextChanged);
+            // 
+            // Label9
+            // 
+            this.Label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label9.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.Label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label9.ForeColor = System.Drawing.Color.White;
+            this.Label9.Location = new System.Drawing.Point(258, 36);
+            this.Label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label9.Name = "Label9";
+            this.Label9.Size = new System.Drawing.Size(118, 28);
+            this.Label9.TabIndex = 29;
+            this.Label9.Text = "المجموع :";
+            this.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtBarcode
+            // 
+            this.txtBarcode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBarcode.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtBarcode.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.txtBarcode.Location = new System.Drawing.Point(612, 64);
+            this.txtBarcode.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBarcode.Name = "txtBarcode";
+            this.txtBarcode.Size = new System.Drawing.Size(105, 30);
+            this.txtBarcode.TabIndex = 2;
+            this.txtBarcode.TextChanged += new System.EventHandler(this.txtBarcode_TextChanged);
+            this.txtBarcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBarcode_KeyPress);
             // 
             // txtPricePerQty
             // 
             this.txtPricePerQty.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPricePerQty.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtPricePerQty.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtPricePerQty.Location = new System.Drawing.Point(224, 65);
+            this.txtPricePerQty.Location = new System.Drawing.Point(372, 64);
             this.txtPricePerQty.Margin = new System.Windows.Forms.Padding(4);
             this.txtPricePerQty.Name = "txtPricePerQty";
-            this.txtPricePerQty.Size = new System.Drawing.Size(119, 30);
+            this.txtPricePerQty.Size = new System.Drawing.Size(151, 30);
             this.txtPricePerQty.TabIndex = 4;
             this.txtPricePerQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtPricePerQty.TextChanged += new System.EventHandler(this.txtPricePerQty_TextChanged);
@@ -412,7 +594,7 @@
             this.txtQty.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtQty.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtQty.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtQty.Location = new System.Drawing.Point(344, 65);
+            this.txtQty.Location = new System.Drawing.Point(522, 64);
             this.txtQty.Margin = new System.Windows.Forms.Padding(4);
             this.txtQty.Name = "txtQty";
             this.txtQty.Size = new System.Drawing.Size(91, 30);
@@ -420,30 +602,16 @@
             this.txtQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtQty.TextChanged += new System.EventHandler(this.txtQty_TextChanged);
             // 
-            // Label9
-            // 
-            this.Label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label9.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.Label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label9.ForeColor = System.Drawing.Color.White;
-            this.Label9.Location = new System.Drawing.Point(127, 36);
-            this.Label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(97, 28);
-            this.Label9.TabIndex = 29;
-            this.Label9.Text = "المجموع :";
-            this.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Label6
             // 
             this.Label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Label6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label6.ForeColor = System.Drawing.Color.White;
-            this.Label6.Location = new System.Drawing.Point(224, 36);
+            this.Label6.Location = new System.Drawing.Point(376, 36);
             this.Label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(119, 28);
+            this.Label6.Size = new System.Drawing.Size(146, 28);
             this.Label6.TabIndex = 28;
             this.Label6.Text = "سعر الصنف :";
             this.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -454,7 +622,7 @@
             this.Label4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label4.ForeColor = System.Drawing.Color.White;
-            this.Label4.Location = new System.Drawing.Point(344, 36);
+            this.Label4.Location = new System.Drawing.Point(522, 36);
             this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(91, 28);
@@ -466,7 +634,7 @@
             // 
             this.Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Button1.Image = ((System.Drawing.Image)(resources.GetObject("Button1.Image")));
-            this.Button1.Location = new System.Drawing.Point(901, 33);
+            this.Button1.Location = new System.Drawing.Point(1175, 33);
             this.Button1.Margin = new System.Windows.Forms.Padding(4);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(57, 64);
@@ -479,19 +647,19 @@
             this.txtProductName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProductName.BackColor = System.Drawing.SystemColors.Control;
             this.txtProductName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtProductName.Location = new System.Drawing.Point(709, 65);
+            this.txtProductName.Location = new System.Drawing.Point(828, 64);
             this.txtProductName.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductName.Name = "txtProductName";
-            this.txtProductName.ReadOnly = true;
-            this.txtProductName.Size = new System.Drawing.Size(189, 30);
+            this.txtProductName.Size = new System.Drawing.Size(181, 30);
             this.txtProductName.TabIndex = 1;
+            this.txtProductName.TextChanged += new System.EventHandler(this.txtProductName_TextChanged);
             // 
             // txtProductCode
             // 
             this.txtProductCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProductCode.BackColor = System.Drawing.SystemColors.Control;
             this.txtProductCode.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtProductCode.Location = new System.Drawing.Point(596, 65);
+            this.txtProductCode.Location = new System.Drawing.Point(718, 64);
             this.txtProductCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductCode.Name = "txtProductCode";
             this.txtProductCode.ReadOnly = true;
@@ -504,7 +672,7 @@
             this.Label7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label7.ForeColor = System.Drawing.Color.White;
-            this.Label7.Location = new System.Drawing.Point(596, 36);
+            this.Label7.Location = new System.Drawing.Point(716, 36);
             this.Label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label7.Name = "Label7";
             this.Label7.Size = new System.Drawing.Size(112, 28);
@@ -518,13 +686,170 @@
             this.Label8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label8.ForeColor = System.Drawing.Color.White;
-            this.Label8.Location = new System.Drawing.Point(709, 36);
+            this.Label8.Location = new System.Drawing.Point(828, 36);
             this.Label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(191, 28);
+            this.Label8.Size = new System.Drawing.Size(196, 28);
             this.Label8.TabIndex = 22;
             this.Label8.Text = "اسم الصنف :";
             this.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dgw
+            // 
+            this.dgw.AllowUserToAddRows = false;
+            this.dgw.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Azure;
+            this.dgw.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgw.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgw.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgw.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgw.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgw.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgw.ColumnHeadersHeight = 35;
+            this.dgw.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgw.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DataGridViewTextBoxColumn1,
+            this.DataGridViewTextBoxColumn2,
+            this.DataGridViewTextBoxColumn3,
+            this.DataGridViewTextBoxColumn4,
+            this.DataGridViewTextBoxColumn5,
+            this.DataGridViewTextBoxColumn6,
+            this.DataGridViewTextBoxColumn7,
+            this.DataGridViewTextBoxColumn8,
+            this.DataGridViewTextBoxColumn9,
+            this.Column18});
+            this.dgw.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dgw.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgw.EnableHeadersVisualStyles = false;
+            this.dgw.GridColor = System.Drawing.Color.Gray;
+            this.dgw.Location = new System.Drawing.Point(317, 462);
+            this.dgw.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgw.MultiSelect = false;
+            this.dgw.Name = "dgw";
+            this.dgw.ReadOnly = true;
+            this.dgw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dgw.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgw.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dgw.RowHeadersWidth = 25;
+            this.dgw.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            this.dgw.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgw.RowTemplate.Height = 30;
+            this.dgw.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgw.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgw.Size = new System.Drawing.Size(1068, 210);
+            this.dgw.TabIndex = 500;
+            this.dgw.Visible = false;
+            this.dgw.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_CellContentClick);
+            this.dgw.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgw_MouseDoubleClick);
+            // 
+            // DataGridViewTextBoxColumn1
+            // 
+            this.DataGridViewTextBoxColumn1.HeaderText = "PID";
+            this.DataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1";
+            this.DataGridViewTextBoxColumn1.ReadOnly = true;
+            this.DataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // DataGridViewTextBoxColumn2
+            // 
+            this.DataGridViewTextBoxColumn2.HeaderText = "كود الصنف";
+            this.DataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2";
+            this.DataGridViewTextBoxColumn2.ReadOnly = true;
+            this.DataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // DataGridViewTextBoxColumn3
+            // 
+            this.DataGridViewTextBoxColumn3.FillWeight = 16.33216F;
+            this.DataGridViewTextBoxColumn3.HeaderText = "اسم الصنف";
+            this.DataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3";
+            this.DataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // DataGridViewTextBoxColumn4
+            // 
+            this.DataGridViewTextBoxColumn4.FillWeight = 4.736325F;
+            this.DataGridViewTextBoxColumn4.HeaderText = "الباركود";
+            this.DataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4";
+            this.DataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // DataGridViewTextBoxColumn5
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.DataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataGridViewTextBoxColumn5.FillWeight = 7.021714F;
+            this.DataGridViewTextBoxColumn5.HeaderText = "سعر التكلفة";
+            this.DataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5";
+            this.DataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // DataGridViewTextBoxColumn6
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.DataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle4;
+            this.DataGridViewTextBoxColumn6.FillWeight = 2.354234F;
+            this.DataGridViewTextBoxColumn6.HeaderText = "السعر";
+            this.DataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6";
+            this.DataGridViewTextBoxColumn6.ReadOnly = true;
+            this.DataGridViewTextBoxColumn6.Visible = false;
+            // 
+            // DataGridViewTextBoxColumn7
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.DataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle5;
+            this.DataGridViewTextBoxColumn7.HeaderText = "الخصم";
+            this.DataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7";
+            this.DataGridViewTextBoxColumn7.ReadOnly = true;
+            this.DataGridViewTextBoxColumn7.Visible = false;
+            // 
+            // DataGridViewTextBoxColumn8
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.DataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle6;
+            this.DataGridViewTextBoxColumn8.HeaderText = "الضريبة";
+            this.DataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8";
+            this.DataGridViewTextBoxColumn8.ReadOnly = true;
+            this.DataGridViewTextBoxColumn8.Visible = false;
+            // 
+            // DataGridViewTextBoxColumn9
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle7;
+            this.DataGridViewTextBoxColumn9.FillWeight = 4.736325F;
+            this.DataGridViewTextBoxColumn9.HeaderText = "الكمية المتوفرة";
+            this.DataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9";
+            this.DataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // Column18
+            // 
+            this.Column18.HeaderText = "سعرالجملة";
+            this.Column18.MinimumWidth = 6;
+            this.Column18.Name = "Column18";
+            this.Column18.ReadOnly = true;
+            this.Column18.Visible = false;
             // 
             // OpenFileDialog1
             // 
@@ -536,7 +861,7 @@
             this.Label2.BackColor = System.Drawing.SystemColors.Control;
             this.Label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label2.ForeColor = System.Drawing.Color.Black;
-            this.Label2.Location = new System.Drawing.Point(396, 75);
+            this.Label2.Location = new System.Drawing.Point(395, 75);
             this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(149, 32);
@@ -550,27 +875,30 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Panel2.Controls.Add(this.Cprice);
+            this.Panel2.Controls.Add(this.CUID);
             this.Panel2.Controls.Add(this.lblUserType);
             this.Panel2.Controls.Add(this.txtProductID);
+            this.Panel2.Controls.Add(this.WID);
+            this.Panel2.Controls.Add(this.pictureBox1);
             this.Panel2.Controls.Add(this.lblSet);
             this.Panel2.Controls.Add(this.lblUser);
             this.Panel2.Controls.Add(this.txtSup_ID);
             this.Panel2.Controls.Add(this.txtST_ID);
             this.Panel2.Controls.Add(this.Label1);
-            this.Panel2.Location = new System.Drawing.Point(13, 9);
+            this.Panel2.Location = new System.Drawing.Point(13, 3);
             this.Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(1325, 76);
+            this.Panel2.Size = new System.Drawing.Size(1603, 62);
             this.Panel2.TabIndex = 0;
             // 
-            // Cprice
+            // CUID
             // 
-            this.Cprice.Location = new System.Drawing.Point(319, 27);
-            this.Cprice.Margin = new System.Windows.Forms.Padding(4);
-            this.Cprice.Name = "Cprice";
-            this.Cprice.Size = new System.Drawing.Size(45, 22);
-            this.Cprice.TabIndex = 313;
+            this.CUID.Location = new System.Drawing.Point(367, 28);
+            this.CUID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CUID.Name = "CUID";
+            this.CUID.Size = new System.Drawing.Size(53, 22);
+            this.CUID.TabIndex = 377;
+            this.CUID.Visible = false;
             // 
             // lblUserType
             // 
@@ -591,6 +919,23 @@
             this.txtProductID.Size = new System.Drawing.Size(45, 22);
             this.txtProductID.TabIndex = 311;
             this.txtProductID.Visible = false;
+            // 
+            // WID
+            // 
+            this.WID.Location = new System.Drawing.Point(289, 27);
+            this.WID.Margin = new System.Windows.Forms.Padding(4);
+            this.WID.Name = "WID";
+            this.WID.Size = new System.Drawing.Size(45, 22);
+            this.WID.TabIndex = 377;
+            this.WID.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(1092, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 378;
+            this.pictureBox1.TabStop = false;
             // 
             // lblSet
             // 
@@ -638,7 +983,7 @@
             this.Label1.BackColor = System.Drawing.Color.Transparent;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.Label1.ForeColor = System.Drawing.Color.White;
-            this.Label1.Location = new System.Drawing.Point(507, 17);
+            this.Label1.Location = new System.Drawing.Point(608, 5);
             this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(180, 36);
@@ -649,7 +994,7 @@
             // 
             this.txtRemarks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRemarks.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtRemarks.Location = new System.Drawing.Point(121, 149);
+            this.txtRemarks.Location = new System.Drawing.Point(139, 189);
             this.txtRemarks.Margin = new System.Windows.Forms.Padding(4);
             this.txtRemarks.Name = "txtRemarks";
             this.txtRemarks.Size = new System.Drawing.Size(241, 72);
@@ -663,7 +1008,7 @@
             this.Label12.BackColor = System.Drawing.SystemColors.Control;
             this.Label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label12.ForeColor = System.Drawing.Color.Black;
-            this.Label12.Location = new System.Drawing.Point(396, 149);
+            this.Label12.Location = new System.Drawing.Point(395, 190);
             this.Label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label12.Name = "Label12";
             this.Label12.Size = new System.Drawing.Size(149, 34);
@@ -680,7 +1025,7 @@
             this.cmbPurchaseType.Items.AddRange(new object[] {
             "كاش",
             "أجل"});
-            this.cmbPurchaseType.Location = new System.Drawing.Point(121, 112);
+            this.cmbPurchaseType.Location = new System.Drawing.Point(139, 112);
             this.cmbPurchaseType.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPurchaseType.Name = "cmbPurchaseType";
             this.cmbPurchaseType.Size = new System.Drawing.Size(241, 31);
@@ -693,7 +1038,7 @@
             this.Label5.BackColor = System.Drawing.SystemColors.Control;
             this.Label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label5.ForeColor = System.Drawing.Color.Black;
-            this.Label5.Location = new System.Drawing.Point(396, 111);
+            this.Label5.Location = new System.Drawing.Point(395, 111);
             this.Label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(149, 34);
@@ -707,7 +1052,7 @@
             this.dtpDate.CustomFormat = "dd/MM/yyyy";
             this.dtpDate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDate.Location = new System.Drawing.Point(121, 75);
+            this.dtpDate.Location = new System.Drawing.Point(139, 75);
             this.dtpDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(241, 30);
@@ -719,7 +1064,7 @@
             this.Label3.BackColor = System.Drawing.SystemColors.Control;
             this.Label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label3.ForeColor = System.Drawing.Color.Black;
-            this.Label3.Location = new System.Drawing.Point(396, 37);
+            this.Label3.Location = new System.Drawing.Point(395, 37);
             this.Label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(149, 32);
@@ -732,7 +1077,7 @@
             this.txtInvoiceNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtInvoiceNo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtInvoiceNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtInvoiceNo.Location = new System.Drawing.Point(121, 37);
+            this.txtInvoiceNo.Location = new System.Drawing.Point(139, 37);
             this.txtInvoiceNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtInvoiceNo.Name = "txtInvoiceNo";
             this.txtInvoiceNo.Size = new System.Drawing.Size(241, 30);
@@ -741,9 +1086,12 @@
             // 
             // GroupBox1
             // 
-            this.GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.GroupBox1.BackColor = System.Drawing.Color.White;
+            this.GroupBox1.Controls.Add(this.label22);
+            this.GroupBox1.Controls.Add(this.Cprice);
+            this.GroupBox1.Controls.Add(this.label25);
+            this.GroupBox1.Controls.Add(this.comboBox1);
             this.GroupBox1.Controls.Add(this.txtRemarks);
             this.GroupBox1.Controls.Add(this.Label12);
             this.GroupBox1.Controls.Add(this.cmbPurchaseType);
@@ -753,15 +1101,67 @@
             this.GroupBox1.Controls.Add(this.txtInvoiceNo);
             this.GroupBox1.Controls.Add(this.Label2);
             this.GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.GroupBox1.Location = new System.Drawing.Point(523, 92);
+            this.GroupBox1.Location = new System.Drawing.Point(695, 94);
             this.GroupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.GroupBox1.Size = new System.Drawing.Size(648, 247);
+            this.GroupBox1.Size = new System.Drawing.Size(574, 271);
             this.GroupBox1.TabIndex = 0;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "معلومات الفاتورة";
-            this.GroupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.BackColor = System.Drawing.SystemColors.Control;
+            this.label22.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(394, 150);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(149, 34);
+            this.label22.TabIndex = 376;
+            this.label22.Text = "العملة :";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Cprice
+            // 
+            this.Cprice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Cprice.AutoSize = true;
+            this.Cprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cprice.Location = new System.Drawing.Point(69, 184);
+            this.Cprice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Cprice.Name = "Cprice";
+            this.Cprice.Size = new System.Drawing.Size(18, 20);
+            this.Cprice.TabIndex = 375;
+            this.Cprice.Text = "1";
+            // 
+            // label25
+            // 
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(42, 157);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(77, 18);
+            this.label25.TabIndex = 374;
+            this.label25.Text = "سعر العملة:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "اختر عملة"});
+            this.comboBox1.Location = new System.Drawing.Point(139, 151);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(241, 31);
+            this.comboBox1.TabIndex = 373;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // txtVATAmt
             // 
@@ -940,10 +1340,10 @@
             this.Label19.BackColor = System.Drawing.Color.Firebrick;
             this.Label19.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label19.ForeColor = System.Drawing.Color.White;
-            this.Label19.Location = new System.Drawing.Point(157, 346);
+            this.Label19.Location = new System.Drawing.Point(165, 346);
             this.Label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label19.Name = "Label19";
-            this.Label19.Size = new System.Drawing.Size(184, 33);
+            this.Label19.Size = new System.Drawing.Size(179, 33);
             this.Label19.TabIndex = 96;
             this.Label19.Text = "إجمالي المدفوع :";
             this.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1001,8 +1401,6 @@
             // 
             // pnlCalc
             // 
-            this.pnlCalc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlCalc.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.pnlCalc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlCalc.Controls.Add(this.txtVATAmt);
@@ -1032,10 +1430,10 @@
             this.pnlCalc.Controls.Add(this.txtSubTotal);
             this.pnlCalc.Controls.Add(this.Label31);
             this.pnlCalc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.pnlCalc.Location = new System.Drawing.Point(4, 345);
+            this.pnlCalc.Location = new System.Drawing.Point(9, 346);
             this.pnlCalc.Margin = new System.Windows.Forms.Padding(4);
             this.pnlCalc.Name = "pnlCalc";
-            this.pnlCalc.Size = new System.Drawing.Size(343, 444);
+            this.pnlCalc.Size = new System.Drawing.Size(343, 427);
             this.pnlCalc.TabIndex = 313;
             // 
             // txtTotalPaid
@@ -1125,11 +1523,9 @@
             // 
             // Panel1
             // 
-            this.Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel1.BackColor = System.Drawing.Color.White;
             this.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Panel1.Controls.Add(this.dgw);
             this.Panel1.Controls.Add(this.pnlCalc);
             this.Panel1.Controls.Add(this.gbPartyInfo);
             this.Panel1.Controls.Add(this.DataGridView1);
@@ -1137,22 +1533,27 @@
             this.Panel1.Controls.Add(this.Panel3);
             this.Panel1.Controls.Add(this.Panel2);
             this.Panel1.Controls.Add(this.GroupBox1);
-            this.Panel1.Location = new System.Drawing.Point(7, 0);
+            this.Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel1.Location = new System.Drawing.Point(0, 0);
             this.Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1348, 987);
-            this.Panel1.TabIndex = 3;
+            this.Panel1.Size = new System.Drawing.Size(1629, 842);
+            this.Panel1.TabIndex = 0;
+            this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // gbPartyInfo
             // 
             this.gbPartyInfo.BackColor = System.Drawing.Color.White;
+            this.gbPartyInfo.Controls.Add(this.lblBalanceCC);
+            this.gbPartyInfo.Controls.Add(this.lblBalanceByC);
+            this.gbPartyInfo.Controls.Add(this.label33);
+            this.gbPartyInfo.Controls.Add(this.txtContactNo);
+            this.gbPartyInfo.Controls.Add(this.txtSupplierName);
             this.gbPartyInfo.Controls.Add(this.btnSelection);
             this.gbPartyInfo.Controls.Add(this.Label10);
             this.gbPartyInfo.Controls.Add(this.txtSupplierID);
             this.gbPartyInfo.Controls.Add(this.lblBalance);
             this.gbPartyInfo.Controls.Add(this.Label11);
-            this.gbPartyInfo.Controls.Add(this.txtContactNo);
-            this.gbPartyInfo.Controls.Add(this.txtSupplierName);
             this.gbPartyInfo.Controls.Add(this.txtCity);
             this.gbPartyInfo.Controls.Add(this.txtAddress);
             this.gbPartyInfo.Controls.Add(this.Label26);
@@ -1160,20 +1561,84 @@
             this.gbPartyInfo.Controls.Add(this.Label30);
             this.gbPartyInfo.Controls.Add(this.Label36);
             this.gbPartyInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.gbPartyInfo.Location = new System.Drawing.Point(15, 92);
+            this.gbPartyInfo.Location = new System.Drawing.Point(9, 94);
             this.gbPartyInfo.Margin = new System.Windows.Forms.Padding(4);
             this.gbPartyInfo.Name = "gbPartyInfo";
             this.gbPartyInfo.Padding = new System.Windows.Forms.Padding(4);
-            this.gbPartyInfo.Size = new System.Drawing.Size(508, 247);
+            this.gbPartyInfo.Size = new System.Drawing.Size(603, 247);
             this.gbPartyInfo.TabIndex = 1;
             this.gbPartyInfo.TabStop = false;
             this.gbPartyInfo.Text = "معلومات المورد";
+            // 
+            // lblBalanceCC
+            // 
+            this.lblBalanceCC.AutoSize = true;
+            this.lblBalanceCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBalanceCC.ForeColor = System.Drawing.Color.Maroon;
+            this.lblBalanceCC.Location = new System.Drawing.Point(40, 147);
+            this.lblBalanceCC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBalanceCC.Name = "lblBalanceCC";
+            this.lblBalanceCC.Size = new System.Drawing.Size(24, 25);
+            this.lblBalanceCC.TabIndex = 41;
+            this.lblBalanceCC.Text = "0";
+            this.lblBalanceCC.Visible = false;
+            // 
+            // lblBalanceByC
+            // 
+            this.lblBalanceByC.AutoSize = true;
+            this.lblBalanceByC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.lblBalanceByC.ForeColor = System.Drawing.Color.Maroon;
+            this.lblBalanceByC.Location = new System.Drawing.Point(17, 216);
+            this.lblBalanceByC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBalanceByC.Name = "lblBalanceByC";
+            this.lblBalanceByC.Size = new System.Drawing.Size(17, 18);
+            this.lblBalanceByC.TabIndex = 39;
+            this.lblBalanceByC.Text = "0";
+            // 
+            // label33
+            // 
+            this.label33.BackColor = System.Drawing.Color.Firebrick;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(155, 208);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(125, 28);
+            this.label33.TabIndex = 40;
+            this.label33.Text = "الرصيد بالعملة :";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtContactNo
+            // 
+            this.txtContactNo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtContactNo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtContactNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.txtContactNo.FormattingEnabled = true;
+            this.txtContactNo.Location = new System.Drawing.Point(131, 169);
+            this.txtContactNo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContactNo.Name = "txtContactNo";
+            this.txtContactNo.Size = new System.Drawing.Size(312, 31);
+            this.txtContactNo.TabIndex = 38;
+            this.txtContactNo.SelectedIndexChanged += new System.EventHandler(this.txtContactNo_SelectedIndexChanged);
+            // 
+            // txtSupplierName
+            // 
+            this.txtSupplierName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtSupplierName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtSupplierName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.txtSupplierName.FormattingEnabled = true;
+            this.txtSupplierName.Location = new System.Drawing.Point(134, 63);
+            this.txtSupplierName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSupplierName.Name = "txtSupplierName";
+            this.txtSupplierName.Size = new System.Drawing.Size(312, 31);
+            this.txtSupplierName.TabIndex = 37;
+            this.txtSupplierName.SelectedIndexChanged += new System.EventHandler(this.txtSupplierName_SelectedIndexChanged_1);
             // 
             // btnSelection
             // 
             this.btnSelection.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelection.Image = ((System.Drawing.Image)(resources.GetObject("btnSelection.Image")));
-            this.btnSelection.Location = new System.Drawing.Point(83, 23);
+            this.btnSelection.Location = new System.Drawing.Point(134, 25);
             this.btnSelection.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelection.Name = "btnSelection";
             this.btnSelection.Size = new System.Drawing.Size(41, 32);
@@ -1186,7 +1651,7 @@
             this.Label10.BackColor = System.Drawing.SystemColors.Control;
             this.Label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label10.ForeColor = System.Drawing.Color.Black;
-            this.Label10.Location = new System.Drawing.Point(352, 63);
+            this.Label10.Location = new System.Drawing.Point(451, 63);
             this.Label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label10.Name = "Label10";
             this.Label10.Size = new System.Drawing.Size(135, 32);
@@ -1198,81 +1663,60 @@
             // 
             this.txtSupplierID.BackColor = System.Drawing.SystemColors.Control;
             this.txtSupplierID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSupplierID.Location = new System.Drawing.Point(128, 27);
+            this.txtSupplierID.Location = new System.Drawing.Point(208, 27);
             this.txtSupplierID.Margin = new System.Windows.Forms.Padding(4);
             this.txtSupplierID.Name = "txtSupplierID";
             this.txtSupplierID.ReadOnly = true;
-            this.txtSupplierID.Size = new System.Drawing.Size(195, 30);
+            this.txtSupplierID.Size = new System.Drawing.Size(236, 30);
             this.txtSupplierID.TabIndex = 0;
             this.txtSupplierID.TextChanged += new System.EventHandler(this.txtSupplierID_TextChanged);
             // 
             // lblBalance
             // 
             this.lblBalance.AutoSize = true;
-            this.lblBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.lblBalance.ForeColor = System.Drawing.Color.Maroon;
-            this.lblBalance.Location = new System.Drawing.Point(188, 204);
+            this.lblBalance.Location = new System.Drawing.Point(306, 213);
             this.lblBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(24, 25);
+            this.lblBalance.Size = new System.Drawing.Size(17, 18);
             this.lblBalance.TabIndex = 5;
             this.lblBalance.Text = "0";
+            this.lblBalance.Click += new System.EventHandler(this.lblBalance_Click);
             // 
             // Label11
             // 
             this.Label11.BackColor = System.Drawing.Color.Firebrick;
-            this.Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.Label11.ForeColor = System.Drawing.Color.White;
-            this.Label11.Location = new System.Drawing.Point(352, 206);
+            this.Label11.Location = new System.Drawing.Point(489, 208);
             this.Label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label11.Name = "Label11";
-            this.Label11.Size = new System.Drawing.Size(136, 32);
+            this.Label11.Size = new System.Drawing.Size(96, 28);
             this.Label11.TabIndex = 34;
             this.Label11.Text = "الرصيد :";
             this.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtContactNo
-            // 
-            this.txtContactNo.BackColor = System.Drawing.SystemColors.Control;
-            this.txtContactNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtContactNo.Location = new System.Drawing.Point(52, 169);
-            this.txtContactNo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtContactNo.Name = "txtContactNo";
-            this.txtContactNo.ReadOnly = true;
-            this.txtContactNo.Size = new System.Drawing.Size(271, 30);
-            this.txtContactNo.TabIndex = 4;
-            // 
-            // txtSupplierName
-            // 
-            this.txtSupplierName.BackColor = System.Drawing.SystemColors.Control;
-            this.txtSupplierName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSupplierName.Location = new System.Drawing.Point(52, 63);
-            this.txtSupplierName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSupplierName.Name = "txtSupplierName";
-            this.txtSupplierName.ReadOnly = true;
-            this.txtSupplierName.Size = new System.Drawing.Size(271, 30);
-            this.txtSupplierName.TabIndex = 1;
             // 
             // txtCity
             // 
             this.txtCity.BackColor = System.Drawing.SystemColors.Control;
             this.txtCity.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtCity.Location = new System.Drawing.Point(52, 133);
+            this.txtCity.Location = new System.Drawing.Point(132, 133);
             this.txtCity.Margin = new System.Windows.Forms.Padding(4);
             this.txtCity.Name = "txtCity";
             this.txtCity.ReadOnly = true;
-            this.txtCity.Size = new System.Drawing.Size(271, 30);
+            this.txtCity.Size = new System.Drawing.Size(312, 30);
             this.txtCity.TabIndex = 3;
             // 
             // txtAddress
             // 
             this.txtAddress.BackColor = System.Drawing.SystemColors.Control;
             this.txtAddress.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtAddress.Location = new System.Drawing.Point(52, 97);
+            this.txtAddress.Location = new System.Drawing.Point(132, 97);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.ReadOnly = true;
-            this.txtAddress.Size = new System.Drawing.Size(271, 30);
+            this.txtAddress.Size = new System.Drawing.Size(312, 30);
             this.txtAddress.TabIndex = 2;
             this.txtAddress.TextChanged += new System.EventHandler(this.txtAddress_TextChanged);
             // 
@@ -1281,7 +1725,7 @@
             this.Label26.BackColor = System.Drawing.SystemColors.Control;
             this.Label26.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label26.ForeColor = System.Drawing.Color.Black;
-            this.Label26.Location = new System.Drawing.Point(352, 169);
+            this.Label26.Location = new System.Drawing.Point(451, 169);
             this.Label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label26.Name = "Label26";
             this.Label26.Size = new System.Drawing.Size(135, 32);
@@ -1294,7 +1738,7 @@
             this.Label29.BackColor = System.Drawing.SystemColors.Control;
             this.Label29.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label29.ForeColor = System.Drawing.Color.Black;
-            this.Label29.Location = new System.Drawing.Point(352, 133);
+            this.Label29.Location = new System.Drawing.Point(451, 133);
             this.Label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label29.Name = "Label29";
             this.Label29.Size = new System.Drawing.Size(135, 32);
@@ -1307,7 +1751,7 @@
             this.Label30.BackColor = System.Drawing.SystemColors.Control;
             this.Label30.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label30.ForeColor = System.Drawing.Color.Black;
-            this.Label30.Location = new System.Drawing.Point(352, 97);
+            this.Label30.Location = new System.Drawing.Point(451, 97);
             this.Label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label30.Name = "Label30";
             this.Label30.Size = new System.Drawing.Size(135, 32);
@@ -1320,7 +1764,7 @@
             this.Label36.BackColor = System.Drawing.SystemColors.Control;
             this.Label36.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label36.ForeColor = System.Drawing.Color.Black;
-            this.Label36.Location = new System.Drawing.Point(352, 27);
+            this.Label36.Location = new System.Drawing.Point(451, 27);
             this.Label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label36.Name = "Label36";
             this.Label36.Size = new System.Drawing.Size(135, 32);
@@ -1332,23 +1776,22 @@
             // 
             this.DataGridView1.AllowUserToAddRows = false;
             this.DataGridView1.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.LightBlue;
-            this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
-            this.DataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.LightBlue;
+            this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.DataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.7F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.DataGridView1.ColumnHeadersHeight = 33;
             this.DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -1360,40 +1803,41 @@
             this.Column6,
             this.Column8});
             this.DataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle15;
+            this.DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.DataGridView1.EnableHeadersVisualStyles = false;
             this.DataGridView1.GridColor = System.Drawing.Color.White;
-            this.DataGridView1.Location = new System.Drawing.Point(372, 558);
+            this.DataGridView1.Location = new System.Drawing.Point(363, 546);
             this.DataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.DataGridView1.RowHeadersWidth = 25;
             this.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
-            this.DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.White;
+            this.DataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle17;
             this.DataGridView1.RowTemplate.Height = 25;
             this.DataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView1.Size = new System.Drawing.Size(962, 231);
+            this.DataGridView1.Size = new System.Drawing.Size(1253, 229);
             this.DataGridView1.TabIndex = 5;
             this.DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             this.DataGridView1.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.DataGridView1_RowPostPaint);
@@ -1401,12 +1845,10 @@
             // 
             // Column1
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.Column1.HeaderText = "PID";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.Visible = false;
-            this.Column1.Width = 125;
             // 
             // Column2
             // 
@@ -1416,6 +1858,7 @@
             // 
             // Column3
             // 
+            this.Column3.FillWeight = 200F;
             this.Column3.HeaderText = "اسم الصنف";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
@@ -1428,56 +1871,49 @@
             // 
             // Column4
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle12;
             this.Column4.HeaderText = "الكمية";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
-            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column5
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle13;
             this.Column5.HeaderText = "سعر الوحدة";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             // 
             // Column6
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle13;
-            this.Column6.HeaderText = "المجموع";
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle14;
+            this.Column6.HeaderText = "المجموع بالعملة";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             // 
             // Column8
             // 
-            this.Column8.HeaderText = "نوع العملة";
+            this.Column8.HeaderText = "المجموع بالجنية";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             // 
-            // button3
+            // searchtime
             // 
-            this.button3.BackColor = System.Drawing.Color.SkyBlue;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(295, 102);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 39);
-            this.button3.TabIndex = 316;
-            this.button3.Text = "تفريغ";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.searchtime.Tick += new System.EventHandler(this.searchtime_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Pymentinvoice
             // 
             this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1357, 935);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1629, 842);
             this.Controls.Add(this.Panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1490,8 +1926,10 @@
             this.Panel3.ResumeLayout(false);
             this.GroupBox2.ResumeLayout(false);
             this.GroupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgw)).EndInit();
             this.Panel2.ResumeLayout(false);
             this.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
             this.pnlCalc.ResumeLayout(false);
@@ -1515,7 +1953,6 @@
         internal System.Windows.Forms.Button Button1;
         internal System.Windows.Forms.GroupBox GroupBox2;
         internal System.Windows.Forms.OpenFileDialog OpenFileDialog1;
-        internal System.Windows.Forms.Timer Timer1;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Panel Panel2;
         internal System.Windows.Forms.Label lblUserType;
@@ -1552,7 +1989,7 @@
         internal System.Windows.Forms.Label Label16;
         internal System.Windows.Forms.TextBox txtRoundOff;
         internal System.Windows.Forms.Panel pnlCalc;
-        internal System.Windows.Forms.TextBox txtTotalPaid;
+        public System.Windows.Forms.TextBox txtTotalPaid;
         internal System.Windows.Forms.TextBox txtGrandTotal;
         internal System.Windows.Forms.TextBox txtOtherCharges;
         internal System.Windows.Forms.TextBox txtFreightCharges;
@@ -1560,14 +1997,11 @@
         internal System.Windows.Forms.TextBox txtSubTotal;
         internal System.Windows.Forms.Label Label31;
         internal System.Windows.Forms.Panel Panel1;
-        internal System.Windows.Forms.GroupBox gbPartyInfo;
         internal System.Windows.Forms.Button btnSelection;
         internal System.Windows.Forms.Label Label10;
         internal System.Windows.Forms.TextBox txtSupplierID;
         internal System.Windows.Forms.Label lblBalance;
         internal System.Windows.Forms.Label Label11;
-        internal System.Windows.Forms.TextBox txtContactNo;
-        internal System.Windows.Forms.TextBox txtSupplierName;
         internal System.Windows.Forms.TextBox txtCity;
         internal System.Windows.Forms.TextBox txtAddress;
         internal System.Windows.Forms.Label Label26;
@@ -1590,9 +2024,28 @@
         internal System.Windows.Forms.Button btnUpdate;
         internal System.Windows.Forms.Button button2;
         internal System.Windows.Forms.Label lblSet;
+        internal System.Windows.Forms.Label Cprice;
+        internal System.Windows.Forms.Label label25;
+        internal System.Windows.Forms.ComboBox comboBox1;
         internal System.Windows.Forms.Label label22;
-        internal System.Windows.Forms.TextBox Cprice;
-        internal System.Windows.Forms.TextBox currencies;
+        internal System.Windows.Forms.TextBox CUID;
+        internal System.Windows.Forms.Button button3;
+        internal System.Windows.Forms.Button button4;
+        internal System.Windows.Forms.Button button5;
+        internal System.Windows.Forms.DataGridView dgw;
+        internal System.Windows.Forms.ComboBox comboBox2;
+        internal System.Windows.Forms.TextBox WNeame;
+        internal System.Windows.Forms.Label label27;
+        internal System.Windows.Forms.TextBox WID;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.GroupBox gbPartyInfo;
+        internal System.Windows.Forms.Timer Timer1;
+        internal System.Windows.Forms.Timer searchtime;
+        internal System.Windows.Forms.Timer timer2;
+        internal System.Windows.Forms.ComboBox txtSupplierName;
+        internal System.Windows.Forms.ComboBox txtContactNo;
+        internal System.Windows.Forms.TextBox textBox2;
+        internal System.Windows.Forms.Label label28;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -1601,6 +2054,20 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        internal System.Windows.Forms.Button button3;
+        internal System.Windows.Forms.Label lblBalanceByC;
+        internal System.Windows.Forms.Label label33;
+        internal System.Windows.Forms.Label lblBalanceCC;
+        internal System.Windows.Forms.Button btnListUpdate;
+        internal System.Windows.Forms.Button button6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
     }
 }

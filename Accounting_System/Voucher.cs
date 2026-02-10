@@ -1,5 +1,4 @@
-﻿using Pharmacy.DL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,27 +13,22 @@ namespace Accounting_System
 {
     public partial class Voucher : Form
     {
-     
-        SqlConnection con = new SqlConnection(DataAccessLayer.Con());
+        public static Voucher instance;
         public Voucher()
         {
-            
             InitializeComponent();
             txtParticulars.Text = "0";
             DataGridView1.MouseClick += new MouseEventHandler(DataGridView1_MouseClick);
             txtAmount.KeyPress += new KeyPressEventHandler(txtAmount_KeyPress);
+            instance = this;
+            fillSaleMan();
         }
 
-        private void Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         public void Reset()
         {
             txtVoucherID.Text = string.Empty;
             txtName.Text = string.Empty;
             txtDetails.Text = string.Empty;
-          //  txtParticulars.Text = string.Empty;
             txtNotes.Text = string.Empty;
             txtVoucherNo.Text = string.Empty;
             txtAmount.Text = string.Empty;
@@ -50,14 +44,15 @@ namespace Accounting_System
             Clear();
             auto();
         }
+
         private void Clear()
         {
-          //  txtParticulars.Text = string.Empty;
             txtAmount.Text = string.Empty;
             txtNotes.Text = string.Empty;
             btnAdd.Enabled = true;
             btnRemove.Enabled = false;
         }
+
         public double GrandTotal()
         {
             double sum = 0;
@@ -65,12 +60,13 @@ namespace Accounting_System
             {
                 foreach (DataGridViewRow r in this.DataGridView1.Rows)
                 {
-                    sum += Convert.ToDouble(r.Cells[1].Value);
+                    if (r.Cells[1].Value != null)
+                        sum += Convert.ToDouble(r.Cells[1].Value);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
             return sum;
         }
@@ -78,95 +74,74 @@ namespace Accounting_System
         private void btnNew_Click(object sender, EventArgs e)
         {
             Reset();
-            Reset();
         }
+
         private string GenerateID()
         {
             string value = "0000";
-            using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
+            try
             {
-                try
+                string query = "SELECT TOP 1 ID FROM Voucher ORDER BY ID DESC";
+                object result = DataAccessLayer.ExecuteScalar(query, CommandType.Text);
+                if (result != null && result != DBNull.Value)
                 {
-                    // Fetch the latest ID from the database
-                    con.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT TOP 1 ID FROM Voucher ORDER BY ID DESC", con))
-                    {
-                        SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-                        if (rdr.HasRows)
-                        {
-                            rdr.Read();
-                            value = rdr["ID"].ToString();
-                        }
-                        rdr.Close();
-                    }
-
-                    // Increase the ID by 1
-                    value = (int.Parse(value) + 1).ToString();
-
-                    // Ensure the ID is 4 digits long
-                    value = value.PadLeft(4, '0');
+                    value = result.ToString();
                 }
-                catch (Exception ex)
-                {
-                    // Handle any errors and reset the ID to "0000"
-                    if (con.State == ConnectionState.Open)
-                    {
-                        con.Close();
-                    }
-                    value = "0000";
-                }
+                value = (int.Parse(value) + 1).ToString().PadLeft(4, '0');
+            }
+            catch
+            {
+                value = "0001";
             }
             return value;
         }
+
         private void auto()
         {
             try
             {
-                txtVoucherID.Text = GenerateID();
-                txtVoucherNo.Text = "V-" + GenerateID();
+                string id = GenerateID();
+                txtVoucherID.Text = id;
+                txtVoucherNo.Text = "V-" + id;
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
+
         private void Print()
         {
             try
             {
+                rptVoucher rpt = new rptVoucher();
+                DataSet myDS = new DataSet();
 
+                string queryVoucher = "SELECT Voucher.ID, Voucher.VoucherNo, Voucher.Date, Voucher.Name, Voucher.Details, Voucher.GrandTotal, " +
+                                     "Voucher_OtherDetails.VD_ID, Voucher_OtherDetails.VoucherID, Voucher_OtherDetails.Particulars, " +
+                                     "Voucher_OtherDetails.Amount, Voucher_OtherDetails.Note " +
+                                     "FROM Voucher " +
+                                     "INNER JOIN Voucher_OtherDetails ON Voucher.ID = Voucher_OtherDetails.VoucherID " +
+                                     "WHERE VoucherNo = @VoucherNo";
 
-                rptVoucher rpt = new rptVoucher(); // The report you created.
-                SqlConnection myConnection = new SqlConnection(DataAccessLayer.Con());
-                SqlCommand MyCommand = new SqlCommand();
-                SqlCommand MyCommand1 = new SqlCommand();
-                SqlDataAdapter myDA = new SqlDataAdapter();
-                SqlDataAdapter myDA1 = new SqlDataAdapter();
-                DataSet myDS = new DataSet(); // The DataSet you created.
-
-                MyCommand.Connection = myConnection;
-                MyCommand1.Connection = myConnection;
-
-                MyCommand.CommandText = "SELECT Voucher.ID, Voucher.VoucherNo, Voucher.Date, Voucher.Name, Voucher.Details, Voucher.GrandTotal, " +
-                                        "Voucher_OtherDetails.VD_ID, Voucher_OtherDetails.VoucherID, Voucher_OtherDetails.Particulars, " +
-                                        "Voucher_OtherDetails.Amount, Voucher_OtherDetails.Note " +
-                                        "FROM Voucher " +
-                                        "INNER JOIN Voucher_OtherDetails ON Voucher.ID = Voucher_OtherDetails.VoucherID " +
-                                        "WHERE VoucherNo = @VoucherNo";
-
-                MyCommand1.CommandText = "SELECT * FROM Company";
-
-                MyCommand.CommandType = CommandType.Text;
-                MyCommand1.CommandType = CommandType.Text;
-
-                MyCommand.Parameters.AddWithValue("@VoucherNo", txtVoucherNo.Text);
-
-                myDA.SelectCommand = MyCommand;
-                myDA1.SelectCommand = MyCommand1;
-
-                myDA.Fill(myDS, "Voucher");
-                myDA.Fill(myDS, "Voucher_OtherDetails");
-                myDA1.Fill(myDS, "Company");
+                SqlParameter[] parameters = { new SqlParameter("@VoucherNo", txtVoucherNo.Text) };
+                
+                using (SqlConnection connection = new SqlConnection(DataAccessLayer.Con()))
+                {
+                    using (SqlCommand cmd = new SqlCommand(queryVoucher, connection))
+                    {
+                        cmd.Parameters.AddRange(parameters);
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        da.Fill(myDS, "Voucher");
+                        da.Fill(myDS, "Voucher_OtherDetails");
+                    }
+                    
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM Company", connection))
+                    {
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        da.Fill(myDS, "Company");
+                    }
+                }
 
                 rpt.SetDataSource(myDS);
                 frmReport frmReport = new frmReport();
@@ -175,77 +150,71 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
+
         public void DeleteRecord()
         {
             try
             {
-                int RowsAffected = 0;
-                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
-                {
-                    con.Open();
-                    string ct = "DELETE FROM Voucher WHERE ID = @ID";
-                    using (SqlCommand cmd = new SqlCommand(ct, con))
-                    {
-                        cmd.Parameters.AddWithValue("@ID", txtVoucherID.Text);
-                        RowsAffected = cmd.ExecuteNonQuery();
-                    }
-                }
+                string query = "DELETE FROM Voucher WHERE ID = @ID";
+                SqlParameter[] parameters = { new SqlParameter("@ID", txtVoucherID.Text) };
+                int RowsAffected = DataAccessLayer.ExecuteNonQuery(query, CommandType.Text, parameters);
 
                 if (RowsAffected > 0)
                 {
                     LedgerDelete(txtVoucherNo.Text, "مصروفات");
-                    string st = "deleted the voucher having voucher no. '" + txtVoucherNo.Text + "'";
-                    LogFunc(lblUser.Text, st);
-                    MessageBox.Show("تم الحذف بنجاح", "السجلات", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LogFunc(lblUser.Text, "deleted the voucher having voucher no. '" + txtVoucherNo.Text + "'");
+                    System.Windows.Forms.MessageBox.Show("تم الحذف بنجاح", "السجلات", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
                     Reset();
                 }
                 else
                 {
-                    MessageBox.Show("لا يوجد سجلات", "عذراً", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    System.Windows.Forms.MessageBox.Show("لا يوجد سجلات", "عذراً", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
                     Reset();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
+
         public static void LogFunc(string st1, string st2)
         {
-            using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
+            try
             {
-                con.Open();
-                string cb = "INSERT INTO Logs(UserID, Date, Operation) VALUES (@d1, @d2, @d3)";
-                using (var cmd = new SqlCommand(cb, con))
-                {
-                    cmd.Parameters.AddWithValue("@d1", st1);
-                    cmd.Parameters.AddWithValue("@d2", DateTime.Now);
-                    cmd.Parameters.AddWithValue("@d3", st2);
-                    cmd.ExecuteReader();
-                }
+                string query = "INSERT INTO Logs(UserID, Date, Operation) VALUES (@d1, @d2, @d3)";
+                SqlParameter[] parameters = {
+                    new SqlParameter("@d1", st1),
+                    new SqlParameter("@d2", DateTime.Now),
+                    new SqlParameter("@d3", st2)
+                };
+                DataAccessLayer.ExecuteNonQuery(query, CommandType.Text, parameters);
             }
+            catch { }
         }
+
         public static void LedgerDelete(string a, string b)
         {
-            using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
+            try
             {
-                con.Open();
-                string cq = "DELETE FROM LedgerBook WHERE LedgerNo=@d1 AND Label=@d2";
-                using (var cmd = new SqlCommand(cq, con))
-                {
-                    cmd.Parameters.AddWithValue("@d1", a);
-                    cmd.Parameters.AddWithValue("@d2", b);
-                    cmd.ExecuteReader();
-                }
+                string query = "DELETE FROM LedgerBook WHERE LedgerNo=@d1 AND Label=@d2";
+                SqlParameter[] parameters = {
+                    new SqlParameter("@d1", a),
+                    new SqlParameter("@d2", b)
+                };
+                DataAccessLayer.ExecuteNonQuery(query, CommandType.Text, parameters);
             }
+            catch { }
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            Print();
+            btnPrint.Enabled = false;
+            try { Print(); }
+            finally { btnPrint.Enabled = true; }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -254,481 +223,305 @@ namespace Accounting_System
             {
                 if (string.IsNullOrWhiteSpace(txtParticulars.Text))
                 {
-                    MessageBox.Show("الرجاء كتابة البيان", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    System.Windows.Forms.MessageBox.Show("الرجاء كتابة البيان", "", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
                     txtParticulars.Focus();
                     return;
                 }
 
                 if (string.IsNullOrWhiteSpace(txtAmount.Text))
                 {
-                    MessageBox.Show("الرجاء كتابة المبلغ", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    System.Windows.Forms.MessageBox.Show("الرجاء كتابة المبلغ", "", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
                     txtAmount.Focus();
                     return;
                 }
 
-                if (DataGridView1.Rows.Count == 0)
+                btnAdd.Enabled = false;
+                try
                 {
                     DataGridView1.Rows.Add(txtParticulars.Text, Convert.ToDouble(txtAmount.Text), txtNotes.Text);
-                    double k = GrandTotal();
-                    k = Math.Round(k, 2);
-                    txtGrandTotal.Text = k.ToString();
+                    double sum = GrandTotal();
+                    txtGrandTotal.Text = Math.Round(sum, 2).ToString();
                     Clear();
-                    return;
                 }
-
-                DataGridView1.Rows.Add(txtParticulars.Text, Convert.ToDouble(txtAmount.Text), txtNotes.Text);
-                double j = GrandTotal();
-                j = Math.Round(j, 2);
-                txtGrandTotal.Text = j.ToString();
-                Clear();
+                finally { btnAdd.Enabled = true; }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
-
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                System.Windows.Forms.MessageBox.Show("الرجاء كتابة اسم السند", "", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+                txtName.Focus();
+                return;
+            }
+
+            if (DataGridView1.Rows.Count == 0)
+            {
+                System.Windows.Forms.MessageBox.Show("عذراً لا يوجد بيانات مضافة في شبكة البيانات", "", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+                return;
+            }
+
+            btnSave.Enabled = false;
             try
             {
-                if (string.IsNullOrWhiteSpace(txtName.Text))
-                {
-                    MessageBox.Show("الرجاء كتابة اسم السند", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtName.Focus();
-                    return;
-                }
-
-                if (DataGridView1.Rows.Count == 0)
-                {
-                    MessageBox.Show("عذراً لا يوجد بيانات مضافة في شبكة البيانات", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
                 int voucherId;
                 decimal grandTotal;
+                if (!int.TryParse(txtVoucherID.Text, out voucherId)) return;
+                if (!decimal.TryParse(txtGrandTotal.Text, out grandTotal)) return;
 
-                // Validate and parse values
-                if (!int.TryParse(txtVoucherID.Text, out voucherId))
+                string queryVoucher = "INSERT INTO Voucher(Id, VoucherNo, Date, Name, Details, GrandTotal) VALUES (@d1, @d2, @d3, @d4, @d5, @d7)";
+                SqlParameter[] voucherParams = {
+                    new SqlParameter("@d1", voucherId),
+                    new SqlParameter("@d2", txtVoucherNo.Text),
+                    new SqlParameter("@d3", dtpDate.Value.Date),
+                    new SqlParameter("@d4", txtName.Text),
+                    new SqlParameter("@d5", txtDetails.Text),
+                    new SqlParameter("@d7", grandTotal)
+                };
+                
+                DataAccessLayer.ExecuteNonQuery(queryVoucher, CommandType.Text, voucherParams);
+
+                foreach (DataGridViewRow row in DataGridView1.Rows)
                 {
-                    MessageBox.Show("Invalid Voucher ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                if (!decimal.TryParse(txtGrandTotal.Text, out grandTotal))
-                {
-                    MessageBox.Show("Invalid Grand Total.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
-                {
-                    con.Open();
-
-                    // Insert into Voucher
-                    string cb = "INSERT INTO Voucher(Id, VoucherNo, Date, Name, Details, GrandTotal) VALUES (@d1, @d2, @d3, @d4, @d5, @d7)";
-                    using (SqlCommand cmd = new SqlCommand(cb, con))
+                    if (!row.IsNewRow)
                     {
-                        cmd.Parameters.AddWithValue("@d1", voucherId);
-                        cmd.Parameters.AddWithValue("@d2", txtVoucherNo.Text);
-                        cmd.Parameters.AddWithValue("@d3", dtpDate.Value.Date);
-                        cmd.Parameters.AddWithValue("@d4", txtName.Text);
-                        cmd.Parameters.AddWithValue("@d5", txtDetails.Text);
-                        cmd.Parameters.AddWithValue("@d7", grandTotal);
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    // Insert into Voucher_OtherDetails
-                    string cb1 = "INSERT INTO Voucher_OtherDetails(VoucherID, Particulars, Amount, Note) VALUES (@d1, @d2, @d3, @d4)";
-                    using (SqlCommand cmd = new SqlCommand(cb1, con))
-                    {
-                        foreach (DataGridViewRow row in DataGridView1.Rows)
-                        {
-                            if (!row.IsNewRow)
-                            {
-                                int particulars;
-                                decimal amount;
-                                string note = row.Cells[2].Value?.ToString(); // Assuming note is a string
-
-                                string particularsStr = row.Cells[0].Value?.ToString();
-                                string amountStr = row.Cells[1].Value?.ToString();
-
-                                // Log the values for debugging
-                                Console.WriteLine($"Particulars: {particularsStr}, Amount: {amountStr}");
-
-                                if (!int.TryParse(particularsStr, out particulars))
-                                {
-                                    MessageBox.Show($"Invalid particulars value in row: {particularsStr}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                    continue; // Skip this row
-                                }
-
-                                if (!decimal.TryParse(amountStr, out amount))
-                                {
-                                    MessageBox.Show($"Invalid amount value in row: {amountStr}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                    continue; // Skip this row
-                                }
-
-                                cmd.Parameters.Clear();
-                                cmd.Parameters.AddWithValue("@d1", voucherId);
-                                cmd.Parameters.AddWithValue("@d2", particulars);
-                                cmd.Parameters.AddWithValue("@d3", amount);
-                                cmd.Parameters.AddWithValue("@d4", note ?? (object)DBNull.Value);
-
-                                cmd.ExecuteNonQuery();
-                            }
-                        }
+                        string queryDetail = "INSERT INTO Voucher_OtherDetails(VoucherID, Particulars, Amount, Note) VALUES (@d1, @d2, @d3, @d4)";
+                        SqlParameter[] detailParams = {
+                            new SqlParameter("@d1", voucherId),
+                            new SqlParameter("@d2", row.Cells[0].Value),
+                            new SqlParameter("@d3", Convert.ToDecimal(row.Cells[1].Value)),
+                            new SqlParameter("@d4", row.Cells[2].Value ?? (object)DBNull.Value)
+                        };
+                        DataAccessLayer.ExecuteNonQuery(queryDetail, CommandType.Text, detailParams);
                     }
                 }
 
-                string st = "added the new voucher having voucher no. '" + txtVoucherNo.Text + "'";
-                LogFunc(lblUser.Text, st);
-                LedgerSave(dtpDate.Value.Date, txtName.Text, txtVoucherNo.Text, "مصروفات", grandTotal, 0, "", "");
-                btnSave.Enabled = false;
-                MessageBox.Show("تم الحفظ بنجاح", "سندات الصرف", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                LogFunc(lblUser.Text, "added the new voucher having voucher no. '" + txtVoucherNo.Text + "'");
+                LedgerSave(dtpDate.Value.Date, txtName.Text, txtVoucherNo.Text, "مصروفات", 0, grandTotal, "", "");
+                System.Windows.Forms.MessageBox.Show("تم الحفظ بنجاح", "سندات الصرف", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
                 Print();
                 Reset();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
-
+            finally { btnSave.Enabled = true; }
         }
+
         public static void LedgerSave(DateTime a, string b, string c, string d, decimal e, decimal f, string g, string h)
         {
-            using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
+            try
             {
-                con.Open();
-                string cb = "INSERT INTO LedgerBook(Date, Name, LedgerNo, Label, Debit, Credit, PartyID, Manual_Inv) VALUES (@d1, @d2, @d3, @d4, @d5, @d6, @d7, @d8)";
-                using (var cmd = new SqlCommand(cb, con))
-                {
-                    cmd.Parameters.AddWithValue("@d1", a);
-                    cmd.Parameters.AddWithValue("@d2", b);
-                    cmd.Parameters.AddWithValue("@d3", c);
-                    cmd.Parameters.AddWithValue("@d4", d);
-                    cmd.Parameters.AddWithValue("@d5", e);
-                    cmd.Parameters.AddWithValue("@d6", f);
-                    cmd.Parameters.AddWithValue("@d7", g);
-                    cmd.Parameters.AddWithValue("@d8", h);
-                    cmd.ExecuteReader();
-                }
+                string query = "INSERT INTO LedgerBook(Date, Name, LedgerNo, Label, Debit, Credit, PartyID, Manual_Inv) VALUES (@d1, @d2, @d3, @d4, @d5, @d6, @d7, @d8)";
+                SqlParameter[] parameters = {
+                    new SqlParameter("@d1", a),
+                    new SqlParameter("@d2", b),
+                    new SqlParameter("@d3", c),
+                    new SqlParameter("@d4", d),
+                    new SqlParameter("@d5", e),
+                    new SqlParameter("@d6", f),
+                    new SqlParameter("@d7", g),
+                    new SqlParameter("@d8", h)
+                };
+                DataAccessLayer.ExecuteNonQuery(query, CommandType.Text, parameters);
             }
+            catch { }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            try
+            if (System.Windows.Forms.MessageBox.Show("هل أنت متأكد أنك تريد حذف سجل السند?", "تأكيد", System.Windows.Forms.MessageBoxButtons.YesNo, System.Windows.Forms.MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                if (MessageBox.Show("هل أنت متأكد أنك تريد حذف سجل السند?", "تأكيد", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                btnDelete.Enabled = false;
+                try { DeleteRecord(); }
+                catch (Exception ex)
                 {
-                    DeleteRecord();
+                    System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
                 }
+                finally { if (btnSave.Enabled) btnDelete.Enabled = false; }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                System.Windows.Forms.MessageBox.Show("الرجاء كتابة اسم السند", "", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+                txtName.Focus();
+                return;
+            }
+
+            if (DataGridView1.Rows.Count == 0)
+            {
+                System.Windows.Forms.MessageBox.Show("عذرًا لا يوجد بيانات مضافة في شبكة البيانات", "", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+                return;
+            }
+
+            btnUpdate.Enabled = false;
             try
             {
-                if (string.IsNullOrWhiteSpace(txtName.Text))
-                {
-                    MessageBox.Show("الرجاء كتابة اسم السند", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtName.Focus();
-                    return;
-                }
-
-                if (DataGridView1.Rows.Count == 0)
-                {
-                    MessageBox.Show("عذرًا لا يوجد بيانات مضافة في شبكة البيانات", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
                 int voucherId;
                 decimal grandTotal;
+                if (!int.TryParse(txtVoucherID.Text, out voucherId)) return;
+                if (!decimal.TryParse(txtGrandTotal.Text, out grandTotal)) return;
 
-                // Validate and parse values
-                if (!int.TryParse(txtVoucherID.Text, out voucherId))
-                {
-                    MessageBox.Show("Invalid Voucher ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                string queryVoucher = "UPDATE Voucher SET VoucherNo = @d2, Date = @d3, Name = @d4, Details = @d5, GrandTotal = @d7 WHERE ID = @d1";
+                SqlParameter[] voucherParams = {
+                    new SqlParameter("@d1", voucherId),
+                    new SqlParameter("@d2", txtVoucherNo.Text),
+                    new SqlParameter("@d3", dtpDate.Value.Date),
+                    new SqlParameter("@d4", txtName.Text),
+                    new SqlParameter("@d5", txtDetails.Text),
+                    new SqlParameter("@d7", grandTotal)
+                };
+                DataAccessLayer.ExecuteNonQuery(queryVoucher, CommandType.Text, voucherParams);
 
-                if (!decimal.TryParse(txtGrandTotal.Text, out grandTotal))
-                {
-                    MessageBox.Show("Invalid Grand Total.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                DataAccessLayer.ExecuteNonQuery("DELETE FROM Voucher_OtherDetails WHERE VoucherID = @VoucherID", CommandType.Text, new SqlParameter("@VoucherID", voucherId));
 
-                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
-                {
-                    con.Open();
-
-                    // Update Voucher
-                    string cb = "UPDATE Voucher SET VoucherNo = @d2, Date = @d3, Name = @d4, Details = @d5, GrandTotal = @d7 WHERE ID = @d1";
-                    using (SqlCommand cmd = new SqlCommand(cb, con))
-                    {
-                        cmd.Parameters.AddWithValue("@d1", voucherId);
-                        cmd.Parameters.AddWithValue("@d2", txtVoucherNo.Text);
-                        cmd.Parameters.AddWithValue("@d3", dtpDate.Value.Date);
-                        cmd.Parameters.AddWithValue("@d4", txtName.Text);
-                        cmd.Parameters.AddWithValue("@d5", txtDetails.Text);
-                        cmd.Parameters.AddWithValue("@d7", grandTotal);
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    // Delete existing Voucher_OtherDetails
-                    string deleteDetails = "DELETE FROM Voucher_OtherDetails WHERE VoucherID = @VoucherID";
-                    using (SqlCommand cmd = new SqlCommand(deleteDetails, con))
-                    {
-                        cmd.Parameters.AddWithValue("@VoucherID", voucherId);
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    // Insert new Voucher_OtherDetails
-                    string insertDetails = "INSERT INTO Voucher_OtherDetails(VoucherID, Particulars, Amount, Note) VALUES (@VoucherID, @d1, @d2, @d3)";
-                    using (SqlCommand cmd = new SqlCommand(insertDetails, con))
-                    {
-                        foreach (DataGridViewRow row in DataGridView1.Rows)
-                        {
-                            if (!row.IsNewRow)
-                            {
-                                cmd.Parameters.Clear();
-                                cmd.Parameters.AddWithValue("@VoucherID", voucherId);
-                                cmd.Parameters.AddWithValue("@d1", row.Cells[0].Value);
-                                cmd.Parameters.AddWithValue("@d2", Convert.ToDouble(row.Cells[1].Value));
-                                cmd.Parameters.AddWithValue("@d3", row.Cells[2].Value ?? (object)DBNull.Value);
-                                cmd.ExecuteNonQuery();
-                            }
-                        }
-                    }
-                }
-
-                string st = "updated the voucher having voucher no. '" + txtVoucherNo.Text + "'";
-                LogFunc(lblUser.Text, st);
-                LedgerUpdate(dtpDate.Value.Date, txtName.Text, Convert.ToDecimal(txtGrandTotal.Text), 0, txtVoucherNo.Text, "", "Expenses");
-                btnUpdate.Enabled = false;
-                MessageBox.Show("تم التعديل بنجاح", "سندات الصرف", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}\n{ex.StackTrace}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-        }
-        public static void LedgerUpdate(DateTime a, string b, decimal e, decimal f, string g, string h, string i)
-        {
-            using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
-            {
-                con.Open();
-                string cb = "UPDATE LedgerBook SET Date=@d1, Name=@d2, Debit=@d3, Credit=@d4, PartyID=@d5 WHERE LedgerNo=@d6 AND Label=@d7";
-                using (var cmd = new SqlCommand(cb, con))
-                {
-                    cmd.Parameters.AddWithValue("@d1", a);
-                    cmd.Parameters.AddWithValue("@d2", b);
-                    cmd.Parameters.AddWithValue("@d3", e);
-                    cmd.Parameters.AddWithValue("@d4", f);
-                    cmd.Parameters.AddWithValue("@d5", g);
-                    cmd.Parameters.AddWithValue("@d6", h);
-                    cmd.Parameters.AddWithValue("@d7", i);
-                    cmd.ExecuteReader();
-                }
-            }
-        }
-        private void DataGridView1_MouseClick(object sender, MouseEventArgs e)
-        {
-            btnRemove.Enabled = true ;
-        }
-
-        private void btnRemove_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                foreach (DataGridViewRow row in DataGridView1.SelectedRows)
+                foreach (DataGridViewRow row in DataGridView1.Rows)
                 {
                     if (!row.IsNewRow)
                     {
-                        DataGridView1.Rows.Remove(row);
+                        string queryInsert = "INSERT INTO Voucher_OtherDetails(VoucherID, Particulars, Amount, Note) VALUES (@VoucherID, @d1, @d2, @d3)";
+                        SqlParameter[] parameters = {
+                            new SqlParameter("@VoucherID", voucherId),
+                            new SqlParameter("@d1", row.Cells[0].Value),
+                            new SqlParameter("@d2", Convert.ToDecimal(row.Cells[1].Value)),
+                            new SqlParameter("@d3", row.Cells[2].Value ?? (object)DBNull.Value)
+                        };
+                        DataAccessLayer.ExecuteNonQuery(queryInsert, CommandType.Text, parameters);
                     }
                 }
 
-                double k = GrandTotal();
-                k = Math.Round(k, 2);
-                txtGrandTotal.Text = k.ToString();
-
-                btnRemove.Enabled = false;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-        }
-        private void txtAmount_KeyPress(object sender, KeyPressEventArgs e)
-        {
-/*            char keyChar = e.KeyChar;
-
-            if (char.IsControl(keyChar))
-            {
-                // Allow all control characters.
-                return;
-            }
-            else if (char.IsDigit(keyChar) || keyChar == '.')
-            {
-                string text = txtAmount.Text;
-                int selectionStart = txtAmount.SelectionStart;
-                int selectionLength = txtAmount.SelectionLength;
-
-                text = text.Substring(0, selectionStart) + keyChar + text.Substring(selectionStart + selectionLength);
-
-                if (int.TryParse(text, out _) && text.Length > 16)
-                {
-                    // Reject an integer that is longer than 16 digits.
-                    e.Handled = true;
-                }
-                else if (double.TryParse(text, out _) && text.IndexOf('.') < text.Length - 3)
-                {
-                    // Reject a real number with too many decimal places.
-                    e.Handled = true;
-                }
-            }
-            else
-            {
-                // Reject all other characters.
-                e.Handled = true;
-            }*/
-        }
-
-        private void btnGetData_Click(object sender, EventArgs e)
-        {
-            VoucherRecord frm = new VoucherRecord();
-            frm.Reset();
-            frm.ShowDialog();
-
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-
-            try
-            {
-                if (string.IsNullOrWhiteSpace(txtName.Text))
-                {
-                    MessageBox.Show("الرجاء كتابة اسم السند", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtName.Focus();
-                    return;
-                }
-
-                if (DataGridView1.Rows.Count == 0)
-                {
-                    MessageBox.Show("عذراً لا يوجد بيانات مضافة في شبكة البيانات", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                int voucherId;
-                decimal grandTotal;
-
-                // Validate and parse values
-                if (!int.TryParse(txtVoucherID.Text, out voucherId))
-                {
-                    MessageBox.Show("Invalid Voucher ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                if (!decimal.TryParse(txtGrandTotal.Text, out grandTotal))
-                {
-                    MessageBox.Show("Invalid Grand Total.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
-                {
-                    con.Open();
-
-                    // Insert into Voucher
-                    string cb = "INSERT INTO Voucher(Id, VoucherNo, Date, Name, Details, GrandTotal) VALUES (@d1, @d2, @d3, @d4, @d5, @d7)";
-                    using (SqlCommand cmd = new SqlCommand(cb, con))
-                    {
-                        cmd.Parameters.AddWithValue("@d1", voucherId);
-                        cmd.Parameters.AddWithValue("@d2", txtVoucherNo.Text);
-                        cmd.Parameters.AddWithValue("@d3", dtpDate.Value.Date);
-                        cmd.Parameters.AddWithValue("@d4", txtName.Text);
-                        cmd.Parameters.AddWithValue("@d5", txtDetails.Text);
-                        cmd.Parameters.AddWithValue("@d7", grandTotal);
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    // Insert into Voucher_OtherDetails
-                    string cb1 = "INSERT INTO Voucher_OtherDetails(VoucherID, Particulars, Amount, Note) VALUES (@d1, @d2, @d3, @d4)";
-                    using (SqlCommand cmd = new SqlCommand(cb1, con))
-                    {
-                        foreach (DataGridViewRow row in DataGridView1.Rows)
-                        {
-                            if (!row.IsNewRow)
-                            {
-                                int particulars;
-                                decimal amount;
-                                string note = row.Cells[2].Value?.ToString(); // Assuming note is a string
-
-                                string particularsStr = row.Cells[0].Value?.ToString();
-                                string amountStr = row.Cells[1].Value?.ToString();
-
-                                // Log the values for debugging
-                                Console.WriteLine($"Particulars: {particularsStr}, Amount: {amountStr}");
-
-                                if (!int.TryParse(particularsStr, out particulars))
-                                {
-                                    MessageBox.Show($"Invalid particulars value in row: {particularsStr}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                    continue; // Skip this row
-                                }
-
-                                if (!decimal.TryParse(amountStr, out amount))
-                                {
-                                    MessageBox.Show($"Invalid amount value in row: {amountStr}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                    continue; // Skip this row
-                                }
-
-                                cmd.Parameters.Clear();
-                                cmd.Parameters.AddWithValue("@d1", voucherId);
-                                cmd.Parameters.AddWithValue("@d2", particulars);
-                                cmd.Parameters.AddWithValue("@d3", amount);
-                                cmd.Parameters.AddWithValue("@d4", note ?? (object)DBNull.Value);
-
-                                cmd.ExecuteNonQuery();
-                            }
-                        }
-                    }
-                }
-
-                string st = "added the new voucher having voucher no. '" + txtVoucherNo.Text + "'";
-                LogFunc(lblUser.Text, st);
-                LedgerSave(dtpDate.Value.Date, txtName.Text, txtVoucherNo.Text, "مصروفات", grandTotal, 0, "", "");
-                btnSave.Enabled = false;
-                MessageBox.Show("تم الحفظ بنجاح", "سندات الصرف", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                LogFunc(lblUser.Text, "updated the voucher having voucher no. '" + txtVoucherNo.Text + "'");
+                LedgerUpdate(dtpDate.Value.Date, txtName.Text, 0, grandTotal, "", txtVoucherNo.Text, "مصروفات");
+                System.Windows.Forms.MessageBox.Show("تم التعديل بنجاح", "سندات الصرف", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
                 Reset();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}\n{ex.StackTrace}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
+            finally { if (btnSave.Enabled) btnUpdate.Enabled = false; }
+        }
 
+        public static void LedgerUpdate(DateTime a, string b, decimal e, decimal f, string g, string h, string i)
+        {
+            try
+            {
+                string query = "UPDATE LedgerBook SET Date=@d1, Name=@d2, Debit=@d3, Credit=@d4, PartyID=@d5 WHERE LedgerNo=@d6 AND Label=@d7";
+                SqlParameter[] parameters = {
+                    new SqlParameter("@d1", a),
+                    new SqlParameter("@d2", b),
+                    new SqlParameter("@d3", e),
+                    new SqlParameter("@d4", f),
+                    new SqlParameter("@d5", g),
+                    new SqlParameter("@d6", h),
+                    new SqlParameter("@d7", i)
+                };
+                DataAccessLayer.ExecuteNonQuery(query, CommandType.Text, parameters);
+            }
+            catch { }
+        }
 
+        private void DataGridView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            btnRemove.Enabled = true;
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            btnRemove.Enabled = false;
+            try
+            {
+                foreach (DataGridViewRow row in DataGridView1.SelectedRows)
+                {
+                    if (!row.IsNewRow) DataGridView1.Rows.Remove(row);
+                }
+                txtGrandTotal.Text = Math.Round(GrandTotal(), 2).ToString();
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+            }
+            finally { btnRemove.Enabled = false; }
+        }
+
+        private void txtAmount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+        }
+
+        private void btnGetData_Click(object sender, EventArgs e)
+        {
+            btnGetData.Enabled = false;
+            try
+            {
+                VoucherRecord frm = new VoucherRecord();
+                frm.Reset();
+                frm.Show();
+            }
+            finally { btnGetData.Enabled = true; }
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            btnSave_Click(sender, e);
         }
 
         private void btnSelect_Click(object sender, EventArgs e)
         {
-            SalesmanRecord frm = new SalesmanRecord();
-            frm.lblSet.Text = "voucher";
-            frm.Reset();
-            frm.ShowDialog();
+            btnSelect.Enabled = false;
+            try
+            {
+                SalesmanRecord frm = new SalesmanRecord();
+                frm.lblSet.Text = "voucher";
+                frm.Reset();
+                frm.Show();
+            }
+            finally { btnSelect.Enabled = true; }
+        }
 
+        private void txtName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = "SELECT Name FROM Salesman WHERE Name=@d1";
+                SqlParameter[] parameters = { new SqlParameter("@d1", txtName.Text) };
+                using (SqlDataReader rdr = DataAccessLayer.ExecuteReader(query, CommandType.Text, parameters))
+                {
+                    if (rdr.Read())
+                    {
+                        txtName.Text = rdr[0].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+            }
+        }
+
+        private void fillSaleMan()
+        {
+            try
+            {
+                DataTable dtable = DataAccessLayer.ExecuteTable("SELECT RTRIM(Name) FROM Salesman", CommandType.Text);
+                txtName.Items.Clear();
+                foreach (DataRow drow in dtable.Rows)
+                {
+                    txtName.Items.Add(drow[0].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+            }
         }
     }
 }

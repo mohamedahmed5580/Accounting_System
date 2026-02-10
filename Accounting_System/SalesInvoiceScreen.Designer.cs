@@ -28,33 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesInvoiceScreen));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesInvoiceScreen));
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GroupBox6 = new System.Windows.Forms.GroupBox();
             this.TextBox4 = new System.Windows.Forms.TextBox();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Label4 = new System.Windows.Forms.Label();
             this.Label7 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
             this.TextBox3 = new System.Windows.Forms.TextBox();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TextBox2 = new System.Windows.Forms.TextBox();
             this.TextBox1 = new System.Windows.Forms.TextBox();
             this.GroupBox5 = new System.Windows.Forms.GroupBox();
             this.txtSalesman = new System.Windows.Forms.TextBox();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnExportExcel = new System.Windows.Forms.Button();
             this.cmbInvoiceNo = new System.Windows.Forms.ComboBox();
             this.btnReset = new System.Windows.Forms.Button();
@@ -65,14 +57,8 @@
             this.DateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Button1 = new System.Windows.Forms.Button();
             this.DateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GroupBox4 = new System.Windows.Forms.GroupBox();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Label1 = new System.Windows.Forms.Label();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.Label5 = new System.Windows.Forms.Label();
@@ -81,11 +67,32 @@
             this.btnGetData = new System.Windows.Forms.Button();
             this.dtpDateFrom = new System.Windows.Forms.DateTimePicker();
             this.dgw = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Panel2 = new System.Windows.Forms.Panel();
+            this.WID = new System.Windows.Forms.TextBox();
             this.lblSet = new System.Windows.Forms.Label();
             this.Panel1 = new System.Windows.Forms.Panel();
-            this.GroupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.GroupBox1 = new System.Windows.Forms.GroupBox();
             this.GroupBox6.SuspendLayout();
             this.GroupBox5.SuspendLayout();
             this.GroupBox3.SuspendLayout();
@@ -94,25 +101,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgw)).BeginInit();
             this.Panel2.SuspendLayout();
             this.Panel1.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.GroupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "اسم العميل";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 150;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "CID";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Visible = false;
-            this.Column4.Width = 70;
             // 
             // GroupBox6
             // 
@@ -121,7 +112,7 @@
             this.GroupBox6.Controls.Add(this.TextBox4);
             this.GroupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupBox6.ForeColor = System.Drawing.Color.Black;
-            this.GroupBox6.Location = new System.Drawing.Point(1036, 156);
+            this.GroupBox6.Location = new System.Drawing.Point(921, 159);
             this.GroupBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GroupBox6.Name = "GroupBox6";
             this.GroupBox6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -142,30 +133,22 @@
             this.TextBox4.TabIndex = 14;
             this.TextBox4.TextChanged += new System.EventHandler(this.TextBox4_TextChanged);
             // 
-            // Column15
-            // 
-            this.Column15.HeaderText = "اسم المندوب";
-            this.Column15.MinimumWidth = 6;
-            this.Column15.Name = "Column15";
-            this.Column15.ReadOnly = true;
-            this.Column15.Width = 90;
-            // 
             // Label4
             // 
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.Label4.Location = new System.Drawing.Point(171, 126);
+            this.Label4.Location = new System.Drawing.Point(168, 130);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(89, 18);
+            this.Label4.Size = new System.Drawing.Size(94, 18);
             this.Label4.TabIndex = 62;
-            this.Label4.Text = "اجمالي الديون";
+            this.Label4.Text = "اجمالي المتبقي";
             this.Label4.Visible = false;
             // 
             // Label7
             // 
             this.Label7.AutoSize = true;
             this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.Label7.Location = new System.Drawing.Point(153, 100);
+            this.Label7.Location = new System.Drawing.Point(155, 101);
             this.Label7.Name = "Label7";
             this.Label7.Size = new System.Drawing.Size(111, 18);
             this.Label7.TabIndex = 61;
@@ -176,7 +159,7 @@
             // 
             this.Label8.AutoSize = true;
             this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.Label8.Location = new System.Drawing.Point(167, 66);
+            this.Label8.Location = new System.Drawing.Point(171, 65);
             this.Label8.Name = "Label8";
             this.Label8.Size = new System.Drawing.Size(111, 18);
             this.Label8.TabIndex = 60;
@@ -192,23 +175,7 @@
             this.TextBox3.Size = new System.Drawing.Size(133, 35);
             this.TextBox3.TabIndex = 59;
             this.TextBox3.Visible = false;
-            // 
-            // Column13
-            // 
-            this.Column13.HeaderText = "رقم المندوب";
-            this.Column13.MinimumWidth = 6;
-            this.Column13.Name = "Column13";
-            this.Column13.ReadOnly = true;
-            this.Column13.Width = 88;
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "SM_ID";
-            this.Column12.MinimumWidth = 6;
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            this.Column12.Visible = false;
-            this.Column12.Width = 70;
+            this.TextBox3.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
             // 
             // TextBox2
             // 
@@ -219,6 +186,7 @@
             this.TextBox2.Size = new System.Drawing.Size(133, 35);
             this.TextBox2.TabIndex = 58;
             this.TextBox2.Visible = false;
+            this.TextBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // TextBox1
             // 
@@ -229,6 +197,7 @@
             this.TextBox1.Size = new System.Drawing.Size(133, 35);
             this.TextBox1.TabIndex = 57;
             this.TextBox1.Visible = false;
+            this.TextBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // GroupBox5
             // 
@@ -237,7 +206,7 @@
             this.GroupBox5.Controls.Add(this.txtSalesman);
             this.GroupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.GroupBox5.ForeColor = System.Drawing.Color.Black;
-            this.GroupBox5.Location = new System.Drawing.Point(620, 155);
+            this.GroupBox5.Location = new System.Drawing.Point(494, 158);
             this.GroupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GroupBox5.Name = "GroupBox5";
             this.GroupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -259,32 +228,6 @@
             this.txtSalesman.TabIndex = 14;
             this.txtSalesman.TextChanged += new System.EventHandler(this.txtSalesman_TextChanged);
             // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "رقم العميل";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 79;
-            // 
-            // Column3
-            // 
-            dataGridViewCellStyle1.Format = "dd/MM/yyyy";
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column3.HeaderText = "تاريخ الفاتورة";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 97;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "رقم الفاتورة";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 87;
-            // 
             // btnExportExcel
             // 
             this.btnExportExcel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -292,12 +235,13 @@
             this.btnExportExcel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExportExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnExportExcel.ForeColor = System.Drawing.Color.White;
+            this.btnExportExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExportExcel.Image")));
             this.btnExportExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExportExcel.Location = new System.Drawing.Point(451, 175);
+            this.btnExportExcel.Location = new System.Drawing.Point(332, 175);
             this.btnExportExcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExportExcel.Name = "btnExportExcel";
             this.btnExportExcel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnExportExcel.Size = new System.Drawing.Size(145, 39);
+            this.btnExportExcel.Size = new System.Drawing.Size(152, 39);
             this.btnExportExcel.TabIndex = 5;
             this.btnExportExcel.Text = "تصدير للأكسل";
             this.btnExportExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -324,7 +268,7 @@
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(303, 175);
+            this.btnReset.Location = new System.Drawing.Point(202, 175);
             this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(123, 39);
@@ -344,7 +288,7 @@
             this.GroupBox3.Controls.Add(this.Button1);
             this.GroupBox3.Controls.Add(this.DateTimePicker2);
             this.GroupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.GroupBox3.Location = new System.Drawing.Point(288, 60);
+            this.GroupBox3.Location = new System.Drawing.Point(346, 60);
             this.GroupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GroupBox3.Name = "GroupBox3";
             this.GroupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -352,7 +296,7 @@
             this.GroupBox3.Size = new System.Drawing.Size(648, 89);
             this.GroupBox3.TabIndex = 50;
             this.GroupBox3.TabStop = false;
-            this.GroupBox3.Text = "بحث بالمبالغ المستحقة :";
+            this.GroupBox3.Text = "بحث بالمبالغ المتبقية :";
             // 
             // checkBox1
             // 
@@ -370,7 +314,7 @@
             this.Label2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label2.ForeColor = System.Drawing.Color.White;
-            this.Label2.Location = new System.Drawing.Point(255, 27);
+            this.Label2.Location = new System.Drawing.Point(296, 27);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(119, 25);
             this.Label2.TabIndex = 56;
@@ -394,7 +338,7 @@
             this.DateTimePicker1.CustomFormat = "dd/MM/yyyy";
             this.DateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateTimePicker1.Location = new System.Drawing.Point(255, 50);
+            this.DateTimePicker1.Location = new System.Drawing.Point(296, 50);
             this.DateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DateTimePicker1.Name = "DateTimePicker1";
             this.DateTimePicker1.Size = new System.Drawing.Size(119, 30);
@@ -405,7 +349,7 @@
             this.Button1.BackColor = System.Drawing.Color.Gold;
             this.Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.Button1.Location = new System.Drawing.Point(120, 23);
+            this.Button1.Location = new System.Drawing.Point(137, 31);
             this.Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(103, 38);
@@ -425,16 +369,6 @@
             this.DateTimePicker2.Size = new System.Drawing.Size(119, 30);
             this.DateTimePicker2.TabIndex = 11;
             // 
-            // Column7
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column7.HeaderText = "إجمالي المبلغ";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 125;
-            // 
             // GroupBox4
             // 
             this.GroupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -442,7 +376,7 @@
             this.GroupBox4.Controls.Add(this.txtCustomerName);
             this.GroupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.GroupBox4.ForeColor = System.Drawing.Color.Black;
-            this.GroupBox4.Location = new System.Drawing.Point(841, 155);
+            this.GroupBox4.Location = new System.Drawing.Point(720, 158);
             this.GroupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GroupBox4.Name = "GroupBox4";
             this.GroupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -451,6 +385,7 @@
             this.GroupBox4.TabIndex = 51;
             this.GroupBox4.TabStop = false;
             this.GroupBox4.Text = "بحث باسم العميل :";
+            this.GroupBox4.Enter += new System.EventHandler(this.GroupBox4_Enter);
             // 
             // txtCustomerName
             // 
@@ -462,51 +397,6 @@
             this.txtCustomerName.Size = new System.Drawing.Size(137, 30);
             this.txtCustomerName.TabIndex = 14;
             this.txtCustomerName.TextChanged += new System.EventHandler(this.txtCustomerName_TextChanged);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Invoice ID";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Visible = false;
-            this.Column1.Width = 70;
-            // 
-            // Column8
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column8.HeaderText = "المدفوع";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 120;
-            // 
-            // Column9
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            this.Column9.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column9.HeaderText = "المبلغ المستحق";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Width = 104;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "رقم الفاتورة اليدوية";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Width = 122;
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "رقم الاتصال";
-            this.Column11.MinimumWidth = 6;
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            this.Column11.Width = 120;
             // 
             // Label1
             // 
@@ -530,7 +420,7 @@
             this.GroupBox2.Controls.Add(this.btnGetData);
             this.GroupBox2.Controls.Add(this.dtpDateFrom);
             this.GroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.GroupBox2.Location = new System.Drawing.Point(948, 60);
+            this.GroupBox2.Location = new System.Drawing.Point(1005, 60);
             this.GroupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GroupBox2.Name = "GroupBox2";
             this.GroupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -580,7 +470,7 @@
             this.btnGetData.BackColor = System.Drawing.Color.Gold;
             this.btnGetData.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGetData.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnGetData.Location = new System.Drawing.Point(19, 27);
+            this.btnGetData.Location = new System.Drawing.Point(20, 31);
             this.btnGetData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGetData.Name = "btnGetData";
             this.btnGetData.Size = new System.Drawing.Size(100, 38);
@@ -604,20 +494,19 @@
             // 
             this.dgw.AllowUserToAddRows = false;
             this.dgw.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.PowderBlue;
-            this.dgw.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgw.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PowderBlue;
+            this.dgw.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgw.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgw.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgw.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgw.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgw.ColumnHeadersHeight = 30;
             this.dgw.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -633,16 +522,20 @@
             this.Column7,
             this.Column8,
             this.Column9,
-            this.Column10});
+            this.Column10,
+            this.Column16,
+            this.Column17,
+            this.Column14,
+            this.Column18});
             this.dgw.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgw.EnableHeadersVisualStyles = false;
             this.dgw.GridColor = System.Drawing.Color.Gray;
-            this.dgw.Location = new System.Drawing.Point(3, 237);
+            this.dgw.Location = new System.Drawing.Point(9, 238);
             this.dgw.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgw.MultiSelect = false;
             this.dgw.Name = "dgw";
             this.dgw.ReadOnly = true;
-            this.dgw.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dgw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgw.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.CadetBlue;
@@ -661,10 +554,166 @@
             this.dgw.RowTemplate.Height = 30;
             this.dgw.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgw.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw.Size = new System.Drawing.Size(1479, 656);
+            this.dgw.Size = new System.Drawing.Size(1513, 581);
             this.dgw.TabIndex = 43;
             this.dgw.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_CellContentClick);
             this.dgw.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgw_MouseDoubleClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Invoice ID";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
+            this.Column1.Width = 70;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "رقم الفاتورة";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 87;
+            // 
+            // Column3
+            // 
+            dataGridViewCellStyle3.Format = "dd/MM/yyyy";
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column3.HeaderText = "تاريخ الفاتورة";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 97;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "SM_ID";
+            this.Column12.MinimumWidth = 6;
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            this.Column12.Visible = false;
+            this.Column12.Width = 70;
+            // 
+            // Column13
+            // 
+            this.Column13.HeaderText = "رقم المندوب";
+            this.Column13.MinimumWidth = 6;
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            this.Column13.Width = 88;
+            // 
+            // Column15
+            // 
+            this.Column15.HeaderText = "اسم المندوب";
+            this.Column15.MinimumWidth = 6;
+            this.Column15.Name = "Column15";
+            this.Column15.ReadOnly = true;
+            this.Column15.Width = 90;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "CID";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Visible = false;
+            this.Column4.Width = 70;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "رقم العميل";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 79;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "اسم العميل";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 150;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "رقم الاتصال";
+            this.Column11.MinimumWidth = 6;
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            this.Column11.Width = 120;
+            // 
+            // Column7
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column7.HeaderText = "إجمالي المبلغ";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 125;
+            // 
+            // Column8
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Column8.HeaderText = "المدفوع";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 120;
+            // 
+            // Column9
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.Column9.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Column9.HeaderText = "المبلغ المتبقي";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 104;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "رقم الفاتورة اليدوية";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Width = 122;
+            // 
+            // Column16
+            // 
+            this.Column16.HeaderText = "رقم المخزن";
+            this.Column16.MinimumWidth = 6;
+            this.Column16.Name = "Column16";
+            this.Column16.ReadOnly = true;
+            this.Column16.Width = 125;
+            // 
+            // Column17
+            // 
+            this.Column17.HeaderText = "اسم المخزن";
+            this.Column17.MinimumWidth = 6;
+            this.Column17.Name = "Column17";
+            this.Column17.ReadOnly = true;
+            this.Column17.Width = 125;
+            // 
+            // Column14
+            // 
+            this.Column14.HeaderText = "TC_ID";
+            this.Column14.MinimumWidth = 6;
+            this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
+            this.Column14.Visible = false;
+            this.Column14.Width = 125;
+            // 
+            // Column18
+            // 
+            this.Column18.HeaderText = "الخصم الكلي";
+            this.Column18.MinimumWidth = 6;
+            this.Column18.Name = "Column18";
+            this.Column18.ReadOnly = true;
+            this.Column18.Width = 125;
             // 
             // Panel2
             // 
@@ -672,13 +721,29 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Panel2.Controls.Add(this.WID);
             this.Panel2.Controls.Add(this.lblSet);
             this.Panel2.Controls.Add(this.Label1);
             this.Panel2.Location = new System.Drawing.Point(9, 7);
             this.Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(1459, 41);
+            this.Panel2.Size = new System.Drawing.Size(1517, 41);
             this.Panel2.TabIndex = 0;
+            // 
+            // WID
+            // 
+            this.WID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.WID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.WID.BackColor = System.Drawing.Color.Honeydew;
+            this.WID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.WID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.WID.Location = new System.Drawing.Point(45, 6);
+            this.WID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.WID.Name = "WID";
+            this.WID.Size = new System.Drawing.Size(181, 30);
+            this.WID.TabIndex = 413;
+            this.WID.Visible = false;
+            this.WID.WordWrap = false;
             // 
             // lblSet
             // 
@@ -694,6 +759,7 @@
             // 
             this.Panel1.BackColor = System.Drawing.Color.White;
             this.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Panel1.Controls.Add(this.groupBox7);
             this.Panel1.Controls.Add(this.gunaAdvenceButton1);
             this.Panel1.Controls.Add(this.GroupBox6);
             this.Panel1.Controls.Add(this.Label4);
@@ -715,26 +781,39 @@
             this.Panel1.Location = new System.Drawing.Point(0, 0);
             this.Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1477, 894);
+            this.Panel1.Size = new System.Drawing.Size(1535, 823);
             this.Panel1.TabIndex = 3;
             this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
-            // GroupBox1
+            // groupBox7
             // 
-            this.GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.GroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.GroupBox1.Controls.Add(this.cmbInvoiceNo);
-            this.GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.GroupBox1.Location = new System.Drawing.Point(1287, 156);
-            this.GroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.GroupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.GroupBox1.Size = new System.Drawing.Size(183, 75);
-            this.GroupBox1.TabIndex = 48;
-            this.GroupBox1.TabStop = false;
-            this.GroupBox1.Text = "بحث برقم الفاتورة :";
+            this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox7.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox7.Controls.Add(this.comboBox2);
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.groupBox7.ForeColor = System.Drawing.Color.Black;
+            this.groupBox7.Location = new System.Drawing.Point(1349, 159);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox7.Size = new System.Drawing.Size(179, 75);
+            this.groupBox7.TabIndex = 49;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "اسم المحزن:";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(18, 30);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(155, 31);
+            this.comboBox2.TabIndex = 13;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // gunaAdvenceButton1
             // 
@@ -750,12 +829,13 @@
             this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
             this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
             this.gunaAdvenceButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.Image")));
             this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(25, 187);
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(9, 172);
+            this.gunaAdvenceButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
             this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -770,7 +850,25 @@
             this.gunaAdvenceButton1.Text = "تم الدفع";
             this.gunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaAdvenceButton1.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SingleBitPerPixel;
+            this.gunaAdvenceButton1.Visible = false;
             this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
+            // 
+            // GroupBox1
+            // 
+            this.GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.GroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.GroupBox1.Controls.Add(this.cmbInvoiceNo);
+            this.GroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.GroupBox1.ForeColor = System.Drawing.Color.Black;
+            this.GroupBox1.Location = new System.Drawing.Point(1160, 159);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.GroupBox1.Name = "GroupBox1";
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.GroupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.GroupBox1.Size = new System.Drawing.Size(183, 75);
+            this.GroupBox1.TabIndex = 48;
+            this.GroupBox1.TabStop = false;
+            this.GroupBox1.Text = "بحث برقم الفاتورة :";
             // 
             // SalesInvoiceScreen
             // 
@@ -778,7 +876,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1477, 894);
+            this.ClientSize = new System.Drawing.Size(1535, 823);
             this.Controls.Add(this.Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -801,31 +899,23 @@
             this.Panel2.PerformLayout();
             this.Panel1.ResumeLayout(false);
             this.Panel1.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
             this.GroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         internal System.Windows.Forms.GroupBox GroupBox6;
         internal System.Windows.Forms.TextBox TextBox4;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column15;
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label Label7;
         internal System.Windows.Forms.Label Label8;
         internal System.Windows.Forms.TextBox TextBox3;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         internal System.Windows.Forms.TextBox TextBox2;
         internal System.Windows.Forms.TextBox TextBox1;
         internal System.Windows.Forms.GroupBox GroupBox5;
         internal System.Windows.Forms.TextBox txtSalesman;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         internal System.Windows.Forms.Button btnExportExcel;
         internal System.Windows.Forms.ComboBox cmbInvoiceNo;
         internal System.Windows.Forms.Button btnReset;
@@ -835,14 +925,8 @@
         internal System.Windows.Forms.DateTimePicker DateTimePicker1;
         internal System.Windows.Forms.Button Button1;
         internal System.Windows.Forms.DateTimePicker DateTimePicker2;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         internal System.Windows.Forms.GroupBox GroupBox4;
         internal System.Windows.Forms.TextBox txtCustomerName;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.GroupBox GroupBox2;
         internal System.Windows.Forms.Label Label5;
@@ -857,5 +941,26 @@
         internal System.Windows.Forms.GroupBox GroupBox1;
         private System.Windows.Forms.CheckBox checkBox1;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
+        internal System.Windows.Forms.TextBox WID;
+        internal System.Windows.Forms.GroupBox groupBox7;
+        internal System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
     }
 }

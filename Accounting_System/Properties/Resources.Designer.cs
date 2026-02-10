@@ -153,16 +153,6 @@ namespace Accounting_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cross_remove_sign {
-            get {
-                object obj = ResourceManager.GetObject("cross-remove-sign", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap diagram_06_24511 {
             get {
                 object obj = ResourceManager.GetObject("diagram-06_24511", resourceCulture);
@@ -353,9 +343,9 @@ namespace Accounting_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo {
+        internal static System.Drawing.Bitmap if_icons_user3 {
             get {
-                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                object obj = ResourceManager.GetObject("if_icons_user3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

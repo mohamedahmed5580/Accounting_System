@@ -110,6 +110,7 @@
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(259, 30);
             this.txtCity.TabIndex = 13;
+            this.txtCity.TextChanged += new System.EventHandler(this.txtCity_TextChanged);
             // 
             // Label2
             // 
@@ -133,6 +134,7 @@
             this.txtContactNo.Name = "txtContactNo";
             this.txtContactNo.Size = new System.Drawing.Size(259, 30);
             this.txtContactNo.TabIndex = 13;
+            this.txtContactNo.TextChanged += new System.EventHandler(this.txtContactNo_TextChanged);
             // 
             // Label4
             // 

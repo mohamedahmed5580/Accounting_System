@@ -1,4 +1,4 @@
-﻿using Pharmacy.DL;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -201,6 +201,7 @@ namespace Accounting_System
                     CustomerLedger customerLedgerForm = new CustomerLedger();
                     CustomerLedger.instance.txtCustomerID.Text = dr.Cells[1].Value.ToString();
                     CustomerLedger.instance.cmbCustomerName.Text = dr.Cells[2].Value.ToString();
+
                     CustomerLedger.instance.ShowDialog();
                 }
             }
@@ -212,6 +213,11 @@ namespace Accounting_System
         }
 
         private void dgw_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void CustomerRecord5_Load(object sender, EventArgs e)
         {
 
         }

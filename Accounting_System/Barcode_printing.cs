@@ -1,4 +1,4 @@
-﻿using Pharmacy.DL;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -208,7 +208,7 @@ namespace Accounting_System
                     {
                         con.Open();
 
-                        string query = "SELECT Temp_Stock.Barcode, BarcodeImage, Product.Productname " +
+                        string query = "SELECT Temp_Stock.Barcode, BarcodeImage, Product.Productname  , Product.SellingPrice " +
                                        "FROM Category, SubCategory, Product, Temp_Stock " +
                                        "WHERE Category.CategoryName = SubCategory.Category " +
                                        "AND Product.SubCategoryID = SubCategory.ID " +
@@ -219,7 +219,7 @@ namespace Accounting_System
                         for (int j = 1; j < noOfCopies; j++)
                         {
                             query += " UNION ALL " +
-                                     "SELECT Temp_Stock.Barcode, BarcodeImage, Product.Productname " +
+                                     "SELECT Temp_Stock.Barcode, BarcodeImage, Product.Productname , Product.SellingPrice " +
                                      "FROM Category, SubCategory, Product, Temp_Stock " +
                                      "WHERE Category.CategoryName = SubCategory.Category " +
                                      "AND Product.SubCategoryID = SubCategory.ID " +

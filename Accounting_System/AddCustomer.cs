@@ -1,6 +1,5 @@
 ﻿using Microsoft.Office.Interop.Excel;
 using Microsoft.VisualBasic;
-using Pharmacy.DL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,7 +18,6 @@ namespace Accounting_System
 {
     public partial class AddCustomer : Form
     {
-        SqlConnection cn = new SqlConnection(DataAccessLayer.Con());
         public static AddCustomer _instance;
         public static AddCustomer instance;
         public static AddCustomer Instance
@@ -417,6 +415,7 @@ namespace Accounting_System
         }
         public void LedgerUpdate(DateTime a, string b, decimal e, decimal f, string g, string h, string i)
         {
+                SqlConnection cn = new SqlConnection(DataAccessLayer.Con());
             cn.Open();
             string cb = "Update LedgerBook set Date=@d1, Name=@d2,Debit=@d3,Credit=@d4,PartyID=@d5 where LedgerNo=@d6 and Label=@d7";
             SqlCommand cmd = new SqlCommand(cb);

@@ -1,5 +1,5 @@
 ﻿using Microsoft.Win32;
-using Pharmacy.DL;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using System.IO;
 using static DevExpress.Data.Helpers.ExpressiveSortInfo;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 namespace Accounting_System
 {
     public partial class Notifications : Form
@@ -20,6 +21,7 @@ namespace Accounting_System
         public static Notifications instance;
         public static TimeZoneInfo egyptTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Egypt Standard Time");
         public static DateTime egyptTime = TimeZoneInfo.ConvertTime(DateTime.Now, egyptTimeZone);
+        //public basic basicc = new basic();
 
         public Notifications()
         {
@@ -29,10 +31,11 @@ namespace Accounting_System
 
         private void Notifications_Load(object sender, EventArgs e)
         {
-
             GetNotifications();
-            notificationTimer.Start();
+            CheckForNotifications();
             CheckForQuantity();
+            notificationTimer.Start();
+
 
         }
         private void GetNotifications()
@@ -41,7 +44,7 @@ namespace Accounting_System
             {
                 con.Open();
 
-                using (SqlCommand cmd = new SqlCommand("SELECT NID, Name,Hours,Minutes,Timing, Date FROM Notifications", con))
+                using (SqlCommand cmd = new SqlCommand("SELECT NID, Name,Hours,Minutes,Timing, Date,IsNotified FROM Notifications", con))
                 {
                     using (SqlDataReader rdr = cmd.ExecuteReader())
                     {
@@ -56,7 +59,8 @@ namespace Accounting_System
                                 rdr["Hours"].ToString(),       // Third  column: hours
                                 rdr["Minutes"].ToString(),       // Third  column: hours
                                 rdr["Timing"].ToString(),       // Third  column: hours
-                                Convert.ToDateTime(rdr["Date"]).ToString("yyyy-MM-dd") // Fours column: Date (formatted)
+                                Convert.ToDateTime(rdr["Date"]).ToString("yyyy-MM-dd") ,// Fours column: Date (formatted)
+                                rdr["IsNotified"].ToString()    // Third  column: hours
                             );
                         }
                     }
@@ -71,7 +75,7 @@ namespace Accounting_System
         {
             // Step 1: Insert the data into the DataGridView
             // dgw.Rows.Add(txtCompanyName.Text, dateTimePicker1.Value.ToString());
-
+            Properties.Settings.Default.Notification = true;
             try
             {
                 using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
@@ -216,89 +220,127 @@ namespace Accounting_System
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        // Declare a HashSet to keep track of notified products
+        private HashSet<int> notifiedProducts = new HashSet<int>();
+
         private void notificationTimer_Tick(object sender, EventArgs e)
         {
-
             CheckForNotifications();
+            CheckForQuantity();
         }
+
+        
+
+
 
 
 
         private void CheckForNotifications()
         {
-            try
-            {
-                DateTime egyptTime = TimeZoneInfo.ConvertTime(DateTime.Now, egyptTimeZone);
-                string currentDate = egyptTime.ToString("yyyy-MM-dd");
-                string currentPeriod = egyptTime.ToString("tt"); // AM or PM
-                int currentHour = egyptTime.Hour > 12 ? egyptTime.Hour - 12 : egyptTime.Hour;
-                currentHour = currentHour == 0 ? 12 : currentHour; // Adjust for midnight/noon
-                string currentHourStr = currentHour.ToString("D2");
-                string currentMinuteStr = egyptTime.Minute.ToString("D2");
+           
+                // Timezone for Egypt (Assuming this is already defined)
+                TimeZoneInfo egyptTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Egypt Standard Time");
 
-                label9.Text = currentDate;
-                label11.Text = currentHourStr;
-                label12.Text = currentMinuteStr;
-
-                List<int> notificationIds = new List<int>();
-
-                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
+                // Loop through each row of DataGridView
+                foreach (DataGridViewRow row in dgw.Rows)
                 {
-                    con.Open();
-                    string query = @"SELECT NID, Name FROM Notifications 
-                             WHERE CAST(Date AS DATE) = @CurrentDate 
-                             AND Hours = @CurrentHour 
-                             AND Minutes = @CurrentMinute 
-                             AND Timing = @CurrentPeriod 
-                             AND IsNotified = 0";
-
-                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    // Ensure the row is not empty
+                    if (!row.IsNewRow)
                     {
-                        cmd.Parameters.AddWithValue("@CurrentDate", currentDate);
-                        cmd.Parameters.AddWithValue("@CurrentHour", currentHourStr);
-                        cmd.Parameters.AddWithValue("@CurrentMinute", currentMinuteStr);
-                        cmd.Parameters.AddWithValue("@CurrentPeriod", currentPeriod);
+                        // Extract notification details from DataGridView cells
+                        string notificationName = row.Cells[1].Value?.ToString(); // Assuming the column is named "Name"
+                        string notificationHours = row.Cells[2].Value?.ToString(); // Column for hours
+                        string notificationMinutes = row.Cells[3].Value?.ToString(); // Column for minutes
+                        string notificationTiming = row.Cells[4].Value?.ToString(); // Column for AM/PM
+                        DateTime notificationDate = Convert.ToDateTime(row.Cells[5].Value); // Column for date
+                        // Get current Egypt time
+                        DateTime egyptTime = TimeZoneInfo.ConvertTime(DateTime.Now, egyptTimeZone);
 
-                        using (SqlDataReader rdr = cmd.ExecuteReader())
+                        // Display current time in labels for debugging
+                        label9.Text = Math.Abs(int.Parse(egyptTime.ToString("HH")) - 12).ToString(); // Adjust hours for 12-hour format
+                        label11.Text = (notificationMinutes).ToString(); // Minutes comparison
+                        label12.Text = notificationTiming.ToString(); // Current time in Egypt
+                        SqlConnection con = new SqlConnection(DataAccessLayer.Con());
+
+                        // Check if the current date matches the notification date
+                        if (egyptTime.ToString("yyyy-MM-dd") == notificationDate.ToString("yyyy-MM-dd") /*&& row.Cells["Column6"].Value.ToString() != "1"*/)
                         {
-                            while (rdr.Read())
+                            // If current time is PM, adjust the hour for 12-hour format and check for notification match
+                            if (Math.Abs(int.Parse(egyptTime.ToString("HH"))) >= 12 && row.Cells[6].Value.ToString() == "0")
                             {
-                                string notificationName = rdr["Name"].ToString();
-                                int notificationId = Convert.ToInt32(rdr["NID"]);
+                                string adjustedHours = Math.Abs(int.Parse(egyptTime.ToString("HH")) - 12).ToString();
+                                if (adjustedHours == notificationHours &&
+                                    egyptTime.ToString("mm") == notificationMinutes &&
+                                    egyptTime.ToString("tt") == notificationTiming)
+                                {
+                                    // Show the notification
+                                    ShowNotification("تذكير", $"الاشعار: {notificationName}");
+                                    // Safely casting row.Cells["Column9"].Value to int
+                                    if (row.Cells[0].Value != null && int.TryParse(row.Cells[0].Value.ToString(), out int notificationId))
+                                    {
+                                        MarkNotificationAsNotified(notificationId, con);
+                                        // Remove the row from DataGridView after the notification is processed
+                                        int rowIndex = row.Index;
+                                    }
+                                    else
+                                    {
+                                        // Handle the case where the value is null or not an integer
+                                        MessageBox.Show("Invalid notification ID");
+                                    }
 
-                                // Show the notification    
+                                }
+                            }else if (Math.Abs(int.Parse(egyptTime.ToString("HH"))) == 12 && row.Cells[6].Value.ToString() == "0")
+                        {
+                            string adjustedHours = Math.Abs(int.Parse(egyptTime.ToString("HH"))).ToString();
+                            if (adjustedHours == notificationHours &&
+                                egyptTime.ToString("mm") == notificationMinutes &&
+                                egyptTime.ToString("tt") == notificationTiming)
+                            {
+                                // Show the notification
                                 ShowNotification("تذكير", $"الاشعار: {notificationName}");
+                                // Safely casting row.Cells["Column9"].Value to int
+                                if (row.Cells[0].Value != null && int.TryParse(row.Cells[0].Value.ToString(), out int notificationId))
+                                {
+                                    MarkNotificationAsNotified(notificationId, con);
+                                    // Remove the row from DataGridView after the notification is processed
+                                    int rowIndex = row.Index;
+                                }
+                                else
+                                {
+                                    // Handle the case where the value is null or not an integer
+                                    MessageBox.Show("Invalid notification ID");
+                                }
 
-                                // Collect the NID for updating later
-                                notificationIds.Add(notificationId);
                             }
                         }
-
-                        // After closing the reader, perform the updates
-                        foreach (int nid in notificationIds)
-                        {
-                            string updateQuery = "UPDATE Notifications SET IsNotified = 1 WHERE NID = @Id";
-                            using (SqlCommand updateCmd = new SqlCommand(updateQuery, con))
+                        else
                             {
-                                updateCmd.Parameters.AddWithValue("@Id", nid);
-                                int rowsAffected = updateCmd.ExecuteNonQuery();
-
-                                // Optional: Log or verify if the update was successful
-                                if (rowsAffected == 0)
+                            string adjustedHours = Math.Abs(int.Parse(egyptTime.ToString("HH"))).ToString();
+                            if (adjustedHours == notificationHours &&
+                                egyptTime.ToString("mm") == notificationMinutes &&
+                                egyptTime.ToString("tt") == notificationTiming)
+                            {
+                                // Show the notification
+                                ShowNotification("تذكير", $"الاشعار: {notificationName}");
+                                // Safely casting row.Cells["Column9"].Value to int
+                                if (row.Cells[0].Value != null && int.TryParse(row.Cells[0].Value.ToString(), out int notificationId))
                                 {
-                                    // Handle the case where no rows were updated
-                                    LogError(new Exception($"No rows updated for NID: {nid}"));
+                                    MarkNotificationAsNotified(notificationId, con);
+                                    // Remove the row from DataGridView after the notification is processed
+                                    int rowIndex = row.Index;
                                 }
+                                else
+                                {
+                                    // Handle the case where the value is null or not an integer
+                                    MessageBox.Show("Invalid notification ID");
+                                }
+
                             }
+                        }
                         }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                // Handle exceptions (e.g., log the error)
-                LogError(ex);
-            }
+            
         }
         private void LogError(Exception ex)
         {
@@ -309,52 +351,66 @@ namespace Accounting_System
 
         private void MarkNotificationAsNotified(int notificationId, SqlConnection con)
         {
+            con.Open();
             string updateQuery = "UPDATE Notifications SET IsNotified = 1 WHERE NID = @Id";
             using (SqlCommand updateCmd = new SqlCommand(updateQuery, con))
             {
                 updateCmd.Parameters.AddWithValue("@Id", notificationId);
                 updateCmd.ExecuteNonQuery();
-
+                GetNotifications();
+                con.Close();
             }
         }
+
+
+
 
         private void CheckForQuantity()
         {
-            using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
-            {
-                // Open the connection
-                con.Open();
-
-                // Define the query and command
-                using (SqlCommand cmd = new SqlCommand("SELECT PID, RTRIM(Product.ProductCode), RTRIM(ProductName), Qty " +
-                                         "FROM Temp_Stock, Product " +
-                                         "WHERE Product.PID = Temp_Stock.ProductID AND Qty = 0 " +
-                                         "ORDER BY ProductCode", con))
+            
+                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
                 {
-                    // Execute the query and read the data
-                    using (SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection))
+                    // Open the connection
+                    con.Open();
+
+                    // Define the query and command
+                    using (SqlCommand cmd = new SqlCommand(
+                        "SELECT PID, RTRIM(Product.ProductCode), RTRIM(ProductName), Qty " +
+                        "FROM Temp_Stock " +
+                        "INNER JOIN Product ON Product.PID = Temp_Stock.ProductID " +
+                        "WHERE Qty = 0 " +
+                        "ORDER BY ProductCode", con))
                     {
-                        // Clear the DataGridView before adding new rows
-                        dgw2.Rows.Clear();
+                        // Execute the query and read the data
 
-                        // Loop through the data and add rows to the DataGridView
-                        while (rdr.Read())
+                        using (SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection))
                         {
-                            dgw2.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3]);
-                            if (rdr[3].ToString() == "0")
-                            {
-                                // Show the notification    
-                                ShowNotification("تذكير", $"الاشعار: هاذا الصنف قد نفذ   {rdr[2].ToString()}");
+                            // Clear the DataGridView before adding new rows
+                            dgw2.Rows.Clear();
 
+                            // Loop through the data and add rows to the DataGridView
+                            while (rdr.Read())
+                            {
+                                int pid = (int)rdr[0]; // Get PID as int
+
+                                dgw2.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3]);
+
+                                // Check if this product hasn't been notified yet
+                                if (!notifiedProducts.Contains(pid))
+                                {
+                                    // Show the notification    
+                                    ShowNotification("تذكير", $"الاشعار: هاذا الصنف قد نفذ   {rdr[2].ToString()}");
+
+                                    // Add the product ID to the set to avoid future notifications
+                                    notifiedProducts.Add(pid);
+                                }
                             }
                         }
-
                     }
                 }
-            }
+
+            
         }
-
-
 
         private void ShowNotification(string title, string message)
         {
@@ -362,9 +418,8 @@ namespace Accounting_System
             notifyIcon1.BalloonTipTitle = title;
             notifyIcon1.BalloonTipText = message;
             notifyIcon1.BalloonTipIcon = ToolTipIcon.Info; // You can set it to Info, Warning, or Error
-            notifyIcon1.ShowBalloonTip(2000); // Display for 3 seconds/
+            notifyIcon1.ShowBalloonTip(500); // Display for 3 seconds/
             
-
         }
 
 
@@ -374,6 +429,7 @@ namespace Accounting_System
         }
         private void UpdateNotification()
         {
+            Properties.Settings.Default.Notification = true;
             using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
             {
                 con.Open();
@@ -439,38 +495,56 @@ namespace Accounting_System
             txtCompanyName.Text = "";
             textBox1.Text = "";
             dateTimePicker1.ResetText();
+            btnSave.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-        
-            //ShowNotification(textBox1.Text, txtCompanyName.Text);
-            AddApplicationToStartup();
+
+
         }
-
-        public static void AddApplicationToStartup()
+        public static void AddToStartup(string appName, string appPath)
         {
-            string appName = "URTECH";
-            string appPath = Application.ExecutablePath; // Path of the running application
-
-            RegistryKey rk = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
-            if (rk.GetValue(appName) == null)
+            try
             {
-                rk.SetValue(appName, appPath);
+                // Open the key where Windows startup programs are stored
+                RegistryKey registryKey = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
+
+                // Add the value in the registry for your app
+                if (registryKey != null && registryKey.GetValue(appName) == null)
+                {
+                    registryKey.SetValue(appName, appPath);
+                    registryKey.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to add to startup: {ex.Message}");
             }
         }
 
-        public static void RemoveApplicationFromStartup()
+        public static void RemoveFromStartup(string appName)
         {
-            string appName = "URTECH";
-
-            RegistryKey rk = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
-            if (rk.GetValue(appName) != null)
+            try
             {
-                rk.DeleteValue(appName);
+                // Open the key where Windows startup programs are stored
+                RegistryKey registryKey = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
+
+                // Remove the value from the registry
+                if (registryKey != null)
+                {
+                    if (registryKey.GetValue(appName) != null)
+                    {
+                        registryKey.DeleteValue(appName);
+                    }
+                    registryKey.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to remove from startup: {ex.Message}");
             }
         }
-
         private void dgw_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
         }
@@ -479,7 +553,16 @@ namespace Accounting_System
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             this.Show();
-
+            //if (basicc.IsDisposed) // Check if notifn is null or disposed
+            //{
+            //    basicc = new basic(); // Create a new instance
+            //    basicc.ShowDialog();
+            //}
+            //else
+            //{
+            //    basicc.Show();
+            //}
+            
 
         }
 
@@ -565,7 +648,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("هناك خطا ما ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -734,6 +817,24 @@ namespace Accounting_System
             frmPurchaseEntry.lblUser.Text = lblUser.Text;
             frmPurchaseEntry.Reset();
             frmPurchaseEntry.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            RemoveFromStartup("URTECH");
+        }
+
+        private void gunaControlBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();    
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.Notification = true;
+
+            MessageBox.Show("تم حفظ التعديل بنجاح");
+
         }
     }
 }

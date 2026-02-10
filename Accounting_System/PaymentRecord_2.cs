@@ -1,5 +1,5 @@
 ﻿using DevExpress.Data.Browsing.Design;
-using Pharmacy.DL;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -44,6 +44,7 @@ namespace Accounting_System
                                      SalesMan_Name, SalesMan_Comession, SalesMan_ID_2
                               FROM Customer
                               INNER JOIN Payment_2 ON Customer.CustomerID = Payment_2.CustomerID
+                              where Amount != 0
                               ORDER BY [Date]";
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
@@ -153,6 +154,7 @@ namespace Accounting_System
                         string query = "SELECT TC_ID, RTRIM(TransactionID), Date, RTRIM(PaymentMode), Customer.ID, RTRIM(Customer.CustomerID), RTRIM(Name), Amount, RTRIM(Payment_2.Remarks), RTRIM(Check_ID), Check_Date, RTRIM(Bank), SalesMan_ID, SalesMan_Name, SalesMan_Comession, SalesMan_ID_2 " +
                                        "FROM Customer, Payment_2 " +
                                        "WHERE Customer.CustomerID = Payment_2.CustomerID " +
+                                       "and Amount != 0" +
                                        "AND [Date] BETWEEN @d1 AND @d2 " +
                                        "ORDER BY [Date]";
 
@@ -220,6 +222,7 @@ namespace Accounting_System
                                    "SalesMan_Comession, SalesMan_ID_2 " +
                                    "FROM Customer, Payment_2 " +
                                    "WHERE Customer.CustomerID = Payment_2.CustomerID " +
+                                   "and Amount != 0" +
                                    "AND [Name] LIKE '%' + @supplierName + '%' " +
                                    "ORDER BY [Date]";
 
@@ -250,39 +253,35 @@ namespace Accounting_System
             {
                 if (dgw.Rows.Count > 0)
                 {
-                    if (lblSet.Text == "سندات قبض العملاء")
-                    {
-                        this.Close();
-                        DataGridViewRow dr = dgw.SelectedRows[0];
-                        Payment_2 frmPayment_2 = new Payment_2();
-                        
-                        
-                        frmPayment_2.txtT_ID.Text = dr.Cells[0].Value.ToString();
-                        frmPayment_2.txtTransactionNo.Text = dr.Cells[1].Value.ToString();
-                        frmPayment_2.dtpTranactionDate.Value = Convert.ToDateTime(dr.Cells[2].Value);
-                        frmPayment_2.cmbPaymentMode.Text = dr.Cells[3].Value.ToString();
-                        frmPayment_2.txtSup_ID.Text = dr.Cells[4].Value.ToString();
-                        frmPayment_2.txtSupplierID.Text = dr.Cells[5].Value.ToString();
-                        frmPayment_2.txtSupplierName.Text = dr.Cells[6].Value.ToString();
-                        frmPayment_2.txtTransactionAmount.Text = dr.Cells[7].Value.ToString();
-                        frmPayment_2.txtRemarks.Text = dr.Cells[8].Value.ToString();
-                        frmPayment_2.txtCheck.Text = dr.Cells[9].Value.ToString();
-                        frmPayment_2.dtpCheck.Value = Convert.ToDateTime(dr.Cells[10].Value);
-                        frmPayment_2.txtBank.Text = dr.Cells[11].Value.ToString();
-                        frmPayment_2.txtSM_ID.Text = dr.Cells[12].Value.ToString();
-                        frmPayment_2.txtSalesman.Text = dr.Cells[13].Value.ToString();
-                        frmPayment_2.txtCommissionPer.Text = dr.Cells[14].Value.ToString();
-                        frmPayment_2.txtSalesmanID.Text = dr.Cells[15].Value.ToString();
+                    DataGridViewRow dr = dgw.SelectedRows[0];
+                    Payment_2 frmPayment_2 =  Payment_2.instance;
 
-                        frmPayment_2.btnSave.Enabled = false;
-                        frmPayment_2.GetSupplierBalance();
-                        frmPayment_2.btnUpdate.Enabled = true;
-                        frmPayment_2.btnDelete.Enabled = true;
-                        frmPayment_2.GetSupplierInfo();
-                        frmPayment_2.btnSelection.Enabled = false;
-                        frmPayment_2.Button1.Enabled = false;
-                        frmPayment_2.ShowDialog();
-                    }
+
+                    frmPayment_2.txtT_ID.Text = dr.Cells[0].Value.ToString();
+                    frmPayment_2.txtTransactionNo.Text = dr.Cells[1].Value.ToString();
+                    frmPayment_2.dtpTranactionDate.Value = Convert.ToDateTime(dr.Cells[2].Value);
+                    frmPayment_2.cmbPaymentMode.Text = dr.Cells[3].Value.ToString();
+                    frmPayment_2.txtSup_ID.Text = dr.Cells[4].Value.ToString();
+                    frmPayment_2.txtSupplierID.Text = dr.Cells[5].Value.ToString();
+                    frmPayment_2.txtSupplierName.Text = dr.Cells[6].Value.ToString();
+                    frmPayment_2.txtTransactionAmount.Text = dr.Cells[7].Value.ToString();
+                    frmPayment_2.txtRemarks.Text = dr.Cells[8].Value.ToString();
+                    frmPayment_2.txtCheck.Text = dr.Cells[9].Value.ToString();
+                    frmPayment_2.dtpCheck.Value = Convert.ToDateTime(dr.Cells[10].Value);
+                    frmPayment_2.txtBank.Text = dr.Cells[11].Value.ToString();
+                    frmPayment_2.txtSM_ID.Text = dr.Cells[12].Value.ToString();
+                    frmPayment_2.txtSalesman.Text = dr.Cells[13].Value.ToString();
+                    frmPayment_2.txtCommissionPer.Text = dr.Cells[14].Value.ToString();
+                    frmPayment_2.txtSalesmanID.Text = dr.Cells[15].Value.ToString();
+
+                    frmPayment_2.btnSave.Enabled = false;
+                    frmPayment_2.GetSupplierBalance();
+                    frmPayment_2.btnUpdate.Enabled = true;
+                    frmPayment_2.btnDelete.Enabled = true;
+                    frmPayment_2.GetSupplierInfo();
+                    frmPayment_2.btnSelection.Enabled = false;
+                    frmPayment_2.Button1.Enabled = false;
+                    this.Close();
                 }
             }
             catch (Exception ex)

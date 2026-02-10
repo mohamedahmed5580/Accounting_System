@@ -6,13 +6,14 @@
         <xs:element name="Table1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="InvoiceDate" type="xs:dateTime" minOccurs="0" />
               <xs:element name="Name" type="xs:string" minOccurs="0" />
               <xs:element name="LedgerNo" type="xs:string" minOccurs="0" />
               <xs:element name="Label" type="xs:string" minOccurs="0" />
               <xs:element name="Credit" type="xs:decimal" minOccurs="0" />
               <xs:element name="Debit" type="xs:decimal" minOccurs="0" />
               <xs:element name="Manual_Inv" type="xs:string" minOccurs="0" />
+              <xs:element name="total_sale" type="xs:double" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

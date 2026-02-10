@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Company_Ledger1" targetNamespace="http://tempuri.org/Company_Ledger1.xsd" xmlns:mstns="http://tempuri.org/Company_Ledger1.xsd" xmlns="http://tempuri.org/Company_Ledger1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="saConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="saConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Accounting_System.Properties.Settings.GlobalReference.Default.saConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Company_Ledger1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Company_Ledger1" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Company_Ledger1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CompanyLedgerBook" msprop:Generator_RowEvHandlerName="CompanyLedgerBookRowChangeEventHandler" msprop:Generator_RowDeletedName="CompanyLedgerBookRowDeleted" msprop:Generator_RowDeletingName="CompanyLedgerBookRowDeleting" msprop:Generator_RowEvArgName="CompanyLedgerBookRowChangeEvent" msprop:Generator_TablePropName="CompanyLedgerBook" msprop:Generator_RowChangedName="CompanyLedgerBookRowChanged" msprop:Generator_UserTableName="CompanyLedgerBook" msprop:Generator_RowChangingName="CompanyLedgerBookRowChanging" msprop:Generator_RowClassName="CompanyLedgerBookRow" msprop:Generator_TableClassName="CompanyLedgerBookDataTable" msprop:Generator_TableVarName="tableCompanyLedgerBook">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnVarNameInTable="columnId" type="xs:int" />
+              <xs:element name="Date1" msprop:Generator_ColumnPropNameInTable="Date1Column" msprop:Generator_ColumnPropNameInRow="Date1" msprop:Generator_UserColumnName="Date1" msprop:Generator_ColumnVarNameInTable="columnDate1" type="xs:dateTime" />
+              <xs:element name="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LedgerNo" msprop:Generator_ColumnPropNameInTable="LedgerNoColumn" msprop:Generator_ColumnPropNameInRow="LedgerNo" msprop:Generator_UserColumnName="LedgerNo" msprop:Generator_ColumnVarNameInTable="columnLedgerNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Label" msprop:Generator_ColumnPropNameInTable="LabelColumn" msprop:Generator_ColumnPropNameInRow="Label" msprop:Generator_UserColumnName="Label" msprop:Generator_ColumnVarNameInTable="columnLabel">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Debit" msprop:Generator_ColumnPropNameInTable="DebitColumn" msprop:Generator_ColumnPropNameInRow="Debit" msprop:Generator_UserColumnName="Debit" msprop:Generator_ColumnVarNameInTable="columnDebit" type="xs:decimal" />
+              <xs:element name="Credit" msprop:Generator_ColumnPropNameInTable="CreditColumn" msprop:Generator_ColumnPropNameInRow="Credit" msprop:Generator_UserColumnName="Credit" msprop:Generator_ColumnVarNameInTable="columnCredit" type="xs:decimal" />
+              <xs:element name="PartyID" msprop:Generator_ColumnPropNameInTable="PartyIDColumn" msprop:Generator_ColumnPropNameInRow="PartyID" msprop:Generator_UserColumnName="PartyID" msprop:Generator_ColumnVarNameInTable="columnPartyID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ST_ID" msprop:Generator_ColumnPropNameInTable="ST_IDColumn" msprop:Generator_ColumnPropNameInRow="ST_ID" msprop:Generator_UserColumnName="ST_ID" msprop:Generator_ColumnVarNameInTable="columnST_ID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Stock" msprop:Generator_RowEvHandlerName="StockRowChangeEventHandler" msprop:Generator_RowDeletedName="StockRowDeleted" msprop:Generator_RowDeletingName="StockRowDeleting" msprop:Generator_RowEvArgName="StockRowChangeEvent" msprop:Generator_TablePropName="Stock" msprop:Generator_RowChangedName="StockRowChanged" msprop:Generator_UserTableName="Stock" msprop:Generator_RowChangingName="StockRowChanging" msprop:Generator_RowClassName="StockRow" msprop:Generator_TableClassName="StockDataTable" msprop:Generator_TableVarName="tableStock">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ST_ID" msprop:Generator_ColumnPropNameInTable="ST_IDColumn" msprop:Generator_ColumnPropNameInRow="ST_ID" msprop:Generator_UserColumnName="ST_ID" msprop:Generator_ColumnVarNameInTable="columnST_ID" type="xs:int" />
+              <xs:element name="InvoiceNo" msprop:Generator_ColumnPropNameInTable="InvoiceNoColumn" msprop:Generator_ColumnPropNameInRow="InvoiceNo" msprop:Generator_UserColumnName="InvoiceNo" msprop:Generator_ColumnVarNameInTable="columnInvoiceNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnVarNameInTable="columnDate" type="xs:dateTime" />
+              <xs:element name="PurchaseType" msprop:Generator_ColumnPropNameInTable="PurchaseTypeColumn" msprop:Generator_ColumnPropNameInRow="PurchaseType" msprop:Generator_UserColumnName="PurchaseType" msprop:Generator_ColumnVarNameInTable="columnPurchaseType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalPayment" msprop:Generator_ColumnPropNameInTable="TotalPaymentColumn" msprop:Generator_ColumnPropNameInRow="TotalPayment" msprop:Generator_UserColumnName="TotalPayment" msprop:Generator_ColumnVarNameInTable="columnTotalPayment" type="xs:double" />
+              <xs:element name="CurrencieName" msprop:Generator_ColumnPropNameInTable="CurrencieNameColumn" msprop:Generator_ColumnPropNameInRow="CurrencieName" msprop:Generator_UserColumnName="CurrencieName" msprop:Generator_ColumnVarNameInTable="columnCurrencieName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total_By_Pound" msprop:Generator_UserColumnName="Total_By_Pound" msprop:Generator_ColumnPropNameInTable="Total_By_PoundColumn" msprop:Generator_ColumnPropNameInRow="Total_By_Pound" msprop:Generator_ColumnVarNameInTable="columnTotal_By_Pound" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CompanyLedgerBook" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="Stock_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Stock" />
+      <xs:field xpath="mstns:ST_ID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Stock_CompanyLedgerBook" msdata:parent="Stock" msdata:child="CompanyLedgerBook" msdata:parentkey="ST_ID" msdata:childkey="ST_ID" msprop:Generator_UserParentTable="Stock" msprop:Generator_UserChildTable="CompanyLedgerBook" msprop:Generator_RelationVarName="relationStock_CompanyLedgerBook" msprop:Generator_ChildPropName="GetCompanyLedgerBookRows" msprop:Generator_ParentPropName="StockRow" msprop:Generator_UserRelationName="Stock_CompanyLedgerBook" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

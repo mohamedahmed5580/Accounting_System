@@ -433,6 +433,7 @@
             this.txtSalesmanName.Name = "txtSalesmanName";
             this.txtSalesmanName.Size = new System.Drawing.Size(256, 30);
             this.txtSalesmanName.TabIndex = 1;
+            this.txtSalesmanName.TextChanged += new System.EventHandler(this.txtSalesmanName_TextChanged);
             // 
             // Label2
             // 
@@ -597,6 +598,7 @@
             // Picture
             // 
             this.Picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Picture.Image = global::Accounting_System.Properties.Resources.if_icons_user3;
             this.Picture.Location = new System.Drawing.Point(16, 12);
             this.Picture.Margin = new System.Windows.Forms.Padding(4);
             this.Picture.Name = "Picture";

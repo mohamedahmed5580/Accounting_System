@@ -1,5 +1,4 @@
 ﻿using Microsoft.Office.Interop.Excel;
-using Pharmacy.DL;
 using System;
 using System.Data;
 using System.Data.SqlClient;
@@ -46,6 +45,7 @@ namespace Accounting_System
                 using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
                 {
                     cn.Open();
+
                     SqlCommand cmd = new SqlCommand("SELECT RTRIM(ID),RTRIM(SupplierID),RTRIM([Name]), RTRIM(Address),RTRIM(City),RTRIM(State),RTRIM(ZipCode), RTRIM(ContactNo), RTRIM(EmailID),RTRIM(TIN),RTRIM(STNo),RTRIM(CST),RTRIM(PAN),RTRIM(AccountName),RTRIM(AccountNumber),RTRIM(Bank),RTRIM(Branch),RTRIM(IFSCCode),OpeningBalance,RTRIM(OpeningBalanceType),RTRIM(Remarks) FROM Supplier ORDER BY Name", cn);
                     SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
                     dgw.Rows.Clear();
@@ -119,7 +119,7 @@ namespace Accounting_System
                     
                     if (lblSet.Text == "Supplier Entry")
                     {
-                        Supplier sup = new Supplier();
+                        Supplier sup =  Supplier.instance;
                         sup.txtID.Text = row.Cells[0].Value.ToString();
                         sup.txtSupplierID.Text = row.Cells[1].Value.ToString();
                         sup.txtSupplierName.Text = row.Cells[2].Value.ToString();
@@ -149,7 +149,6 @@ namespace Accounting_System
                         sup.cmbOpeningBalanceType.Enabled = false;
                         sup.txtOpeningBalance.ReadOnly = true;
 
-                        sup.ShowDialog();
                         this.Close();
                     }
                     else if (lblSet.Text == "Purchase")
@@ -246,6 +245,8 @@ namespace Accounting_System
                     Pymentinvoice.instance.txtCity.Text = row.Cells[4].Value.ToString();
                     Pymentinvoice.instance.txtContactNo.Text = row.Cells[7].Value.ToString();
                     lblSet.Text = "";
+                    Pymentinvoice.instance.isSupplierSelecting = false   ;
+
                     this.Close();
 
                 }

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CustomerSuppDataSet" targetNamespace="http://tempuri.org/CustomerSuppDataSet.xsd" xmlns:mstns="http://tempuri.org/CustomerSuppDataSet.xsd" xmlns="http://tempuri.org/CustomerSuppDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SalesProductsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SalesProductsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Accounting_System.Properties.Settings.GlobalReference.Default.SalesProductsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CustomerSuppDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CustomerSuppDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CustomerSuppDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CustomerSupp" msprop:Generator_RowClassName="CustomerSuppRow" msprop:Generator_RowEvHandlerName="CustomerSuppRowChangeEventHandler" msprop:Generator_RowDeletedName="CustomerSuppRowDeleted" msprop:Generator_RowDeletingName="CustomerSuppRowDeleting" msprop:Generator_RowEvArgName="CustomerSuppRowChangeEvent" msprop:Generator_TablePropName="CustomerSupp" msprop:Generator_RowChangedName="CustomerSuppRowChanged" msprop:Generator_UserTableName="CustomerSupp" msprop:Generator_RowChangingName="CustomerSuppRowChanging" msprop:Generator_TableClassName="CustomerSuppDataTable" msprop:Generator_TableVarName="tableCustomerSupp">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EntityID" msprop:Generator_UserColumnName="EntityID" msprop:Generator_ColumnPropNameInTable="EntityIDColumn" msprop:Generator_ColumnPropNameInRow="EntityID" msprop:Generator_ColumnVarNameInTable="columnEntityID" type="xs:int" minOccurs="0" />
+              <xs:element name="EntityCode" msprop:Generator_UserColumnName="EntityCode" msprop:Generator_ColumnPropNameInTable="EntityCodeColumn" msprop:Generator_ColumnPropNameInRow="EntityCode" msprop:Generator_ColumnVarNameInTable="columnEntityCode" type="xs:string" minOccurs="0" />
+              <xs:element name="EntityName" msprop:Generator_UserColumnName="EntityName" msprop:Generator_ColumnPropNameInTable="EntityNameColumn" msprop:Generator_ColumnPropNameInRow="EntityName" msprop:Generator_ColumnVarNameInTable="columnEntityName" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalDebit" msprop:Generator_UserColumnName="TotalDebit" msprop:Generator_ColumnPropNameInTable="TotalDebitColumn" msprop:Generator_ColumnPropNameInRow="TotalDebit" msprop:Generator_ColumnVarNameInTable="columnTotalDebit" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalBalance" msprop:Generator_UserColumnName="TotalBalance" msprop:Generator_ColumnPropNameInTable="TotalBalanceColumn" msprop:Generator_ColumnPropNameInRow="TotalBalance" msprop:Generator_ColumnVarNameInTable="columnTotalBalance" type="xs:string" minOccurs="0" />
+              <xs:element name="STotalPayment" msprop:Generator_UserColumnName="STotalPayment" msprop:Generator_ColumnPropNameInTable="STotalPaymentColumn" msprop:Generator_ColumnPropNameInRow="STotalPayment" msprop:Generator_ColumnVarNameInTable="columnSTotalPayment" type="xs:double" minOccurs="0" />
+              <xs:element name="QtyBK" msprop:Generator_ColumnPropNameInRow="QtyBK" msprop:Generator_ColumnPropNameInTable="QtyBKColumn" msprop:Generator_ColumnVarNameInTable="columnQtyBK" msprop:Generator_UserColumnName="QtyBK" type="xs:string" minOccurs="0" />
+              <xs:element name="EntityType" msprop:Generator_UserColumnName="EntityType" msprop:Generator_ColumnPropNameInTable="EntityTypeColumn" msprop:Generator_ColumnPropNameInRow="EntityType" msprop:Generator_ColumnVarNameInTable="columnEntityType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

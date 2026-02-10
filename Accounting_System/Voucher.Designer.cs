@@ -60,7 +60,6 @@
             this.txtVoucherID = new System.Windows.Forms.TextBox();
             this.lblUser = new System.Windows.Forms.Label();
             this.Timer1 = new System.Windows.Forms.Timer(this.components);
-            this.txtName = new System.Windows.Forms.TextBox();
             this.Label3 = new System.Windows.Forms.Label();
             this.Panel1 = new System.Windows.Forms.Panel();
             this.DataGridView1 = new System.Windows.Forms.DataGridView();
@@ -76,6 +75,7 @@
             this.txtDetails = new System.Windows.Forms.TextBox();
             this.dtpDate = new System.Windows.Forms.DateTimePicker();
             this.txtVoucherNo = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.ComboBox();
             Label5 = new System.Windows.Forms.Label();
             this.Panel4.SuspendLayout();
             this.GroupBox2.SuspendLayout();
@@ -118,7 +118,7 @@
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnRemove.ForeColor = System.Drawing.Color.White;
             this.btnRemove.Location = new System.Drawing.Point(279, 112);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(120, 39);
             this.btnRemove.TabIndex = 4;
@@ -137,7 +137,7 @@
             this.Panel4.Controls.Add(this.btnSave);
             this.Panel4.Controls.Add(this.btnNew);
             this.Panel4.Location = new System.Drawing.Point(773, 82);
-            this.Panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.Panel4.Name = "Panel4";
             this.Panel4.Size = new System.Drawing.Size(174, 332);
             this.Panel4.TabIndex = 3;
@@ -147,7 +147,7 @@
             this.Button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Button2.Location = new System.Drawing.Point(12, 49);
-            this.Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button2.Margin = new System.Windows.Forms.Padding(4);
             this.Button2.Name = "Button2";
             this.Button2.Size = new System.Drawing.Size(151, 41);
             this.Button2.TabIndex = 6;
@@ -162,7 +162,7 @@
             this.btnPrint.Enabled = false;
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnPrint.Location = new System.Drawing.Point(12, 278);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(151, 41);
             this.btnPrint.TabIndex = 5;
@@ -176,7 +176,7 @@
             this.btnGetData.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGetData.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnGetData.Location = new System.Drawing.Point(12, 230);
-            this.btnGetData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGetData.Margin = new System.Windows.Forms.Padding(4);
             this.btnGetData.Name = "btnGetData";
             this.btnGetData.Size = new System.Drawing.Size(151, 41);
             this.btnGetData.TabIndex = 4;
@@ -192,7 +192,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(12, 183);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(151, 41);
             this.btnDelete.TabIndex = 3;
@@ -207,7 +207,7 @@
             this.btnUpdate.Enabled = false;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnUpdate.Location = new System.Drawing.Point(12, 138);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(151, 41);
             this.btnUpdate.TabIndex = 2;
@@ -221,7 +221,7 @@
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnSave.Location = new System.Drawing.Point(12, 94);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(151, 41);
             this.btnSave.TabIndex = 1;
@@ -236,7 +236,7 @@
             this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnNew.ForeColor = System.Drawing.Color.White;
             this.btnNew.Location = new System.Drawing.Point(12, 5);
-            this.btnNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(4);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(151, 41);
             this.btnNew.TabIndex = 0;
@@ -257,9 +257,9 @@
             this.GroupBox2.Controls.Add(this.txtAmount);
             this.GroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.GroupBox2.Location = new System.Drawing.Point(12, 245);
-            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.GroupBox2.Size = new System.Drawing.Size(753, 159);
             this.GroupBox2.TabIndex = 1;
             this.GroupBox2.TabStop = false;
@@ -269,7 +269,7 @@
             // 
             this.txtNotes.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtNotes.Location = new System.Drawing.Point(20, 31);
-            this.txtNotes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNotes.Margin = new System.Windows.Forms.Padding(4);
             this.txtNotes.Multiline = true;
             this.txtNotes.Name = "txtNotes";
             this.txtNotes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -281,7 +281,7 @@
             this.txtParticulars.Enabled = false;
             this.txtParticulars.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtParticulars.Location = new System.Drawing.Point(447, 32);
-            this.txtParticulars.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtParticulars.Margin = new System.Windows.Forms.Padding(4);
             this.txtParticulars.Name = "txtParticulars";
             this.txtParticulars.Size = new System.Drawing.Size(172, 30);
             this.txtParticulars.TabIndex = 0;
@@ -332,7 +332,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(421, 112);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(157, 39);
             this.btnAdd.TabIndex = 3;
@@ -344,7 +344,7 @@
             // 
             this.txtAmount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtAmount.Location = new System.Drawing.Point(447, 69);
-            this.txtAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAmount.Margin = new System.Windows.Forms.Padding(4);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(172, 30);
             this.txtAmount.TabIndex = 1;
@@ -358,7 +358,7 @@
             this.Panel2.Controls.Add(this.txtVoucherID);
             this.Panel2.Controls.Add(this.lblUser);
             this.Panel2.Location = new System.Drawing.Point(12, 9);
-            this.Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(947, 76);
             this.Panel2.TabIndex = 0;
@@ -379,7 +379,7 @@
             // txtVoucherID
             // 
             this.txtVoucherID.Location = new System.Drawing.Point(91, 28);
-            this.txtVoucherID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVoucherID.Margin = new System.Windows.Forms.Padding(4);
             this.txtVoucherID.Name = "txtVoucherID";
             this.txtVoucherID.Size = new System.Drawing.Size(147, 22);
             this.txtVoucherID.TabIndex = 4;
@@ -395,16 +395,6 @@
             this.lblUser.TabIndex = 5;
             this.lblUser.Text = "Label8";
             this.lblUser.Visible = false;
-            // 
-            // txtName
-            // 
-            this.txtName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtName.Location = new System.Drawing.Point(56, 30);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtName.Name = "txtName";
-            this.txtName.ReadOnly = true;
-            this.txtName.Size = new System.Drawing.Size(276, 30);
-            this.txtName.TabIndex = 2;
             // 
             // Label3
             // 
@@ -429,11 +419,10 @@
             this.Panel1.Controls.Add(this.Panel4);
             this.Panel1.Controls.Add(this.Panel2);
             this.Panel1.Location = new System.Drawing.Point(7, 6);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(969, 742);
             this.Panel1.TabIndex = 3;
-            this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // DataGridView1
             // 
@@ -469,7 +458,7 @@
             this.DataGridView1.EnableHeadersVisualStyles = false;
             this.DataGridView1.GridColor = System.Drawing.Color.White;
             this.DataGridView1.Location = new System.Drawing.Point(12, 422);
-            this.DataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.ReadOnly = true;
             this.DataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -524,7 +513,7 @@
             this.Panel3.Controls.Add(this.Label31);
             this.Panel3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.Panel3.Location = new System.Drawing.Point(671, 422);
-            this.Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.Panel3.Name = "Panel3";
             this.Panel3.Size = new System.Drawing.Size(237, 145);
             this.Panel3.TabIndex = 307;
@@ -533,7 +522,7 @@
             // 
             this.txtGrandTotal.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtGrandTotal.Location = new System.Drawing.Point(9, 97);
-            this.txtGrandTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGrandTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtGrandTotal.Name = "txtGrandTotal";
             this.txtGrandTotal.ReadOnly = true;
             this.txtGrandTotal.Size = new System.Drawing.Size(212, 30);
@@ -555,10 +544,10 @@
             // 
             // GroupBox4
             // 
+            this.GroupBox4.Controls.Add(this.txtName);
             this.GroupBox4.Controls.Add(this.btnSelect);
             this.GroupBox4.Controls.Add(this.Label4);
             this.GroupBox4.Controls.Add(this.txtDetails);
-            this.GroupBox4.Controls.Add(this.txtName);
             this.GroupBox4.Controls.Add(this.Label3);
             this.GroupBox4.Controls.Add(this.dtpDate);
             this.GroupBox4.Controls.Add(this.txtVoucherNo);
@@ -566,9 +555,9 @@
             this.GroupBox4.Controls.Add(Label5);
             this.GroupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.GroupBox4.Location = new System.Drawing.Point(4, 97);
-            this.GroupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox4.Name = "GroupBox4";
-            this.GroupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.GroupBox4.Size = new System.Drawing.Size(761, 140);
             this.GroupBox4.TabIndex = 0;
             this.GroupBox4.TabStop = false;
@@ -580,7 +569,7 @@
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelect.Image = ((System.Drawing.Image)(resources.GetObject("btnSelect.Image")));
             this.btnSelect.Location = new System.Drawing.Point(3, 27);
-            this.btnSelect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSelect.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(48, 32);
             this.btnSelect.TabIndex = 6;
@@ -603,7 +592,7 @@
             // 
             this.txtDetails.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtDetails.Location = new System.Drawing.Point(56, 69);
-            this.txtDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDetails.Margin = new System.Windows.Forms.Padding(4);
             this.txtDetails.Multiline = true;
             this.txtDetails.Name = "txtDetails";
             this.txtDetails.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -625,11 +614,24 @@
             // 
             this.txtVoucherNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtVoucherNo.Location = new System.Drawing.Point(481, 28);
-            this.txtVoucherNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVoucherNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtVoucherNo.Name = "txtVoucherNo";
             this.txtVoucherNo.ReadOnly = true;
             this.txtVoucherNo.Size = new System.Drawing.Size(147, 30);
             this.txtVoucherNo.TabIndex = 0;
+            // 
+            // txtName
+            // 
+            this.txtName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.txtName.FormattingEnabled = true;
+            this.txtName.Location = new System.Drawing.Point(59, 29);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(275, 31);
+            this.txtName.TabIndex = 348;
+            this.txtName.SelectedIndexChanged += new System.EventHandler(this.txtName_SelectedIndexChanged);
             // 
             // Voucher
             // 
@@ -640,7 +642,7 @@
             this.ClientSize = new System.Drawing.Size(981, 753);
             this.Controls.Add(this.Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Voucher";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -687,7 +689,6 @@
         internal System.Windows.Forms.Label lblUser;
         internal System.Windows.Forms.Timer Timer1;
         internal System.Windows.Forms.Button btnSelect;
-        internal System.Windows.Forms.TextBox txtName;
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.Panel Panel1;
         internal System.Windows.Forms.DataGridView DataGridView1;
@@ -702,5 +703,6 @@
         internal System.Windows.Forms.TextBox txtDetails;
         internal System.Windows.Forms.DateTimePicker dtpDate;
         internal System.Windows.Forms.TextBox txtVoucherNo;
+        internal System.Windows.Forms.ComboBox txtName;
     }
 }

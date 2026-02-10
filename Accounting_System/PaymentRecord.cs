@@ -1,4 +1,5 @@
-﻿using Pharmacy.DL;
+﻿
+using SixLabors.ImageSharp.Drawing;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,22 +27,21 @@ namespace Accounting_System
         }
         public void GetData()
         {
-            
-            
+            using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
+            {
                 cn.Open();
-                using (SqlCommand cmd = new SqlCommand("SELECT T_ID, RTRIM(TransactionID), Date, RTRIM(PaymentMode), Supplier.ID, RTRIM(Supplier.SupplierID), RTRIM(Name), Amount, RTRIM(Payment.Remarks) from Supplier, Payment where Supplier.ID = Payment.SupplierID and Amount > 0 order by [Date]", cn))
+                using (SqlCommand cmd = new SqlCommand("SELECT T_ID, RTRIM(TransactionID), Date, RTRIM(PaymentMode), Supplier.ID, RTRIM(Supplier.SupplierID), RTRIM(Name), Amount, RTRIM(Payment.Remarks),Payment.InvNo from Supplier, Payment where Supplier.ID = Payment.SupplierID  order by [Date]", cn))
                 {
                     using (SqlDataReader rdr = cmd.ExecuteReader())
                     {
                         dgw.Rows.Clear();
                         while (rdr.Read())
                         {
-                            dgw.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8]);
+                            dgw.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8], rdr[9]);
                         }
                     }
                 }
-                cn.Close();
-            
+            }
         }
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
@@ -51,10 +51,10 @@ namespace Accounting_System
 
         private void btnGetData_Click(object sender, EventArgs e)
         {
-            
-            
+            using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
+            {
                 cn.Open();
-                using (SqlCommand cmd = new SqlCommand("SELECT T_ID, RTRIM(TransactionID), Date, RTRIM(PaymentMode), Supplier.ID, RTRIM(Supplier.SupplierID), RTRIM(Name), Amount, RTRIM(Payment.Remarks) from Supplier, Payment where Supplier.ID = Payment.SupplierID and Amount > 0 and [Date] between @d1 and @d2 order by [Date]", cn))
+                using (SqlCommand cmd = new SqlCommand("SELECT T_ID, RTRIM(TransactionID), Date, RTRIM(PaymentMode), Supplier.ID, RTRIM(Supplier.SupplierID), RTRIM(Name), Amount, RTRIM(Payment.Remarks),Payment.InvNo from Supplier, Payment where Supplier.ID = Payment.SupplierID and [Date] between @d1 and @d2 order by [Date]", cn))
                 {
                     cmd.Parameters.Add(new SqlParameter("@d1", SqlDbType.DateTime) { Value = dtpDateFrom.Value.Date });
                     cmd.Parameters.Add(new SqlParameter("@d2", SqlDbType.DateTime) { Value = dtpDateTo.Value });
@@ -64,27 +64,34 @@ namespace Accounting_System
                         dgw.Rows.Clear();
                         while (rdr.Read())
                         {
-                            dgw.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8]);
+                            dgw.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8], rdr[9]);
                         }
                     }
                 }
-            
+            }
         }
         private void txtSupplierName_TextChanged(object sender, EventArgs e)
         {
-            cn.Open();
-            using (SqlCommand cmd = new SqlCommand("SELECT T_ID, RTRIM(TransactionID), Date, RTRIM(PaymentMode), Supplier.ID, RTRIM(Supplier.SupplierID), RTRIM(Name), Amount, RTRIM(Payment.Remarks) from Supplier, Payment where Supplier.ID = Payment.SupplierID and Amount > 0 and [Name] like @name order by [Date]", cn))
+            using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
             {
-                cmd.Parameters.AddWithValue("@name", "%" + txtSupplierName.Text + "%");
-
-                using (SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection))
+                cn.Open();
+                using (SqlCommand cmd = new SqlCommand("SELECT T_ID, RTRIM(TransactionID), Date, RTRIM(PaymentMode), Supplier.ID, RTRIM(Supplier.SupplierID), RTRIM(Name), Amount, RTRIM(Payment.Remarks),Payment.InvNo from Supplier, Payment where Supplier.ID = Payment.SupplierID and Name like @name order by [Date]", cn))
                 {
-                    dgw.Rows.Clear();
-                    while (rdr.Read())
+                    cmd.Parameters.AddWithValue("@name", "%" + txtSupplierName.Text + "%");
+
+                    using (SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection))
                     {
-                        dgw.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8]);
+                        dgw.Rows.Clear();
+                        while (rdr.Read())
+                        {
+                            dgw.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8], rdr[9]);
+                        }
                     }
                 }
+            }
+            if (txtSupplierName.Text == "")
+            {
+                GetData();
             }
         }
         private void dgw_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -94,9 +101,8 @@ namespace Accounting_System
                 
                 
                     DataGridViewRow dr = dgw.SelectedRows[0];
-                    supplier_payment frmPayment = new supplier_payment();
-                    frmPayment.Show();
-                    this.Hide();
+                    supplier_payment frmPayment =  supplier_payment.instance;
+
                     frmPayment.txtT_ID.Text = dr.Cells[0].Value.ToString();
                     frmPayment.txtTransactionNo.Text = dr.Cells[1].Value.ToString();
                     frmPayment.dtpTranactionDate.Text = dr.Cells[2].Value.ToString();
@@ -106,13 +112,15 @@ namespace Accounting_System
                     frmPayment.txtSupplierName.Text = dr.Cells[6].Value.ToString();
                     frmPayment.txtTransactionAmount.Text = dr.Cells[7].Value.ToString();
                     frmPayment.txtRemarks.Text = dr.Cells[8].Value.ToString();
-                    frmPayment.btnSave.Enabled = false;
                     frmPayment.GetSupplierBalance();
                     frmPayment.btnUpdate.Enabled = true;
+                    frmPayment.btnSave.Enabled = false;
+                    frmPayment.btnUpdate1.Enabled = true;
                     frmPayment.btnDelete.Enabled = true;
                     frmPayment.GetSupplierInfo();
                     frmPayment.btnSelection.Enabled = false;
-                
+                    this.Hide();
+
             }
 
         }
@@ -174,11 +182,7 @@ namespace Accounting_System
                 xlApp = null;
             }
         }
-
-        private void txtSupplierName_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void PaymentRecord_Load(object sender, EventArgs e)
         {

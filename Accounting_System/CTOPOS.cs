@@ -1,5 +1,5 @@
 ﻿using Microsoft.Office.Interop.Excel;
-using Pharmacy.DL;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,52 +47,159 @@ namespace Accounting_System
         {
             try
             {
+                string searchTerm = txtCustomerName.Text.Trim();
+                if (string.IsNullOrEmpty(searchTerm))
+                {
+                    Getdata();
+                    return;
+                }
+
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT RTRIM(ID),RTRIM(CustomerID),RTRIM([Name]),RTRIM(Gender), RTRIM(Address),RTRIM(City),RTRIM(State),RTRIM(ZipCode), RTRIM(ContactNo), RTRIM(EmailID),RTRIM(Remarks),Photo from Customer where CustomerType='Regular' and name like '%" + txtCustomerName.Text + "%' order by ID", con);
-                SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-                dgw.Rows.Clear();
-                while (rdr.Read() == true)
-                    dgw.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8], rdr[9], rdr[10], rdr[11]);
-                con.Close();
+                using (SqlCommand cmd = new SqlCommand(
+                    "SELECT ID, CustomerID, [Name], Gender, Address, City, State, ZipCode, ContactNo, EmailID, Remarks, Photo " +
+                    "FROM Customer " +
+                    "WHERE [Name] LIKE @SearchTerm " +
+                    "ORDER BY ID", con))
+                {
+                    cmd.Parameters.AddWithValue("@SearchTerm", $"%{searchTerm}%");
+                    using (SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection))
+                    {
+                        dgw.Rows.Clear();
+                        while (rdr.Read())
+                        {
+                            dgw.Rows.Add(
+                                rdr["ID"],
+                                rdr["CustomerID"],
+                                rdr["Name"],
+                                rdr["Gender"],
+                                rdr["Address"],
+                                rdr["City"],
+                                rdr["State"],
+                                rdr["ZipCode"],
+                                rdr["ContactNo"],
+                                rdr["EmailID"],
+                                rdr["Remarks"],
+                                rdr["Photo"]);
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (con != null && con.State == ConnectionState.Open)
+                    con.Close();
             }
         }
         private void txtCity_TextChanged(object sender, EventArgs e)
         {
             try
             {
+                string searchTerm = txtCity.Text.Trim();
+                if (string.IsNullOrEmpty(searchTerm))
+                {
+                    Getdata();
+                    return;
+                }
+
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT RTRIM(ID),RTRIM(CustomerID),RTRIM([Name]),RTRIM(Gender), RTRIM(Address),RTRIM(City),RTRIM(State),RTRIM(ZipCode), RTRIM(ContactNo), RTRIM(EmailID),RTRIM(Remarks),Photo from Customer where CustomerType='Regular' and City like '%" + txtCity.Text + "%' order by ID", con);
-                SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-                dgw.Rows.Clear();
-                while (rdr.Read() == true)
-                    dgw.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8], rdr[9], rdr[10], rdr[11]);
-                con.Close();
+                using (SqlCommand cmd = new SqlCommand(
+                    "SELECT ID, CustomerID, [Name], Gender, Address, City, State, ZipCode, ContactNo, EmailID, Remarks, Photo " +
+                    "FROM Customer " +
+                    "WHERE [City] LIKE @SearchTerm " +
+                    "ORDER BY ID", con))
+                {
+                    cmd.Parameters.AddWithValue("@SearchTerm", $"%{searchTerm}%");
+                    using (SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection))
+                    {
+                        dgw.Rows.Clear();
+                        while (rdr.Read())
+                        {
+                            dgw.Rows.Add(
+                                rdr["ID"],
+                                rdr["CustomerID"],
+                                rdr["Name"],
+                                rdr["Gender"],
+                                rdr["Address"],
+                                rdr["City"],
+                                rdr["State"],
+                                rdr["ZipCode"],
+                                rdr["ContactNo"],
+                                rdr["EmailID"],
+                                rdr["Remarks"],
+                                rdr["Photo"]);
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            finally
+            {
+                if (con != null && con.State == ConnectionState.Open)
+                    con.Close();
+            }
+
+         
         }
         private void txtContactNo_TextChanged(object sender, EventArgs e)
         {
             try
             {
+                string searchTerm = txtContactNo.Text.Trim();
+                if (string.IsNullOrEmpty(searchTerm))
+                {
+                    Getdata();
+                    return;
+                }
+
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT RTRIM(ID),RTRIM(CustomerID),RTRIM([Name]),RTRIM(Gender), RTRIM(Address),RTRIM(City),RTRIM(State),RTRIM(ZipCode), RTRIM(ContactNo), RTRIM(EmailID),RTRIM(Remarks),Photo from Customer where CustomerType='Regular' and ContactNo like '%" + txtContactNo.Text + "%' order by ID", con);
-                SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-                dgw.Rows.Clear();
-                while (rdr.Read() == true)
-                    dgw.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8], rdr[9], rdr[10], rdr[11]);
-                con.Close();
+                using (SqlCommand cmd = new SqlCommand(
+                    "SELECT ID, CustomerID, [Name], Gender, Address, City, State, ZipCode, ContactNo, EmailID, Remarks, Photo " +
+                    "FROM Customer " +
+                    "WHERE [ContactNo] LIKE @SearchTerm " +
+                    "ORDER BY ID", con))
+                {
+                    cmd.Parameters.AddWithValue("@SearchTerm", $"%{searchTerm}%");
+                    using (SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection))
+                    {
+                        dgw.Rows.Clear();
+                        while (rdr.Read())
+                        {
+                            dgw.Rows.Add(
+                                rdr["ID"],
+                                rdr["CustomerID"],
+                                rdr["Name"],
+                                rdr["Gender"],
+                                rdr["Address"],
+                                rdr["City"],
+                                rdr["State"],
+                                rdr["ZipCode"],
+                                rdr["ContactNo"],
+                                rdr["EmailID"],
+                                rdr["Remarks"],
+                                rdr["Photo"]);
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            finally
+            {
+                if (con != null && con.State == ConnectionState.Open)
+                    con.Close();
+            }
+
+
+          
         }
 
         public void Reset()
@@ -137,7 +244,6 @@ namespace Accounting_System
                         POS.instance.txtCustomerID.Text = dr.Cells[1].Value.ToString();
                         POS.instance.txtCustomerName.Text = dr.Cells[2].Value.ToString();
                         POS.instance.txtContactNo.Text = dr.Cells[8].Value.ToString();
-                        POS.instance.txtCustomerName.ReadOnly = true;
                         POS.instance.txtContactNo.ReadOnly = true;
 
                         this.Hide();
@@ -174,7 +280,7 @@ namespace Accounting_System
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        
         private void Button1_Click(object sender, EventArgs e)
         {
             Reset();

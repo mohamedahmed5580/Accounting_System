@@ -1,5 +1,4 @@
-﻿using Pharmacy.DL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +13,8 @@ namespace Accounting_System
 {
     public partial class SuppliersList : Form
     {
-        SqlConnection cn = new SqlConnection(DataAccessLayer.Con()) ;
+        SqlConnection cn = new SqlConnection(DataAccessLayer.Con());
+
         public SuppliersList()
         {
             InitializeComponent();
@@ -58,69 +58,17 @@ namespace Accounting_System
                 if (dgw.Rows.Count > 0)
                 {
                     DataGridViewRow dr = dgw.SelectedRows[0];
-                   // if (lblSet.Text == "Supplier Entry")
-                   // {
-                        /*supplier_payment frmSupplier = new supplier_payment();
-                        frmSupplier.Show();
-                        this.Close();
-                        frmSupplier.txtID.Text = dr.Cells[0].Value.ToString();
-                        frmSupplier.txtSupplierID.Text = dr.Cells[1].Value.ToString();
-                        frmSupplier.txtSupplierName.Text = dr.Cells[2].Value.ToString();
-                        frmSupplier.txtSupName.Text = dr.Cells[2].Value.ToString();
-                        frmSupplier.txtAddress.Text = dr.Cells[3].Value.ToString();
-                        frmSupplier.txtCity.Text = dr.Cells[4].Value.ToString();
-                        frmSupplier.cmbState.Text = dr.Cells[5].Value.ToString();
-                        frmSupplier.txtZipCode.Text = dr.Cells[6].Value.ToString();
-                        frmSupplier.txtContactNo.Text = dr.Cells[7].Value.ToString();
-                        frmSupplier.txtEmailID.Text = dr.Cells[8].Value.ToString();
-                        frmSupplier.txtTIN.Text = dr.Cells[9].Value.ToString();
-                        frmSupplier.txtSTNo.Text = dr.Cells[10].Value.ToString();
-                        frmSupplier.txtCSTNo.Text = dr.Cells[11].Value.ToString();
-                        frmSupplier.txtPAN.Text = dr.Cells[12].Value.ToString();
-                        frmSupplier.txtAccountName.Text = dr.Cells[13].Value.ToString();
-                        frmSupplier.txtAccountNo.Text = dr.Cells[14].Value.ToString();
-                        frmSupplier.txtBank.Text = dr.Cells[15].Value.ToString();
-                        frmSupplier.txtBranch.Text = dr.Cells[16].Value.ToString();
-                        frmSupplier.txtIFSCcode.Text = dr.Cells[17].Value.ToString();
-                        frmSupplier.txtOpeningBalance.Text = dr.Cells[18].Value.ToString();
-                        frmSupplier.cmbOpeningBalanceType.DropDownStyle = ComboBoxStyle.DropDown;
-                        frmSupplier.cmbOpeningBalanceType.Text = dr.Cells[19].Value.ToString();
-                        frmSupplier.txtRemarks.Text = dr.Cells[20].Value.ToString();
-                        frmSupplier.btnUpdate.Enabled = true;
-                        frmSupplier.btnDelete.Enabled = true;
-                        frmSupplier.btnSave.Enabled = false;
-                        // frmSupplier.cmbOpeningBalanceType.Enabled = false;
-                        // frmSupplier.txtOpeningBalance.ReadOnly = true;
-                        lblSet.Text = "";
-                    }*/
-                    // if (lblSet.Text == "Payment")
-                   // {
-                        supplier_payment frmPayment = new supplier_payment();
-                        frmPayment.Show();
-                        this.Close();
-                        frmPayment.txtSup_ID.Text = dr.Cells[0].Value.ToString();
-                        frmPayment.txtSupplierID.Text = dr.Cells[1].Value.ToString();
-                        frmPayment.txtSupplierName.Text = dr.Cells[2].Value.ToString();
-                        frmPayment.txtAddress.Text = dr.Cells[3].Value.ToString();
-                        frmPayment.txtCity.Text = dr.Cells[4].Value.ToString();
-                        frmPayment.txtContactNo.Text = dr.Cells[7].Value.ToString();
-                        frmPayment.GetSupplierBalance();
-                        lblSet.Text = "";
-                   // }
-                   /* else if (lblSet.Text == "Purchase")
-                    {
-                        frmPurchaseEntry frmPurchaseEntry = new frmPurchaseEntry();
-                        frmPurchaseEntry.Show();
-                        this.Close();
-                        frmPurchaseEntry.txtSup_ID.Text = dr.Cells[0].Value.ToString();
-                        frmPurchaseEntry.txtSupplierID.Text = dr.Cells[1].Value.ToString();
-                        frmPurchaseEntry.txtSupplierName.Text = dr.Cells[2].Value.ToString();
-                        frmPurchaseEntry.txtAddress.Text = dr.Cells[3].Value.ToString();
-                        frmPurchaseEntry.txtCity.Text = dr.Cells[4].Value.ToString();
-                        frmPurchaseEntry.txtContactNo.Text = dr.Cells[7].Value.ToString();
-                        frmPurchaseEntry.GetSupplierBalance();
-                        lblSet.Text = "";
-                    }*/
+                    supplier_payment frmPayment =  supplier_payment.instance;
+                    frmPayment.txtSup_ID.Text = dr.Cells[0].Value.ToString();
+                    frmPayment.txtSupplierID.Text = dr.Cells[1].Value.ToString();
+                    frmPayment.txtSupplierName.Text = dr.Cells[2].Value.ToString();
+                    frmPayment.txtAddress.Text = dr.Cells[3].Value.ToString();
+                    frmPayment.txtCity.Text = dr.Cells[4].Value.ToString();
+                    frmPayment.txtContactNo.Text = dr.Cells[7].Value.ToString();
+                    frmPayment.GetSupplierBalance();
+                    lblSet.Text = "";
+                    this.Close();
+
                 }
             }
             catch (Exception ex)
@@ -206,7 +154,7 @@ namespace Accounting_System
             Reset();
         }
 
-        private void btnExportExcel_Click(object sender, EventArgs e)
+        private void SuppliersList_Load(object sender, EventArgs e)
         {
 
         }

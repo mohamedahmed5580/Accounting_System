@@ -1,4 +1,4 @@
-﻿using Pharmacy.DL;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,8 +16,6 @@ namespace Accounting_System
 {
     public partial class SalesMan : Form
     {
-
-        SqlConnection con = new SqlConnection(DataAccessLayer.Con());
         private string s;
         private string Photoname = "";
         private bool IsImageChanged = false;
@@ -120,21 +118,20 @@ namespace Accounting_System
                 return;
             }
 
+            btnSave.Enabled = false;
             try
             {
                 using (var con = new SqlConnection(DataAccessLayer.Con()))
                 {
                     con.Open();
-                    using (var cmd = new SqlCommand("SELECT RTRIM(ContactNo) FROM Salesman WHERE ContactNo=@d1", con))
+                    using (var cmd = new SqlCommand("SELECT COUNT(*) FROM Salesman WHERE ContactNo=@d1", con))
                     {
                         cmd.Parameters.AddWithValue("@d1", txtContactNo.Text);
-                        using (var rdr = cmd.ExecuteReader())
+                        int count = (int)cmd.ExecuteScalar();
+                        if (count > 0)
                         {
-                            if (rdr.Read())
-                            {
-                                MessageBox.Show("لا لقد تم إدخال جهة اتصال , أنه مسجل مسبقا", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                return;
-                            }
+                            MessageBox.Show("لا لقد تم إدخال جهة اتصال , أنه مسجل مسبقا", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
                         }
                     }
 
@@ -152,11 +149,12 @@ namespace Accounting_System
                         cmd.Parameters.AddWithValue("@d10", cmbState.Text);
                         cmd.Parameters.AddWithValue("@d11", txtZipCode.Text);
 
-                        var ms = new MemoryStream();
-                        var bmpImage = new Bitmap(Picture.Image);
-                        bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
-                        byte[] data = ms.ToArray();
-                        cmd.Parameters.Add(new SqlParameter("@d12", SqlDbType.Image) { Value = data });
+                        using (var ms = new MemoryStream())
+                        {
+                            var bmpImage = new Bitmap(Picture.Image);
+                            bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                            cmd.Parameters.Add(new SqlParameter("@d12", SqlDbType.Image) { Value = ms.ToArray() });
+                        }
 
                         cmd.ExecuteNonQuery();
                     }
@@ -164,29 +162,37 @@ namespace Accounting_System
 
                 LogFunc(lblUser.Text, "added the new Salesman having Salesman id '" + txtSalesmanID.Text + "'");
                 MessageBox.Show("تم الحفظ بنجاح", "سجلات المندوبين", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                btnSave.Enabled = false;
-                fillState();
                 Reset();
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                btnSave.Enabled = true;
+            }
+            finally
+            {
+                btnSave.Enabled = true;
             }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            try
+            if (MessageBox.Show("هل أنت متأكد أنك تريد حذف سجل المندوب?", "تأكيد", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                if (MessageBox.Show("هل أنت متأكد أنك تريد حذف سجل المندوب?", "تأكيد", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                btnDelete.Enabled = false;
+                try
                 {
                     DeleteRecord();
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    btnDelete.Enabled = true;
+                }
+                finally
+                {
+                    if (btnSave.Enabled) btnDelete.Enabled = false;
+                }
             }
         }
 
@@ -231,7 +237,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
 
@@ -256,6 +262,7 @@ namespace Accounting_System
                 return;
             }
 
+            btnUpdate.Enabled = false;
             try
             {
                 using (var con = new SqlConnection(DataAccessLayer.Con()))
@@ -274,11 +281,12 @@ namespace Accounting_System
                         cmd.Parameters.AddWithValue("@d10", cmbState.Text);
                         cmd.Parameters.AddWithValue("@d11", txtZipCode.Text);
 
-                        var ms = new MemoryStream();
-                        var bmpImage = new Bitmap(Picture.Image);
-                        bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
-                        byte[] data = ms.ToArray();
-                        cmd.Parameters.Add(new SqlParameter("@d12", SqlDbType.Image) { Value = data });
+                        using (var ms = new MemoryStream())
+                        {
+                            var bmpImage = new Bitmap(Picture.Image);
+                            bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                            cmd.Parameters.Add(new SqlParameter("@d12", SqlDbType.Image) { Value = ms.ToArray() });
+                        }
 
                         cmd.Parameters.AddWithValue("@d1", txtID.Text);
                         cmd.ExecuteNonQuery();
@@ -287,13 +295,16 @@ namespace Accounting_System
 
                 LogFunc(lblUser.Text, "updated the Salesman having Salesman id '" + txtSalesmanID.Text + "'");
                 MessageBox.Show("تم التعديل بنجاح", "سجلات المندوبين", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                btnUpdate.Enabled = false;
-                fillState();
                 Reset();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                btnUpdate.Enabled = true;
+            }
+            finally
+            {
+                if (btnSave.Enabled) btnUpdate.Enabled = false;
             }
         }
 
@@ -309,11 +320,19 @@ namespace Accounting_System
 
         private void btnGetData_Click(object sender, EventArgs e)
         {
-            SalesManScreen smscreen = new SalesManScreen();
-            smscreen.lblSet.Text = "Salesman Entry";
-            smscreen.Button2.Enabled= false;
-            smscreen.Show();
-            this.Hide();
+            btnGetData.Enabled = false;
+            try
+            {
+                SalesManScreen smscreen = new SalesManScreen();
+                smscreen.lblSet.Text = "Salesman Entry";
+                smscreen.Button2.Enabled = false;
+                smscreen.Show();
+                this.Hide();
+            }
+            finally
+            {
+                btnGetData.Enabled = true;
+            }
         }
 
 
@@ -337,12 +356,13 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
 
         private void Browse_Click(object sender, EventArgs e)
         {
+            Browse.Enabled = false;
             try
             {
                 OpenFileDialog1.Filter = "Images |*.png; *.bmp; *.jpg;*.jpeg; *.gif;";
@@ -356,6 +376,10 @@ namespace Accounting_System
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Browse.Enabled = true;
             }
         }
 
@@ -487,7 +511,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
 
@@ -581,6 +605,11 @@ namespace Accounting_System
         }
 
         private void BStartCapture_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSalesmanName_TextChanged(object sender, EventArgs e)
         {
 
         }

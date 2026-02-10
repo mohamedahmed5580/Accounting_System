@@ -1,4 +1,4 @@
-﻿using Pharmacy.DL;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +25,7 @@ namespace Accounting_System
             dgw.MouseDoubleClick += new MouseEventHandler(dgw_MouseClick);
             dgw.RowPostPaint += new DataGridViewRowPostPaintEventHandler(dgw_RowPostPaint);
         }
+
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -165,16 +166,13 @@ namespace Accounting_System
                     DataGridViewRow dr = dgw.SelectedRows[0];
                     // Uncomment if lblSet is used
                     // if (string.IsNullOrEmpty(lblSet.Text))
-                    {
-                        Payment_2 frmPayment_2 = Payment_2.Instance;
-                        frmPayment_2.Show();
-                        this.Hide();
-                        frmPayment_2.txtSM_ID.Text = dr.Cells[0].Value.ToString();
-                        frmPayment_2.txtSalesmanID.Text = dr.Cells[1].Value.ToString();
-                        frmPayment_2.txtSalesman.Text = dr.Cells[2].Value.ToString();
-                        frmPayment_2.txtCommissionPer.Text = dr.Cells[9].Value.ToString();
-                        lblSet.Text = "";
-                    }
+                    Payment_2 frmPayment_2 = Payment_2.instance;
+                    frmPayment_2.txtSM_ID.Text = dr.Cells[0].Value.ToString();
+                    frmPayment_2.txtSalesmanID.Text = dr.Cells[1].Value.ToString();
+                    frmPayment_2.txtSalesman.Text = dr.Cells[2].Value.ToString();
+                    frmPayment_2.txtCommissionPer.Text = dr.Cells[9].Value.ToString();
+                    lblSet.Text = "";
+                    this.Close();
                 }
             }
             catch (Exception ex)
@@ -207,6 +205,11 @@ namespace Accounting_System
         private void dgw_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void SalesmanRecord_2_Load(object sender, EventArgs e)
+        {
+            Getdata();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Pharmacy.DL;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -99,8 +99,6 @@ namespace Accounting_System
                     cmbCity.Focus();
                     return;
                 }
-
-
                 using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
                 {
                     con.Open();
@@ -136,6 +134,32 @@ namespace Accounting_System
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("Select * from Debitors_supplier", con);
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                DataTable dtable = new DataTable("Debitors_supplier");
+                adp.Fill(dtable);
+                con.Close();
+
+                DataSet ds = new DataSet("Debtors1");
+                ds.Tables.Add(dtable);
+                ds.WriteXmlSchema("Debtors.xml");
+
+                rptDebtors1 rpt = new rptDebtors1();
+                rpt.SetDataSource(ds);
+                rpt.SetParameterValue("p1", DateTime.Today);
+
+                frmReport frm = new frmReport();
+                frm.crystalReportViewer1.ReportSource = rpt;
+                frm.ShowDialog();
+            }
         }
     }
 }

@@ -184,22 +184,25 @@
             // 
             // Panel6
             // 
+            this.Panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel6.Controls.Add(this.txtContactNo);
             this.Panel6.Controls.Add(this.Label7);
             this.Panel6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.Panel6.Location = new System.Drawing.Point(1042, 76);
+            this.Panel6.Location = new System.Drawing.Point(941, 93);
+            this.Panel6.Margin = new System.Windows.Forms.Padding(4);
             this.Panel6.Name = "Panel6";
-            this.Panel6.Size = new System.Drawing.Size(213, 70);
+            this.Panel6.Size = new System.Drawing.Size(283, 86);
             this.Panel6.TabIndex = 50;
             // 
             // txtContactNo
             // 
             this.txtContactNo.BackColor = System.Drawing.Color.White;
             this.txtContactNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtContactNo.Location = new System.Drawing.Point(13, 32);
+            this.txtContactNo.Location = new System.Drawing.Point(17, 39);
+            this.txtContactNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtContactNo.Name = "txtContactNo";
-            this.txtContactNo.Size = new System.Drawing.Size(183, 26);
+            this.txtContactNo.Size = new System.Drawing.Size(243, 30);
             this.txtContactNo.TabIndex = 13;
             this.txtContactNo.TextChanged += new System.EventHandler(this.txtContactNo_TextChanged);
             // 
@@ -208,9 +211,10 @@
             this.Label7.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label7.ForeColor = System.Drawing.Color.White;
-            this.Label7.Location = new System.Drawing.Point(13, 7);
+            this.Label7.Location = new System.Drawing.Point(17, 9);
+            this.Label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(183, 25);
+            this.Label7.Size = new System.Drawing.Size(244, 31);
             this.Label7.TabIndex = 15;
             this.Label7.Text = "بحث برقم الاتصال :";
             this.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -221,9 +225,10 @@
             this.Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Button1.ForeColor = System.Drawing.Color.White;
-            this.Button1.Location = new System.Drawing.Point(52, 90);
+            this.Button1.Location = new System.Drawing.Point(8, 112);
+            this.Button1.Margin = new System.Windows.Forms.Padding(4);
             this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(132, 42);
+            this.Button1.Size = new System.Drawing.Size(176, 52);
             this.Button1.TabIndex = 5;
             this.Button1.Text = "إعادة تعيين";
             this.Button1.UseVisualStyleBackColor = false;
@@ -235,6 +240,8 @@
             this.dgw.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FloralWhite;
             this.dgw.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgw.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgw.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgw.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -270,11 +277,12 @@
             this.dgw.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgw.EnableHeadersVisualStyles = false;
             this.dgw.GridColor = System.Drawing.Color.Gray;
-            this.dgw.Location = new System.Drawing.Point(3, 181);
+            this.dgw.Location = new System.Drawing.Point(8, 223);
+            this.dgw.Margin = new System.Windows.Forms.Padding(4);
             this.dgw.MultiSelect = false;
             this.dgw.Name = "dgw";
             this.dgw.ReadOnly = true;
-            this.dgw.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dgw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgw.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.CadetBlue;
@@ -294,7 +302,7 @@
             this.dgw.RowTemplate.Height = 50;
             this.dgw.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgw.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw.Size = new System.Drawing.Size(1318, 429);
+            this.dgw.Size = new System.Drawing.Size(1247, 528);
             this.dgw.TabIndex = 51;
             this.dgw.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_CellContentClick_1);
             this.dgw.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgw_MouseClick);
@@ -399,9 +407,11 @@
             this.Panel1.Controls.Add(this.Panel4);
             this.Panel1.Controls.Add(this.Panel3);
             this.Panel1.Controls.Add(this.Panel2);
-            this.Panel1.Location = new System.Drawing.Point(2, 3);
+            this.Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel1.Location = new System.Drawing.Point(0, 0);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1344, 615);
+            this.Panel1.Size = new System.Drawing.Size(1269, 852);
             this.Panel1.TabIndex = 3;
             this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
@@ -411,10 +421,10 @@
             this.Button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Button2.ForeColor = System.Drawing.Color.White;
-            this.Button2.Location = new System.Drawing.Point(206, 90);
-            this.Button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Button2.Location = new System.Drawing.Point(200, 112);
+            this.Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(100, 42);
+            this.Button2.Size = new System.Drawing.Size(133, 52);
             this.Button2.TabIndex = 52;
             this.Button2.Text = "اضافة بائع";
             this.Button2.UseVisualStyleBackColor = false;
@@ -422,13 +432,15 @@
             // 
             // Panel4
             // 
+            this.Panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel4.Controls.Add(this.Label6);
             this.Panel4.Controls.Add(this.txtCity);
             this.Panel4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.Panel4.Location = new System.Drawing.Point(745, 76);
+            this.Panel4.Location = new System.Drawing.Point(631, 94);
+            this.Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.Panel4.Name = "Panel4";
-            this.Panel4.Size = new System.Drawing.Size(213, 70);
+            this.Panel4.Size = new System.Drawing.Size(283, 86);
             this.Panel4.TabIndex = 49;
             this.Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
@@ -437,9 +449,10 @@
             this.Label6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label6.ForeColor = System.Drawing.Color.White;
-            this.Label6.Location = new System.Drawing.Point(13, 7);
+            this.Label6.Location = new System.Drawing.Point(17, 9);
+            this.Label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(183, 25);
+            this.Label6.Size = new System.Drawing.Size(244, 31);
             this.Label6.TabIndex = 14;
             this.Label6.Text = "بحث بالمدينة :";
             this.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -448,9 +461,10 @@
             // 
             this.txtCity.BackColor = System.Drawing.Color.White;
             this.txtCity.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtCity.Location = new System.Drawing.Point(13, 32);
+            this.txtCity.Location = new System.Drawing.Point(17, 39);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(4);
             this.txtCity.Name = "txtCity";
-            this.txtCity.Size = new System.Drawing.Size(183, 26);
+            this.txtCity.Size = new System.Drawing.Size(243, 30);
             this.txtCity.TabIndex = 13;
             this.txtCity.TextChanged += new System.EventHandler(this.txtCity_TextChanged);
             // 
@@ -460,9 +474,10 @@
             this.Panel3.Controls.Add(this.Label5);
             this.Panel3.Controls.Add(this.txtSalesmanName);
             this.Panel3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.Panel3.Location = new System.Drawing.Point(453, 76);
+            this.Panel3.Location = new System.Drawing.Point(340, 94);
+            this.Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.Panel3.Name = "Panel3";
-            this.Panel3.Size = new System.Drawing.Size(213, 70);
+            this.Panel3.Size = new System.Drawing.Size(283, 86);
             this.Panel3.TabIndex = 48;
             // 
             // Label5
@@ -470,9 +485,10 @@
             this.Label5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label5.ForeColor = System.Drawing.Color.White;
-            this.Label5.Location = new System.Drawing.Point(13, 7);
+            this.Label5.Location = new System.Drawing.Point(17, 9);
+            this.Label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(183, 25);
+            this.Label5.Size = new System.Drawing.Size(244, 31);
             this.Label5.TabIndex = 13;
             this.Label5.Text = "بحث باسم المندوب :";
             this.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -481,30 +497,35 @@
             // 
             this.txtSalesmanName.BackColor = System.Drawing.Color.White;
             this.txtSalesmanName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSalesmanName.Location = new System.Drawing.Point(13, 32);
+            this.txtSalesmanName.Location = new System.Drawing.Point(17, 39);
+            this.txtSalesmanName.Margin = new System.Windows.Forms.Padding(4);
             this.txtSalesmanName.Name = "txtSalesmanName";
-            this.txtSalesmanName.Size = new System.Drawing.Size(183, 26);
+            this.txtSalesmanName.Size = new System.Drawing.Size(243, 30);
             this.txtSalesmanName.TabIndex = 13;
             this.txtSalesmanName.TextChanged += new System.EventHandler(this.txtSalesmanName_TextChanged);
             // 
             // Panel2
             // 
+            this.Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Panel2.Controls.Add(this.lblSet);
             this.Panel2.Controls.Add(this.Label1);
-            this.Panel2.Location = new System.Drawing.Point(6, 7);
+            this.Panel2.Location = new System.Drawing.Point(8, 9);
+            this.Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(1334, 62);
+            this.Panel2.Size = new System.Drawing.Size(1248, 76);
             this.Panel2.TabIndex = 0;
             this.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
             // lblSet
             // 
             this.lblSet.AutoSize = true;
-            this.lblSet.Location = new System.Drawing.Point(727, 32);
+            this.lblSet.Location = new System.Drawing.Point(969, 39);
+            this.lblSet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSet.Name = "lblSet";
-            this.lblSet.Size = new System.Drawing.Size(23, 13);
+            this.lblSet.Size = new System.Drawing.Size(27, 16);
             this.lblSet.TabIndex = 44;
             this.lblSet.Text = "Set";
             this.lblSet.Visible = false;
@@ -515,22 +536,23 @@
             this.Label1.BackColor = System.Drawing.Color.Transparent;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.Label1.ForeColor = System.Drawing.Color.White;
-            this.Label1.Location = new System.Drawing.Point(455, 9);
+            this.Label1.Location = new System.Drawing.Point(499, 23);
+            this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(204, 29);
+            this.Label1.Size = new System.Drawing.Size(248, 36);
             this.Label1.TabIndex = 0;
             this.Label1.Text = "قائمة مندوبين المبيعات";
             // 
             // SalesManScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1350, 692);
+            this.ClientSize = new System.Drawing.Size(1269, 852);
             this.Controls.Add(this.Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimizeBox = false;
             this.Name = "SalesManScreen";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

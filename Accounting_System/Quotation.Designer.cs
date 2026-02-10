@@ -210,7 +210,7 @@
             this.btnListReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListReset.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListReset.Location = new System.Drawing.Point(27, 326);
-            this.btnListReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnListReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnListReset.Name = "btnListReset";
             this.btnListReset.Size = new System.Drawing.Size(175, 39);
             this.btnListReset.TabIndex = 11;
@@ -225,7 +225,7 @@
             this.btnListUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListUpdate.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListUpdate.Location = new System.Drawing.Point(223, 366);
-            this.btnListUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnListUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnListUpdate.Name = "btnListUpdate";
             this.btnListUpdate.Size = new System.Drawing.Size(176, 39);
             this.btnListUpdate.TabIndex = 14;
@@ -242,7 +242,7 @@
             this.btnRemove.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.Color.White;
             this.btnRemove.Location = new System.Drawing.Point(25, 367);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(176, 39);
             this.btnRemove.TabIndex = 13;
@@ -254,7 +254,7 @@
             // 
             this.txtTotalAmount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtTotalAmount.Location = new System.Drawing.Point(23, 287);
-            this.txtTotalAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotalAmount.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotalAmount.Name = "txtTotalAmount";
             this.txtTotalAmount.ReadOnly = true;
             this.txtTotalAmount.Size = new System.Drawing.Size(213, 30);
@@ -269,9 +269,9 @@
             this.GroupBox4.Controls.Add(Label5);
             this.GroupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.GroupBox4.Location = new System.Drawing.Point(924, 105);
-            this.GroupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox4.Name = "GroupBox4";
-            this.GroupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.GroupBox4.Size = new System.Drawing.Size(328, 140);
             this.GroupBox4.TabIndex = 0;
             this.GroupBox4.TabStop = false;
@@ -292,7 +292,7 @@
             // 
             this.txtQuotationNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtQuotationNo.Location = new System.Drawing.Point(17, 31);
-            this.txtQuotationNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtQuotationNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtQuotationNo.Name = "txtQuotationNo";
             this.txtQuotationNo.ReadOnly = true;
             this.txtQuotationNo.Size = new System.Drawing.Size(147, 30);
@@ -320,7 +320,7 @@
             this.Panel3.Controls.Add(this.btnNew);
             this.Panel3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.Panel3.Location = new System.Drawing.Point(1269, 89);
-            this.Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.Panel3.Name = "Panel3";
             this.Panel3.Size = new System.Drawing.Size(281, 156);
             this.Panel3.TabIndex = 3;
@@ -333,7 +333,7 @@
             this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrint.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrint.Location = new System.Drawing.Point(12, 105);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(145, 41);
             this.btnPrint.TabIndex = 6;
@@ -348,7 +348,7 @@
             this.btnGetData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGetData.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGetData.Location = new System.Drawing.Point(165, 105);
-            this.btnGetData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGetData.Margin = new System.Windows.Forms.Padding(4);
             this.btnGetData.Name = "btnGetData";
             this.btnGetData.Size = new System.Drawing.Size(109, 41);
             this.btnGetData.TabIndex = 5;
@@ -364,7 +364,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(85, 57);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(145, 41);
             this.btnDelete.TabIndex = 3;
@@ -378,7 +378,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Location = new System.Drawing.Point(12, 9);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(145, 41);
             this.btnSave.TabIndex = 1;
@@ -394,7 +394,7 @@
             this.btnNew.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNew.ForeColor = System.Drawing.Color.White;
             this.btnNew.Location = new System.Drawing.Point(165, 9);
-            this.btnNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(4);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(109, 41);
             this.btnNew.TabIndex = 0;
@@ -405,7 +405,7 @@
             // txtCustomerType
             // 
             this.txtCustomerType.Location = new System.Drawing.Point(481, 48);
-            this.txtCustomerType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCustomerType.Margin = new System.Windows.Forms.Padding(4);
             this.txtCustomerType.Name = "txtCustomerType";
             this.txtCustomerType.Size = new System.Drawing.Size(132, 22);
             this.txtCustomerType.TabIndex = 88;
@@ -416,7 +416,7 @@
             this.txtProductID.BackColor = System.Drawing.SystemColors.Control;
             this.txtProductID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProductID.Location = new System.Drawing.Point(480, 16);
-            this.txtProductID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProductID.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductID.Name = "txtProductID";
             this.txtProductID.ReadOnly = true;
             this.txtProductID.Size = new System.Drawing.Size(92, 24);
@@ -428,7 +428,7 @@
             this.txtID.BackColor = System.Drawing.SystemColors.Control;
             this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.Location = new System.Drawing.Point(380, 49);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(92, 24);
@@ -440,7 +440,7 @@
             this.txtCID.BackColor = System.Drawing.SystemColors.Control;
             this.txtCID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCID.Location = new System.Drawing.Point(380, 16);
-            this.txtCID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCID.Margin = new System.Windows.Forms.Padding(4);
             this.txtCID.Name = "txtCID";
             this.txtCID.ReadOnly = true;
             this.txtCID.Size = new System.Drawing.Size(92, 24);
@@ -452,7 +452,7 @@
             this.txtTotalQty.BackColor = System.Drawing.SystemColors.Control;
             this.txtTotalQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalQty.Location = new System.Drawing.Point(93, 21);
-            this.txtTotalQty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotalQty.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotalQty.Name = "txtTotalQty";
             this.txtTotalQty.ReadOnly = true;
             this.txtTotalQty.Size = new System.Drawing.Size(92, 24);
@@ -536,9 +536,9 @@
             this.GroupBox5.Controls.Add(this.Label22);
             this.GroupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.GroupBox5.Location = new System.Drawing.Point(1135, 261);
-            this.GroupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox5.Name = "GroupBox5";
-            this.GroupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox5.Padding = new System.Windows.Forms.Padding(4);
             this.GroupBox5.Size = new System.Drawing.Size(411, 411);
             this.GroupBox5.TabIndex = 2;
             this.GroupBox5.TabStop = false;
@@ -550,7 +550,7 @@
             this.btnSelectionInv.ForeColor = System.Drawing.Color.White;
             this.btnSelectionInv.Image = ((System.Drawing.Image)(resources.GetObject("btnSelectionInv.Image")));
             this.btnSelectionInv.Location = new System.Drawing.Point(23, 12);
-            this.btnSelectionInv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSelectionInv.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelectionInv.Name = "btnSelectionInv";
             this.btnSelectionInv.Size = new System.Drawing.Size(64, 50);
             this.btnSelectionInv.TabIndex = 10;
@@ -574,7 +574,7 @@
             // 
             this.txtQty.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtQty.Location = new System.Drawing.Point(125, 134);
-            this.txtQty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtQty.Margin = new System.Windows.Forms.Padding(4);
             this.txtQty.Name = "txtQty";
             this.txtQty.Size = new System.Drawing.Size(111, 30);
             this.txtQty.TabIndex = 3;
@@ -584,7 +584,7 @@
             // 
             this.txtProductName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtProductName.Location = new System.Drawing.Point(23, 63);
-            this.txtProductName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProductName.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.ReadOnly = true;
             this.txtProductName.Size = new System.Drawing.Size(213, 30);
@@ -607,7 +607,7 @@
             // 
             this.txtProductCode.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtProductCode.Location = new System.Drawing.Point(95, 25);
-            this.txtProductCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProductCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductCode.Name = "txtProductCode";
             this.txtProductCode.ReadOnly = true;
             this.txtProductCode.Size = new System.Drawing.Size(141, 30);
@@ -617,7 +617,7 @@
             // 
             this.txtDiscountPer.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtDiscountPer.Location = new System.Drawing.Point(151, 209);
-            this.txtDiscountPer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiscountPer.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiscountPer.Name = "txtDiscountPer";
             this.txtDiscountPer.Size = new System.Drawing.Size(85, 30);
             this.txtDiscountPer.TabIndex = 5;
@@ -627,7 +627,7 @@
             // 
             this.txtVATAmount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtVATAmount.Location = new System.Drawing.Point(23, 247);
-            this.txtVATAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVATAmount.Margin = new System.Windows.Forms.Padding(4);
             this.txtVATAmount.Name = "txtVATAmount";
             this.txtVATAmount.ReadOnly = true;
             this.txtVATAmount.Size = new System.Drawing.Size(84, 30);
@@ -653,7 +653,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(221, 325);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(176, 39);
             this.btnAdd.TabIndex = 12;
@@ -687,7 +687,7 @@
             // 
             this.txtSellingPrice.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtSellingPrice.Location = new System.Drawing.Point(125, 98);
-            this.txtSellingPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSellingPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtSellingPrice.Name = "txtSellingPrice";
             this.txtSellingPrice.Size = new System.Drawing.Size(111, 30);
             this.txtSellingPrice.TabIndex = 2;
@@ -697,7 +697,7 @@
             // 
             this.txtDiscountAmount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtDiscountAmount.Location = new System.Drawing.Point(23, 210);
-            this.txtDiscountAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiscountAmount.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiscountAmount.Name = "txtDiscountAmount";
             this.txtDiscountAmount.ReadOnly = true;
             this.txtDiscountAmount.Size = new System.Drawing.Size(84, 30);
@@ -708,7 +708,7 @@
             // 
             this.txtAmount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtAmount.Location = new System.Drawing.Point(125, 171);
-            this.txtAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAmount.Margin = new System.Windows.Forms.Padding(4);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.ReadOnly = true;
             this.txtAmount.Size = new System.Drawing.Size(111, 30);
@@ -719,7 +719,7 @@
             // 
             this.txtVAT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtVAT.Location = new System.Drawing.Point(151, 249);
-            this.txtVAT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVAT.Margin = new System.Windows.Forms.Padding(4);
             this.txtVAT.Name = "txtVAT";
             this.txtVAT.Size = new System.Drawing.Size(85, 30);
             this.txtVAT.TabIndex = 7;
@@ -758,7 +758,7 @@
             this.Panel4.Controls.Add(this.txtGrandTotal);
             this.Panel4.Controls.Add(this.Label31);
             this.Panel4.Location = new System.Drawing.Point(1152, 679);
-            this.Panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.Panel4.Name = "Panel4";
             this.Panel4.Size = new System.Drawing.Size(393, 44);
             this.Panel4.TabIndex = 5;
@@ -767,7 +767,7 @@
             // 
             this.txtGrandTotal.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtGrandTotal.Location = new System.Drawing.Point(21, 5);
-            this.txtGrandTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGrandTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtGrandTotal.Name = "txtGrandTotal";
             this.txtGrandTotal.ReadOnly = true;
             this.txtGrandTotal.Size = new System.Drawing.Size(200, 30);
@@ -792,7 +792,7 @@
             this.txtCustomerID.BackColor = System.Drawing.SystemColors.Control;
             this.txtCustomerID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtCustomerID.Location = new System.Drawing.Point(107, 25);
-            this.txtCustomerID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCustomerID.Margin = new System.Windows.Forms.Padding(4);
             this.txtCustomerID.Name = "txtCustomerID";
             this.txtCustomerID.ReadOnly = true;
             this.txtCustomerID.Size = new System.Drawing.Size(153, 30);
@@ -841,7 +841,7 @@
             // 
             this.txtCustomerName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtCustomerName.Location = new System.Drawing.Point(32, 62);
-            this.txtCustomerName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCustomerName.Margin = new System.Windows.Forms.Padding(4);
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(228, 30);
             this.txtCustomerName.TabIndex = 1;
@@ -857,9 +857,9 @@
             this.GroupBox3.Controls.Add(this.txtCustomerName);
             this.GroupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.GroupBox3.Location = new System.Drawing.Point(504, 102);
-            this.GroupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox3.Name = "GroupBox3";
-            this.GroupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.GroupBox3.Size = new System.Drawing.Size(412, 143);
             this.GroupBox3.TabIndex = 1;
             this.GroupBox3.TabStop = false;
@@ -869,7 +869,7 @@
             // 
             this.txtContactNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtContactNo.Location = new System.Drawing.Point(32, 98);
-            this.txtContactNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContactNo.Margin = new System.Windows.Forms.Padding(4);
             this.txtContactNo.Name = "txtContactNo";
             this.txtContactNo.Size = new System.Drawing.Size(228, 30);
             this.txtContactNo.TabIndex = 2;
@@ -880,7 +880,7 @@
             this.btnSelect.ForeColor = System.Drawing.Color.White;
             this.btnSelect.Image = ((System.Drawing.Image)(resources.GetObject("btnSelect.Image")));
             this.btnSelect.Location = new System.Drawing.Point(32, 11);
-            this.btnSelect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSelect.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(67, 47);
             this.btnSelect.TabIndex = 3;
@@ -901,7 +901,7 @@
             this.Panel1.Controls.Add(this.Panel3);
             this.Panel1.Controls.Add(this.Panel2);
             this.Panel1.Location = new System.Drawing.Point(5, 5);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(1562, 738);
             this.Panel1.TabIndex = 3;
@@ -925,7 +925,7 @@
             this.txtRemarks.BackColor = System.Drawing.Color.White;
             this.txtRemarks.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtRemarks.Location = new System.Drawing.Point(28, 123);
-            this.txtRemarks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRemarks.Margin = new System.Windows.Forms.Padding(4);
             this.txtRemarks.Multiline = true;
             this.txtRemarks.Name = "txtRemarks";
             this.txtRemarks.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -973,10 +973,10 @@
             this.DataGridView1.EnableHeadersVisualStyles = false;
             this.DataGridView1.GridColor = System.Drawing.Color.White;
             this.DataGridView1.Location = new System.Drawing.Point(12, 272);
-            this.DataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.ReadOnly = true;
-            this.DataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.DataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle12.BackColor = System.Drawing.Color.CadetBlue;
@@ -1109,7 +1109,7 @@
             this.Panel2.Controls.Add(this.lblUser);
             this.Panel2.Controls.Add(this.Label1);
             this.Panel2.Location = new System.Drawing.Point(12, 9);
-            this.Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(1539, 76);
             this.Panel2.TabIndex = 0;
@@ -1124,7 +1124,7 @@
             this.ClientSize = new System.Drawing.Size(1575, 748);
             this.Controls.Add(this.Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Quotation";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;

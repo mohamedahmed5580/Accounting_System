@@ -293,6 +293,8 @@ namespace Accounting_System {
             
             private global::System.Data.DataColumn columnQty;
             
+            private global::System.Data.DataColumn columnUnits;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public Stock1DataTable() {
@@ -384,6 +386,14 @@ namespace Accounting_System {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn UnitsColumn {
+                get {
+                    return this.columnUnits;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -419,7 +429,7 @@ namespace Accounting_System {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Stock1Row AddStock1Row(string ProductCode, string ProductName, double CostPrice, double SellingPrice, double Discount, double VAT, double Qty) {
+            public Stock1Row AddStock1Row(string ProductCode, string ProductName, double CostPrice, double SellingPrice, double Discount, double VAT, double Qty, string Units) {
                 Stock1Row rowStock1Row = ((Stock1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ProductCode,
@@ -428,7 +438,8 @@ namespace Accounting_System {
                         SellingPrice,
                         Discount,
                         VAT,
-                        Qty};
+                        Qty,
+                        Units};
                 rowStock1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowStock1Row);
                 return rowStock1Row;
@@ -458,6 +469,7 @@ namespace Accounting_System {
                 this.columnDiscount = base.Columns["Discount"];
                 this.columnVAT = base.Columns["VAT"];
                 this.columnQty = base.Columns["Qty"];
+                this.columnUnits = base.Columns["Units"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -477,6 +489,8 @@ namespace Accounting_System {
                 base.Columns.Add(this.columnVAT);
                 this.columnQty = new global::System.Data.DataColumn("Qty", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnQty);
+                this.columnUnits = new global::System.Data.DataColumn("Units", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUnits);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -731,6 +745,22 @@ namespace Accounting_System {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Units {
+                get {
+                    try {
+                        return ((string)(this[this.tableStock1.UnitsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Units\' in table \'Stock1\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableStock1.UnitsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsProductCodeNull() {
                 return this.IsNull(this.tableStock1.ProductCodeColumn);
             }
@@ -811,6 +841,18 @@ namespace Accounting_System {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetQtyNull() {
                 this[this.tableStock1.QtyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsUnitsNull() {
+                return this.IsNull(this.tableStock1.UnitsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetUnitsNull() {
+                this[this.tableStock1.UnitsColumn] = global::System.Convert.DBNull;
             }
         }
         

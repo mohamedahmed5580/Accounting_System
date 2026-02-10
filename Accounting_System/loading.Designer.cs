@@ -51,18 +51,18 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.label2.Location = new System.Drawing.Point(466, 104);
+            this.label2.Location = new System.Drawing.Point(467, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 23);
             this.label2.TabIndex = 29;
-            this.label2.Text = "ver 1.0";
+            this.label2.Text = "ver 7.0";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.label1.Location = new System.Drawing.Point(152, 61);
+            this.label1.Location = new System.Drawing.Point(152, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(391, 29);
             this.label1.TabIndex = 28;
@@ -73,6 +73,7 @@
             this.Prbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Prbar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Prbar.Location = new System.Drawing.Point(9, 207);
+            this.Prbar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Prbar.Name = "Prbar";
             this.Prbar.Size = new System.Drawing.Size(544, 27);
             this.Prbar.TabIndex = 20;
@@ -83,9 +84,9 @@
             this.pbDBConfig.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbDBConfig.Image = ((System.Drawing.Image)(resources.GetObject("pbDBConfig.Image")));
             this.pbDBConfig.Location = new System.Drawing.Point(9, 6);
-            this.pbDBConfig.Margin = new System.Windows.Forms.Padding(4);
+            this.pbDBConfig.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbDBConfig.Name = "pbDBConfig";
-            this.pbDBConfig.Size = new System.Drawing.Size(31, 29);
+            this.pbDBConfig.Size = new System.Drawing.Size(31, 30);
             this.pbDBConfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbDBConfig.TabIndex = 30;
             this.pbDBConfig.TabStop = false;
@@ -95,6 +96,7 @@
             // 
             this.pictureBox1.Image = global::Accounting_System.Properties.Resources.accounting;
             this.pictureBox1.Location = new System.Drawing.Point(9, 42);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(137, 122);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -113,6 +115,7 @@
             this.Controls.Add(this.Prbar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "loading";

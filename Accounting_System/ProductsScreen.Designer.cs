@@ -36,16 +36,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnExportExcel = new System.Windows.Forms.Button();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,33 +56,8 @@
             this.Panel4 = new System.Windows.Forms.Panel();
             this.txtCategory = new System.Windows.Forms.TextBox();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Label6 = new System.Windows.Forms.Label();
             this.Panel1 = new System.Windows.Forms.Panel();
             this.dgw = new System.Windows.Forms.DataGridView();
-            this.Panel7 = new System.Windows.Forms.Panel();
-            this.txtBarcode = new System.Windows.Forms.TextBox();
-            this.Label5 = new System.Windows.Forms.Label();
-            this.Panel6 = new System.Windows.Forms.Panel();
-            this.txtSubCategory = new System.Windows.Forms.TextBox();
-            this.Label4 = new System.Windows.Forms.Label();
-            this.Panel3 = new System.Windows.Forms.Panel();
-            this.txtProductName = new System.Windows.Forms.TextBox();
-            this.Label3 = new System.Windows.Forms.Label();
-            this.Panel2 = new System.Windows.Forms.Panel();
-            this.Label1 = new System.Windows.Forms.Label();
-            this.lblSet = new System.Windows.Forms.Label();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -100,12 +75,46 @@
             this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Panel7 = new System.Windows.Forms.Panel();
+            this.txtBarcode = new System.Windows.Forms.TextBox();
+            this.Label5 = new System.Windows.Forms.Label();
+            this.Panel6 = new System.Windows.Forms.Panel();
+            this.txtSubCategory = new System.Windows.Forms.TextBox();
+            this.Label4 = new System.Windows.Forms.Label();
+            this.Panel3 = new System.Windows.Forms.Panel();
+            this.txtProductName = new System.Windows.Forms.TextBox();
+            this.Label3 = new System.Windows.Forms.Label();
+            this.Panel2 = new System.Windows.Forms.Panel();
+            this.WID = new System.Windows.Forms.TextBox();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.lblSet = new System.Windows.Forms.Label();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Panel5.SuspendLayout();
             this.Panel4.SuspendLayout();
             this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgw)).BeginInit();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.Panel7.SuspendLayout();
             this.Panel6.SuspendLayout();
             this.Panel3.SuspendLayout();
@@ -129,10 +138,10 @@
             this.btnExportExcel.ForeColor = System.Drawing.Color.White;
             this.btnExportExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExportExcel.Image")));
             this.btnExportExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExportExcel.Location = new System.Drawing.Point(155, 15);
+            this.btnExportExcel.Location = new System.Drawing.Point(149, 12);
             this.btnExportExcel.Margin = new System.Windows.Forms.Padding(4);
             this.btnExportExcel.Name = "btnExportExcel";
-            this.btnExportExcel.Size = new System.Drawing.Size(196, 49);
+            this.btnExportExcel.Size = new System.Drawing.Size(150, 49);
             this.btnExportExcel.TabIndex = 6;
             this.btnExportExcel.Text = "تصدير للأكسل";
             this.btnExportExcel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -152,10 +161,10 @@
             this.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel5.Controls.Add(this.btnExportExcel);
             this.Panel5.Controls.Add(this.btnReset);
-            this.Panel5.Location = new System.Drawing.Point(12, 94);
+            this.Panel5.Location = new System.Drawing.Point(4, 3);
             this.Panel5.Margin = new System.Windows.Forms.Padding(4);
             this.Panel5.Name = "Panel5";
-            this.Panel5.Size = new System.Drawing.Size(360, 86);
+            this.Panel5.Size = new System.Drawing.Size(317, 86);
             this.Panel5.TabIndex = 46;
             // 
             // btnReset
@@ -185,7 +194,7 @@
             this.Label2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label2.ForeColor = System.Drawing.Color.White;
-            this.Label2.Location = new System.Drawing.Point(17, 9);
+            this.Label2.Location = new System.Drawing.Point(5, 9);
             this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(162, 31);
@@ -199,18 +208,18 @@
             this.Panel4.Controls.Add(this.txtCategory);
             this.Panel4.Controls.Add(this.Label2);
             this.Panel4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Panel4.Location = new System.Drawing.Point(597, 92);
+            this.Panel4.Location = new System.Drawing.Point(219, 106);
             this.Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.Panel4.Name = "Panel4";
-            this.Panel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Panel4.Size = new System.Drawing.Size(195, 86);
+            this.Panel4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Panel4.Size = new System.Drawing.Size(176, 86);
             this.Panel4.TabIndex = 47;
             // 
             // txtCategory
             // 
             this.txtCategory.BackColor = System.Drawing.Color.White;
             this.txtCategory.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtCategory.Location = new System.Drawing.Point(17, 39);
+            this.txtCategory.Location = new System.Drawing.Point(4, 39);
             this.txtCategory.Margin = new System.Windows.Forms.Padding(4);
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.Size = new System.Drawing.Size(162, 30);
@@ -227,35 +236,23 @@
             this.Column12.Name = "Column12";
             this.Column12.Width = 80;
             // 
-            // Label6
-            // 
-            this.Label6.AutoSize = true;
-            this.Label6.BackColor = System.Drawing.Color.Transparent;
-            this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.Label6.ForeColor = System.Drawing.Color.White;
-            this.Label6.Location = new System.Drawing.Point(5, 15);
-            this.Label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(188, 36);
-            this.Label6.TabIndex = 45;
-            this.Label6.Text = "Accessories";
-            // 
             // Panel1
             // 
             this.Panel1.BackColor = System.Drawing.Color.White;
             this.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel1.Controls.Add(this.dgw);
+            this.Panel1.Controls.Add(this.panel9);
+            this.Panel1.Controls.Add(this.panel8);
             this.Panel1.Controls.Add(this.Panel7);
             this.Panel1.Controls.Add(this.Panel6);
             this.Panel1.Controls.Add(this.Panel4);
-            this.Panel1.Controls.Add(this.Panel5);
             this.Panel1.Controls.Add(this.Panel3);
             this.Panel1.Controls.Add(this.Panel2);
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel1.Location = new System.Drawing.Point(0, 0);
             this.Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1280, 746);
+            this.Panel1.Size = new System.Drawing.Size(1235, 746);
             this.Panel1.TabIndex = 3;
             this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint_1);
             // 
@@ -265,7 +262,7 @@
             this.dgw.AllowUserToDeleteRows = false;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.PowderBlue;
             this.dgw.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgw.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgw.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgw.BackgroundColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -294,8 +291,9 @@
             this.Column21,
             this.dataGridViewTextBoxColumn9,
             this.Column22,
-            this.Column24,
-            this.Column25});
+            this.Column25,
+            this.Column26,
+            this.Column27});
             this.dgw.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
@@ -307,12 +305,12 @@
             this.dgw.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgw.EnableHeadersVisualStyles = false;
             this.dgw.GridColor = System.Drawing.Color.Gray;
-            this.dgw.Location = new System.Drawing.Point(4, 188);
+            this.dgw.Location = new System.Drawing.Point(12, 197);
             this.dgw.Margin = new System.Windows.Forms.Padding(4);
             this.dgw.MultiSelect = false;
             this.dgw.Name = "dgw";
             this.dgw.ReadOnly = true;
-            this.dgw.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dgw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgw.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
@@ -332,10 +330,291 @@
             this.dgw.RowTemplate.Height = 30;
             this.dgw.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgw.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgw.Size = new System.Drawing.Size(1271, 552);
-            this.dgw.TabIndex = 50;
-            this.dgw.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_CellContentClick_1);
+            this.dgw.Size = new System.Drawing.Size(1206, 539);
+            this.dgw.TabIndex = 52;
+            this.dgw.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgw_CellContentClick_2);
             this.dgw.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgw_MouseDoubleClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "PID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 7;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.dataGridViewTextBoxColumn1.Width = 69;
+            // 
+            // Column1
+            // 
+            this.Column1.FillWeight = 7.742554F;
+            this.Column1.HeaderText = "كود الصنف";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 105;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column2.FillWeight = 9.742554F;
+            this.Column2.HeaderText = "اسم الصنف";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 200;
+            // 
+            // Column23
+            // 
+            this.Column23.HeaderText = "id";
+            this.Column23.MinimumWidth = 6;
+            this.Column23.Name = "Column23";
+            this.Column23.ReadOnly = true;
+            this.Column23.Visible = false;
+            this.Column23.Width = 55;
+            // 
+            // Column18
+            // 
+            this.Column18.FillWeight = 7.742554F;
+            this.Column18.HeaderText = "الفئة الرئيسية";
+            this.Column18.MinimumWidth = 6;
+            this.Column18.Name = "Column18";
+            this.Column18.ReadOnly = true;
+            this.Column18.Width = 119;
+            // 
+            // Column19
+            // 
+            this.Column19.FillWeight = 7.742554F;
+            this.Column19.HeaderText = "الفئة الفرعية";
+            this.Column19.MinimumWidth = 6;
+            this.Column19.Name = "Column19";
+            this.Column19.ReadOnly = true;
+            this.Column19.Width = 114;
+            // 
+            // Column20
+            // 
+            this.Column20.FillWeight = 7.742554F;
+            this.Column20.HeaderText = "الوصف";
+            this.Column20.MinimumWidth = 6;
+            this.Column20.Name = "Column20";
+            this.Column20.ReadOnly = true;
+            this.Column20.Width = 83;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewTextBoxColumn3.FillWeight = 7.742554F;
+            this.dataGridViewTextBoxColumn3.HeaderText = "سعر الشراء";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 108;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewTextBoxColumn4.FillWeight = 7.742554F;
+            this.dataGridViewTextBoxColumn4.HeaderText = "السعر البيع";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 103;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewTextBoxColumn5.FillWeight = 7.742554F;
+            this.dataGridViewTextBoxColumn5.HeaderText = "الخصم %";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 98;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridViewTextBoxColumn6.FillWeight = 7.742554F;
+            this.dataGridViewTextBoxColumn6.HeaderText = "الضريبة %";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 108;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewTextBoxColumn7.FillWeight = 7.742554F;
+            this.dataGridViewTextBoxColumn7.HeaderText = "حد الطلب";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 92;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.FillWeight = 11.21253F;
+            this.dataGridViewTextBoxColumn2.HeaderText = "الباركود";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 4;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 84;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.FillWeight = 7.742554F;
+            this.dataGridViewTextBoxColumn8.HeaderText = "الرصيد الافتتاحي";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 136;
+            // 
+            // Column21
+            // 
+            this.Column21.FillWeight = 7.742554F;
+            this.Column21.HeaderText = "تاريخ الانتاج";
+            this.Column21.MinimumWidth = 6;
+            this.Column21.Name = "Column21";
+            this.Column21.ReadOnly = true;
+            this.Column21.Width = 113;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.FillWeight = 7.742554F;
+            this.dataGridViewTextBoxColumn9.HeaderText = "انتهاء الصلاحية";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Width = 131;
+            // 
+            // Column22
+            // 
+            this.Column22.FillWeight = 7.742554F;
+            this.Column22.HeaderText = "سعر الجملة";
+            this.Column22.MinimumWidth = 6;
+            this.Column22.Name = "Column22";
+            this.Column22.ReadOnly = true;
+            this.Column22.Width = 104;
+            // 
+            // Column25
+            // 
+            this.Column25.FillWeight = 7.742554F;
+            this.Column25.HeaderText = "حد السعر";
+            this.Column25.MinimumWidth = 6;
+            this.Column25.Name = "Column25";
+            this.Column25.ReadOnly = true;
+            this.Column25.Width = 92;
+            // 
+            // Column26
+            // 
+            this.Column26.FillWeight = 7.5F;
+            this.Column26.HeaderText = "المخزن";
+            this.Column26.MinimumWidth = 6;
+            this.Column26.Name = "Column26";
+            this.Column26.ReadOnly = true;
+            this.Column26.Width = 81;
+            // 
+            // Column27
+            // 
+            this.Column27.HeaderText = "رقم المخزن";
+            this.Column27.MinimumWidth = 6;
+            this.Column27.Name = "Column27";
+            this.Column27.ReadOnly = true;
+            this.Column27.Visible = false;
+            this.Column27.Width = 105;
+            // 
+            // panel9
+            // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.comboBox1);
+            this.panel9.Controls.Add(this.label8);
+            this.panel9.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.panel9.Location = new System.Drawing.Point(1040, 106);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
+            this.panel9.Name = "panel9";
+            this.panel9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.panel9.Size = new System.Drawing.Size(178, 86);
+            this.panel9.TabIndex = 51;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "كل الاصناف",
+            "اصناف قد نفذت",
+            "اصناف علي وشك النفاذ",
+            "اصناف ليست في المخازن"});
+            this.comboBox1.Location = new System.Drawing.Point(9, 40);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(163, 27);
+            this.comboBox1.TabIndex = 372;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(4, 7);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(168, 31);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "نوع البحث :";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.comboBox2);
+            this.panel8.Controls.Add(this.label7);
+            this.panel8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.panel8.Location = new System.Drawing.Point(830, 106);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
+            this.panel8.Name = "panel8";
+            this.panel8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.panel8.Size = new System.Drawing.Size(178, 86);
+            this.panel8.TabIndex = 46;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "المخزن الرئيسي"});
+            this.comboBox2.Location = new System.Drawing.Point(5, 40);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(163, 27);
+            this.comboBox2.TabIndex = 372;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(4, 7);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(168, 31);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "بحث باسم المخزن :";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Panel7
             // 
@@ -343,18 +622,18 @@
             this.Panel7.Controls.Add(this.txtBarcode);
             this.Panel7.Controls.Add(this.Label5);
             this.Panel7.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Panel7.Location = new System.Drawing.Point(811, 92);
+            this.Panel7.Location = new System.Drawing.Point(424, 106);
             this.Panel7.Margin = new System.Windows.Forms.Padding(4);
             this.Panel7.Name = "Panel7";
-            this.Panel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Panel7.Size = new System.Drawing.Size(192, 86);
+            this.Panel7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Panel7.Size = new System.Drawing.Size(168, 86);
             this.Panel7.TabIndex = 49;
             // 
             // txtBarcode
             // 
             this.txtBarcode.BackColor = System.Drawing.Color.White;
             this.txtBarcode.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtBarcode.Location = new System.Drawing.Point(17, 39);
+            this.txtBarcode.Location = new System.Drawing.Point(6, 39);
             this.txtBarcode.Margin = new System.Windows.Forms.Padding(4);
             this.txtBarcode.Name = "txtBarcode";
             this.txtBarcode.Size = new System.Drawing.Size(152, 30);
@@ -366,7 +645,7 @@
             this.Label5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label5.ForeColor = System.Drawing.Color.White;
-            this.Label5.Location = new System.Drawing.Point(17, 9);
+            this.Label5.Location = new System.Drawing.Point(6, 9);
             this.Label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(152, 31);
@@ -380,18 +659,18 @@
             this.Panel6.Controls.Add(this.txtSubCategory);
             this.Panel6.Controls.Add(this.Label4);
             this.Panel6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Panel6.Location = new System.Drawing.Point(392, 92);
+            this.Panel6.Location = new System.Drawing.Point(16, 106);
             this.Panel6.Margin = new System.Windows.Forms.Padding(4);
             this.Panel6.Name = "Panel6";
-            this.Panel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Panel6.Size = new System.Drawing.Size(190, 86);
+            this.Panel6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Panel6.Size = new System.Drawing.Size(167, 86);
             this.Panel6.TabIndex = 48;
             // 
             // txtSubCategory
             // 
             this.txtSubCategory.BackColor = System.Drawing.Color.White;
             this.txtSubCategory.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSubCategory.Location = new System.Drawing.Point(22, 40);
+            this.txtSubCategory.Location = new System.Drawing.Point(3, 40);
             this.txtSubCategory.Margin = new System.Windows.Forms.Padding(4);
             this.txtSubCategory.Name = "txtSubCategory";
             this.txtSubCategory.Size = new System.Drawing.Size(155, 30);
@@ -403,7 +682,7 @@
             this.Label4.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label4.ForeColor = System.Drawing.Color.White;
-            this.Label4.Location = new System.Drawing.Point(22, 9);
+            this.Label4.Location = new System.Drawing.Point(3, 9);
             this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(156, 31);
@@ -417,11 +696,11 @@
             this.Panel3.Controls.Add(this.txtProductName);
             this.Panel3.Controls.Add(this.Label3);
             this.Panel3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Panel3.Location = new System.Drawing.Point(1018, 92);
+            this.Panel3.Location = new System.Drawing.Point(637, 106);
             this.Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.Panel3.Name = "Panel3";
-            this.Panel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Panel3.Size = new System.Drawing.Size(257, 86);
+            this.Panel3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Panel3.Size = new System.Drawing.Size(169, 86);
             this.Panel3.TabIndex = 45;
             // 
             // txtProductName
@@ -430,25 +709,22 @@
             this.txtProductName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtProductName.BackColor = System.Drawing.Color.White;
             this.txtProductName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtProductName.Location = new System.Drawing.Point(17, 38);
+            this.txtProductName.Location = new System.Drawing.Point(6, 38);
             this.txtProductName.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(222, 30);
+            this.txtProductName.Size = new System.Drawing.Size(143, 30);
             this.txtProductName.TabIndex = 13;
             this.txtProductName.TextChanged += new System.EventHandler(this.txtProductName_TextChanged_1);
             // 
             // Label3
             // 
-            this.Label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Label3.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Label3.ForeColor = System.Drawing.Color.White;
-            this.Label3.Location = new System.Drawing.Point(17, 7);
+            this.Label3.Location = new System.Drawing.Point(6, 7);
             this.Label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(222, 31);
+            this.Label3.Size = new System.Drawing.Size(144, 31);
             this.Label3.TabIndex = 12;
             this.Label3.Text = "بحث باسم الصنف :";
             this.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -457,16 +733,27 @@
             // 
             this.Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.Panel2.AutoSize = true;
             this.Panel2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Panel2.Controls.Add(this.Label6);
+            this.Panel2.Controls.Add(this.WID);
             this.Panel2.Controls.Add(this.Label1);
             this.Panel2.Controls.Add(this.lblSet);
+            this.Panel2.Controls.Add(this.Panel5);
             this.Panel2.Location = new System.Drawing.Point(12, 9);
             this.Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(1254, 76);
+            this.Panel2.Size = new System.Drawing.Size(1206, 93);
             this.Panel2.TabIndex = 0;
+            // 
+            // WID
+            // 
+            this.WID.Location = new System.Drawing.Point(492, 34);
+            this.WID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.WID.Name = "WID";
+            this.WID.Size = new System.Drawing.Size(53, 22);
+            this.WID.TabIndex = 337;
+            this.WID.Visible = false;
             // 
             // Label1
             // 
@@ -474,12 +761,13 @@
             this.Label1.BackColor = System.Drawing.Color.Transparent;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.Label1.ForeColor = System.Drawing.Color.White;
-            this.Label1.Location = new System.Drawing.Point(622, 16);
+            this.Label1.Location = new System.Drawing.Point(574, 29);
             this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(165, 36);
             this.Label1.TabIndex = 0;
             this.Label1.Text = "قائمة الأصناف";
+            this.Label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // lblSet
             // 
@@ -588,156 +876,11 @@
             this.Column13.Name = "Column13";
             this.Column13.Width = 80;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "PID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "كود الصنف";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "اسم الصنف";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column23
-            // 
-            this.Column23.HeaderText = "id";
-            this.Column23.MinimumWidth = 6;
-            this.Column23.Name = "Column23";
-            this.Column23.ReadOnly = true;
-            this.Column23.Visible = false;
-            // 
-            // Column18
-            // 
-            this.Column18.HeaderText = "الفئة الرئيسية";
-            this.Column18.MinimumWidth = 6;
-            this.Column18.Name = "Column18";
-            this.Column18.ReadOnly = true;
-            // 
-            // Column19
-            // 
-            this.Column19.HeaderText = "الفئة الفرعية";
-            this.Column19.MinimumWidth = 6;
-            this.Column19.Name = "Column19";
-            this.Column19.ReadOnly = true;
-            // 
-            // Column20
-            // 
-            this.Column20.HeaderText = "الوصف";
-            this.Column20.MinimumWidth = 6;
-            this.Column20.Name = "Column20";
-            this.Column20.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewTextBoxColumn3.HeaderText = "سعر الشراء";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridViewTextBoxColumn4.HeaderText = "السعر البيع";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridViewTextBoxColumn5.HeaderText = "الخصم %";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridViewTextBoxColumn6.HeaderText = "الضريبة %";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridViewTextBoxColumn7.HeaderText = "حد الطلب";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "الباركود";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "الرصيد الافتتاحي";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
-            // Column21
-            // 
-            this.Column21.HeaderText = "تاريخ الانتاج";
-            this.Column21.MinimumWidth = 6;
-            this.Column21.Name = "Column21";
-            this.Column21.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "انتهاء الصلاحية";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // Column22
-            // 
-            this.Column22.HeaderText = "سعر الجملة";
-            this.Column22.MinimumWidth = 6;
-            this.Column22.Name = "Column22";
-            this.Column22.ReadOnly = true;
-            // 
-            // Column24
-            // 
-            this.Column24.HeaderText = "العملة";
-            this.Column24.MinimumWidth = 6;
-            this.Column24.Name = "Column24";
-            this.Column24.ReadOnly = true;
-            // 
-            // Column25
-            // 
-            this.Column25.HeaderText = "حد السعر";
-            this.Column25.MinimumWidth = 6;
-            this.Column25.Name = "Column25";
-            this.Column25.ReadOnly = true;
-            // 
             // ProductsScreen
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1280, 746);
+            this.ClientSize = new System.Drawing.Size(1235, 746);
             this.Controls.Add(this.Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -753,7 +896,10 @@
             this.Panel4.ResumeLayout(false);
             this.Panel4.PerformLayout();
             this.Panel1.ResumeLayout(false);
+            this.Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgw)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
             this.Panel7.ResumeLayout(false);
             this.Panel7.PerformLayout();
             this.Panel6.ResumeLayout(false);
@@ -779,7 +925,6 @@
         internal System.Windows.Forms.Panel Panel4;
         internal System.Windows.Forms.TextBox txtCategory;
         internal System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.Panel Panel1;
         internal System.Windows.Forms.Panel Panel7;
         internal System.Windows.Forms.TextBox txtBarcode;
@@ -805,6 +950,13 @@
         internal System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         internal System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         internal System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        internal System.Windows.Forms.Panel panel8;
+        internal System.Windows.Forms.Label label7;
+        internal System.Windows.Forms.ComboBox comboBox2;
+        internal System.Windows.Forms.TextBox WID;
+        internal System.Windows.Forms.Panel panel9;
+        internal System.Windows.Forms.ComboBox comboBox1;
+        internal System.Windows.Forms.Label label8;
         internal System.Windows.Forms.DataGridView dgw;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -823,7 +975,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column26;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column27;
     }
 }

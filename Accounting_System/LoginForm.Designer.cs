@@ -39,8 +39,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
-            this.UserID = new System.Windows.Forms.ComboBox();
             this.UserType = new System.Windows.Forms.TextBox();
+            this.UserID = new Guna.UI.WinForms.GunaTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +61,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1172, 455);
+            this.label2.Location = new System.Drawing.Point(1200, 455);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 29);
             this.label2.TabIndex = 5;
@@ -77,14 +77,14 @@
             this.Password.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.Password.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.Password.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.Password.Location = new System.Drawing.Point(856, 448);
+            this.Password.Location = new System.Drawing.Point(844, 455);
             this.Password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Password.Name = "Password";
             this.Password.PasswordChar = '*';
             this.Password.Radius = 10;
             this.Password.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Password.SelectedText = "";
-            this.Password.Size = new System.Drawing.Size(306, 57);
+            this.Password.Size = new System.Drawing.Size(315, 57);
             this.Password.TabIndex = 4;
             this.Password.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -211,17 +211,6 @@
             this.gunaButton2.UseTransfarantBackground = true;
             this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
             // 
-            // UserID
-            // 
-            this.UserID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.UserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserID.FormattingEnabled = true;
-            this.UserID.Location = new System.Drawing.Point(853, 370);
-            this.UserID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.UserID.Name = "UserID";
-            this.UserID.Size = new System.Drawing.Size(309, 38);
-            this.UserID.TabIndex = 63;
-            // 
             // UserType
             // 
             this.UserType.Location = new System.Drawing.Point(352, 651);
@@ -231,6 +220,28 @@
             this.UserType.TabIndex = 64;
             this.UserType.Visible = false;
             // 
+            // UserID
+            // 
+            this.UserID.BackColor = System.Drawing.Color.Transparent;
+            this.UserID.BaseColor = System.Drawing.Color.White;
+            this.UserID.BorderColor = System.Drawing.Color.Silver;
+            this.UserID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.UserID.FocusedBaseColor = System.Drawing.Color.White;
+            this.UserID.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.UserID.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.UserID.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.UserID.Location = new System.Drawing.Point(844, 365);
+            this.UserID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UserID.Name = "UserID";
+            this.UserID.PasswordChar = '\0';
+            this.UserID.Radius = 10;
+            this.UserID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.UserID.SelectedText = "";
+            this.UserID.Size = new System.Drawing.Size(315, 57);
+            this.UserID.TabIndex = 65;
+            this.UserID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.UserID.TextChanged += new System.EventHandler(this.UserID_TextChanged);
+            // 
             // LoginForm
             // 
             this.AcceptButton = this.gunaButton1;
@@ -238,8 +249,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1361, 702);
-            this.Controls.Add(this.UserType);
             this.Controls.Add(this.UserID);
+            this.Controls.Add(this.UserType);
             this.Controls.Add(this.gunaButton2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -273,8 +284,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaButton gunaButton2;
-        internal System.Windows.Forms.ComboBox UserID;
         internal System.Windows.Forms.TextBox UserType;
         public Guna.UI.WinForms.GunaTextBox Password;
+        public Guna.UI.WinForms.GunaTextBox UserID;
     }
 }

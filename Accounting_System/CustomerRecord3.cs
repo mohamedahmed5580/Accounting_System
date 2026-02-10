@@ -1,4 +1,4 @@
-﻿using Pharmacy.DL;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -212,8 +212,7 @@ namespace Accounting_System
                 {
                     DataGridViewRow dr = dgw.SelectedRows[0];
 
-                    Payment_2 frmPayment_2 = Payment_2.Instance;
-                    frmPayment_2.Reset();
+                    Payment_2 frmPayment_2 = Payment_2.instance;
 
                     frmPayment_2.txtSupplierID.Text = dr.Cells[1].Value.ToString();
                     frmPayment_2.txtSupplierName.Text = dr.Cells[2].Value.ToString();
@@ -223,7 +222,6 @@ namespace Accounting_System
                     frmPayment_2.GetSupplierBalance();
                     frmPayment_2.lblSet.Text = "سندات قبض العملاء";
                     this.Close();
-                    frmPayment_2.ShowDialog();
 
                 }
             }
@@ -231,6 +229,11 @@ namespace Accounting_System
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void CustomerRecord3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

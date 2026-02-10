@@ -1,5 +1,6 @@
 ﻿using Emgu.CV.CvEnum;
-using Pharmacy.DL;
+
+using Pharmacy.PL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,6 +37,7 @@ namespace Accounting_System
             InitializeComponent();
             this.FormClosed += new FormClosedEventHandler(formclosed);
             instance = this;
+            UserID.Focus();
         }
         private void formclosed(object sender, FormClosedEventArgs e)
         {
@@ -44,16 +46,23 @@ namespace Accounting_System
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            label3.Parent = pictureBox1;
-            label3.BackColor = Color.Transparent;
+            try
+            {
+                label3.Parent = pictureBox1;
+                label3.BackColor = Color.Transparent;
+
+                label5.Parent = pictureBox1;
+                label5.BackColor = Color.Transparent;
+                UserID.Focus();
 
 
-
-            label5.Parent = pictureBox1;
-            label5.BackColor = Color.Transparent;
-
-            fillUsers();
-            UserID.SelectedIndex = 0;
+            }
+            catch 
+            {
+                MessageBox.Show("عفوا لقد حدث خطأ في الاتصال ");
+                DBConfig c = new DBConfig();
+                c.ShowDialog();
+            }
 
         }
 
@@ -112,8 +121,8 @@ namespace Accounting_System
                                 if (UserType.Text == "Admin")
                                 {
                                     this.Hide();
-                                    basic frm = new basic();
-                                   /* frm.اToolStripMenuItem.Enabled = true;
+                                    Dashbourd frm = new Dashbourd();
+                                    frm.اToolStripMenuItem.Enabled = true;
                                     frm.المستخدمينToolStripMenuItem.Enabled = true;
                                     frm.toolStripMenuItem5.Enabled = true;
                                     frm.نسخToolStripMenuItem.Enabled = true;
@@ -132,15 +141,15 @@ namespace Accounting_System
                                 //    frm.ToolStripMenuItemSetting.Enabled = true;
                                     frm.toolStripMenuItem15.Enabled = true;
                                     frm.lblUser.Text = UserID.Text;
-                                    frm.lblUserType.Text = UserType.Text;*/
+                                    frm.lblUserType.Text = UserType.Text;
                                     LogFunc(UserID.Text, "Successfully logged in");
                                     frm.Show();
                                 }
                                 else if (UserType.Text == "Sales Person")
                                 {
                                     this.Hide();
-                                    basic frm = new basic();
-                                  /*  frm.اToolStripMenuItem.Enabled = false;
+                                    Dashbourd frm = new Dashbourd();
+                                    frm.اToolStripMenuItem.Enabled = false;
                                     frm.المستخدمينToolStripMenuItem.Enabled = false;
                                     frm.toolStripMenuItem5.Enabled = false;
                                     frm.نسخToolStripMenuItem.Enabled = false;
@@ -158,7 +167,7 @@ namespace Accounting_System
                                    // frm.SalesmanToolStripMenuItem.Enabled = false;
                                    // frm.SendSMSToolStripMenuItem.Enabled = false;
                                     frm.مرتجعمبيعاتToolStripMenuItem.Enabled = true;
-                                    frm.toolStripMenuItem21.Enabled = false;*/
+                                    frm.toolStripMenuItem21.Enabled = false;
                                     frm.btnProductMaster.Enabled = false;
                                     frm.btnSalesmanMaster.Enabled = false;
                                     frm.btnStockAdjustment.Enabled = false;
@@ -176,10 +185,10 @@ namespace Accounting_System
                                 else if (UserType.Text == "Inventory Manager")
                                 {
                                     this.Hide();
-                                    basic frm = new basic();
+                                    Dashbourd frm = new Dashbourd();
                                     frm.اToolStripMenuItem.Enabled = false;
                                     frm.المستخدمينToolStripMenuItem.Enabled = false;
-                                   /* frm.toolStripMenuItem5.Enabled = false;
+                                    frm.toolStripMenuItem5.Enabled = false;
                                     frm.نسخToolStripMenuItem.Enabled = false;
                                     frm.toolStripMenuItem17.Enabled = false;
                                     frm.toolStripMenuItem23.Enabled = false;
@@ -194,7 +203,7 @@ namespace Accounting_System
                                     frm.toolStripMenuItem29.Enabled = false;
                                    // frm.SalesmanToolStripMenuItem.Enabled = false;
                                   //  frm.SendSMSToolStripMenuItem.Enabled = false;
-                                    frm.toolStripMenuItem21.Enabled = false;*/
+                                    frm.toolStripMenuItem21.Enabled = false;
                                     frm.btnProductMaster.Enabled = false;
                                     frm.btnSalesmanMaster.Enabled = false;
                                     frm.btnStockAdjustment.Enabled = true;
@@ -212,10 +221,10 @@ namespace Accounting_System
                                 else if (UserType.Text == "accountant")
                                 {
                                     this.Hide();
-                                    basic frm = new basic();
+                                    Dashbourd frm = new Dashbourd();
                                     frm.اToolStripMenuItem.Enabled = false;
                                     frm.المستخدمينToolStripMenuItem.Enabled = false;
-                                /*    frm.toolStripMenuItem5.Enabled = false;
+                                    frm.toolStripMenuItem5.Enabled = false;
                                     frm.نسخToolStripMenuItem.Enabled = false;
                                     frm.toolStripMenuItem17.Enabled = false;
                                     frm.toolStripMenuItem23.Enabled = false;
@@ -230,7 +239,7 @@ namespace Accounting_System
                                     frm.toolStripMenuItem29.Enabled = false;
                                  //   frm.SalesmanToolStripMenuItem.Enabled = false;
                                   //  frm.SendSMSToolStripMenuItem.Enabled = false;
-                                    frm.toolStripMenuItem21.Enabled = true;*/
+                                    frm.toolStripMenuItem21.Enabled = true;
                                     frm.btnProductMaster.Enabled = false;
                                     frm.btnSalesmanMaster.Enabled = false;
                                     frm.btnStockAdjustment.Enabled = true;
@@ -304,38 +313,11 @@ namespace Accounting_System
 
         private void gunaButton2_Click(object sender, EventArgs e)
         {
-            this.Hide();
             ChangePassword changePassword = new ChangePassword();
             changePassword.UserID.Focus();
-            changePassword.Show();
+            changePassword.ShowDialog();
         }
-        private void fillUsers()
-        {
-            try
-            {
-                using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
-                {
-                    con.Open();
-                    using (SqlDataAdapter adp = new SqlDataAdapter())
-                    {
-                        adp.SelectCommand = new SqlCommand("SELECT DISTINCT UserID FROM Registration WHERE Active='Yes'", con);
-                        DataSet ds = new DataSet("ds");
-                        adp.Fill(ds);
-                        DataTable dtable = ds.Tables[0];
-                        UserID.Items.Clear();
-                        foreach (DataRow drow in dtable.Rows)
-                        {
-                            UserID.Items.Add(drow[0].ToString());
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-        }
+      
         public static void LogFunc(string st1, string st2)
         {
             using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
@@ -350,6 +332,16 @@ namespace Accounting_System
                     cmd.ExecuteReader();
                 }
             }
+        }
+
+        private void UserID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

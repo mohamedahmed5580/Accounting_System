@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PymentProductt" targetNamespace="http://tempuri.org/PymentProductt1.xsd" xmlns:mstns="http://tempuri.org/PymentProductt1.xsd" xmlns="http://tempuri.org/PymentProductt1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SalesProductsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SalesProductsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Accounting_System.Properties.Settings.GlobalReference.Default.SalesProductsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PymentProductt" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PymentProductt" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PymentProductt">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PymentProduct" msprop:Generator_RowClassName="PymentProductRow" msprop:Generator_RowEvHandlerName="PymentProductRowChangeEventHandler" msprop:Generator_RowDeletedName="PymentProductRowDeleted" msprop:Generator_RowDeletingName="PymentProductRowDeleting" msprop:Generator_RowEvArgName="PymentProductRowChangeEvent" msprop:Generator_TablePropName="PymentProduct" msprop:Generator_RowChangedName="PymentProductRowChanged" msprop:Generator_UserTableName="PymentProduct" msprop:Generator_RowChangingName="PymentProductRowChanging" msprop:Generator_TableClassName="PymentProductDataTable" msprop:Generator_TableVarName="tablePymentProduct">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Units" msprop:Generator_UserColumnName="Units" msprop:Generator_ColumnPropNameInTable="UnitsColumn" msprop:Generator_ColumnPropNameInRow="Units" msprop:Generator_ColumnVarNameInTable="columnUnits" type="xs:string" minOccurs="0" />
+              <xs:element name="QtyBunit" msprop:Generator_UserColumnName="QtyBunit" msprop:Generator_ColumnPropNameInTable="QtyBunitColumn" msprop:Generator_ColumnPropNameInRow="QtyBunit" msprop:Generator_ColumnVarNameInTable="columnQtyBunit" type="xs:string" minOccurs="0" />
+              <xs:element name="QtyAFrival" msprop:Generator_UserColumnName="QtyAFrival" msprop:Generator_ColumnPropNameInTable="QtyAFrivalColumn" msprop:Generator_ColumnPropNameInRow="QtyAFrival" msprop:Generator_ColumnVarNameInTable="columnQtyAFrival" type="xs:string" minOccurs="0" />
+              <xs:element name="Rival" msprop:Generator_UserColumnName="Rival" msprop:Generator_ColumnPropNameInTable="RivalColumn" msprop:Generator_ColumnPropNameInRow="Rival" msprop:Generator_ColumnVarNameInTable="columnRival" type="xs:string" minOccurs="0" />
+              <xs:element name="QtyP" msprop:Generator_UserColumnName="QtyP" msprop:Generator_ColumnPropNameInTable="QtyPColumn" msprop:Generator_ColumnPropNameInRow="QtyP" msprop:Generator_ColumnVarNameInTable="columnQtyP" type="xs:string" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

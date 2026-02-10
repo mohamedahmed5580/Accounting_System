@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerLedger));
             this.Panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.Button2 = new System.Windows.Forms.Button();
@@ -54,13 +55,31 @@
             // 
             this.Panel1.BackColor = System.Drawing.Color.White;
             this.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Panel1.Controls.Add(this.button3);
             this.Panel1.Controls.Add(this.GroupBox2);
             this.Panel1.Controls.Add(this.Panel2);
             this.Panel1.Location = new System.Drawing.Point(7, 5);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1165, 225);
+            this.Panel1.Size = new System.Drawing.Size(1165, 261);
             this.Panel1.TabIndex = 3;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.ForestGreen;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button3.Location = new System.Drawing.Point(20, 191);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(208, 44);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "عرض التقرير العام";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // GroupBox2
             // 
@@ -75,10 +94,10 @@
             this.GroupBox2.Controls.Add(this.dtpDateFrom);
             this.GroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.GroupBox2.Location = new System.Drawing.Point(12, 92);
-            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GroupBox2.Size = new System.Drawing.Size(1147, 113);
+            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.GroupBox2.Size = new System.Drawing.Size(1147, 161);
             this.GroupBox2.TabIndex = 0;
             this.GroupBox2.TabStop = false;
             this.GroupBox2.Text = "بحث باسم العميل وبين تاريخين :";
@@ -90,7 +109,7 @@
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
             this.btnReset.Location = new System.Drawing.Point(12, 39);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(61, 53);
             this.btnReset.TabIndex = 1;
@@ -101,7 +120,7 @@
             // 
             this.Button2.Image = ((System.Drawing.Image)(resources.GetObject("Button2.Image")));
             this.Button2.Location = new System.Drawing.Point(732, 50);
-            this.Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button2.Margin = new System.Windows.Forms.Padding(4);
             this.Button2.Name = "Button2";
             this.Button2.Size = new System.Drawing.Size(69, 37);
             this.Button2.TabIndex = 17;
@@ -115,7 +134,7 @@
             this.cmbCustomerName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.cmbCustomerName.FormattingEnabled = true;
             this.cmbCustomerName.Location = new System.Drawing.Point(803, 52);
-            this.cmbCustomerName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbCustomerName.Margin = new System.Windows.Forms.Padding(4);
             this.cmbCustomerName.Name = "cmbCustomerName";
             this.cmbCustomerName.Size = new System.Drawing.Size(177, 31);
             this.cmbCustomerName.TabIndex = 0;
@@ -141,7 +160,7 @@
             this.Button1.ForeColor = System.Drawing.Color.White;
             this.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Button1.Location = new System.Drawing.Point(81, 41);
-            this.Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button1.Margin = new System.Windows.Forms.Padding(4);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(135, 50);
             this.Button1.TabIndex = 3;
@@ -157,7 +176,7 @@
             this.dtpDateTo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.dtpDateTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpDateTo.Location = new System.Drawing.Point(227, 50);
-            this.dtpDateTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpDateTo.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDateTo.Name = "dtpDateTo";
             this.dtpDateTo.Size = new System.Drawing.Size(127, 30);
             this.dtpDateTo.TabIndex = 2;
@@ -195,7 +214,7 @@
             this.dtpDateFrom.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.dtpDateFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpDateFrom.Location = new System.Drawing.Point(476, 52);
-            this.dtpDateFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpDateFrom.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDateFrom.Name = "dtpDateFrom";
             this.dtpDateFrom.Size = new System.Drawing.Size(137, 30);
             this.dtpDateFrom.TabIndex = 1;
@@ -207,18 +226,18 @@
             this.Panel2.Controls.Add(this.txtCustomerID);
             this.Panel2.Controls.Add(this.Label1);
             this.Panel2.Location = new System.Drawing.Point(7, 9);
-            this.Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(1147, 76);
             this.Panel2.TabIndex = 0;
             // 
             // txtCustomerID
             // 
-            this.txtCustomerID.Location = new System.Drawing.Point(25, 25);
-            this.txtCustomerID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCustomerID.Location = new System.Drawing.Point(25, 20);
+            this.txtCustomerID.Margin = new System.Windows.Forms.Padding(4);
             this.txtCustomerID.Name = "txtCustomerID";
             this.txtCustomerID.ReadOnly = true;
-            this.txtCustomerID.Size = new System.Drawing.Size(57, 22);
+            this.txtCustomerID.Size = new System.Drawing.Size(68, 22);
             this.txtCustomerID.TabIndex = 1;
             this.txtCustomerID.Visible = false;
             // 
@@ -241,10 +260,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1180, 235);
+            this.ClientSize = new System.Drawing.Size(1180, 272);
             this.Controls.Add(this.Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CustomerLedger";
@@ -276,5 +295,6 @@
         internal System.Windows.Forms.TextBox txtCustomerID;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.Timer Timer1;
+        internal System.Windows.Forms.Button button3;
     }
 }

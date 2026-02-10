@@ -11,10 +11,25 @@
     <AssemblyName>Accounting_System</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -37,6 +52,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Accounting_System.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
@@ -69,11 +87,14 @@
     <Reference Include="CryptoQrUtilities, Version=0.9.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CryptoQrUtilities.1.0.0\lib\net40\CryptoQrUtilities.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine">
-      <HintPath>..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win64_x64\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Engine.13.0.4003\lib\net40\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc">
-      <HintPath>..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win64_x64\dotnet\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ClientDoc.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
     </Reference>
     <Reference Include="CrystalDecisions.ReportAppServer.CommLayer">
       <HintPath>..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win64_x64\dotnet\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
@@ -84,17 +105,24 @@
     <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
       <HintPath>..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win64_x64\dotnet\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalDecisions.ReportAppServer.Controllers">
-      <HintPath>..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win64_x64\dotnet\CrystalDecisions.ReportAppServer.Controllers.dll</HintPath>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.Controllers.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.Controllers.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel">
-      <HintPath>..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win64_x64\dotnet\CrystalDecisions.ReportAppServer.CubeDefModel.dll</HintPath>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.CubeDefModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.CubeDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel">
-      <HintPath>..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win64_x64\dotnet\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataDefModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion">
-      <HintPath>..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win64_x64\dotnet\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataSetConversion.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalReports.ReportAppServer.ObjectFactory.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
@@ -104,20 +132,28 @@
       <HintPath>..\packages\CrystalReports.ReportAppServer.Prompting.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.Prompting.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel">
-      <HintPath>..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win64_x64\dotnet\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportAppServer.ReportDefModel.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
     </Reference>
     <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize">
       <HintPath>..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win64_x64\dotnet\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalDecisions.ReportSource">
-      <HintPath>..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win64_x64\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportSource.13.0.4003\lib\net40\CrystalDecisions.ReportSource.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="CrystalDecisions.Shared">
-      <HintPath>..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win64_x64\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Shared.13.0.4003\lib\net40\CrystalDecisions.Shared.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="CrystalDecisions.Windows.Forms">
-      <HintPath>..\..\..\..\..\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win64_x64\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Windows.Forms.13.0.4003\lib\net40\CrystalDecisions.Windows.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.1.66\lib\net461\Dapper.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v24.1, Version=24.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>..\packages\DevExpress.Data.24.1.6-pre-24238\lib\net452\DevExpress.Data.v24.1.dll</HintPath>
@@ -143,8 +179,8 @@
     <Reference Include="IronSoftware.Shared, Version=2024.9.0.27, Culture=neutral, PublicKeyToken=c0ab8f6e415e2702, processorArchitecture=MSIL">
       <HintPath>..\packages\IronSoftware.Common.2024.9.27\lib\netstandard2.0\IronSoftware.Shared.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=3.0.0.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.3.0.0-preview.2\lib\net462\log4net.dll</HintPath>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
@@ -155,8 +191,8 @@
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.0-preview.7.24405.7\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.1\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
@@ -199,6 +235,10 @@
     <Reference Include="NetBarcode, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NetBarcode.2.0.0-beta.1\lib\netstandard2.0\NetBarcode.dll</HintPath>
     </Reference>
+    <Reference Include="OpenQA.Selenium.Winium, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenQA.Selenium.Winium.1.0.0.4\lib\OpenQA.Selenium.Winium.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework" />
     <Reference Include="SixLabors.Fonts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
       <HintPath>..\packages\SixLabors.Fonts.1.0.0\lib\netstandard2.0\SixLabors.Fonts.dll</HintPath>
     </Reference>
@@ -360,6 +400,12 @@
     <Reference Include="WebCamLib, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
       <HintPath>..\packages\CryptoQrUtilities.1.0.0\lib\net40\WebCamLib.dll</HintPath>
     </Reference>
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WhatsAppApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WhatsAppAPI.15.4.29\lib\net40\WhatsAppApi.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
       <HintPath>..\packages\ZXing.Net.0.16.9\lib\net48\zxing.dll</HintPath>
@@ -395,11 +441,11 @@
     <Compile Include="Barcode_printing.Designer.cs">
       <DependentUpon>Barcode_printing.cs</DependentUpon>
     </Compile>
-    <Compile Include="basic.cs">
+    <Compile Include="Dashbourd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="basic.Designer.cs">
-      <DependentUpon>basic.cs</DependentUpon>
+    <Compile Include="Dashbourd.Designer.cs">
+      <DependentUpon>Dashbourd.cs</DependentUpon>
     </Compile>
     <Compile Include="Camera.cs">
       <SubType>Form</SubType>
@@ -425,11 +471,162 @@
     <Compile Include="Company.Designer.cs">
       <DependentUpon>Company.cs</DependentUpon>
     </Compile>
+    <Compile Include="Company_Ledger11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Company_Ledger1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Company_Ledger2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Company_Ledger.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CTOPOS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CTOPOS.Designer.cs">
       <DependentUpon>CTOPOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Currencies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Currencies.Designer.cs">
+      <DependentUpon>Currencies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Currency1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Currency.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Debtors11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Debtors1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewDataSet.cs">
+      <DependentUpon>NewDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFile.Designer.cs">
+      <DependentUpon>NewFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POSSS.cs" />
+    <Compile Include="ProductInitializer.cs" />
+    <Compile Include="Properties\AssemblyComVisible.cs" />
+    <Compile Include="PymentProductt1.cs">
+      <DependentUpon>PymentProductt1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PymentProductt1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PymentProductt1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pymentproductt2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pymentproductt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\AuthRepository.cs" />
+    <Compile Include="Repositories\CustomerRepository.cs" />
+    <Compile Include="Repositories\DapperHelper.cs" />
+    <Compile Include="Repositories\SalesRepository.cs" />
+    <Compile Include="rptCompanyLedger.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCompanyLedger.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptGeneralInvoicePay.cs">
+      <DependentUpon>rptGeneralInvoicePay.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="rptGeneralSPReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGeneralSPReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInvoice4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInvoice4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptInvoice5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptInvoice5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPurchase_12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPurchase_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SalesPaymentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesPaymentReport.Designer.cs">
+      <DependentUpon>SalesPaymentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesProduct1.cs">
+      <DependentUpon>SalesProduct1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingCom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShippingCom.Designer.cs">
+      <DependentUpon>ShippingCom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingComPymentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShippingComPymentScreen.Designer.cs">
+      <DependentUpon>ShippingComPymentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingCom_pyment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShippingCom_pyment.Designer.cs">
+      <DependentUpon>ShippingCom_pyment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show_database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show_database.Designer.cs">
+      <DependentUpon>Show_database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_DBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SIS_DBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInv11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerInv1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInvProductReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerInvProductReport.Designer.cs">
+      <DependentUpon>CustomerInvProductReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInvReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerInvReport.Designer.cs">
+      <DependentUpon>CustomerInvReport.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerLedger.cs">
       <SubType>Form</SubType>
@@ -442,6 +639,11 @@
     </Compile>
     <Compile Include="CustomerList.Designer.cs">
       <DependentUpon>CustomerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerProductsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerProductsDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="customerRecord2.cs">
       <SubType>Form</SubType>
@@ -460,6 +662,20 @@
     </Compile>
     <Compile Include="CustomerRecord5.Designer.cs">
       <DependentUpon>CustomerRecord5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSuppDataSet.cs">
+      <DependentUpon>CustomerSuppDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSuppDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerSuppDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSuppReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerSuppReport.Designer.cs">
+      <DependentUpon>CustomerSuppReport.cs</DependentUpon>
     </Compile>
     <Compile Include="DBConfig.cs">
       <SubType>Form</SubType>
@@ -480,17 +696,92 @@
     <Compile Include="Actives.Designer.cs">
       <DependentUpon>Actives.cs</DependentUpon>
     </Compile>
-    <Compile Include="Currencies.cs">
+    <Compile Include="PaymentProductReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Currencies.Designer.cs">
-      <DependentUpon>Currencies.cs</DependentUpon>
+    <Compile Include="PaymentProductReport.Designer.cs">
+      <DependentUpon>PaymentProductReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PymentProduct11.cs">
+      <DependentUpon>PymentProduct11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PymentProduct111.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PymentProduct11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="rptCustomerInvReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCustomerInvReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptCustomerProductInvReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCustomerProductInvReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptGeneralCSReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGeneralCSReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPaymentProductReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPaymentProductReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSalesProductsReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSalesProductsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SalesProduct11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesProduct1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalesProductsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesProductsReport.Designer.cs">
+      <DependentUpon>SalesProductsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlProductRepository .cs" />
+    <Compile Include="SqlServerDetector.cs" />
+    <Compile Include="SupplierCompanyLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierCompanyLedger.Designer.cs">
+      <DependentUpon>SupplierCompanyLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppliersProductReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliersProductReport.Designer.cs">
+      <DependentUpon>SuppliersProductReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouses_transportation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouses_transportation.Designer.cs">
+      <DependentUpon>Warehouses_transportation.cs</DependentUpon>
     </Compile>
     <Compile Include="frmReport.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmReport.Designer.cs">
       <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralDayBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralDayBook.Designer.cs">
+      <DependentUpon>GeneralDayBook.cs</DependentUpon>
     </Compile>
     <Compile Include="GeneralLedger.cs">
       <SubType>Form</SubType>
@@ -515,12 +806,6 @@
     </Compile>
     <Compile Include="Logs.Designer.cs">
       <DependentUpon>Logs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainMenu.Designer.cs">
-      <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="ModFunc.cs" />
     <Compile Include="Notifications.cs">
@@ -644,12 +929,6 @@
     <Compile Include="PymentinvoiceScreen.Designer.cs">
       <DependentUpon>PymentinvoiceScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="PymentNotification.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PymentNotification.Designer.cs">
-      <DependentUpon>PymentNotification.cs</DependentUpon>
-    </Compile>
     <Compile Include="Quotation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -692,10 +971,22 @@
       <DependentUpon>rptDebtors.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptDebtors1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDebtors1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="rptExpenses.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptExpenses.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptGeneralDayBook.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGeneralDayBook.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="rptGeneralLedger.cs">
@@ -998,6 +1289,18 @@
     <Compile Include="VoucherReport.Designer.cs">
       <DependentUpon>VoucherReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Warehouses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouses.Designer.cs">
+      <DependentUpon>Warehouses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WSender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WSender.Designer.cs">
+      <DependentUpon>WSender.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Actives.resx">
       <DependentUpon>Actives.cs</DependentUpon>
     </EmbeddedResource>
@@ -1010,8 +1313,8 @@
     <EmbeddedResource Include="Barcode_printing.resx">
       <DependentUpon>Barcode_printing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="basic.resx">
-      <DependentUpon>basic.cs</DependentUpon>
+    <EmbeddedResource Include="Dashbourd.resx">
+      <DependentUpon>Dashbourd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Camera.resx">
       <DependentUpon>Camera.cs</DependentUpon>
@@ -1031,6 +1334,23 @@
     <EmbeddedResource Include="Currencies.resx">
       <DependentUpon>Currencies.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewFile.resx">
+      <DependentUpon>NewFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCompanyLedger.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCompanyLedger.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptGeneralInvoicePay.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGeneralInvoicePay.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerInvProductReport.resx">
+      <DependentUpon>CustomerInvProductReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerInvReport.resx">
+      <DependentUpon>CustomerInvReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerLedger.resx">
       <DependentUpon>CustomerLedger.cs</DependentUpon>
     </EmbeddedResource>
@@ -1046,14 +1366,86 @@
     <EmbeddedResource Include="CustomerRecord5.resx">
       <DependentUpon>CustomerRecord5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomerSuppReport.resx">
+      <DependentUpon>CustomerSuppReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DBConfig.resx">
       <DependentUpon>DBConfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DebtorsReport.resx">
       <DependentUpon>DebtorsReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PaymentProductReport.resx">
+      <DependentUpon>PaymentProductReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCustomerInvReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCustomerInvReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCustomerProductInvReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCustomerProductInvReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptGeneralCSReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGeneralCSReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptGeneralSPReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGeneralSPReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInvoice4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInvoice4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInvoice5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInvoice5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPaymentProductReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPaymentProductReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPurchase_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPurchase_12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSalesProductsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSalesProductsReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesPaymentReport.resx">
+      <DependentUpon>SalesPaymentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesProductsReport.resx">
+      <DependentUpon>SalesProductsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShippingCom.resx">
+      <DependentUpon>ShippingCom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShippingComPymentScreen.resx">
+      <DependentUpon>ShippingComPymentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShippingCom_pyment.resx">
+      <DependentUpon>ShippingCom_pyment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show_database.resx">
+      <DependentUpon>Show_database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierCompanyLedger.resx">
+      <DependentUpon>SupplierCompanyLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliersProductReport.resx">
+      <DependentUpon>SuppliersProductReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouses_transportation.resx">
+      <DependentUpon>Warehouses_transportation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmReport.resx">
       <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralDayBook.resx">
+      <DependentUpon>GeneralDayBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GeneralLedger.resx">
       <DependentUpon>GeneralLedger.cs</DependentUpon>
@@ -1066,9 +1458,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Logs.resx">
       <DependentUpon>Logs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainMenu.resx">
-      <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Notifications.resx">
       <DependentUpon>Notifications.cs</DependentUpon>
@@ -1141,9 +1530,6 @@
     <EmbeddedResource Include="PymentinvoiceScreen.resx">
       <DependentUpon>PymentinvoiceScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PymentNotification.resx">
-      <DependentUpon>PymentNotification.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Quotation.resx">
       <DependentUpon>Quotation.cs</DependentUpon>
     </EmbeddedResource>
@@ -1169,9 +1555,17 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptDebtors.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptDebtors1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDebtors1.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="rptExpenses.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptExpenses.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptGeneralDayBook.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGeneralDayBook.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="rptGeneralLedger.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -1342,6 +1736,12 @@
     <EmbeddedResource Include="VoucherReport.resx">
       <DependentUpon>VoucherReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Warehouses.resx">
+      <DependentUpon>Warehouses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WSender.resx">
+      <DependentUpon>WSender.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="BarcodeDataSet.xsc">
       <DependentUpon>BarcodeDataSet.xsd</DependentUpon>
     </None>
@@ -1353,6 +1753,94 @@
     <None Include="BarcodeDataSet.xss">
       <DependentUpon>BarcodeDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Company_Ledger.xsc">
+      <DependentUpon>Company_Ledger.xsd</DependentUpon>
+    </None>
+    <None Include="Company_Ledger.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Company_Ledger2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Company_Ledger.xss">
+      <DependentUpon>Company_Ledger.xsd</DependentUpon>
+    </None>
+    <None Include="Company_Ledger1.xsc">
+      <DependentUpon>Company_Ledger1.xsd</DependentUpon>
+    </None>
+    <None Include="Company_Ledger1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Company_Ledger11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Company_Ledger1.xss">
+      <DependentUpon>Company_Ledger1.xsd</DependentUpon>
+    </None>
+    <None Include="Currency.xsc">
+      <DependentUpon>Currency.xsd</DependentUpon>
+    </None>
+    <None Include="Currency.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Currency1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Currency.xss">
+      <DependentUpon>Currency.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerInv1.xsc">
+      <DependentUpon>CustomerInv1.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerInv1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerInv11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CustomerInv1.xss">
+      <DependentUpon>CustomerInv1.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerProductsDataSet.xsc">
+      <DependentUpon>CustomerProductsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerProductsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerProductsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CustomerProductsDataSet.xss">
+      <DependentUpon>CustomerProductsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerSuppDataSet.xsc">
+      <DependentUpon>CustomerSuppDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerSuppDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerSuppDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CustomerSuppDataSet.xss">
+      <DependentUpon>CustomerSuppDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Debtors1.xsc">
+      <DependentUpon>Debtors1.xsd</DependentUpon>
+    </None>
+    <None Include="Debtors1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Debtors11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Debtors1.xss">
+      <DependentUpon>Debtors1.xsd</DependentUpon>
+    </None>
+    <None Include="NewDataSet.xsc">
+      <DependentUpon>NewDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NewDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NewDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NewDataSet.xss">
+      <DependentUpon>NewDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -1363,7 +1851,62 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="PymentProduct11.xsc">
+      <DependentUpon>PymentProduct11.xsd</DependentUpon>
+    </None>
+    <None Include="PymentProduct11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PymentProduct111.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PymentProduct11.xss">
+      <DependentUpon>PymentProduct11.xsd</DependentUpon>
+    </None>
+    <None Include="Pymentproductt.xsc">
+      <DependentUpon>Pymentproductt.xsd</DependentUpon>
+    </None>
+    <None Include="Pymentproductt.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Pymentproductt2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Pymentproductt.xss">
+      <DependentUpon>Pymentproductt.xsd</DependentUpon>
+    </None>
+    <None Include="PymentProductt1.xsc">
+      <DependentUpon>PymentProductt1.xsd</DependentUpon>
+    </None>
+    <None Include="PymentProductt1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PymentProductt1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PymentProductt1.xss">
+      <DependentUpon>PymentProductt1.xsd</DependentUpon>
+    </None>
+    <None Include="SalesProduct1.xsc">
+      <DependentUpon>SalesProduct1.xsd</DependentUpon>
+    </None>
+    <None Include="SalesProduct1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalesProduct11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SalesProduct1.xss">
+      <DependentUpon>SalesProduct1.xsd</DependentUpon>
+    </None>
     <None Include="Scripts\Manager.ttinclude" />
+    <None Include="SIS_DBDataSet1.xsc">
+      <DependentUpon>SIS_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SIS_DBDataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SIS_DBDataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SIS_DBDataSet1.xss">
+      <DependentUpon>SIS_DBDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Stock11.xsc">
       <DependentUpon>Stock11.xsd</DependentUpon>
     </None>
@@ -1449,14 +1992,15 @@
     <None Include="Resources\power_closedown_close_exit_pode_1842.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BarcodeLabelPrinting.xml" />
     <Content Include="logo.ico" />
     <Content Include="MetroFramework.txt" />
-    <None Include="Resources\logo.png" />
-    <None Include="Resources\cross-remove-sign.png" />
     <Content Include="Scripts\TypeLite.Net4.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>TypeLite.Net4.d.ts</LastGenOutput>
     </Content>
+    <Content Include="StockIn.xml" />
+    <Content Include="TotalSales.xml" />
     <None Include="Resources\photo1.jpg" />
     <None Include="Resources\121.jpg" />
     <None Include="Resources\Company11.png" />
@@ -1476,6 +2020,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TypeLite.Net4.tt</DependentUpon>
     </TypeScriptCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\SkiaSharp.NativeAssets.macOS.2.88.8\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.8\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />

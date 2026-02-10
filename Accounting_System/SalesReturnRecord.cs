@@ -1,5 +1,5 @@
 ﻿using Microsoft.Office.Interop.Excel;
-using Pharmacy.DL;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -77,24 +77,24 @@ namespace Accounting_System
 
 
 
-                        SalesReturn.Instance.txtSRID.Text = dr.Cells[0].Value.ToString();
-                        SalesReturn.Instance.txtSRNO.Text = dr.Cells[1].Value.ToString();
-                        SalesReturn.Instance.dtpSRDate.Text = dr.Cells[2].Value.ToString();
-                        SalesReturn.Instance.txtSalesID.Text = dr.Cells[3].Value.ToString();
-                        SalesReturn.Instance.txtSalesInvoiceNo.Text = dr.Cells[4].Value.ToString();
-                        SalesReturn.Instance.dtpSalesDate.Text = dr.Cells[5].Value.ToString();
-                        SalesReturn.Instance.txtCustomerID.Text = dr.Cells[6].Value.ToString();
-                        SalesReturn.Instance.txtCustomerName.Text = dr.Cells[7].Value.ToString();
-                        SalesReturn.Instance.txtGrandTotal.Text = dr.Cells[8].Value.ToString();
+                        SalesReturn.instance.txtSRID.Text = dr.Cells[0].Value.ToString();
+                        SalesReturn.instance.txtSRNO.Text = dr.Cells[1].Value.ToString();
+                        SalesReturn.instance.dtpSRDate.Text = dr.Cells[2].Value.ToString();
+                        SalesReturn.instance.txtSalesID.Text = dr.Cells[3].Value.ToString();
+                        SalesReturn.instance.txtSalesInvoiceNo.Text = dr.Cells[4].Value.ToString();
+                        SalesReturn.instance.dtpSalesDate.Text = dr.Cells[5].Value.ToString();
+                        SalesReturn.instance.txtCustomerID.Text = dr.Cells[6].Value.ToString();
+                        SalesReturn.instance.txtCustomerName.Text = dr.Cells[7].Value.ToString();
+                        SalesReturn.instance.txtGrandTotal.Text = dr.Cells[8].Value.ToString();
 
-                        SalesReturn.Instance.btnSave.Enabled = false;
-                        SalesReturn.Instance.DataGridView1.Enabled = true;
-                        SalesReturn.Instance.btnAdd.Enabled = false;
-                        SalesReturn.Instance.btnRemove.Enabled = false;
-                        SalesReturn.Instance.lblSet.Text = "Not Allowed";
-                        SalesReturn.Instance.pnlCalc.Enabled = false;
-                        SalesReturn.Instance.btnDelete.Enabled = true;
-                        SalesReturn.Instance.btnSelection.Enabled = false;
+                        SalesReturn.instance.btnSave.Enabled = false;
+                        SalesReturn.instance.DataGridView1.Enabled = true;
+                        SalesReturn.instance.btnAdd.Enabled = false;
+                        SalesReturn.instance.btnRemove.Enabled = false;
+                        SalesReturn.instance.lblSet.Text = "Not Allowed";
+                        SalesReturn.instance.pnlCalc.Enabled = false;
+                        SalesReturn.instance.btnDelete.Enabled = true;
+                        SalesReturn.instance.btnSelection.Enabled = false;
                         
 
                         using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
@@ -106,15 +106,14 @@ namespace Accounting_System
                                 cmd.Parameters.AddWithValue("@sr_id", dr.Cells[0].Value);
                                 using (SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection))
                                 {
-                                    SalesReturn.Instance.DataGridView1.Rows.Clear();
+                                    SalesReturn.instance.DataGridView1.Rows.Clear();
                                     while (rdr.Read())
                                     {
-                                        SalesReturn.Instance.DataGridView1.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8], rdr[9], rdr[10], rdr[11], rdr[12], rdr[13]);
+                                        SalesReturn.instance.DataGridView1.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8], rdr[9], rdr[10], rdr[11], rdr[12], rdr[13]);
                                     }
                                 }
                             }
                         }
-                        SalesReturn.Instance.Show();
                         this.Close();
 
                     }

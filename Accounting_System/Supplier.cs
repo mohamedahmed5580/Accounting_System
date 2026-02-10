@@ -1,6 +1,5 @@
 ﻿using Microsoft.Office.Interop.Excel;
 using Microsoft.VisualBasic;
-using Pharmacy.DL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,12 +18,14 @@ namespace Accounting_System
 {
     public partial class Supplier : Form
     {
-        SqlConnection cn = new SqlConnection(DataAccessLayer.Con());
+        public static Supplier instance;
 
         public Supplier()
         {
             InitializeComponent();
-            
+            instance = this;
+
+
         }
         private void Panel4_Paint(object sender, PaintEventArgs e)
         {
@@ -106,7 +107,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
         private void DeleteRecord()
@@ -178,7 +179,7 @@ namespace Accounting_System
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
 
 
@@ -189,25 +190,27 @@ namespace Accounting_System
         {
             try
             {
-                cn.Open();
-                SqlDataAdapter adp = new SqlDataAdapter();
-                adp.SelectCommand = new SqlCommand("SELECT DISTINCT RTRIM(State) FROM Supplier ORDER BY 1", cn);
-                DataSet ds = new DataSet("ds");
-                adp.Fill(ds);
-
-                // Specify System.Data.DataTable explicitly to resolve ambiguity
-                System.Data.DataTable dtable = ds.Tables[0];
-                cmbState.Items.Clear();
-
-                foreach (System.Data.DataRow drow in dtable.Rows)
+                using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
                 {
-                    cmbState.Items.Add(drow[0].ToString());
+                    cn.Open();
+                    SqlDataAdapter adp = new SqlDataAdapter();
+                    adp.SelectCommand = new SqlCommand("SELECT DISTINCT RTRIM(State) FROM Supplier ORDER BY 1", cn);
+                    DataSet ds = new DataSet("ds");
+                    adp.Fill(ds);
+
+                    // Specify System.Data.DataTable explicitly to resolve ambiguity
+                    System.Data.DataTable dtable = ds.Tables[0];
+                    cmbState.Items.Clear();
+
+                    foreach (System.Data.DataRow drow in dtable.Rows)
+                    {
+                        cmbState.Items.Add(drow[0].ToString());
+                    }
                 }
-                cn.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
         private void cmbState_Format(object sender, System.Windows.Forms.ListControlConvertEventArgs e)
@@ -249,6 +252,7 @@ namespace Accounting_System
                 txtOpeningBalance.Text = "0";
             }
 
+            btnSave.Enabled = false;
             try
             {
                 using (var connection = new SqlConnection(DataAccessLayer.Con()))
@@ -256,17 +260,15 @@ namespace Accounting_System
                     connection.Open();
 
                     // Check if contact number already exists
-                    string checkQuery = "SELECT RTRIM(ContactNo) FROM Supplier WHERE ContactNo = @ContactNo";
+                    string checkQuery = "SELECT COUNT(*) FROM Supplier WHERE ContactNo = @ContactNo";
                     using (var checkCmd = new SqlCommand(checkQuery, connection))
                     {
                         checkCmd.Parameters.AddWithValue("@ContactNo", txtContactNo.Text);
-                        using (var reader = checkCmd.ExecuteReader())
+                        int count = (int)checkCmd.ExecuteScalar();
+                        if (count > 0)
                         {
-                            if (reader.Read())
-                            {
-                                MessageBox.Show("لم يتم إدخال جهة اتصال , أنه مسجل مسبقا", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                return;
-                            }
+                            MessageBox.Show("لم يتم إدخال جهة اتصال , أنه مسجل مسبقا", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
                         }
                     }
 
@@ -294,22 +296,37 @@ namespace Accounting_System
                         insertCmd.Parameters.AddWithValue("@Bank", txtBank.Text);
                         insertCmd.Parameters.AddWithValue("@Branch", txtBranch.Text);
                         insertCmd.Parameters.AddWithValue("@IFSCCode", txtIFSCcode.Text);
-                        insertCmd.Parameters.AddWithValue("@OpeningBalance", Convert.ToInt32(txtOpeningBalance.Text));
+                        insertCmd.Parameters.AddWithValue("@OpeningBalance", Convert.ToDecimal(txtOpeningBalance.Text));
                         insertCmd.Parameters.AddWithValue("@OpeningBalanceType", cmbOpeningBalanceType.Text);
 
                         insertCmd.ExecuteNonQuery();
                     }
+                    
+                    if (Convert.ToDecimal(txtOpeningBalance.Text) > 0)
+                    {
+                        if (cmbOpeningBalanceType.Text == "Credit")
+                        {
+                            LedgerSave(DateTime.Now, txtSupplierName.Text, txtSupplierID.Text, "الرصيد الافتتاحي", 0, Convert.ToDecimal(txtOpeningBalance.Text), txtSupplierID.Text, "");
+                        }
+                        if (cmbOpeningBalanceType.Text == "Debit")
+                        {
+                            LedgerSave(DateTime.Now, txtSupplierName.Text, txtSupplierID.Text, "الرصيد الافتتاحي", Convert.ToDecimal(txtOpeningBalance.Text), 0, txtSupplierID.Text, "");
+                        }
+                    }
                 }
 
-                // Additional logic for ledger and logs...
+                LogFunc(lblUser.Text, "added the new supplier having supplier id '" + txtSupplierID.Text + "'");
                 MessageBox.Show("تم الحفظ بنجاح", "سجلات الموردين", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                btnSave.Enabled = false;
                 fillState();
                 Reset();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.Message, "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+            }
+            finally
+            {
+                btnSave.Enabled = true;
             }
         }
 
@@ -335,6 +352,7 @@ namespace Accounting_System
                 return;
             }
 
+            btnUpdate.Enabled = false;
             try
             {
                 using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
@@ -391,7 +409,6 @@ namespace Accounting_System
                     LogFunc(lblUser.Text, "updated the supplier having supplier id '" + txtSupplierID.Text + "'");
 
                     MessageBox.Show("تم التعديل بنجاح", "سجلات الموردين", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    btnUpdate.Enabled = false;
                     fillState();
                     Reset();
                 }
@@ -399,33 +416,45 @@ namespace Accounting_System
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                btnUpdate.Enabled = true;
+            }
+            finally
+            {
+                // btnUpdate will be false usually due to Reset, but let's be safe
+                if (btnSave.Enabled) btnUpdate.Enabled = false;
             }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            try
+            if (MessageBox.Show("هل أنت متأكد أنك تريد حذف سجل هذا المورد?", "تأكيد", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == System.Windows.Forms.DialogResult.Yes)
             {
-                if (MessageBox.Show("هل أنت متأكد أنك تريد حذف سجل هذا المورد?", "تأكيد", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == System.Windows.Forms.DialogResult.Yes)
+                btnDelete.Enabled = false;
+                try
                 {
                     DeleteRecord();
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    btnDelete.Enabled = true;
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
         }
 
         private void btnGetData_Click(object sender, EventArgs e)
         {
-            var frm = new SupplierScreen();
-            frm.lblSet.Text = "Supplier Entry";
-            frm.ShowDialog();
-            this.Close();
-            this.FormClosed += (s, args) => this.Close();
-
+            btnGetData.Enabled = false;
+            try
+            {
+                var frm = new SupplierScreen();
+                frm.lblSet.Text = "Supplier Entry";
+                frm.ShowDialog();
+            }
+            finally
+            {
+                btnGetData.Enabled = true;
+            }
         }
 
 
@@ -472,130 +501,104 @@ namespace Accounting_System
         }
         public void SMS(string st1)
         {
-            
-            cn.Open();
-            string cb = "insert into SMS(Message,Date) VALUES (@d1,@d2)";
-            SqlCommand cmd = new SqlCommand(cb);
-            cmd.Connection = cn;
-            cmd.Parameters.AddWithValue("@d1", st1);
-            cmd.Parameters.AddWithValue("@d2", DateTime.Now);
-            cmd.ExecuteReader();
-            cn.Close();
+            using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
+            {
+                cn.Open();
+                string cb = "insert into SMS(Message,Date) VALUES (@d1,@d2)";
+                using (SqlCommand cmd = new SqlCommand(cb, cn))
+                {
+                    cmd.Parameters.AddWithValue("@d1", st1);
+                    cmd.Parameters.AddWithValue("@d2", DateTime.Now);
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
         public void LogFunc(string st1, string st2)
         {
-            
-            cn.Open();
-            string cb = "insert into Logs(UserID,Date,Operation) VALUES (@d1,@d2,@d3)";
-            SqlCommand cmd = new SqlCommand(cb);
-            cmd.Connection = cn;
-            cmd.Parameters.AddWithValue("@d1", st1);
-            cmd.Parameters.AddWithValue("@d2", DateTime.Now);
-            cmd.Parameters.AddWithValue("@d3", st2);
-            cmd.ExecuteReader();
-            cn.Close();
+            using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
+            {
+                cn.Open();
+                string cb = "insert into Logs(UserID,Date,Operation) VALUES (@d1,@d2,@d3)";
+                using (SqlCommand cmd = new SqlCommand(cb, cn))
+                {
+                    cmd.Parameters.AddWithValue("@d1", st1);
+                    cmd.Parameters.AddWithValue("@d2", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@d3", st2);
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
-        public void SMSFunc(string st1, string st2, string st3)
-        {
-            st3 = st3.Replace("@MobileNo", st1).Replace("@Message", st2);
-            HttpWebRequest request;
-            HttpWebResponse response = default;
-            var myUri = new Uri(st3);
-            request = (HttpWebRequest)WebRequest.Create(myUri);
-            response = (HttpWebResponse)request.GetResponse();
-        }
-        public string Encrypt(string password)
-        {
-            string strmsg = string.Empty;
-            byte[] encode = new byte[password.Length];
-            encode = Encoding.UTF8.GetBytes(password);
-            strmsg = Convert.ToBase64String(encode);
-            return strmsg;
-        }
-
-        public string Decrypt(string encryptpwd)
-        {
-            string decryptpwd = string.Empty;
-            var encodepwd = new UTF8Encoding();
-            var Decode = encodepwd.GetDecoder();
-            byte[] todecode_byte = Convert.FromBase64String(encryptpwd);
-            int charCount = Decode.GetCharCount(todecode_byte, 0, todecode_byte.Length);
-            char[] decoded_char = new char[charCount];
-            Decode.GetChars(todecode_byte, 0, todecode_byte.Length, decoded_char, 0);
-            decryptpwd = new string(decoded_char);
-            return decryptpwd;
-        }
-        public void RefreshRecords()
-        {
-/*            frmStockBalance obj = (frmStockBalance)Application.OpenForms("frmStockBalance");
-            obj.Getdata();
-            obj.DataGridView1.Refresh();
-            obj.DataGridView1.Update();*/
-        }
-        
         public void LedgerSave(DateTime a, string b, string c, string d, decimal e, decimal f, string g, string h)
         {
-            
-            cn.Open();
-            string cb = "insert into LedgerBook(Date, Name, LedgerNo, Label,Debit,Credit,PartyID,Manual_Inv) Values (@d1,@d2,@d3,@d4,@d5,@d6,@d7,@d8)";
-            SqlCommand cmd = new SqlCommand(cb);
-            cmd.Parameters.AddWithValue("@d1", a);
-            cmd.Parameters.AddWithValue("@d2", b);
-            cmd.Parameters.AddWithValue("@d3", c);
-            cmd.Parameters.AddWithValue("@d4", d);
-            cmd.Parameters.AddWithValue("@d5", e);
-            cmd.Parameters.AddWithValue("@d6", f);
-            cmd.Parameters.AddWithValue("@d7", g);
-            cmd.Parameters.AddWithValue("@d8", h);
-            cmd.Connection = cn;
-            cmd.ExecuteReader();
-            cn.Close();
+            using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
+            {
+                cn.Open();
+                string cb = "insert into LedgerBook(Date, Name, LedgerNo, Label,Debit,Credit,PartyID,Manual_Inv) Values (@d1,@d2,@d3,@d4,@d5,@d6,@d7,@d8)";
+                using (SqlCommand cmd = new SqlCommand(cb, cn))
+                {
+                    cmd.Parameters.AddWithValue("@d1", a);
+                    cmd.Parameters.AddWithValue("@d2", b);
+                    cmd.Parameters.AddWithValue("@d3", c);
+                    cmd.Parameters.AddWithValue("@d4", d);
+                    cmd.Parameters.AddWithValue("@d5", e);
+                    cmd.Parameters.AddWithValue("@d6", f);
+                    cmd.Parameters.AddWithValue("@d7", g);
+                    cmd.Parameters.AddWithValue("@d8", h);
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
         public void LedgerDelete(string a, string b)
         {
-            
-            cn.Open();
-            string cq = "delete from LedgerBook where LedgerNo=@d1 and Label=@d2";
-            SqlCommand cmd = new SqlCommand(cq);
-            cmd.Parameters.AddWithValue("@d1", a);
-            cmd.Parameters.AddWithValue("@d2", b);
-            cmd.Connection = cn;
-            cmd.ExecuteReader();
-            cn.Close();
+            using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
+            {
+                cn.Open();
+                string cq = "delete from LedgerBook where LedgerNo=@d1 and Label=@d2";
+                using (SqlCommand cmd = new SqlCommand(cq, cn))
+                {
+                    cmd.Parameters.AddWithValue("@d1", a);
+                    cmd.Parameters.AddWithValue("@d2", b);
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
         public void LedgerUpdate(DateTime a, string b, decimal e, decimal f, string g, string h, string i)
         {
-            
-            cn.Open();
-            string cb = "Update LedgerBook set Date=@d1, Name=@d2,Debit=@d3,Credit=@d4,PartyID=@d5 where LedgerNo=@d6 and Label=@d7";
-            SqlCommand cmd = new SqlCommand(cb);
-            cmd.Parameters.AddWithValue("@d1", a);
-            cmd.Parameters.AddWithValue("@d2", b);
-            cmd.Parameters.AddWithValue("@d3", e);
-            cmd.Parameters.AddWithValue("@d4", f);
-            cmd.Parameters.AddWithValue("@d5", g);
-            cmd.Parameters.AddWithValue("@d6", h);
-            cmd.Parameters.AddWithValue("@d7", i);
-            cmd.Connection = cn;
-            cmd.ExecuteReader();
-            cn.Close();
+            using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
+            {
+                cn.Open();
+                string cb = "Update LedgerBook set Date=@d1, Name=@d2,Debit=@d3,Credit=@d4,PartyID=@d5 where LedgerNo=@d6 and Label=@d7";
+                using (SqlCommand cmd = new SqlCommand(cb, cn))
+                {
+                    cmd.Parameters.AddWithValue("@d1", a);
+                    cmd.Parameters.AddWithValue("@d2", b);
+                    cmd.Parameters.AddWithValue("@d3", e);
+                    cmd.Parameters.AddWithValue("@d4", f);
+                    cmd.Parameters.AddWithValue("@d5", g);
+                    cmd.Parameters.AddWithValue("@d6", h);
+                    cmd.Parameters.AddWithValue("@d7", i);
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
         public void SupplierLedgerSave(DateTime a, string b, string c, string d, decimal e, decimal f, string g)
         {
-            
-            cn.Open();
-            string cb = "insert into SupplierLedgerBook(Date, Name, LedgerNo, Label,Debit,Credit,PartyID) Values (@d1,@d2,@d3,@d4,@d5,@d6,@d7)";
-            SqlCommand cmd = new SqlCommand(cb);
-            cmd.Parameters.AddWithValue("@d1", a);
-            cmd.Parameters.AddWithValue("@d2", b);
-            cmd.Parameters.AddWithValue("@d3", c);
-            cmd.Parameters.AddWithValue("@d4", d);
-            cmd.Parameters.AddWithValue("@d5", e);
-            cmd.Parameters.AddWithValue("@d6", f);
-            cmd.Parameters.AddWithValue("@d7", g);
-            cmd.Connection = cn;
-            cmd.ExecuteReader();
-            cn.Close();
+            using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
+            {
+                cn.Open();
+                string cb = "insert into SupplierLedgerBook(Date, Name, LedgerNo, Label,Debit,Credit,PartyID) Values (@d1,@d2,@d3,@d4,@d5,@d6,@d7)";
+                using (SqlCommand cmd = new SqlCommand(cb, cn))
+                {
+                    cmd.Parameters.AddWithValue("@d1", a);
+                    cmd.Parameters.AddWithValue("@d2", b);
+                    cmd.Parameters.AddWithValue("@d3", c);
+                    cmd.Parameters.AddWithValue("@d4", d);
+                    cmd.Parameters.AddWithValue("@d5", e);
+                    cmd.Parameters.AddWithValue("@d6", f);
+                    cmd.Parameters.AddWithValue("@d7", g);
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
         public void SendMail(string s1, string s2, string s3, string s5, string s6, int s7, string s8, string s9)
         {
@@ -620,30 +623,32 @@ namespace Accounting_System
         }
         public void SupplierLedgerDelete(string a)
         {
-            
-            cn.Open();
-            string cq = "delete from SupplierLedgerBook where LedgerNo=@d1";
-            SqlCommand cmd = new SqlCommand(cq);
-            cmd.Parameters.AddWithValue("@d1", a);
-            cmd.Connection = cn;
-            cmd.ExecuteReader();
-            cn.Close();
+            using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
+            {
+                cn.Open();
+                string cq = "delete from SupplierLedgerBook where LedgerNo=@d1";
+                SqlCommand cmd = new SqlCommand(cq);
+                cmd.Parameters.AddWithValue("@d1", a);
+                cmd.Connection = cn;
+                cmd.ExecuteReader();
+            }
         }
         public void SupplierLedgerUpdate(DateTime a, string b, decimal e, decimal f, string g, string h)
         {
-            
-            cn.Open();
-            string cb = "Update SupplierLedgerBook set Date=@d1, Name=@d2,Debit=@d3,Credit=@d4 where LedgerNo=@d5 and Label=@d6";
-            SqlCommand cmd = new SqlCommand(cb);
-            cmd.Parameters.AddWithValue("@d1", a);
-            cmd.Parameters.AddWithValue("@d2", b);
-            cmd.Parameters.AddWithValue("@d3", e);
-            cmd.Parameters.AddWithValue("@d4", f);
-            cmd.Parameters.AddWithValue("@d5", g);
-            cmd.Parameters.AddWithValue("@d6", h);
-            cmd.Connection = cn;
-            cmd.ExecuteReader();
-            cn.Close();
+            using (SqlConnection cn = new SqlConnection(DataAccessLayer.Con()))
+            {
+                cn.Open();
+                string cb = "Update SupplierLedgerBook set Date=@d1, Name=@d2,Debit=@d3,Credit=@d4 where LedgerNo=@d5 and Label=@d6";
+                SqlCommand cmd = new SqlCommand(cb);
+                cmd.Parameters.AddWithValue("@d1", a);
+                cmd.Parameters.AddWithValue("@d2", b);
+                cmd.Parameters.AddWithValue("@d3", e);
+                cmd.Parameters.AddWithValue("@d4", f);
+                cmd.Parameters.AddWithValue("@d5", g);
+                cmd.Parameters.AddWithValue("@d6", h);
+                cmd.Connection = cn;
+                cmd.ExecuteReader();
+            }
         }
 
         private void Supplier_Load(object sender, EventArgs e)

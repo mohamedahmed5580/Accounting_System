@@ -11,13 +11,15 @@ namespace Accounting_System
     {
         /// <summary>
         /// The main entry point for the application.
-        /// </summary>
+        //z/ </summary>
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new basic());
+            Application.Run(new Show_database());
+
         }
     }
 }

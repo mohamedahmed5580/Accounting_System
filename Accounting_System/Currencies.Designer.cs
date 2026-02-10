@@ -72,6 +72,7 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblSet = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.Panel2.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
@@ -137,7 +138,7 @@
             this.Panel2.Controls.Add(this.Label6);
             this.Panel2.Controls.Add(this.Label8);
             this.Panel2.Controls.Add(this.Label7);
-            this.Panel2.Location = new System.Drawing.Point(12, 56);
+            this.Panel2.Location = new System.Drawing.Point(12, 57);
             this.Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(972, 76);
@@ -160,12 +161,12 @@
             this.Label1.BackColor = System.Drawing.Color.Transparent;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label1.ForeColor = System.Drawing.Color.White;
-            this.Label1.Location = new System.Drawing.Point(361, 14);
+            this.Label1.Location = new System.Drawing.Point(400, 14);
             this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(152, 31);
             this.Label1.TabIndex = 0;
-            this.Label1.Text = "أدخال العملات";
+            this.Label1.Text = "إدخال العملات";
             // 
             // txtTIN
             // 
@@ -268,6 +269,7 @@
             // Panel1
             // 
             this.Panel1.BackColor = System.Drawing.Color.White;
+            this.Panel1.Controls.Add(this.lblSet);
             this.Panel1.Controls.Add(this.Panel4);
             this.Panel1.Controls.Add(this.Panel3);
             this.Panel1.Controls.Add(this.dgw);
@@ -275,8 +277,9 @@
             this.Panel1.Location = new System.Drawing.Point(5, 4);
             this.Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1015, 552);
+            this.Panel1.Size = new System.Drawing.Size(1015, 551);
             this.Panel1.TabIndex = 5;
+            this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // Panel4
             // 
@@ -288,22 +291,26 @@
             this.Panel4.Location = new System.Drawing.Point(252, 304);
             this.Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.Panel4.Name = "Panel4";
-            this.Panel4.Size = new System.Drawing.Size(732, 216);
+            this.Panel4.Size = new System.Drawing.Size(732, 217);
             this.Panel4.TabIndex = 0;
             this.Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel4_Paint);
             // 
             // txtPrice
             // 
+            this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrice.Location = new System.Drawing.Point(348, 146);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(202, 24);
+            this.txtPrice.Size = new System.Drawing.Size(201, 26);
             this.txtPrice.TabIndex = 18;
             // 
             // txtName
             // 
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(348, 54);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(202, 24);
+            this.txtName.Size = new System.Drawing.Size(201, 26);
             this.txtName.TabIndex = 17;
             // 
             // label2
@@ -342,7 +349,7 @@
             this.Panel3.Location = new System.Drawing.Point(12, 304);
             this.Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.Panel3.Name = "Panel3";
-            this.Panel3.Size = new System.Drawing.Size(147, 239);
+            this.Panel3.Size = new System.Drawing.Size(147, 240);
             this.Panel3.TabIndex = 0;
             // 
             // btnDelete
@@ -352,7 +359,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(18, 188);
+            this.btnDelete.Location = new System.Drawing.Point(19, 188);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(109, 43);
@@ -367,7 +374,7 @@
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnUpdate.Location = new System.Drawing.Point(18, 129);
+            this.btnUpdate.Location = new System.Drawing.Point(19, 129);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(109, 43);
@@ -381,7 +388,7 @@
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnSave.Location = new System.Drawing.Point(18, 73);
+            this.btnSave.Location = new System.Drawing.Point(19, 73);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(109, 43);
@@ -397,7 +404,7 @@
             this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnNew.ForeColor = System.Drawing.Color.White;
-            this.btnNew.Location = new System.Drawing.Point(18, 17);
+            this.btnNew.Location = new System.Drawing.Point(19, 17);
             this.btnNew.Margin = new System.Windows.Forms.Padding(4);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(109, 43);
@@ -492,20 +499,36 @@
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
+            // lblSet
+            // 
+            this.lblSet.AutoSize = true;
+            this.lblSet.Location = new System.Drawing.Point(53, 5);
+            this.lblSet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSet.Name = "lblSet";
+            this.lblSet.Size = new System.Drawing.Size(27, 16);
+            this.lblSet.TabIndex = 312;
+            this.lblSet.Text = "Set";
+            this.lblSet.Visible = false;
+            // 
             // Currencies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1021, 561);
             this.Controls.Add(this.Panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Currencies";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Currencies_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Currencies_FormClosed);
             this.Load += new System.EventHandler(this.Currencies_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.Panel2.ResumeLayout(false);
             this.Panel2.PerformLayout();
             this.contextMenuStrip2.ResumeLayout(false);
             this.Panel1.ResumeLayout(false);
+            this.Panel1.PerformLayout();
             this.Panel4.ResumeLayout(false);
             this.Panel4.PerformLayout();
             this.Panel3.ResumeLayout(false);
@@ -553,5 +576,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtPrice;
+        internal System.Windows.Forms.Label lblSet;
     }
 }

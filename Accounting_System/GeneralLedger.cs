@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using Pharmacy.DL;
+
 
 namespace Accounting_System
 {
@@ -41,6 +41,7 @@ namespace Accounting_System
         {
             try
             {
+
                 using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
                 {
                     Cursor = Cursors.WaitCursor;
@@ -68,6 +69,8 @@ namespace Accounting_System
                     }
                    
                 }
+
+
                 using (SqlConnection con = new SqlConnection(DataAccessLayer.Con()))
                 {
                     frmReport frmReport = new frmReport();
